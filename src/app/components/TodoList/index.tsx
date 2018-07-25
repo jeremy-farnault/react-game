@@ -1,21 +1,21 @@
-import * as React from 'react';
-import * as style from './style.css';
-import { TodoActions } from 'app/actions/todos';
-import { TodoItem } from '../TodoItem';
-import { TodoModel } from 'app/models/TodoModel';
+import * as React from 'react'
+import * as style from './style.css'
+import { TodoActions } from 'app/actions/todos'
+import { TodoItem } from '../TodoItem'
+import { TodoModel } from 'app/models/TodoModel'
 
 export namespace TodoList {
   export interface Props {
-    todos: TodoModel[];
-    actions: TodoActions;
+    todos: TodoModel[]
+    actions: TodoActions
   }
 }
 
 export class TodoList extends React.Component<TodoList.Props> {
   renderToggleAll(): JSX.Element | void {
-    const { todos, actions } = this.props;
+    const { todos, actions } = this.props
     if (todos.length > 0) {
-      const hasIncompleted = todos.some((todo) => !todo.completed);
+      const hasIncompleted = todos.some((todo) => !todo.completed)
       return (
         <input
           className={style.toggleAll}
@@ -23,12 +23,12 @@ export class TodoList extends React.Component<TodoList.Props> {
           checked={hasIncompleted}
           onChange={actions.completeAll}
         />
-      );
+      )
     }
   }
 
   render() {
-    const { todos, actions } = this.props;
+    const { todos, actions } = this.props
     return (
       <section className={style.main}>
         {this.renderToggleAll()}
@@ -44,6 +44,6 @@ export class TodoList extends React.Component<TodoList.Props> {
           ))}
         </ul>
       </section>
-    );
+    )
   }
 }

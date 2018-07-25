@@ -1,46 +1,46 @@
-import * as React from 'react';
-import * as classNames from 'classnames';
-import * as style from './style.css';
-import { TodoModel } from 'app/models';
-import { TodoActions } from 'app/actions';
-import { TodoTextInput } from '../TodoTextInput';
+import * as React from 'react'
+import * as classNames from 'classnames'
+import * as style from './style.css'
+import { TodoModel } from 'app/models'
+import { TodoActions } from 'app/actions'
+import { TodoTextInput } from '../TodoTextInput'
 
 export namespace TodoItem {
   export interface Props {
-    todo: TodoModel;
-    editTodo: typeof TodoActions.editTodo;
-    deleteTodo: typeof TodoActions.deleteTodo;
-    completeTodo: typeof TodoActions.completeTodo;
+    todo: TodoModel
+    editTodo: typeof TodoActions.editTodo
+    deleteTodo: typeof TodoActions.deleteTodo
+    completeTodo: typeof TodoActions.completeTodo
   }
 
   export interface State {
-    editing: boolean;
+    editing: boolean
   }
 }
 
 export class TodoItem extends React.Component<TodoItem.Props, TodoItem.State> {
   constructor(props: TodoItem.Props, context?: any) {
-    super(props, context);
-    this.state = { editing: false };
+    super(props, context)
+    this.state = { editing: false }
   }
 
   handleDoubleClick() {
-    this.setState({ editing: true });
+    this.setState({ editing: true })
   }
 
   handleSave(id: number, text: string) {
     if (text.length === 0) {
-      this.props.deleteTodo(id);
+      this.props.deleteTodo(id)
     } else {
-      this.props.editTodo({ id, text });
+      this.props.editTodo({ id, text })
     }
-    this.setState({ editing: false });
+    this.setState({ editing: false })
   }
 
   render() {
-    const { todo, completeTodo, deleteTodo } = this.props;
+    const { todo, completeTodo, deleteTodo } = this.props
 
-    let element;
+    let element
     if (this.state.editing) {
       element = (
         <TodoTextInput
@@ -48,7 +48,7 @@ export class TodoItem extends React.Component<TodoItem.Props, TodoItem.State> {
           editing={this.state.editing}
           onSave={(text) => todo.id && this.handleSave(todo.id, text)}
         />
-      );
+      )
     } else {
       element = (
         <div className={style.view}>
@@ -62,11 +62,11 @@ export class TodoItem extends React.Component<TodoItem.Props, TodoItem.State> {
           <button
             className={style.destroy}
             onClick={() => {
-              if (todo.id) deleteTodo(todo.id);
+              if (todo.id) deleteTodo(todo.id)
             }}
           />
         </div>
-      );
+      )
     }
 
     // TODO: compose
@@ -74,8 +74,8 @@ export class TodoItem extends React.Component<TodoItem.Props, TodoItem.State> {
       [style.completed]: todo.completed,
       [style.editing]: this.state.editing,
       [style.normal]: !this.state.editing
-    });
+    })
 
-    return <li className={classes}>{element}</li>;
+    return <li className={classes}>{element}</li>
   }
 }
