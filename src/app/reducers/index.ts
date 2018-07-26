@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 import { RootState } from './state'
-import { todoReducer } from './todos'
+import { todoReducer } from './tiles'
 import { routerReducer, RouterState } from 'react-router-redux'
 
 export { RootState, RouterState }

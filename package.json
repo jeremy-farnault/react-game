@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --mode development --hot --progress --color --port 3000 --open",
     "build": "webpack -p --progress --colors",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
-    "pretty": "prettier --single-quote --no-semi --jsx-bracket-same-line --write \"src/**/*.{ts, tsx}\""
+    "pretty": "prettier --single-quote --no-semi --jsx-bracket-same-line --write \"src/**/*.tsx\""
   },
   "license": "MIT",
   "devDependencies": {
