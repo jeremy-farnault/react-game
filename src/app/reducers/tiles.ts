@@ -1,7 +1,7 @@
 import { handleActions } from 'redux-actions'
 import { RootState } from './state'
-import { TodoActions } from 'app/actions/tiles'
-import { TodoModel } from 'app/models'
+import { TileActions } from 'app/actions/tiles'
+import { TileModel } from 'app/models'
 
 const initialState: RootState.TileState = [
   {
@@ -11,9 +11,9 @@ const initialState: RootState.TileState = [
   }
 ]
 
-export const todoReducer = handleActions<RootState.TodoState, TodoModel>(
+export const todoReducer = handleActions<RootState.TodoState, TileModel>(
   {
-    [TodoActions.Type.ADD_TODO]: (state, action) => {
+    [TileActions.Type.CHANGE_TILE_STATE]: (state, action) => {
       if (action.payload && action.payload.text) {
         return [
           {

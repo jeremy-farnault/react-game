@@ -1,11 +1,11 @@
-import { TodoModel } from 'app/models'
+import { TileModel } from 'app/models'
 import { RouterState } from 'react-router-redux'
 
 export interface RootState {
-  todos: RootState.TodoState
+  tiles: RootState.TileState
   router: RouterState
 }
 
 export namespace RootState {
-  export type TodoState = TodoModel[]
+  export type TileState = TileModel[]
 }
