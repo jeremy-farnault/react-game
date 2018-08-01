@@ -4,7 +4,7 @@ import * as _ from 'lodash'
 
 import nanoid = require('nanoid')
 
-export const defaultTiles = (): Tile[][] => {
+const createDefaultTiles = (): Tile[][] => {
   return _.range(config.numberOfColumns).map(i => {
     return _.range(config.numberOfLines).map(j => {
       return {
@@ -18,3 +18,5 @@ export const defaultTiles = (): Tile[][] => {
     })
   })
 }
+
+export const DefaultTiles = createDefaultTiles()

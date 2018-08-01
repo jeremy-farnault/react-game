@@ -1,35 +1,33 @@
 import * as React from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import { bindActionCreators, Dispatch } from 'redux'
-import * as actions from '../actions/'
+import * as actions from '../../core/actions'
 import { StoreState } from '../../types'
 
-interface IProps {}
+// interface IProps {}
 
-interface IState {}
+// interface IState {}
 
-class Battlefield extends React.PureComponent<IProps, IState> {
-
-  constructor(props: IProps) {
+class Battlefield extends React.PureComponent<{}, {}> {
+  constructor(props: {}) {
     super(props)
   }
 
-  render() {
-    return (
-      <div>
-        TESTEST
-      </div>
-    )
+  public render() {
+    return <div>TESTEST</div>
   }
 }
 
-function mapStateToProps({tiles}: StoreState) {
+function mapStateToProps({ tiles }: StoreState) {
   return {
     tiles
   }
 }
 
-const mapDispatchToProps = (dispatch: Dispatch<actions.LoadData>) => bindActionCreators({
-}, dispatch)
+const mapDispatchToProps = (dispatch: Dispatch<actions.ILoadData>) =>
+  bindActionCreators({}, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(Battlefield)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Battlefield)

@@ -1,12 +1,12 @@
 import * as React from 'react'
-import './App.css'
 import Battlefield from '../Battlefield/Battlefield'
+import './App.css'
 
 class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        <Battlefield/>
+        <Battlefield />
       </div>
     )
   }

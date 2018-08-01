@@ -8,7 +8,8 @@ import createStore from './core/create'
 
 ReactDOM.render(
   <Provider store={createStore()}>
-    <App/>
+    <App />
   </Provider>,
-  document.getElementById("root") as HTMLElement);
-registerServiceWorker();
+  document.getElementById('root') as HTMLElement
+)
+registerServiceWorker()
