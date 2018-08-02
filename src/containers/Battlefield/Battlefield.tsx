@@ -1,8 +1,9 @@
+import * as actions from '../../core/actions'
+import { IStoreState } from '../../types'
+
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators, Dispatch } from 'redux'
-import * as actions from '../../core/actions'
-import { StoreState } from '../../types'
 
 // interface IProps {}
 
@@ -18,7 +19,7 @@ class Battlefield extends React.PureComponent<{}, {}> {
   }
 }
 
-function mapStateToProps({ tiles }: StoreState) {
+function mapStateToProps({ tiles }: IStoreState) {
   return {
     tiles
   }

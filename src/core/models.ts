@@ -1,4 +1,4 @@
-export interface Tile {
+export interface ITile {
   uuid: string
   columnIndex: number
   lineIndex: number

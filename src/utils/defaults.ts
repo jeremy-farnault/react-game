@@ -1,10 +1,11 @@
+import { ITile, TileState } from '../core/models'
 import { config } from './config'
-import { Tile, TileState } from '../core/models'
+
 import * as _ from 'lodash'
 
 import nanoid = require('nanoid')
 
-const createDefaultTiles = (): Tile[][] => {
+const createDefaultTiles = (): ITile[][] => {
   return _.range(config.numberOfColumns).map(i => {
     return _.range(config.numberOfLines).map(j => {
       return {
@@ -14,7 +15,7 @@ const createDefaultTiles = (): Tile[][] => {
         posY: j * config.tileSize,
         state: TileState.empty,
         uuid: nanoid(6)
-      } as Tile
+      } as ITile
     })
   })
 }

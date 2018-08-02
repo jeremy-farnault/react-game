@@ -1,5 +1,5 @@
 export const config = {
-  numberOfLines: 12,
   numberOfColumns: 16,
+  numberOfLines: 12,
   tileSize: 44
 }

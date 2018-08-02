@@ -1,41 +1,35 @@
-import createSagaMiddleware from "redux-saga";
-import { reducers } from "./reducers";
+import { IStoreState } from '../types'
+import { DefaultTiles } from '../utils/defaults'
+import { reducers } from './reducers'
+import root from './saga'
 
-import {
-  applyMiddleware,
-  compose,
-  createStore as _createStore,
-  Store
-} from "redux";
+import { applyMiddleware, compose, createStore, Store } from 'redux'
+import createSagaMiddleware from 'redux-saga'
 
-import root from "./saga";
-import { StoreState } from "../types";
-import { DefaultTiles } from "../utils/defaults";
+export default function createReduxStore(): Store {
+  const sagaMiddleware = createSagaMiddleware()
 
-export default function createStore(): Store {
-  const sagaMiddleware = createSagaMiddleware();
-
-  const middleWares = [sagaMiddleware];
+  const middleWares = [sagaMiddleware]
 
   // tslint:disable:no-any
   const devToolsExtension = (window as any).devToolsExtension
     ? (window as any).devToolsExtension()
-    : (f: any) => f;
+    : (f: any) => f
 
   const enhancers = compose<any>(
     applyMiddleware(...middleWares),
     devToolsExtension
-  ); // tslint:enable:no-any
+  ) // tslint:enable:no-any
 
-  const store = _createStore(
+  const store = createStore(
     reducers,
     {
       tiles: DefaultTiles
-    } as StoreState,
+    } as IStoreState,
     enhancers
-  );
+  )
 
-  sagaMiddleware.run(root);
+  sagaMiddleware.run(root)
 
-  return store;
+  return store
 }

@@ -1,5 +1,6 @@
-import { Tile } from '../core/models'
+import { ITile } from '../core/models'
 
-export interface StoreState {
-  tiles: Tile[][]
+export interface IStoreState {
+  [key: string]: any
+  tiles: ITile[][]
 }

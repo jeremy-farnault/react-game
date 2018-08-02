@@ -1,11 +1,11 @@
-import {Actions} from '../actions'
+import { IStoreState } from '../../types'
+import { Actions } from '../actions'
 import * as constants from '../constants/index'
-import { StoreState } from '../../types'
 
-export function reducers(state: StoreState, action: Actions): StoreState {
+export function reducers(state: IStoreState, action: Actions): IStoreState {
   switch (action.type) {
     case constants.LOAD_DATA:
-      return {...state, tiles: []}
+      return { ...state, tiles: [] }
     default:
       return state
   }
