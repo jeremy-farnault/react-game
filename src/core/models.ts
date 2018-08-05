@@ -8,5 +8,9 @@ export interface ITile {
 }
 
 export enum TileState {
-  empty = 'EMPTY'
+  empty
+}
+
+export enum TileColors {
+  empty = 'orange'
 }
