@@ -1,12 +1,12 @@
-import Tile from "../../components/Tile";
-import * as actions from "../../core/actions";
-import { ITile } from "../../core/models";
-import { IStoreState } from "../../types";
+import Tile from '../../components/Tile'
+import * as actions from '../../core/actions'
+import { ITile } from '../../core/models'
+import { IStoreState } from '../../types'
 
-import * as React from "react";
-import { connect } from "react-redux";
-import { bindActionCreators, Dispatch } from "redux";
-import styled from "styled-components";
+import * as React from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators, Dispatch } from 'redux'
+import styled from 'styled-components'
 
 interface IProps {
   tiles: ITile[][]
@@ -16,37 +16,37 @@ interface IProps {
 
 class Battlefield extends React.PureComponent<IProps, {}> {
   constructor(props: IProps) {
-    super(props);
+    super(props)
   }
 
   public render() {
-    return this.props.tiles.map(((c: ITile[], index: number) => {
-      return <Row key={index}>
-        {c.map((r: ITile) => {
-          return <Tile key={r.uuid} tile={r}/>;
-        })}
-      </Row>;
-    }));
+    return this.props.tiles.map((c: ITile[], index: number) => {
+      return (
+        <Row key={index}>
+          {c.map((r: ITile) => {
+            return <Tile key={r.uuid} tile={r} />
+          })}
+        </Row>
+      )
+    })
   }
 }
 
 function mapStateToProps({ tiles }: IStoreState) {
   return {
     tiles
-  };
+  }
 }
 
 const mapDispatchToProps = (dispatch: Dispatch<actions.ILoadData>) =>
-  bindActionCreators({}, dispatch);
+  bindActionCreators({}, dispatch)
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Battlefield);
+)(Battlefield)
 
 const Row = styled.div`
-flex-direction: row;
-display: flex;  
-`;
-
-
+  flex-direction: row;
+  display: flex;
+`
