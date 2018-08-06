@@ -1,12 +1,12 @@
 // Tiles
 
 export interface ITile {
-  uuid: string
   columnIndex: number
   lineIndex: number
   posX: number
   posY: number
   state: TileState
+  uuid: string
 }
 
 export enum TileState {
@@ -24,38 +24,38 @@ export interface IHeroes {
 }
 
 export interface IHero {
-  id: string
+  assets: IHeroAssets
   characteristics: IHeroCharacteristics
   cost: number
-  unique: boolean
-  skills: string[]
   description: string
-  assets: IHeroAssets
+  id: string
+  skills: string[]
+  unique: boolean
 }
 
 export interface IHeroCharacteristics {
-  speed: number
+  agility: number
+  armor: number
+  attack: number
+  attackArmor: number
   initiative: number
   lifePoints: number
+  magic: number
   magicPoints: number
-  armor: number
+  mental: number
   range: number
+  rangedAttack: number
   size: HeroSize
-  agility: number
+  speed: number
   stamina: number
   strength: number
-  magic: number
-  mental: number
-  attack: number
-  rangedAttack: number
-  attackArmor: number
 }
 
 export interface IHeroAssets {
-  tokenPath: string
-  tokenInitPath: string
-  miniaturePath: string
   battlefieldPath: string
+  miniaturePath: string
+  tokenInitPath: string
+  tokenPath: string
 }
 
 export enum HeroSize {
