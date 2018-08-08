@@ -20,21 +20,21 @@
           <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="4" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="9" />
+          <entry key="TypeScriptServerServiceImpl" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="515" />
           <entry key="md" value="61" />
-          <entry key="ts" value="33089" />
+          <entry key="ts" value="42207" />
           <entry key="tsx" value="2407" />
         </counts>
       </usages-collector>
@@ -42,7 +42,7 @@
         <counts>
           <entry key="JSON" value="245" />
           <entry key="Markdown" value="61" />
-          <entry key="TypeScript" value="33089" />
+          <entry key="TypeScript" value="42207" />
           <entry key="TypeScript JSX" value="2407" />
           <entry key="tsconfig" value="270" />
         </counts>
@@ -80,8 +80,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/dbstore/heroes.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="789">
-                  <caret line="156" column="20" selection-start-line="156" selection-start-column="20" selection-end-line="156" selection-end-column="20" />
+                <state relative-caret-position="28755">
+                  <caret line="1917" column="11" selection-start-line="1917" selection-start-column="11" selection-end-line="1917" selection-end-column="11" />
                   <folding>
                     <element signature="e#0#93#0" expanded="true" />
                   </folding>
@@ -123,8 +123,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/dbstore/heroesIds.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                <state relative-caret-position="720">
+                  <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -142,9 +142,15 @@
       <find>attack_armor</find>
       <find>False</find>
       <find>r&quot;a</find>
-      <find>&quot;</find>
       <find>\</find>
       <find>\\</find>
+      <find>&quot;</find>
+      <find>&quot;assets&quot;</find>
+      <find>size: M</find>
+      <find>size: S</find>
+      <find>size: B</find>
+      <find>size: G</find>
+      <find>&quot;battlefieldPath&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>magicPoints</replace>
@@ -154,6 +160,11 @@
       <replace>&quot;a</replace>
       <replace>\\</replace>
       <replace>/</replace>
+      <replace>assets</replace>
+      <replace>size: HeroSize.medium</replace>
+      <replace>size: HeroSize.small</replace>
+      <replace>size: HeroSize.large</replace>
+      <replace>battlefieldPath</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -202,7 +213,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1171" />
@@ -338,6 +349,7 @@
       <workItem from="1533503060454" duration="29000" />
       <workItem from="1533586634247" duration="4291000" />
       <workItem from="1533673354189" duration="2318000" />
+      <workItem from="1533759935393" duration="1923000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -350,10 +362,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24934000" />
+    <option name="totallyTimeSpent" value="26857000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1171" extended-state="0" />
+    <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09058685" />
@@ -509,15 +521,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dbstore/heroesIds.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="720">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dbstore/heroes.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="156" column="20" selection-start-line="156" selection-start-column="20" selection-end-line="156" selection-end-column="20" />
+        <state relative-caret-position="28755">
+          <caret line="1917" column="11" selection-start-line="1917" selection-start-column="11" selection-end-line="1917" selection-end-column="11" />
           <folding>
             <element signature="e#0#93#0" expanded="true" />
           </folding>
