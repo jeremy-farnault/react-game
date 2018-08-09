@@ -1,2 +1,10 @@
-export const LOAD_DATA = 'LOAD_DATA'
-export type LOAD_DATA = typeof LOAD_DATA
+// Load heroes
+
+export const LOAD_HEROES_START = 'LOAD_HEROES_START'
+export type LOAD_HEROES_START = typeof LOAD_HEROES_START
+
+export const LOAD_HEROES_SUCCESS = 'LOAD_HEROES_SUCCESS'
+export type LOAD_HEROES_SUCCESS = typeof LOAD_HEROES_SUCCESS
+
+export const LOAD_HEROES_FAIL = 'LOAD_HEROES_FAIL'
+export type LOAD_HEROES_FAIL = typeof LOAD_HEROES_FAIL

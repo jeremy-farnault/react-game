@@ -1,4 +1,5 @@
 import * as constants from '../constants'
+import { createAction } from 'redux-actions'
 
 export interface IAction {
   type: string
@@ -6,10 +7,14 @@ export interface IAction {
 
 export type Actions = ILoadData
 
-// Data Fetching
+// Heroes loading
+
+export const loadHeroesStart = createAction(constants.LOAD_HEROES_START)
+
+
 
 export interface ILoadData extends IAction {
-  type: constants.LOAD_DATA
+  type: constants.LOAD_HEROES_START
 }
 
 export function loadData(): ILoadData {
