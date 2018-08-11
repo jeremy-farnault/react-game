@@ -1,5 +1,4 @@
 import Tile from '../../components/Tile'
-import * as actions from '../../core/actions'
 import { ITile } from '../../core/models'
 import { IStoreState } from '../../types'
 
@@ -38,7 +37,7 @@ function mapStateToProps({ tiles }: IStoreState) {
   }
 }
 
-const mapDispatchToProps = (dispatch: Dispatch<actions.ILoadData>) =>
+const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators({}, dispatch)
 
 export default connect(

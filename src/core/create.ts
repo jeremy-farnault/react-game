@@ -1,6 +1,4 @@
-import { IStoreState } from '../types'
-import { DefaultTiles } from '../utils/defaults'
-import { reducers } from './reducers'
+import reducer from './reducers/index'
 import root from './saga'
 
 import { applyMiddleware, compose, createStore, Store } from 'redux'
@@ -22,10 +20,7 @@ export default function createReduxStore(): Store {
   ) // tslint:enable:no-any
 
   const store = createStore(
-    reducers,
-    {
-      tiles: DefaultTiles
-    } as IStoreState,
+    reducer,
     enhancers
   )
 
