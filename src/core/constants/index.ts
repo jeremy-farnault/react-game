@@ -8,3 +8,19 @@ export type LOAD_HEROES_SUCCESS = typeof LOAD_HEROES_SUCCESS
 
 export const LOAD_HEROES_FAIL = 'LOAD_HEROES_FAIL'
 export type LOAD_HEROES_FAIL = typeof LOAD_HEROES_FAIL
+
+// Tiles Loading
+
+export const LOAD_TILES_START = 'LOAD_TILES_START'
+export type LOAD_TILES_START = typeof LOAD_TILES_START
+
+export const LOAD_TILES_SUCCESS = 'LOAD_TILES_SUCCESS'
+export type LOAD_TILES_SUCCESS = typeof LOAD_TILES_SUCCESS
+
+export const LOAD_TILES_FAIL = 'LOAD_TILES_FAIL'
+export type LOAD_TILES_FAIL = typeof LOAD_TILES_FAIL
+
+// Tiles Updating
+
+export const UPDATE_TILES = 'UPDATE_TILES'
+export type UPDATE_TILES = typeof UPDATE_TILES
