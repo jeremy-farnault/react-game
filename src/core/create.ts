@@ -19,10 +19,7 @@ export default function createReduxStore(): Store {
     devToolsExtension
   ) // tslint:enable:no-any
 
-  const store = createStore(
-    reducer,
-    enhancers
-  )
+  const store = createStore(reducer, enhancers)
 
   sagaMiddleware.run(root)
 

@@ -1,14 +1,12 @@
 import Tile from '../../components/Tile'
-import { ITile } from '../../core/models'
-import { IStoreState } from '../../types'
+import { IHeroes, ITile } from '../../core/models'
 
 import * as React from 'react'
-import { connect } from 'react-redux'
-import { bindActionCreators, Dispatch } from 'redux'
 import styled from 'styled-components'
 
 interface IProps {
   tiles: ITile[][]
+  heroes: IHeroes
 }
 
 // interface IState {}
@@ -31,19 +29,7 @@ class Battlefield extends React.PureComponent<IProps, {}> {
   }
 }
 
-function mapStateToProps({ tiles }: IStoreState) {
-  return {
-    tiles
-  }
-}
-
-const mapDispatchToProps = (dispatch: Dispatch) =>
-  bindActionCreators({}, dispatch)
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Battlefield)
+export default Battlefield
 
 const Row = styled.div`
   flex-direction: row;

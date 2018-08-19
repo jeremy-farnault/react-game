@@ -1,13 +1,14 @@
 const config = {
-  loadHeroesFromFile: false
+  loadHeroesFromFile: false,
+  loadTilesFromFile: false
 }
 
 const loadHeroesFromFile = {
   loadHeroesFromFile: true
 }
 
-export default Object.assign({}, config,
-  loadHeroesFromFile
-)
+const loadTilesFromFile = {
+  loadTilesFromFile: true
+}
 
-
+export default Object.assign({}, config, loadHeroesFromFile, loadTilesFromFile)

@@ -9,38 +9,43 @@ import { heroesIds } from './heroesIds'
 
 export const heroes: IHeroes = {
   [heroesIds.aragorn]: {
-    id: heroesIds.aragorn,
+    assets: {
+      battlefieldPath: 'assets/heroesBattlefield/aragorn.png',
+      miniaturePath: 'assets/heroesMiniatures/aragorn.png',
+      tokenInitPath: 'assets/heroesTokensInit/aragorn.png',
+      tokenPath: 'assets/heroesTokens/aragorn.png'
+    } as IHeroAssets,
     characteristics: {
-      speed: 7,
+      agility: 7,
+      armor: 7,
+      attack: 8,
+      attackArmor: 2,
       initiative: 10,
       lifePoints: 10,
-      magicPoints: 0,
-      armor: 7,
-      range: 8,
-      size: HeroSize.medium,
-      agility: 7,
-      stamina: 8,
-      strength: 7,
       magic: 0,
+      magicPoints: 0,
       mental: 7,
-      attack: 8,
+      range: 8,
       rangedAttack: 6,
-      attackArmor: 2
+      size: HeroSize.medium,
+      speed: 7,
+      stamina: 8,
+      strength: 7
     } as IHeroCharacteristics,
     cost: 100,
-    unique: true,
-    skills: ['Anduril', 'For Frodo'],
     description:
       'Aragorn II, son of Arathorn was a Ranger of the North, first introduced with the name Strider at Bree.',
-    assets: {
-      tokenPath: 'assets/heroesTokens/aragorn.png',
-      tokenInitPath: 'assets/heroesTokensInit/aragorn.png',
-      miniaturePath: 'assets/heroesMiniatures/aragorn.png',
-      battlefieldPath: 'assets/heroesBattlefield/aragorn.png'
-    } as IHeroAssets
+    id: heroesIds.aragorn,
+    skills: ['Anduril', 'For Frodo'],
+    unique: true
   } as IHero,
   [heroesIds.arwen]: {
-    id: heroesIds.arwen,
+    assets: {
+      tokenPath: 'assets/heroesTokens/arwen.png',
+      tokenInitPath: 'assets/heroesTokensInit/arwen.png',
+      miniaturePath: 'assets/heroesMiniatures/arwen.png',
+      battlefieldPath: 'assets/heroesBattlefield/arwen.png'
+    } as IHeroAssets,
     characteristics: {
       speed: 7,
       initiative: 7,
@@ -59,18 +64,18 @@ export const heroes: IHeroes = {
       attackArmor: 1
     } as IHeroCharacteristics,
     cost: 75,
-    unique: true,
-    skills: ['Hadhafang', 'Athelas'],
     description: 'Arwen was the Half-Elven daughter of Elrond and Celebrían.',
-    assets: {
-      tokenPath: 'assets/heroesTokens/arwen.png',
-      tokenInitPath: 'assets/heroesTokensInit/arwen.png',
-      miniaturePath: 'assets/heroesMiniatures/arwen.png',
-      battlefieldPath: 'assets/heroesBattlefield/arwen.png'
-    } as IHeroAssets
+    id: heroesIds.arwen,
+    skills: ['Hadhafang', 'Athelas'],
+    unique: true
   } as IHero,
   [heroesIds.balrog]: {
-    id: heroesIds.balrog,
+    assets: {
+      tokenPath: 'assets/heroesTokens/balrog.png',
+      miniaturePath: 'assets/heroesMiniatures/balrog.png',
+      tokenInitPath: 'assets/heroesTokensInit/balrog.png',
+      battlefieldPath: 'assets/heroesBattlefield/balrog.png'
+    } as IHeroAssets,
     characteristics: {
       speed: 5,
       initiative: 5,
@@ -89,16 +94,11 @@ export const heroes: IHeroes = {
       attackArmor: 4
     } as IHeroCharacteristics,
     cost: 200,
-    unique: false,
-    skills: ['Fire whip', 'Fire blade'],
     description:
       'The Balrogs were Maiar corrupted by Morgoth during the creation of Arda, who cloaked themselves in shadow and flame.',
-    assets: {
-      tokenPath: 'assets/heroesTokens/balrog.png',
-      miniaturePath: 'assets/heroesMiniatures/balrog.png',
-      tokenInitPath: 'assets/heroesTokensInit/balrog.png',
-      battlefieldPath: 'assets/heroesBattlefield/balrog.png'
-    } as IHeroAssets
+    id: heroesIds.balrog,
+    skills: ['Fire whip', 'Fire blade'],
+    unique: false
   } as IHero,
   [heroesIds.barrowWight]: {
     id: heroesIds.barrowWight,
