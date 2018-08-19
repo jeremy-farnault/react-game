@@ -14,6 +14,7 @@ interface IProps {
 
 class App extends React.PureComponent<IProps, {}> {
   public render() {
+    console.log('RENDER')
     console.log('tiles ----- ', this.props.tiles)
     console.log('Heroes ----- ', this.props.heroes)
     return (
@@ -24,11 +25,11 @@ class App extends React.PureComponent<IProps, {}> {
   }
 }
 
-function mapStateToProps(state: IStoreState) {
+function mapStateToProps(state: IStoreState.IRootState) {
   console.log('state -----', state)
   return {
-    tiles: state.tiles,
-    heroes: state.heroes
+    tiles: state.battlefield.tiles,
+    heroes: state.player.heroes
   }
 }
 

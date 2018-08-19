@@ -4,26 +4,25 @@ import {
   LOAD_HEROES_START,
   LOAD_HEROES_SUCCESS
 } from '../constants'
-import { IHeroes, ITile } from '../models'
+import { IHeroes } from '../models'
 
 import { Action, handleActions } from 'redux-actions'
 
-const initialState: IStoreState = {
-  heroes: {} as IHeroes,
-  tiles: [] as ITile[][]
+const initialState: IStoreState.IPlayer = {
+  heroes: {} as IHeroes
 }
 
 export interface ILoadHeroesSuccessPayload {
   data: IHeroes
 }
 
-export default handleActions<IStoreState, any>(
+export default handleActions(
   {
-    [LOAD_HEROES_START]: (state: IStoreState, action: Action<{}>) => ({
+    [LOAD_HEROES_START]: (state: IStoreState.IPlayer, action: Action<{}>) => ({
       ...state
     }),
     [LOAD_HEROES_SUCCESS]: (
-      state: IStoreState,
+      state: IStoreState.IPlayer,
       action: Action<ILoadHeroesSuccessPayload>
     ) => {
       console.log('payload ----- ', action)
@@ -33,7 +32,7 @@ export default handleActions<IStoreState, any>(
       }
       console.log('new state ----- ', newState)
       return newState},
-    [LOAD_HEROES_FAIL]: (state: IStoreState, action: Action<{}>) => ({
+    [LOAD_HEROES_FAIL]: (state: IStoreState.IPlayer, action: Action<{}>) => ({
       ...state,
       heroes: {}
     })
