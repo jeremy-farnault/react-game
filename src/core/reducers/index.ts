@@ -1,9 +1,9 @@
-import heroes from './heroes'
-import tiles from './tiles'
+import battlefield from './battlefield'
+import player from './player'
 
 import { combineReducers } from 'redux'
 
 export default combineReducers({
-  heroes,
-  tiles
+  player,
+  battlefield
 })

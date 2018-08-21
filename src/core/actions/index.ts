@@ -1,9 +1,9 @@
 import * as constants from '../constants'
-import { ILoadHeroesSuccessPayload } from '../reducers/heroes'
 import {
   ILoadTilesSuccessPayload,
   IUpdateTilesPayload
-} from '../reducers/tiles'
+} from '../reducers/battlefield'
+import { ILoadHeroesSuccessPayload } from '../reducers/player'
 
 import { createAction } from 'redux-actions'
 

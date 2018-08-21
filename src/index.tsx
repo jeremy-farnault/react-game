@@ -1,5 +1,5 @@
 import App from './containers/App/App'
-import createReduxStore from './core/create'
+import store from "./core/create";
 import './index.css'
 import registerServiceWorker from './registerServiceWorker'
 
@@ -8,7 +8,7 @@ import * as ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
 ReactDOM.render(
-  <Provider store={createReduxStore()}>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root') as HTMLElement

@@ -1,10 +1,13 @@
 import reducer from './reducers/index'
 import root from './saga'
 
-import { applyMiddleware, compose, createStore, Store } from 'redux'
+import { applyMiddleware, compose, createStore as _createStore, Store } from 'redux'
 import createSagaMiddleware from 'redux-saga'
+import { IStoreState } from "../types";
 
-export default function createReduxStore(): Store {
+export const initialState: {data: IStoreState.IRootState} = {data: {player: {heroes: {}}, battlefield: {tiles: []}}}
+
+export function createStore(data?: any): Store<IStoreState.IRootState> {
   const sagaMiddleware = createSagaMiddleware()
 
   const middleWares = [sagaMiddleware]
@@ -14,14 +17,18 @@ export default function createReduxStore(): Store {
     ? (window as any).devToolsExtension()
     : (f: any) => f
 
-  const enhancers = compose<any>(
-    applyMiddleware(...middleWares),
-    devToolsExtension
-  ) // tslint:enable:no-any
+  const finalCreateStore = compose<any>(applyMiddleware(...middleWares), devToolsExtension)(_createStore)
 
-  const store = createStore(reducer, enhancers)
+  const createdStore = finalCreateStore(reducer, data)
 
   sagaMiddleware.run(root)
 
-  return store
+  initialState.data = createdStore.getState()
+  console.log('initialState ----- ', initialState)
+
+  return createdStore
 }
+
+const store = createStore()
+
+export default store

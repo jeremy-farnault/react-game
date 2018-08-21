@@ -21,11 +21,9 @@ export interface IUpdateTilesPayload {
   data: ITile[][]
 }
 
-export default handleActions(
-  {
+export default handleActions({
     [LOAD_TILES_START]: (state: IStoreState.IBattlefield, action: Action<{}>) => ({
-      ...state,
-      tiles: [] as ITile[][]
+      ...state
     }),
     [LOAD_TILES_SUCCESS]: (
       state: IStoreState.IBattlefield,
@@ -45,6 +43,6 @@ export default handleActions(
       ...state,
       tiles: action.payload ? action.payload.data : []
     })
-  } as IStoreState.IBattlefield,
+  },
   initialState
 )

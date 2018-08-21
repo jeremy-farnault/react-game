@@ -6,11 +6,9 @@ export namespace IStoreState {
     player: IPlayer
   }
   export interface IBattlefield {
-    [key: string]: any
     tiles: ITile[][]
   }
   export interface IPlayer {
-    [key: string]: any
     heroes: IHeroes
   }
 }

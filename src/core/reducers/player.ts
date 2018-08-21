@@ -25,13 +25,18 @@ export default handleActions(
       state: IStoreState.IPlayer,
       action: Action<ILoadHeroesSuccessPayload>
     ) => {
+
       console.log('payload ----- ', action)
+
       const newState = {
           ...state,
         heroes: action.payload ? action.payload.data : {}
       }
+
       console.log('new state ----- ', newState)
+
       return newState},
+
     [LOAD_HEROES_FAIL]: (state: IStoreState.IPlayer, action: Action<{}>) => ({
       ...state,
       heroes: {}
