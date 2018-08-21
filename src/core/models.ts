@@ -1,3 +1,9 @@
+// Session
+export enum Faction {
+  good = 'good',
+  evil = 'evil'
+}
+
 // Tiles
 
 export interface ITile {
@@ -62,4 +68,26 @@ export enum HeroSize {
   small = 'S',
   medium = 'M',
   large = 'L'
+}
+
+// Cards
+
+export interface ICards {
+  [id: string]: ICard
+}
+
+export interface ICard {
+  assets: ICardAssets
+  cost: number
+  effect: string
+  description: string
+  faction: Faction
+  linkedTo: string
+  available: number
+  limitedTo: number
+}
+
+export interface ICardAssets {
+  normalPath: string
+  miniaturePath: string
 }

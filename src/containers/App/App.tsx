@@ -14,9 +14,6 @@ interface IProps {
 
 class App extends React.PureComponent<IProps, {}> {
   public render() {
-    console.log('RENDER')
-    console.log('tiles ----- ', this.props.tiles)
-    console.log('Heroes ----- ', this.props.heroes)
     return (
       <div className="App">
         <Battlefield tiles={this.props.tiles} heroes={this.props.heroes} />

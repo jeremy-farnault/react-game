@@ -24,7 +24,6 @@ export function createStore(data?: any): Store<IStoreState.IRootState> {
   sagaMiddleware.run(root)
 
   initialState.data = createdStore.getState()
-  console.log('initialState ----- ', initialState)
 
   return createdStore
 }
