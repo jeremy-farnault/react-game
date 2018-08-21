@@ -82,7 +82,7 @@ export interface ICard {
   effect: string
   description: string
   faction: Faction
-  linkedTo: string
+  linkedTo: string[]
   available: number
   limitedTo: number
 }
