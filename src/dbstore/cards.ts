@@ -59,7 +59,6 @@ export const cards: ICards = {
     available: 3,
     limitedTo: 10
   },
-
   "Beregond": {
     id: cardsIds.beregond,
     cost: 4,
@@ -67,7 +66,7 @@ export const cards: ICards = {
     description: "Gondor",
     assets: {
       normalPath: "assets/cards_big/beregond_big.png",
-      miniaturePath: "assets/cards_small/beregond_small.png",
+      miniaturePath: "assets/cards_small/beregond_small.png"
     },
     faction: Faction.good,
     linkedTo: [],
@@ -81,7 +80,7 @@ export const cards: ICards = {
     description: "Hobbit",
     assets: {
       normalPath: "assets/cards_big/bilbo_big.png",
-      miniaturePath: "assets/cards_small/bilbo_small.png",
+      miniaturePath: "assets/cards_small/bilbo_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -95,7 +94,7 @@ export const cards: ICards = {
     description: "Bree",
     assets: {
       normalPath: "assets/cards_big/billferny_big.png",
-      miniaturePath: "assets/cards_small/billferny_small.png",
+      miniaturePath: "assets/cards_small/billferny_small.png"
     },
     faction: Faction.evil,
     linkedTo: [],
@@ -109,7 +108,7 @@ export const cards: ICards = {
     description: "Pony",
     assets: {
       normalPath: "assets/cards_big/billpony_big.png",
-      miniaturePath: "assets/cards_small/billpony_small.png",
+      miniaturePath: "assets/cards_small/billpony_small.png"
     },
     faction: Faction.good,
     linkedTo: [],
@@ -123,7 +122,7 @@ export const cards: ICards = {
     description: "Warrior",
     assets: {
       normalPath: "assets/cards_big/boromir_big.png",
-      miniaturePath: "assets/cards_small/boromir_small.png",
+      miniaturePath: "assets/cards_small/boromir_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -137,7 +136,7 @@ export const cards: ICards = {
     description: "Troll",
     assets: {
       normalPath: "assets/cards_big/cavetroll_big.png",
-      miniaturePath: "assets/cards_small/cavetroll_small.png",
+      miniaturePath: "assets/cards_small/cavetroll_small.png"
     },
     faction: Faction.evil,
     linkedTo: [],
@@ -151,7 +150,7 @@ export const cards: ICards = {
     description: "Silvan",
     assets: {
       normalPath: "assets/cards_big/celeborn_big.png",
-      miniaturePath: "assets/cards_small/celeborn_small.png",
+      miniaturePath: "assets/cards_small/celeborn_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -165,7 +164,7 @@ export const cards: ICards = {
     description: "Gondor",
     assets: {
       normalPath: "assets/cards_big/citadelguard_big.png",
-      miniaturePath: "assets/cards_small/citadelguard_small.png",
+      miniaturePath: "assets/cards_small/citadelguard_small.png"
     },
     faction: Faction.good,
     linkedTo: [],
@@ -179,7 +178,7 @@ export const cards: ICards = {
     description: "Creature",
     assets: {
       normalPath: "assets/cards_big/crebain_big.png",
-      miniaturePath: "assets/cards_small/crebain_small.png",
+      miniaturePath: "assets/cards_small/crebain_small.png"
     },
     faction: Faction.evil,
     linkedTo: [],
@@ -193,7 +192,7 @@ export const cards: ICards = {
     description: "Undead",
     assets: {
       normalPath: "assets/cards_big/restlessdead_big.png",
-      miniaturePath: "assets/cards_small/restlessdead_small.png",
+      miniaturePath: "assets/cards_small/restlessdead_small.png"
     },
     faction: Faction.evil,
     linkedTo: [],
@@ -207,7 +206,7 @@ export const cards: ICards = {
     description: "Undead",
     assets: {
       normalPath: "assets/cards_big/shadowhostcaptain_big.png",
-      miniaturePath: "assets/cards_small/shadowhostcaptain_small.png",
+      miniaturePath: "assets/cards_small/shadowhostcaptain_small.png"
     },
     faction: Faction.evil,
     linkedTo: [],
@@ -221,7 +220,7 @@ export const cards: ICards = {
     description: "Undead",
     assets: {
       normalPath: "assets/cards_big/deadlord_big.png",
-      miniaturePath: "assets/cards_small/deadlord_small.png",
+      miniaturePath: "assets/cards_small/deadlord_small.png"
     },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
@@ -235,7 +234,7 @@ export const cards: ICards = {
     description: "Steward",
     assets: {
       normalPath: "assets/cards_big/denethor_big.png",
-      miniaturePath: "assets/cards_small/denethor_small.png",
+      miniaturePath: "assets/cards_small/denethor_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -249,7 +248,7 @@ export const cards: ICards = {
     description: "Rohan",
     asstes: {
       normalPath: "assets/cards_big/dunhere_big.png",
-      miniaturePath: "assets/cards_small/dunhere_small.png",
+      miniaturePath: "assets/cards_small/dunhere_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -263,7 +262,7 @@ export const cards: ICards = {
     description: "Eagle",
     assets: {
       normalPath: "assets/cards_big/eagles_big.png",
-      miniaturePath: "assets/cards_small/eagles_small.png",
+      miniaturePath: "assets/cards_small/eagles_small.png"
     },
     faction: Faction.good,
     linkedTo: [],
@@ -277,7 +276,7 @@ export const cards: ICards = {
     description: "Scout",
     assets: {
       normalPath: "assets/cards_big/elfhelm_big.png",
-      miniaturePath: "assets/cards_small/elfhelm_small.png",
+      miniaturePath: "assets/cards_small/elfhelm_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -291,7 +290,7 @@ export const cards: ICards = {
     description: "Noldor",
     assets: {
       normalPath: "assets/cards_big/elladan_big.png",
-      miniaturePath: "assets/cards_small/elladan_small.png",
+      miniaturePath: "assets/cards_small/elladan_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -305,7 +304,7 @@ export const cards: ICards = {
     description: "Noldor",
     assets: {
       normalPath: "assets/cards_big/elrohir_big.png",
-      miniaturePath: "assets/cards_small/elrohir_small.png",
+      miniaturePath: "assets/cards_small/elrohir_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -319,7 +318,7 @@ export const cards: ICards = {
     description: "Noldor",
     assets: {
       normalPath: "assets/cards_big/elrond_big.png",
-      miniaturePath: "assets/cards_small/elrond_small.png",
+      miniaturePath: "assets/cards_small/elrond_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -333,7 +332,7 @@ export const cards: ICards = {
     description: "Rohan",
     assets: {
       normalPath: "assets/cards_big/eomer_big.png",
-      miniaturePath: "assets/cards_small/eomer_small.png",
+      miniaturePath: "assets/cards_small/eomer_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -347,7 +346,7 @@ export const cards: ICards = {
     description: "Rohan",
     assets: {
       normalPath: "assets/cards_big/eowyn_big.png",
-      miniaturePath: "assets/cards_small/eowyn_small.png",
+      miniaturePath: "assets/cards_small/eowyn_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -361,7 +360,7 @@ export const cards: ICards = {
     description: "Rohan",
     assets: {
       normalPath: "assets/cards_big/erkenbrand_big.png",
-      miniaturePath: "assets/cards_small/erkenbrand_small.png",
+      miniaturePath: "assets/cards_small/erkenbrand_small.png"
     },
     faction: Faction.good,
     linkedTo: [],
@@ -375,7 +374,7 @@ export const cards: ICards = {
     description: "Ranger",
     assets: {
       normalPath: "assets/cards_big/faramir_big.png",
-      miniaturePath: "assets/cards_small/faramir_small.png",
+      miniaturePath: "assets/cards_small/faramir_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -389,7 +388,7 @@ export const cards: ICards = {
     description: "Nazgul",
     assets: {
       normalPath: "assets/cards_big/fellrider_big.png",
-      miniaturePath: "assets/cards_small/fellrider_small.png",
+      miniaturePath: "assets/cards_small/fellrider_small.png"
     },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
@@ -403,7 +402,7 @@ export const cards: ICards = {
     description: "Hobbit",
     assets: {
       normalPath: "assets/cards_big/frodo_big.png",
-      miniaturePath: "assets/cards_small/frodo_small.png",
+      miniaturePath: "assets/cards_small/frodo_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -417,7 +416,7 @@ export const cards: ICards = {
     description: "Noldor",
     assets: {
       normalPath: "assets/cards_big/galadriel_big.png",
-      miniaturePath: "assets/cards_small/galadriel_small.png",
+      miniaturePath: "assets/cards_small/galadriel_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -431,7 +430,7 @@ export const cards: ICards = {
     description: "Istari",
     assets: {
       normalPath: "assets/cards_big/gandalf_big.png",
-      miniaturePath: "assets/cards_small/gandalf_small.png",
+      miniaturePath: "assets/cards_small/gandalf_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -445,7 +444,7 @@ export const cards: ICards = {
     description: "Dwarf",
     assets: {
       normalPath: "assets/cards_big/gimli_big.png",
-      miniaturePath: "assets/cards_small/gimli_small.png",
+      miniaturePath: "assets/cards_small/gimli_small.png"
     },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
@@ -453,532 +452,676 @@ export const cards: ICards = {
     limitedTo: 10
   },
   "Glorfindel": {
-    id: cardsIds.Glorfindel",
+    id: cardsIds.glorfindel,
     cost: 5,
     effect: "Raise threat by 1.",
     description: "Noldor",
-    normalPath: "assets/cards_big/glorfindel_big.png",
-    miniaturePath: "assets/cards_small/glorfindel_small.png",
+    assets: {
+      normalPath: "assets/cards_big/glorfindel_big.png",
+      miniaturePath: "assets/cards_small/glorfindel_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Gollum": {
-    id: cardsIds.Gollum",
+    id: cardsIds.gollum,
     cost: 5,
     effect: "Gollum attacks Bilbo Baggins.",
     description: "Gollum",
-    normalPath: "assets/cards_big/gollum_big.png",
-    miniaturePath: "assets/cards_small/gollum_small.png",
+    assets: {
+      normalPath: "assets/cards_big/gollum_big.png",
+      miniaturePath: "assets/cards_small/gollum_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
-    limitedTo: 1},
+    limitedTo: 1
+  },
   "Grima": {
-    id: cardsIds.Grima",
+    id: cardsIds.grima,
     cost: 3,
     effect: "Lower the cost of the next card you play by 1.",
     description: "Isengard",
-    normalPath: "assets/cards_big/grima_big.png",
-    miniaturePath: "assets/cards_small/grima_small.png",
+    assets: {
+      normalPath: "assets/cards_big/grima_big.png",
+      miniaturePath: "assets/cards_small/grima_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Grishnakh": {
-    id: cardsIds.Grishnakh",
+    id: cardsIds.grishnakh,
     cost: 5,
     effect: "Place a Captive underneath Isengard.",
     description: "Orc",
-    normalPath: "assets/cards_big/grishnakh_big.png",
-    miniaturePath: "assets/cards_small/grishnakh_small.png",
+    assets: {
+      normalPath: "assets/cards_big/grishnakh_big.png",
+      miniaturePath: "assets/cards_small/grishnakh_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 3},
+    limitedTo: 3
+  },
   "Haldir": {
-    id: cardsIds.Haldir",
+    id: cardsIds.haldir,
     cost: 3,
     effect: "Resolves attacks against an ennemy not engaged.",
     description: "Ranger",
-    normalPath: "assets/cards_big/haldir_big.png",
-    miniaturePath: "assets/cards_small/haldir_small.png",
+    assets: {
+      normalPath: "assets/cards_big/haldir_big.png",
+      miniaturePath: "assets/cards_small/haldir_small.png"
+    },
     faction: Faction.good,
     linkedTo: [],
     available: 2,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Hama": {
-    id: cardsIds.Hama",
+    id: cardsIds.hama,
     cost: 4,
     effect: "Return an event from your discard pile.",
     description: "Rohan",
-    normalPath: "assets/cards_big/hama_big.png",
-    miniaturePath: "assets/cards_small/hama_small.png",
+    assets: {
+      normalPath: "assets/cards_big/hama_big.png",
+      miniaturePath: "assets/cards_small/hama_small.png"
+    },
     faction: Faction.good,
     linkedTo: [],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Captain of Harad": {
-    id: cardsIds.Captain of Harad",
+    id: cardsIds.captainOfHarad,
     cost: 5,
     effect: "Each Harad enemy gets +1 hit points.",
     description: "Harad",
-    normalPath: "assets/cards_big/haradcaptain_big.png",
-    miniaturePath: "assets/cards_small/haradcaptain_small.png",
+    assets: {
+      normalPath: "assets/cards_big/haradcaptain_big.png",
+      miniaturePath: "assets/cards_small/haradcaptain_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Haradrim Elite": {
-    id: cardsIds.Haradrim Elite",
+    id: cardsIds.haradrimElite,
     cost: 3,
     effect: "Makes an immediate attck from the staging area.",
     description: "Harad",
-    normalPath: "assets/cards_big/haradrimelite_big.png",
-    miniaturePath: "assets/cards_small/haradrimelite_small.png",
+    assets: {
+      normalPath: "assets/cards_big/haradrimelite_big.png",
+      miniaturePath: "assets/cards_small/haradrimelite_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Haradrim Soldier": {
-    id: cardsIds.Haradrim Soldier",
+    id: cardsIds.haradrimSoldier,
     cost: 4,
     effect: "Makes an immadiate attack after engaging you.",
     description: "Harad",
-    normalPath: "assets/cards_big/haradrimsoldier_big.png",
-    miniaturePath: "assets/cards_small/haradrimsoldier_small.png",
+    assets: {
+      normalPath: "assets/cards_big/haradrimsoldier_big.png",
+      miniaturePath: "assets/cards_small/haradrimsoldier_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 3,
-    limitedTo: 3},
+    limitedTo: 3
+  },
   "Hill Troll": {
-    id: cardsIds.Hill Troll",
+    id: cardsIds.hillTroll,
     cost: 9,
     effect: "Excess damage must be assigned as an increase of threat.",
     description: "Troll",
-    normalPath: "assets/cards_big/hilltroll_big.png",
-    miniaturePath: "assets/cards_small/hilltroll_small.png",
+    assets: {
+      normalPath: "assets/cards_big/hilltroll_big.png",
+      miniaturePath: "assets/cards_small/hilltroll_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 1,
-    limitedTo: 1},
+    limitedTo: 1
+  },
   "Imarahil": {
-    id: cardsIds.Imrahil",
+    id: cardsIds.imrahil,
     cost: 4,
     effect: "After a character dies, Imrahil gets ready.",
     description: "Gondor",
-    normalPath: "assets/cards_big/imrahil_big.png",
-    miniaturePath: "assets/cards_small/imrahil_small.png",
+    assets: {
+      normalPath: "assets/cards_big/imrahil_big.png",
+      miniaturePath: "assets/cards_small/imrahil_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Lieutenant of Orthanc": {
-    id: cardsIds.Lieutenant of Orthanc",
+    id: cardsIds.lieutenantOfOrthanc,
     cost: 5,
     effect: "Enemy discards a card if a character dies.",
     description: "Isengard",
-    normalPath: "assets/cards_big/orthanclieutenant_big.png",
-    miniaturePath: "assets/cards_small/orthanclieutenant_small.png",
+    assets: {
+      normalPath: "assets/cards_big/orthanclieutenant_big.png",
+      miniaturePath: "assets/cards_small/orthanclieutenant_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Isengard Orc": {
-    id: cardsIds.Isengard Orc",
+    id: cardsIds.isengardOrc,
     cost: 3,
     effect: "Discard a random card or reveal an encounter card.",
     description: "Orc",
-    normalPath: "assets/cards_big/isengardorc_big.png",
-    miniaturePath: "assets/cards_small/isengardorc_small.png",
+    assets: {
+      normalPath: "assets/cards_big/isengardorc_big.png",
+      miniaturePath: "assets/cards_small/isengardorc_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 4,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Soldier of Isengard": {
-    id: cardsIds.Soldier of Isengard",
+    id: cardsIds.soldierOfIsengard,
     cost: 4,
     effect: "Toughness. Archery. Place 1 progress on current quest.",
     description: "Uruk-hai",
-    normalPath: "assets/cards_big/isengardsoldier_big.png",
-    miniaturePath: "assets/cards_small/isengardsoldier_small.png",
+    assets: {
+      normalPath: "assets/cards_big/isengardsoldier_big.png",
+      miniaturePath: "assets/cards_small/isengardsoldier_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Isengard Uruk": {
-    id: cardsIds.Isengard Uruk",
+    id: cardsIds.isengardUruk,
     cost: 4,
     effect: "Archery. Assign 3 damage among characters you control.",
     description: "Uruk-hai",
-    normalPath: "assets/cards_big/isengarduruk_big.png",
-    miniaturePath: "assets/cards_small/isengarduruk_small.png",
+    assets: {
+      normalPath: "assets/cards_big/isengarduruk_big.png",
+      miniaturePath: "assets/cards_small/isengarduruk_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 3},
+    limitedTo: 3
+  },
   "Knights of the Swan": {
-    id: cardsIds.Knights of the Swan",
+    id: cardsIds.knightsOfTheSwan,
     cost: 1,
     effect: "Each Outlands character gets +1 hit points.",
     description: "Outlands",
-    normalPath: "assets/cards_big/swanknignts_big.png",
-    miniaturePath: "assets/cards_small/swanknights_small.png",
+    assets: {
+      normalPath: "assets/cards_big/swanknignts_big.png",
+      miniaturePath: "assets/cards_small/swanknights_small.png"
+    },
     faction: Faction.good,
     linkedTo: [],
     available: 2,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Landroval": {
-    id: cardsIds.Landroval",
+    id: cardsIds.landroval,
     cost: 4,
     effect: "Landroval cannot have restricted attachments.",
     description: "Eagle",
-    normalPath: "assets/cards_big/landroval_big.png",
-    miniaturePath: "assets/cards_small/landroval_small.png",
+    assets: {
+      normalPath: "assets/cards_big/landroval_big.png",
+      miniaturePath: "assets/cards_small/landroval_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Legolas": {
-    id: cardsIds.Legolas",
+    id: cardsIds.legolas,
     cost: 4,
     effect: "Ranged. Place 2 progress tokens on the current quest.",
     description: "Sylvan",
-    normalPath: "assets/cards_big/legolas_big.png",
-    miniaturePath: "assets/cards_small/legolas_small.png",
+    assets: {
+      normalPath: "assets/cards_big/legolas_big.png",
+      miniaturePath: "assets/cards_small/legolas_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 1},
+    limitedTo: 1
+  },
   "Mablung": {
-    id: cardsIds.Mablung",
+    id: cardsIds.mablung,
     cost: 4,
     effect: "Add 1 resource to Mablung's resource pool.",
     description: "Ranger",
-    normalPath: "assets/cards_big/mablung_big.png",
-    miniaturePath: "assets/cards_small/mablung_small.png",
+    assets: {
+      normalPath: "assets/cards_big/mablung_big.png",
+      miniaturePath: "assets/cards_small/mablung_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Farmer Maggot": {
-    id: cardsIds.Farmer Maggot",
+    id: cardsIds.farmerMaggot,
     cost: 2,
     effect: "Deal 1 damage to an enemy engaged with you.",
     description: "Hobbit",
-    normalPath: "assets/cards_big/maggot_big.png",
-    miniaturePath: "assets/cards_small/maggot_small.png",
+    assets: {
+      normalPath: "assets/cards_big/maggot_big.png",
+      miniaturePath: "assets/cards_small/maggot_small.png"
+    },
     faction: Faction.good,
     linkedTo: [],
     available: 2,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Merry": {
-    id: cardsIds.Merry",
+    id: cardsIds.merry,
     cost: 2,
     effect: "Exhaust Merry to reduce your threat.",
     description: "Hobbit",
-    normalPath: "assets/cards_big/merry_big.png",
-    miniaturePath: "assets/cards_small/merry_small.png",
+    assets: {
+      normalPath: "assets/cards_big/merry_big.png",
+      miniaturePath: "assets/cards_small/merry_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Lieutenant of Mordor": {
-    id: cardsIds.Lieutenant of Mordor",
+    id: cardsIds.lieutenantOfMordor,
     cost: 5,
     effect: "Allies cannot defend against Lieutenant of Mordor.",
     description: "Mordor",
-    normalPath: "assets/cards_big/mordorlieutenant_big.png",
-    miniaturePath: "assets/cards_small/mordorlieutenant_small.png",
+    assets: {
+      normalPath: "assets/cards_big/mordorlieutenant_big.png",
+      miniaturePath: "assets/cards_small/mordorlieutenant_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Morgul Orc": {
-    id: cardsIds.Morgul Orc",
+    id: cardsIds.morgulOrc,
     cost: 3,
     effect: "Discard 1 random card from your hand.",
     description: "Orc",
-    normalPath: "assets/cards_big/morgulorc_big.png",
-    miniaturePath: "assets/cards_small/morgulorc_small.png",
+    assets: {
+      normalPath: "assets/cards_big/morgulorc_big.png",
+      miniaturePath: "assets/cards_small/morgulorc_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 2,
-    limitedTo: 3},
+    limitedTo: 3
+  },
   "Mumak": {
-    id: cardsIds.Mumak",
+    id: cardsIds.mumak,
     cost: 12,
     effect: "No attachments can be attached to Mumak.",
     description: "Harad",
-    normalPath: "assets/cards_big/mumak_big.png",
-    miniaturePath: "assets/cards_small/mumak_small.png",
+    assets: {
+      normalPath: "assets/cards_big/mumak_big.png",
+      miniaturePath: "assets/cards_small/mumak_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 1},
+    limitedTo: 1
+  },
   "Nazgul of Dol Guldur": {
-    id: cardsIds.Nazgul of Dol Guldur",
+    id: cardsIds.nazgulOfDolGuldur,
     cost: 9,
     effect: "Move Nazgul of Dol Guldur into the staging area.",
     description: "Nazgul",
-    normalPath: "assets/cards_big/nazguldolguldur_big.png",
-    miniaturePath: "assets/cards_small/nazguldolguldur_small.png",
+    assets: {
+      normalPath: "assets/cards_big/nazguldolguldur_big.png",
+      miniaturePath: "assets/cards_small/nazguldolguldur_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Orc Ambusher": {
-    id: cardsIds.Orc Ambusher",
+    id: cardsIds.orcAmbusher,
     cost: 3,
     effect: "Discard 1 non-objective ally you control.",
     description: "Orc",
-    normalPath: "assets/cards_big/orcambusher_big.png",
-    miniaturePath: "assets/cards_small/orcambusher_small.png",
+    assets: {
+      normalPath: "assets/cards_big/orcambusher_big.png",
+      miniaturePath: "assets/cards_small/orcambusher_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 3,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Orc Raiders": {
-    id: cardsIds.Orc Raiders",
+    id: cardsIds.orcRaiders,
     cost: 3,
     effect: "Player discards 2 attachments he controls.",
     description: "Nazgul",
-    normalPath: "assets/cards_big/orcraiders_big.png",
-    miniaturePath: "assets/cards_small/orcraiders_small.png",
+    assets: {
+      normalPath: "assets/cards_big/orcraiders_big.png",
+      miniaturePath: "assets/cards_small/orcraiders_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Pippin": {
-    id: cardsIds.Pippin",
+    id: cardsIds.pippin,
     cost: 2,
     effect: "Raise your threat by 3 and returns it to the staging area.",
     description: "Hobbit",
-    normalPath: "assets/cards_big/pippin_big.png",
-    miniaturePath: "assets/cards_small/pippin_small.png",
+    assets: {
+      normalPath: "assets/cards_big/pippin_big.png",
+      miniaturePath: "assets/cards_small/pippin_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Radagast": {
-    id: cardsIds.Radagast",
+    id: cardsIds.radagast,
     cost: 3,
     effect: "Collects 1 resource each resource phase.",
     description: "Istari",
-    normalPath: "assets/cards_big/radagast_big.png",
-    miniaturePath: "assets/cards_small/radagast_small.png",
+    assets: {
+      normalPath: "assets/cards_big/radagast_big.png",
+      miniaturePath: "assets/cards_small/radagast_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Rider of the Mark": {
-    id: cardsIds.Rider of the Mark",
+    id: cardsIds.riderOfTheMark,
     cost: 2,
     effect: "Give control of Rider of the Mark to another player.",
     description: "Rohan",
-    normalPath: "assets/cards_big/riderofthemark_big.png",
-    miniaturePath: "assets/cards_small/riderofthemark_small.png",
+    assets: {
+      normalPath: "assets/cards_big/riderofthemark_big.png",
+      miniaturePath: "assets/cards_small/riderofthemark_small.png"
+    },
     faction: Faction.good,
     linkedTo: [],
     available: 2,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Ringwraith": {
-    id: cardsIds.Ringwraith",
+    id: cardsIds.ringwraith,
     cost: 5,
     effect: "Deals an additionnal damage.",
     description: "Nazgul",
-    normalPath: "assets/cards_big/ringwraith_big.png",
-    miniaturePath: "assets/cards_small/ringwraith_small.png",
+    assets: {
+      normalPath: "assets/cards_big/ringwraith_big.png",
+      miniaturePath: "assets/cards_small/ringwraith_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 9},
+    limitedTo: 9
+  },
   "Saruman": {
-    id: cardsIds.Saruman",
+    id: cardsIds.saruman,
     cost: 6,
     effect: "Indestructible. Immune to player card effects.",
     description: "Istari",
-    normalPath: "assets/cards_big/saruman_big.png",
-    miniaturePath: "assets/cards_small/saruman_small.png",
+    assets: {
+      normalPath: "assets/cards_big/saruman_big.png",
+      miniaturePath: "assets/cards_small/saruman_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 1},
+    limitedTo: 1
+  },
   "Southron Commander": {
-    id: cardsIds.Southron Commander",
+    id: cardsIds.southronCommander,
     cost: 6,
     effect: "Southron Commander makes an immediate attack.",
     description: "Harad",
-    normalPath: "assets/cards_big/southroncommander_big.png",
-    miniaturePath: "assets/cards_small/southroncommander_small.png",
+    assets: {
+      normalPath: "assets/cards_big/southroncommander_big.png",
+      miniaturePath: "assets/cards_small/southroncommander_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Southron Company": {
-    id: cardsIds.Southron Company",
+    id: cardsIds.southronCompany,
     cost: 5,
     effect: "Gets +2 life points and +2 hit points.",
     description: "Harad",
-    normalPath: "assets/cards_big/southroncompany_big.png",
-    miniaturePath: "assets/cards_small/southroncompany_small.png",
+    assets: {
+      normalPath: "assets/cards_big/southroncompany_big.png",
+      miniaturePath: "assets/cards_small/southroncompany_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Southron Mercenary": {
-    id: cardsIds.Southron Mercenary",
+    id: cardsIds.southronMercenary,
     cost: 4,
     effect: "Archery X. X is the number of players.",
     description: "Harad",
-    normalPath: "assets/cards_big/southronmercenary_big.png",
-    miniaturePath: "assets/cards_small/southronmercenary_small.png",
+    assets: {
+      normalPath: "assets/cards_big/southronmercenary_big.png",
+      miniaturePath: "assets/cards_small/southronmercenary_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 4},
+    limitedTo: 4
+  },
   "Theoden": {
-    id: cardsIds.Theoden",
+    id: cardsIds.theoden,
     cost: 4,
     effect: "Each hero gets +1 hit point.",
     description: "Rohan",
-    normalPath: "assets/cards_big/theoden_big.png",
-    miniaturePath: "assets/cards_small/theoden_small.png",
+    assets: {
+      normalPath: "assets/cards_big/theoden_big.png",
+      miniaturePath: "assets/cards_small/theoden_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Theodred": {
-    id: cardsIds.Theodred",
+    id: cardsIds.theodred,
     cost: 4,
     effect: "Add 1 resource to a hero pool.",
     description: "Rohan",
-    normalPath: "assets/cards_big/theodred_big.png",
-    miniaturePath: "assets/cards_small/theodred_small.png",
+    assets: {
+      normalPath: "assets/cards_big/theodred_big.png",
+      miniaturePath: "assets/cards_small/theodred_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 3},
+    limitedTo: 3
+  },
   "Treebeard": {
-    id: cardsIds.Treebeard",
+    id: cardsIds.treebeard,
     cost: 5,
     effect: "Cannot have restricted attachments.",
     description: "Ent",
-    normalPath: "assets/cards_big/treebeard_big.png",
-    miniaturePath: "assets/cards_small/treebeard_small.png",
+    assets: {
+      normalPath: "assets/cards_big/treebeard_big.png",
+      miniaturePath: "assets/cards_small/treebeard_small.png"
+    },
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Ugluk": {
-    id: cardsIds.Ugluk",
+    id: cardsIds.ugluk,
     cost: 6,
     effect: "Toughness 3. Cannot have attachments.",
     description: "Uruk-hai",
-    normalPath: "assets/cards_big/ugluk_big.png",
-    miniaturePath: "assets/cards_small/ugluk_small.png",
+    assets: {
+      normalPath: "assets/cards_big/ugluk_big.png",
+      miniaturePath: "assets/cards_small/ugluk_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 1},
+    limitedTo: 1
+  },
   "Ugluk's Uruk-Hai": {
-    id: cardsIds.Ugluk's Uruk-Hai",
+    id: cardsIds.ugluksUrukHai,
     cost: 5,
     effect: "Peril. Toughness 1. Archery 1.",
     description: "Uruk-hai",
-    normalPath: "assets/cards_big/ugluksurukhai_big.png",
-    miniaturePath: "assets/cards_small/ugluksurukhai_small.png",
+    assets: {
+      normalPath: "assets/cards_big/ugluksurukhai_big.png",
+      miniaturePath: "assets/cards_small/ugluksurukhai_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 3},
+    limitedTo: 3
+  },
   "Umbar Assassin": {
-    id: cardsIds.Umbar Assassin",
+    id: cardsIds.umbarAssassin,
     cost: 5,
     effect: "Archery 2. Player must deal 3 damage to a hero.",
     description: "Brigand",
-    normalPath: "assets/cards_big/umbarassassin_big.png",
-    miniaturePath: "assets/cards_small/umbarassassin_small.png",
+    assets: {
+      normalPath: "assets/cards_big/umbarassassin_big.png",
+      miniaturePath: "assets/cards_small/umbarassassin_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Umbar Captain": {
-    id: cardsIds.Umbar Captain",
+    id: cardsIds.umbarCaptain,
     cost: 5,
     effect: "Characters you control cannot attack Ship ennemies.",
     description: "Corsair",
-    normalPath: "assets/cards_big/umbarcaptain_big.png",
-    miniaturePath: "assets/cards_small/umbarcaptain_small.png",
+    assets: {
+      normalPath: "assets/cards_big/umbarcaptain_big.png",
+      miniaturePath: "assets/cards_small/umbarcaptain_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Umbar Raider": {
-    id: cardsIds.Umbar Raider",
+    id: cardsIds.umbarRaider,
     cost: 4,
     effect: "Gets +1 hit points for each resource on it.",
     description: "Corsair",
-    normalPath: "assets/cards_big/umbarraider_big.png",
-    miniaturePath: "assets/cards_small/umbarraider_small.png",
+    assets: {
+      normalPath: "assets/cards_big/umbarraider_big.png",
+      miniaturePath: "assets/cards_small/umbarraider_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 1,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Uruk Soldier": {
-    id: cardsIds.Uruk Soldier",
+    id: cardsIds.urukSoldier,
     cost: 2,
     effect: "Destroys a character.",
     description: "Uruk-hai",
-    normalPath: "assets/cards_big/uruksoldier_big.png",
-    miniaturePath: "assets/cards_small/uruksoldier_small.png",
+    assets: {
+      normalPath: "assets/cards_big/uruksoldier_big.png",
+      miniaturePath: "assets/cards_small/uruksoldier_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 2},
+    limitedTo: 2
+  },
   "Uruk-Hai Fighter": {
-    id: cardsIds.Uruk-Hai Fighter",
+    id: cardsIds.urukHaiFighter,
     cost: 3,
     effect: "Toughness 2. Returns it to the staging area.",
     description: "Uruk-hai",
-    normalPath: "assets/cards_big/urukhaifighter_big.png",
-    miniaturePath: "assets/cards_small/urukhaifighter_small.png",
+    assets: {
+      normalPath: "assets/cards_big/urukhaifighter_big.png",
+      miniaturePath: "assets/cards_small/urukhaifighter_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Uruk Lieutenant": {
-    id: cardsIds.Uruk Lieutenant",
+    id: cardsIds.urukLieutenant,
     cost: 3,
     effect: "Add an Orc ennemy to the staging area.",
     description: "Uruk",
-    normalPath: "assets/cards_big/uruklieutenant_big.png",
-    miniaturePath: "assets/cards_small/uruklieutenant_small.png",
+    assets: {
+      normalPath: "assets/cards_big/uruklieutenant_big.png",
+      miniaturePath: "assets/cards_small/uruklieutenant_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Wargs": {
-    id: cardsIds.Wargs",
+    id: cardsIds.wargs,
     cost: 3,
     effect: "Return Wargs to the staging area after it attacks.",
     description: "Creature",
-    normalPath: "assets/cards_big/wargs_big.png",
-    miniaturePath: "assets/cards_small/wargs_small.png",
+    assets: {
+      normalPath: "assets/cards_big/wargs_big.png",
+      miniaturePath: "assets/cards_small/wargs_small.png"
+    },
     faction: Faction.evil,
     linkedTo: [],
     available: 3,
-    limitedTo: 10},
+    limitedTo: 10
+  },
   "Witch-King": {
-    id: cardsIds.Witch-King",
+    id: cardsIds.witchKing,
     cost: 11,
     effect: "Player cannot play attachments on the Witch-King.",
     description: "Nazgul",
-    normalPath: "assets/cards_big/witchking_big.png",
-    miniaturePath: "assets/cards_small/witchking_small.png",
+    assets: {
+      normalPath: "assets/cards_big/witchking_big.png",
+      miniaturePath: "assets/cards_small/witchking_small.png"
+    },
     faction: Faction.evil,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 1}
+    limitedTo: 1
+  }
 };
 
