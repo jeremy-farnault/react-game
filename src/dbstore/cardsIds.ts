@@ -1,82 +1,82 @@
 export enum cardsIds {
-  aragorn = 'Aragorn'
-Arwen
-Durin's Bane
-  Barliman Butterbur
-Beregond
-Bilbo
-Bill Ferny
-Bill the Pony
-Boromir
-Cave-Troll
-Celeborn
-Guard of the Citadel
-Crebain
-Restless Dead
-Shadow Host Captain
-Dead Lord
-Denethor
-Dunhere
-Eagles
-Elfhelm
-Elladan
-Elrohir
-Elrond
-Eomer
-Eowyn
-Erkenbrand
-Faramir
-Fell Rider
-Frodo
-Galadriel
-Gandalf
-Gimli
-Glorfindel
-Gollum
-Grima
-Grishnakh
-Haldir
-Hama
-Captain of Harad
-Haradrim Elite
-Haradrim Soldier
-Hill Troll
-Imarahil
-Lieutenant of Orthanc
-Isengard Orc
-Soldier of Isengard
-Isengard Uruk
-Knights of the Swan
-Landroval
-Legolas
-Mablung
-Farmer Maggot
-Merry
-Lieutenant of Mordor
-Morgul Orc
-Mumak
-Nazgul of Dol Guldur
-Orc Ambusher
-Orc Raiders
-Pippin
-Radagast
-Rider of the Mark
-Ringwraith
-Saruman
-Southron Commander
-Southron Company
-Southron Mercenary
-Theoden
-Theodred
-Treebeard
-Ugluk
-Ugluk's Uruk-Hai
-  Umbar Assassin
-Umbar Captain
-Umbar Raider
-Uruk Soldier
-Uruk-Hai Fighter
-Uruk Lieutenant
-Wargs
-Witch-King
+  aragorn = 'Aragorn',
+  arwen = 'Arwen',
+  barlimanButterbur = 'Barliman Butterbur',
+  beregond = 'Beregond',
+  bilbo = 'Bilbo',
+  billFerny = 'Bill Ferny',
+  billThePony = 'Bill the Pony',
+  boromir = 'Boromir',
+  captainOfHarad = 'Captain of Harad',
+  caveTroll = 'Cave-Troll',
+  celeborn = 'Celeborn',
+  crebain = 'Crebain',
+  deadLord = 'Dead Lord',
+  denethor = 'Denethor',
+  dunhere = 'Dunhere',
+  durinsBane = 'Durin\'s Bane',
+  eagles = 'Eagles',
+  elfhelm = 'Elfhelm',
+  elladan = 'Elladan',
+  elrohir = 'Elrohir',
+  elrond = 'Elrond',
+  eomer = 'Eomer',
+  eowyn = 'Eowyn',
+  erkenbrand = 'Erkenbrand',
+  faramir = 'Faramir',
+  farmerMaggot = 'Farmer Maggot',
+  fellRider = 'Fell Rider',
+  frodo = 'Frodo',
+  galadriel = 'Galadriel',
+  gandalf = 'Gandalf',
+  gimli = 'Gimli',
+  glorfindel = 'Glorfindel',
+  gollum = 'Gollum',
+  grima = 'Grima',
+  grishnakh = 'Grishnakh',
+  guardOfTheCitadel = 'Guard of the Citadel',
+  haldir = 'Haldir',
+  hama = 'Hama',
+  haradrimElite = 'Haradrim Elite',
+  haradrimSoldier = 'Haradrim Soldier',
+  hillTroll = 'Hill Troll',
+  imrahil = 'Imrahil',
+  isengardOrc = 'Isengard Orc',
+  isengardUruk = 'Isengard Uruk',
+  knightsOfTheSwan = 'Knights of the Swan',
+  landroval = 'Landroval',
+  legolas = 'Legolas',
+  lieutenantOfMordor = 'Lieutenant of Mordor',
+  lieutenantOfOrthanc = 'Lieutenant of Orthanc',
+  mablung = 'Mablung',
+  merry = 'Merry',
+  morgulOrc = 'Morgul Orc',
+  mumak = 'Mumak',
+  nazgulOfDolGuldur = 'Nazgul of Dol Guldur',
+  orcAmbusher = 'Orc Ambusher',
+  orcRaiders = 'Orc Raiders',
+  pippin = 'Pippin',
+  radagast = 'Radagast',
+  restlessDead = 'Restless Dead',
+  riderOfTheMark = 'Rider of the Mark',
+  ringwraith = 'Ringwraith',
+  saruman = 'Saruman',
+  shadowHostCaptain = 'Shadow Host Captain',
+  soldierOfIsengard = 'Soldier of Isengard',
+  southronCommander = 'Southron Commander',
+  southronCompany = 'Southron Company',
+  southronMercenary = 'Southron Mercenary',
+  theoden = 'Theoden',
+  theodred = 'Theodred',
+  treebeard = 'Treebeard',
+  ugluk = 'Ugluk',
+  ugluksUrukHai = 'Ugluk\'s Uruk-Hai',
+  umbarAssassin = 'Umbar Assassin',
+  umbarCaptain = 'Umbar Captain',
+  umbarRaider = 'Umbar Raider',
+  urukHaiFighter = 'Uruk-Hai Fighter',
+  urukLieutenant = 'Uruk Lieutenant',
+  urukSoldier = 'Uruk Soldier',
+  wargs = 'Wargs',
+  witchKing = 'Witch-King'
 }
