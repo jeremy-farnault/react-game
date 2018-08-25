@@ -44,8 +44,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  },
-  "Barliman Butterbur": {
+  } as ICard,
+  [cardsIds.barlimanButterbur]: {
     id: cardsIds.barlimanButterbur,
     cost: 3,
     effect: "Damage may be assigned to Barliman.",
@@ -58,8 +58,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 3,
     limitedTo: 10
-  },
-  "Beregond": {
+  } as ICard,
+  [cardsIds.beregond]: {
     id: cardsIds.beregond,
     cost: 4,
     effect: "Lower the cost of weapons by 2.",
@@ -72,8 +72,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 10
-  },
-  "Bilbo": {
+  } as ICard,
+  [cardsIds.bilbo]: {
     id: cardsIds.bilbo,
     cost: 3,
     effect: "The first player gains control of Bilbo.",
@@ -86,8 +86,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 4,
     limitedTo: 10
-  },
-  "Bill Ferny": {
+  } as ICard,
+  [cardsIds.billFerny]: {
     id: cardsIds.billFerny,
     cost: 5,
     effect: "Raise threat by 1 for each non hero.",
@@ -100,8 +100,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 10
-  },
-  "Bill the Pony": {
+  } as ICard,
+  [cardsIds.billThePony]: {
     id: cardsIds.billThePony,
     cost: 2,
     effect: "Each hobbit gets +1 hit point.",
@@ -114,8 +114,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 2,
     limitedTo: 10
-  },
-  "Boromir": {
+  } as ICard,
+  [cardsIds.boromir]: {
     id: cardsIds.boromir,
     cost: 5,
     effect: "Gondor allies get +1 hit point.",
@@ -128,8 +128,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
     limitedTo: 2
-  },
-  "Cave-Troll": {
+  } as ICard,
+  [cardsIds.caveTroll]: {
     id: cardsIds.caveTroll,
     cost: 7,
     effect: "You must damage another character you control.",
@@ -142,8 +142,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 1
-  },
-  "Celeborn": {
+  } as ICard,
+  [cardsIds.celeborn]: {
     id: cardsIds.celeborn,
     cost: 4,
     effect: "Gets +1 hit point for each Sylvan ally.",
@@ -156,8 +156,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Guard of the Citadel": {
+  } as ICard,
+  [cardsIds.guardOfTheCitadel]: {
     id: cardsIds.guardOfTheCitadel,
     cost: 2,
     effect: "Gets +2 life points.",
@@ -170,8 +170,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 2,
     limitedTo: 10
-  },
-  "Crebain": {
+  } as ICard,
+  [cardsIds.crebain]: {
     id: cardsIds.crebain,
     cost: 3,
     effect: "Encounter card effects cannot be canceled.",
@@ -184,8 +184,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 10
-  },
-  "Restless Dead": {
+  } as ICard,
+  [cardsIds.restlessDead]: {
     id: cardsIds.restlessDead,
     cost: 2,
     effect: "Return card to the staging area.",
@@ -198,8 +198,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 10
-  },
-  "Shadow Host Captain": {
+  } as ICard,
+  [cardsIds.bilbo]: {
     id: cardsIds.shadowHostCaptain,
     cost: 6,
     effect: "Gets +2 hit points and +2 life points.",
@@ -212,8 +212,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 2,
     limitedTo: 2
-  },
-  "Dead Lord": {
+  } as ICard,
+  [cardsIds.deadLord]: {
     id: cardsIds.deadLord,
     cost: 3,
     effect: "Put an Undead card in your hand.",
@@ -226,8 +226,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  },
-  "Denethor": {
+  } as ICard,
+  [cardsIds.denethor]: {
     id: cardsIds.denethor,
     cost: 3,
     effect: "Add 2 resources to your pool.",
@@ -240,13 +240,13 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 1
-  },
-  "Dunhere": {
+  } as ICard,
+  [cardsIds.dunhere]: {
     id: cardsIds.dunhere,
     cost: 4,
     effect: "Can target enemies in the staging area.",
     description: "Rohan",
-    asstes: {
+    assets: {
       normalPath: "assets/cards_big/dunhere_big.png",
       miniaturePath: "assets/cards_small/dunhere_small.png"
     } as ICardAssets,
@@ -254,8 +254,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Eagles": {
+  } as ICard,
+  [cardsIds.eagles]: {
     id: cardsIds.eagles,
     cost: 4,
     effect: "Gets +1 hit point for each weapon.",
@@ -268,8 +268,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 3
-  },
-  "Elfhelm": {
+  } as ICard,
+  [cardsIds.elfhelm]: {
     id: cardsIds.elfhelm,
     cost: 4,
     effect: "Each hero gets +1 life point.",
@@ -282,8 +282,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Elladan": {
+  } as ICard,
+  [cardsIds.elladan]: {
     id: cardsIds.elladan,
     cost: 4,
     effect: "Pay 1 resource from your pool.",
@@ -296,8 +296,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  },
-  "Elrohir": {
+  } as ICard,
+  [cardsIds.elrohir]: {
     id: cardsIds.elrohir,
     cost: 4,
     effect: "While Elladan is in play, Elrohir gets +2 hit points.",
@@ -310,8 +310,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 1
-  },
-  "Elrond": {
+  } as ICard,
+  [cardsIds.elrond]: {
     id: cardsIds.elrond,
     cost: 4,
     effect: "Spend resources from Elrond's pool for allies.",
@@ -324,8 +324,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 1
-  },
-  "Eomer": {
+  } as ICard,
+  [cardsIds.eomer]: {
     id: cardsIds.eomer,
     cost: 4,
     effect: "If an allie dies, Eomer gets +2 life points.",
@@ -338,8 +338,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 3
-  },
-  "Eowyn": {
+  } as ICard,
+  [cardsIds.eowyn]: {
     id: cardsIds.eowyn,
     cost: 3,
     effect: "Discard 1 card from your hand.",
@@ -352,8 +352,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Erkenbrand": {
+  } as ICard,
+  [cardsIds.erkenbrand]: {
     id: cardsIds.erkenbrand,
     cost: 4,
     effect: "If Erkenbrand is defending he gets +1 hit point.",
@@ -366,8 +366,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 4,
     limitedTo: 10
-  },
-  "Faramir": {
+  } as ICard,
+  [cardsIds.faramir]: {
     id: cardsIds.faramir,
     cost: 5,
     effect: "Ready an ally you control.",
@@ -380,8 +380,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Fell Rider": {
+  } as ICard,
+  [cardsIds.fellRider]: {
     id: cardsIds.fellRider,
     cost: 6,
     effect: "Cannot have non-Morgul attachments.",
@@ -394,8 +394,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Frodo": {
+  } as ICard,
+  [cardsIds.frodo]: {
     id: cardsIds.frodo,
     cost: 2,
     effect: "Exhaust the One Ring and spend 1 resource.",
@@ -408,8 +408,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 10
-  },
-  "Galadriel": {
+  } as ICard,
+  [cardsIds.galadriel]: {
     id: cardsIds.galadriel,
     cost: 4,
     effect: "Galadriel cannot attack or defend.",
@@ -422,8 +422,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Gandalf": {
+  } as ICard,
+  [cardsIds.gandalf]: {
     id: cardsIds.gandalf,
     cost: 5,
     effect: "Play with the top card of your deck face up.",
@@ -436,8 +436,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  },
-  "Gimli": {
+  } as ICard,
+  [cardsIds.gimli]: {
     id: cardsIds.gimli,
     cost: 5,
     effect: "Gets +1 hit points for each damage he takes.",
@@ -450,8 +450,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 10
-  },
-  "Glorfindel": {
+  } as ICard,
+  [cardsIds.glorfindel]: {
     id: cardsIds.glorfindel,
     cost: 5,
     effect: "Raise threat by 1.",
@@ -464,8 +464,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 2
-  },
-  "Gollum": {
+  } as ICard,
+  [cardsIds.gollum]: {
     id: cardsIds.gollum,
     cost: 5,
     effect: "Gollum attacks Bilbo Baggins.",
@@ -478,8 +478,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
     limitedTo: 1
-  },
-  "Grima": {
+  } as ICard,
+  [cardsIds.grima]: {
     id: cardsIds.grima,
     cost: 3,
     effect: "Lower the cost of the next card you play by 1.",
@@ -492,8 +492,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 10
-  },
-  "Grishnakh": {
+  } as ICard,
+  [cardsIds.grishnakh]: {
     id: cardsIds.grishnakh,
     cost: 5,
     effect: "Place a Captive underneath Isengard.",
@@ -506,8 +506,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 3
-  },
-  "Haldir": {
+  } as ICard,
+  [cardsIds.haldir]: {
     id: cardsIds.haldir,
     cost: 3,
     effect: "Resolves attacks against an ennemy not engaged.",
@@ -520,8 +520,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 2,
     limitedTo: 10
-  },
-  "Hama": {
+  } as ICard,
+  [cardsIds.hama]: {
     id: cardsIds.hama,
     cost: 4,
     effect: "Return an event from your discard pile.",
@@ -534,8 +534,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 10
-  },
-  "Captain of Harad": {
+  } as ICard,
+  [cardsIds.captainOfHarad]: {
     id: cardsIds.captainOfHarad,
     cost: 5,
     effect: "Each Harad enemy gets +1 hit points.",
@@ -548,8 +548,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Haradrim Elite": {
+  } as ICard,
+  [cardsIds.haradrimElite]: {
     id: cardsIds.haradrimElite,
     cost: 3,
     effect: "Makes an immediate attck from the staging area.",
@@ -562,8 +562,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
     limitedTo: 10
-  },
-  "Haradrim Soldier": {
+  } as ICard,
+  [cardsIds.haradrimSoldier]: {
     id: cardsIds.haradrimSoldier,
     cost: 4,
     effect: "Makes an immadiate attack after engaging you.",
@@ -576,8 +576,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 3,
     limitedTo: 3
-  },
-  "Hill Troll": {
+  } as ICard,
+  [cardsIds.hillTroll]: {
     id: cardsIds.hillTroll,
     cost: 9,
     effect: "Excess damage must be assigned as an increase of threat.",
@@ -590,8 +590,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 1
-  },
-  "Imarahil": {
+  } as ICard,
+  [cardsIds.imrahil]: {
     id: cardsIds.imrahil,
     cost: 4,
     effect: "After a character dies, Imrahil gets ready.",
@@ -604,8 +604,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Lieutenant of Orthanc": {
+  } as ICard,
+  [cardsIds.lieutenantOfOrthanc]: {
     id: cardsIds.lieutenantOfOrthanc,
     cost: 5,
     effect: "Enemy discards a card if a character dies.",
@@ -618,8 +618,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 10
-  },
-  "Isengard Orc": {
+  } as ICard,
+  [cardsIds.isengardOrc]: {
     id: cardsIds.isengardOrc,
     cost: 3,
     effect: "Discard a random card or reveal an encounter card.",
@@ -632,8 +632,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 4,
     limitedTo: 10
-  },
-  "Soldier of Isengard": {
+  } as ICard,
+  [cardsIds.soldierOfIsengard]: {
     id: cardsIds.soldierOfIsengard,
     cost: 4,
     effect: "Toughness. Archery. Place 1 progress on current quest.",
@@ -646,8 +646,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Isengard Uruk": {
+  } as ICard,
+  [cardsIds.isengardUruk]: {
     id: cardsIds.isengardUruk,
     cost: 4,
     effect: "Archery. Assign 3 damage among characters you control.",
@@ -660,8 +660,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 3
-  },
-  "Knights of the Swan": {
+  } as ICard,
+  [cardsIds.knightsOfTheSwan]: {
     id: cardsIds.knightsOfTheSwan,
     cost: 1,
     effect: "Each Outlands character gets +1 hit points.",
@@ -674,8 +674,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 2,
     limitedTo: 10
-  },
-  "Landroval": {
+  } as ICard,
+  [cardsIds.landroval]: {
     id: cardsIds.landroval,
     cost: 4,
     effect: "Landroval cannot have restricted attachments.",
@@ -688,8 +688,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Legolas": {
+  } as ICard,
+  [cardsIds.legolas]: {
     id: cardsIds.legolas,
     cost: 4,
     effect: "Ranged. Place 2 progress tokens on the current quest.",
@@ -702,8 +702,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  },
-  "Mablung": {
+  } as ICard,
+  [cardsIds.mablung]: {
     id: cardsIds.mablung,
     cost: 4,
     effect: "Add 1 resource to Mablung's resource pool.",
@@ -716,8 +716,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Farmer Maggot": {
+  } as ICard,
+  [cardsIds.farmerMaggot]: {
     id: cardsIds.farmerMaggot,
     cost: 2,
     effect: "Deal 1 damage to an enemy engaged with you.",
@@ -730,8 +730,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 2,
     limitedTo: 10
-  },
-  "Merry": {
+  } as ICard,
+  [cardsIds.merry]: {
     id: cardsIds.merry,
     cost: 2,
     effect: "Exhaust Merry to reduce your threat.",
@@ -744,8 +744,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
     limitedTo: 10
-  },
-  "Lieutenant of Mordor": {
+  } as ICard,
+  [cardsIds.lieutenantOfMordor]: {
     id: cardsIds.lieutenantOfMordor,
     cost: 5,
     effect: "Allies cannot defend against Lieutenant of Mordor.",
@@ -758,8 +758,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Morgul Orc": {
+  } as ICard,
+  [cardsIds.morgulOrc]: {
     id: cardsIds.morgulOrc,
     cost: 3,
     effect: "Discard 1 random card from your hand.",
@@ -772,8 +772,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 2,
     limitedTo: 3
-  },
-  "Mumak": {
+  } as ICard,
+  [cardsIds.mumak]: {
     id: cardsIds.mumak,
     cost: 12,
     effect: "No attachments can be attached to Mumak.",
@@ -786,8 +786,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  },
-  "Nazgul of Dol Guldur": {
+  } as ICard,
+  [cardsIds.nazgulOfDolGuldur]: {
     id: cardsIds.nazgulOfDolGuldur,
     cost: 9,
     effect: "Move Nazgul of Dol Guldur into the staging area.",
@@ -800,8 +800,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 2
-  },
-  "Orc Ambusher": {
+  } as ICard,
+  [cardsIds.orcAmbusher]: {
     id: cardsIds.orcAmbusher,
     cost: 3,
     effect: "Discard 1 non-objective ally you control.",
@@ -814,8 +814,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 3,
     limitedTo: 10
-  },
-  "Orc Raiders": {
+  } as ICard,
+  [cardsIds.orcRaiders]: {
     id: cardsIds.orcRaiders,
     cost: 3,
     effect: "Player discards 2 attachments he controls.",
@@ -828,8 +828,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 10
-  },
-  "Pippin": {
+  } as ICard,
+  [cardsIds.pippin]: {
     id: cardsIds.pippin,
     cost: 2,
     effect: "Raise your threat by 3 and returns it to the staging area.",
@@ -842,8 +842,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Radagast": {
+  } as ICard,
+  [cardsIds.radagast]: {
     id: cardsIds.radagast,
     cost: 3,
     effect: "Collects 1 resource each resource phase.",
@@ -856,8 +856,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Rider of the Mark": {
+  } as ICard,
+  [cardsIds.riderOfTheMark]: {
     id: cardsIds.riderOfTheMark,
     cost: 2,
     effect: "Give control of Rider of the Mark to another player.",
@@ -870,8 +870,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 2,
     limitedTo: 10
-  },
-  "Ringwraith": {
+  } as ICard,
+  [cardsIds.ringwraith]: {
     id: cardsIds.ringwraith,
     cost: 5,
     effect: "Deals an additionnal damage.",
@@ -884,8 +884,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 9
-  },
-  "Saruman": {
+  } as ICard,
+  [cardsIds.saruman]: {
     id: cardsIds.saruman,
     cost: 6,
     effect: "Indestructible. Immune to player card effects.",
@@ -898,8 +898,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  },
-  "Southron Commander": {
+  } as ICard,
+  [cardsIds.southronCommander]: {
     id: cardsIds.southronCommander,
     cost: 6,
     effect: "Southron Commander makes an immediate attack.",
@@ -912,8 +912,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Southron Company": {
+  } as ICard,
+  [cardsIds.southronCompany]: {
     id: cardsIds.southronCompany,
     cost: 5,
     effect: "Gets +2 life points and +2 hit points.",
@@ -926,8 +926,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 10
-  },
-  "Southron Mercenary": {
+  } as ICard,
+  [cardsIds.southronMercenary]: {
     id: cardsIds.southronMercenary,
     cost: 4,
     effect: "Archery X. X is the number of players.",
@@ -940,8 +940,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 4
-  },
-  "Theoden": {
+  } as ICard,
+  [cardsIds.theoden]: {
     id: cardsIds.theoden,
     cost: 4,
     effect: "Each hero gets +1 hit point.",
@@ -954,8 +954,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Theodred": {
+  } as ICard,
+  [cardsIds.theodred]: {
     id: cardsIds.theodred,
     cost: 4,
     effect: "Add 1 resource to a hero pool.",
@@ -968,8 +968,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 3
-  },
-  "Treebeard": {
+  } as ICard,
+  [cardsIds.treebeard]: {
     id: cardsIds.treebeard,
     cost: 5,
     effect: "Cannot have restricted attachments.",
@@ -982,8 +982,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Ugluk": {
+  } as ICard,
+  [cardsIds.ugluk]: {
     id: cardsIds.ugluk,
     cost: 6,
     effect: "Toughness 3. Cannot have attachments.",
@@ -996,8 +996,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  },
-  "Ugluk's Uruk-Hai": {
+  } as ICard,
+  [cardsIds.ugluksUrukHai]: {
     id: cardsIds.ugluksUrukHai,
     cost: 5,
     effect: "Peril. Toughness 1. Archery 1.",
@@ -1010,8 +1010,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 3
-  },
-  "Umbar Assassin": {
+  } as ICard,
+  [cardsIds.umbarAssassin]: {
     id: cardsIds.umbarAssassin,
     cost: 5,
     effect: "Archery 2. Player must deal 3 damage to a hero.",
@@ -1024,8 +1024,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
-  },
-  "Umbar Captain": {
+  } as ICard,
+  [cardsIds.umbarCaptain]: {
     id: cardsIds.umbarCaptain,
     cost: 5,
     effect: "Characters you control cannot attack Ship ennemies.",
@@ -1038,8 +1038,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 2
-  },
-  "Umbar Raider": {
+  } as ICard,
+  [cardsIds.umbarRaider]: {
     id: cardsIds.umbarRaider,
     cost: 4,
     effect: "Gets +1 hit points for each resource on it.",
@@ -1052,8 +1052,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 2
-  },
-  "Uruk Soldier": {
+  } as ICard,
+  [cardsIds.urukSoldier]: {
     id: cardsIds.urukSoldier,
     cost: 2,
     effect: "Destroys a character.",
@@ -1066,8 +1066,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 2
-  },
-  "Uruk-Hai Fighter": {
+  } as ICard,
+  [cardsIds.urukHaiFighter]: {
     id: cardsIds.urukHaiFighter,
     cost: 3,
     effect: "Toughness 2. Returns it to the staging area.",
@@ -1080,8 +1080,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
     limitedTo: 10
-  },
-  "Uruk Lieutenant": {
+  } as ICard,
+  [cardsIds.urukLieutenant]: {
     id: cardsIds.urukLieutenant,
     cost: 3,
     effect: "Add an Orc ennemy to the staging area.",
@@ -1094,8 +1094,8 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 10
-  },
-  "Wargs": {
+  } as ICard,
+  [cardsIds.wargs]: {
     id: cardsIds.wargs,
     cost: 3,
     effect: "Return Wargs to the staging area after it attacks.",
@@ -1108,8 +1108,8 @@ export const cards: ICards = {
     linkedTo: [],
     available: 3,
     limitedTo: 10
-  },
-  "Witch-King": {
+  } as ICard,
+  [cardsIds.witchKing]: {
     id: cardsIds.witchKing,
     cost: 11,
     effect: "Player cannot play attachments on the Witch-King.",
@@ -1122,6 +1122,6 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
-  }
+  } as ICard
 };
 
