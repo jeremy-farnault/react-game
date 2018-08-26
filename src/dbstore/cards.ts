@@ -31,20 +31,6 @@ export const cards: ICards = {
     available: 2,
     limitedTo: 10
   } as ICard,
-  [cardsIds.durinsBane]: {
-    id: cardsIds.durinsBane,
-    cost: 27,
-    effect: "Regenerate. Indestructible.",
-    description: "Balrog",
-    assets: {
-      normalPath: "assets/cards_big/durinsbane_big.png",
-      miniaturePath: "assets/cards_small/durinsbane_small.png"
-    } as ICardAssets,
-    faction: Faction.evil,
-    linkedTo: ["Hero X", "Hero Y"],
-    available: 1,
-    limitedTo: 1
-  } as ICard,
   [cardsIds.barlimanButterbur]: {
     id: cardsIds.barlimanButterbur,
     cost: 3,
@@ -129,6 +115,20 @@ export const cards: ICards = {
     available: 3,
     limitedTo: 2
   } as ICard,
+  [cardsIds.captainOfHarad]: {
+    id: cardsIds.captainOfHarad,
+    cost: 5,
+    effect: "Each Harad enemy gets +1 hit points.",
+    description: "Harad",
+    assets: {
+      normalPath: "assets/cards_big/haradcaptain_big.png",
+      miniaturePath: "assets/cards_small/haradcaptain_small.png"
+    } as ICardAssets,
+    faction: Faction.evil,
+    linkedTo: ["Hero X", "Hero Y"],
+    available: 1,
+    limitedTo: 10
+  } as ICard,
   [cardsIds.caveTroll]: {
     id: cardsIds.caveTroll,
     cost: 7,
@@ -157,20 +157,6 @@ export const cards: ICards = {
     available: 1,
     limitedTo: 2
   } as ICard,
-  [cardsIds.guardOfTheCitadel]: {
-    id: cardsIds.guardOfTheCitadel,
-    cost: 2,
-    effect: "Gets +2 life points.",
-    description: "Gondor",
-    assets: {
-      normalPath: "assets/cards_big/citadelguard_big.png",
-      miniaturePath: "assets/cards_small/citadelguard_small.png"
-    } as ICardAssets,
-    faction: Faction.good,
-    linkedTo: [],
-    available: 2,
-    limitedTo: 10
-  } as ICard,
   [cardsIds.crebain]: {
     id: cardsIds.crebain,
     cost: 3,
@@ -184,34 +170,6 @@ export const cards: ICards = {
     linkedTo: [],
     available: 1,
     limitedTo: 10
-  } as ICard,
-  [cardsIds.restlessDead]: {
-    id: cardsIds.restlessDead,
-    cost: 2,
-    effect: "Return card to the staging area.",
-    description: "Undead",
-    assets: {
-      normalPath: "assets/cards_big/restlessdead_big.png",
-      miniaturePath: "assets/cards_small/restlessdead_small.png"
-    } as ICardAssets,
-    faction: Faction.evil,
-    linkedTo: [],
-    available: 1,
-    limitedTo: 10
-  } as ICard,
-  [cardsIds.bilbo]: {
-    id: cardsIds.shadowHostCaptain,
-    cost: 6,
-    effect: "Gets +2 hit points and +2 life points.",
-    description: "Undead",
-    assets: {
-      normalPath: "assets/cards_big/shadowhostcaptain_big.png",
-      miniaturePath: "assets/cards_small/shadowhostcaptain_small.png"
-    } as ICardAssets,
-    faction: Faction.evil,
-    linkedTo: [],
-    available: 2,
-    limitedTo: 2
   } as ICard,
   [cardsIds.deadLord]: {
     id: cardsIds.deadLord,
@@ -254,6 +212,20 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
+  } as ICard,
+  [cardsIds.durinsBane]: {
+    id: cardsIds.durinsBane,
+    cost: 27,
+    effect: "Regenerate. Indestructible.",
+    description: "Balrog",
+    assets: {
+      normalPath: "assets/cards_big/durinsbane_big.png",
+      miniaturePath: "assets/cards_small/durinsbane_small.png"
+    } as ICardAssets,
+    faction: Faction.evil,
+    linkedTo: ["Hero X", "Hero Y"],
+    available: 1,
+    limitedTo: 1
   } as ICard,
   [cardsIds.eagles]: {
     id: cardsIds.eagles,
@@ -379,6 +351,20 @@ export const cards: ICards = {
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
+    limitedTo: 10
+  } as ICard,
+  [cardsIds.farmerMaggot]: {
+    id: cardsIds.farmerMaggot,
+    cost: 2,
+    effect: "Deal 1 damage to an enemy engaged with you.",
+    description: "Hobbit",
+    assets: {
+      normalPath: "assets/cards_big/maggot_big.png",
+      miniaturePath: "assets/cards_small/maggot_small.png"
+    } as ICardAssets,
+    faction: Faction.good,
+    linkedTo: [],
+    available: 2,
     limitedTo: 10
   } as ICard,
   [cardsIds.fellRider]: {
@@ -507,6 +493,20 @@ export const cards: ICards = {
     available: 1,
     limitedTo: 3
   } as ICard,
+  [cardsIds.guardOfTheCitadel]: {
+    id: cardsIds.guardOfTheCitadel,
+    cost: 2,
+    effect: "Gets +2 life points.",
+    description: "Gondor",
+    assets: {
+      normalPath: "assets/cards_big/citadelguard_big.png",
+      miniaturePath: "assets/cards_small/citadelguard_small.png"
+    } as ICardAssets,
+    faction: Faction.good,
+    linkedTo: [],
+    available: 2,
+    limitedTo: 10
+  } as ICard,
   [cardsIds.haldir]: {
     id: cardsIds.haldir,
     cost: 3,
@@ -532,20 +532,6 @@ export const cards: ICards = {
     } as ICardAssets,
     faction: Faction.good,
     linkedTo: [],
-    available: 1,
-    limitedTo: 10
-  } as ICard,
-  [cardsIds.captainOfHarad]: {
-    id: cardsIds.captainOfHarad,
-    cost: 5,
-    effect: "Each Harad enemy gets +1 hit points.",
-    description: "Harad",
-    assets: {
-      normalPath: "assets/cards_big/haradcaptain_big.png",
-      miniaturePath: "assets/cards_small/haradcaptain_small.png"
-    } as ICardAssets,
-    faction: Faction.evil,
-    linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 10
   } as ICard,
@@ -605,20 +591,6 @@ export const cards: ICards = {
     available: 1,
     limitedTo: 10
   } as ICard,
-  [cardsIds.lieutenantOfOrthanc]: {
-    id: cardsIds.lieutenantOfOrthanc,
-    cost: 5,
-    effect: "Enemy discards a card if a character dies.",
-    description: "Isengard",
-    assets: {
-      normalPath: "assets/cards_big/orthanclieutenant_big.png",
-      miniaturePath: "assets/cards_small/orthanclieutenant_small.png"
-    } as ICardAssets,
-    faction: Faction.evil,
-    linkedTo: ["Hero X", "Hero Y"],
-    available: 2,
-    limitedTo: 10
-  } as ICard,
   [cardsIds.isengardOrc]: {
     id: cardsIds.isengardOrc,
     cost: 3,
@@ -631,20 +603,6 @@ export const cards: ICards = {
     faction: Faction.evil,
     linkedTo: [],
     available: 4,
-    limitedTo: 10
-  } as ICard,
-  [cardsIds.soldierOfIsengard]: {
-    id: cardsIds.soldierOfIsengard,
-    cost: 4,
-    effect: "Toughness. Archery. Place 1 progress on current quest.",
-    description: "Uruk-hai",
-    assets: {
-      normalPath: "assets/cards_big/isengardsoldier_big.png",
-      miniaturePath: "assets/cards_small/isengardsoldier_small.png"
-    } as ICardAssets,
-    faction: Faction.evil,
-    linkedTo: ["Hero X", "Hero Y"],
-    available: 1,
     limitedTo: 10
   } as ICard,
   [cardsIds.isengardUruk]: {
@@ -703,6 +661,34 @@ export const cards: ICards = {
     available: 1,
     limitedTo: 1
   } as ICard,
+  [cardsIds.lieutenantOfMordor]: {
+    id: cardsIds.lieutenantOfMordor,
+    cost: 5,
+    effect: "Allies cannot defend against Lieutenant of Mordor.",
+    description: "Mordor",
+    assets: {
+      normalPath: "assets/cards_big/mordorlieutenant_big.png",
+      miniaturePath: "assets/cards_small/mordorlieutenant_small.png"
+    } as ICardAssets,
+    faction: Faction.evil,
+    linkedTo: ["Hero X", "Hero Y"],
+    available: 1,
+    limitedTo: 2
+  } as ICard,
+  [cardsIds.lieutenantOfOrthanc]: {
+    id: cardsIds.lieutenantOfOrthanc,
+    cost: 5,
+    effect: "Enemy discards a card if a character dies.",
+    description: "Isengard",
+    assets: {
+      normalPath: "assets/cards_big/orthanclieutenant_big.png",
+      miniaturePath: "assets/cards_small/orthanclieutenant_small.png"
+    } as ICardAssets,
+    faction: Faction.evil,
+    linkedTo: ["Hero X", "Hero Y"],
+    available: 2,
+    limitedTo: 10
+  } as ICard,
   [cardsIds.mablung]: {
     id: cardsIds.mablung,
     cost: 4,
@@ -715,20 +701,6 @@ export const cards: ICards = {
     faction: Faction.good,
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
-    limitedTo: 10
-  } as ICard,
-  [cardsIds.farmerMaggot]: {
-    id: cardsIds.farmerMaggot,
-    cost: 2,
-    effect: "Deal 1 damage to an enemy engaged with you.",
-    description: "Hobbit",
-    assets: {
-      normalPath: "assets/cards_big/maggot_big.png",
-      miniaturePath: "assets/cards_small/maggot_small.png"
-    } as ICardAssets,
-    faction: Faction.good,
-    linkedTo: [],
-    available: 2,
     limitedTo: 10
   } as ICard,
   [cardsIds.merry]: {
@@ -744,20 +716,6 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 3,
     limitedTo: 10
-  } as ICard,
-  [cardsIds.lieutenantOfMordor]: {
-    id: cardsIds.lieutenantOfMordor,
-    cost: 5,
-    effect: "Allies cannot defend against Lieutenant of Mordor.",
-    description: "Mordor",
-    assets: {
-      normalPath: "assets/cards_big/mordorlieutenant_big.png",
-      miniaturePath: "assets/cards_small/mordorlieutenant_small.png"
-    } as ICardAssets,
-    faction: Faction.evil,
-    linkedTo: ["Hero X", "Hero Y"],
-    available: 1,
-    limitedTo: 2
   } as ICard,
   [cardsIds.morgulOrc]: {
     id: cardsIds.morgulOrc,
@@ -857,6 +815,20 @@ export const cards: ICards = {
     available: 1,
     limitedTo: 2
   } as ICard,
+  [cardsIds.restlessDead]: {
+    id: cardsIds.restlessDead,
+    cost: 2,
+    effect: "Return card to the staging area.",
+    description: "Undead",
+    assets: {
+      normalPath: "assets/cards_big/restlessdead_big.png",
+      miniaturePath: "assets/cards_small/restlessdead_small.png"
+    } as ICardAssets,
+    faction: Faction.evil,
+    linkedTo: [],
+    available: 1,
+    limitedTo: 10
+  } as ICard,
   [cardsIds.riderOfTheMark]: {
     id: cardsIds.riderOfTheMark,
     cost: 2,
@@ -898,6 +870,34 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 1,
     limitedTo: 1
+  } as ICard,
+  [cardsIds.shadowHostCaptain]: {
+    id: cardsIds.shadowHostCaptain,
+    cost: 6,
+    effect: "Gets +2 hit points and +2 life points.",
+    description: "Undead",
+    assets: {
+      normalPath: "assets/cards_big/shadowhostcaptain_big.png",
+      miniaturePath: "assets/cards_small/shadowhostcaptain_small.png"
+    } as ICardAssets,
+    faction: Faction.evil,
+    linkedTo: [],
+    available: 2,
+    limitedTo: 2
+  } as ICard,
+  [cardsIds.soldierOfIsengard]: {
+    id: cardsIds.soldierOfIsengard,
+    cost: 4,
+    effect: "Toughness. Archery. Place 1 progress on current quest.",
+    description: "Uruk-hai",
+    assets: {
+      normalPath: "assets/cards_big/isengardsoldier_big.png",
+      miniaturePath: "assets/cards_small/isengardsoldier_small.png"
+    } as ICardAssets,
+    faction: Faction.evil,
+    linkedTo: ["Hero X", "Hero Y"],
+    available: 1,
+    limitedTo: 10
   } as ICard,
   [cardsIds.southronCommander]: {
     id: cardsIds.southronCommander,
@@ -1053,20 +1053,6 @@ export const cards: ICards = {
     available: 1,
     limitedTo: 2
   } as ICard,
-  [cardsIds.urukSoldier]: {
-    id: cardsIds.urukSoldier,
-    cost: 2,
-    effect: "Destroys a character.",
-    description: "Uruk-hai",
-    assets: {
-      normalPath: "assets/cards_big/uruksoldier_big.png",
-      miniaturePath: "assets/cards_small/uruksoldier_small.png"
-    } as ICardAssets,
-    faction: Faction.evil,
-    linkedTo: ["Hero X", "Hero Y"],
-    available: 2,
-    limitedTo: 2
-  } as ICard,
   [cardsIds.urukHaiFighter]: {
     id: cardsIds.urukHaiFighter,
     cost: 3,
@@ -1094,6 +1080,20 @@ export const cards: ICards = {
     linkedTo: ["Hero X", "Hero Y"],
     available: 2,
     limitedTo: 10
+  } as ICard,
+  [cardsIds.urukSoldier]: {
+    id: cardsIds.urukSoldier,
+    cost: 2,
+    effect: "Destroys a character.",
+    description: "Uruk-hai",
+    assets: {
+      normalPath: "assets/cards_big/uruksoldier_big.png",
+      miniaturePath: "assets/cards_small/uruksoldier_small.png"
+    } as ICardAssets,
+    faction: Faction.evil,
+    linkedTo: ["Hero X", "Hero Y"],
+    available: 2,
+    limitedTo: 2
   } as ICard,
   [cardsIds.wargs]: {
     id: cardsIds.wargs,
