@@ -34,12 +34,12 @@ export default handleActions(
       action: Action<ILoadAllHeroesSuccessPayload>
     ) => ({
       ...state,
-      heroes: action.payload ? action.payload.data : {}
+      allHeroes: action.payload ? action.payload.data : {}
     }),
     [LOAD_ALL_HEROES_FAIL]:
       (state: IStoreState.IPlayer, action: Action<{}>) => ({
         ...state,
-        heroes: {}
+        allHeroes: {}
       }),
     [LOAD_ALL_CARDS_START]: (state: IStoreState.IPlayer, action: Action<{}>) => ({
       ...state
@@ -49,12 +49,12 @@ export default handleActions(
       action: Action<ILoadAllCardsSuccessPayload>
     ) => ({
       ...state,
-      cards: action.payload ? action.payload.data : {}
+      allCards: action.payload ? action.payload.data : {}
     }),
     [LOAD_ALL_CARDS_FAIL]:
       (state: IStoreState.IPlayer, action: Action<{}>) => ({
         ...state,
-        cards: {}
+        allCards: {}
       })
   },
   initialState

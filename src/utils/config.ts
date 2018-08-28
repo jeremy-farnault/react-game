@@ -1,14 +1,22 @@
 const config = {
   loadHeroesFromFile: false,
-  loadTilesFromFile: false
-}
+  loadTilesFromFile: false,
+  loadCardsFromFile: false
+};
 
 const loadHeroesFromFile = {
   loadHeroesFromFile: true
-}
+};
 
 const loadTilesFromFile = {
   loadTilesFromFile: true
-}
+};
 
-export default Object.assign({}, config, loadHeroesFromFile, loadTilesFromFile)
+const loadCardsFromFile = {
+  loadCardsFromFile: true
+};
+
+export default Object.assign({}, config,
+  loadHeroesFromFile,
+  loadTilesFromFile,
+  loadCardsFromFile);
