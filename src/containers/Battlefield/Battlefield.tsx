@@ -34,4 +34,6 @@ export default Battlefield
 const Row = styled.div`
   flex-direction: row;
   display: flex;
+  margin: auto;
+  max-width: 760px;
 `

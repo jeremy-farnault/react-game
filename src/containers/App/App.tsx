@@ -3,6 +3,8 @@ import { IStoreState } from '../../types'
 import Battlefield from '../Battlefield/Battlefield'
 import './App.css'
 
+import styled from 'styled-components'
+
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators, Dispatch } from 'redux'
@@ -15,18 +17,15 @@ interface IProps {
 
 class App extends React.PureComponent<IProps, {}> {
   public render() {
-    console.log('cards ----- ', this.props.cards)
-    console.log('heroes ----- ', this.props.heroes)
     return (
-      <div className="App">
+      <ContainerApp>
         <Battlefield tiles={this.props.tiles} heroes={this.props.heroes} />
-      </div>
+      </ContainerApp>
     )
   }
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {
-  console.log('state -----', state)
   return {
     tiles: state.battlefield.tiles,
     heroes: state.session.allHeroes,
@@ -41,3 +40,10 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(App)
+
+const ContainerApp = styled.div`
+margin: auto;
+max-width: 960px;
+padding: 100px 0;
+`
+ContainerApp.displayName = 'ContainerApp'
