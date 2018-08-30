@@ -1,7 +1,8 @@
 const config = {
   loadHeroesFromFile: false,
   loadTilesFromFile: false,
-  loadCardsFromFile: false
+  loadCardsFromFile: false,
+  createFakePlayers: false
 };
 
 const loadHeroesFromFile = {
@@ -16,7 +17,13 @@ const loadCardsFromFile = {
   loadCardsFromFile: true
 };
 
+const createFakePlayers = {
+  createFakePlayers: true
+};
+
 export default Object.assign({}, config,
   loadHeroesFromFile,
   loadTilesFromFile,
-  loadCardsFromFile);
+  loadCardsFromFile,
+  createFakePlayers
+);

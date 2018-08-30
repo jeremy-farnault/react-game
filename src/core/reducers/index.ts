@@ -1,11 +1,11 @@
 import battlefield from './battlefield'
-import player from './player'
+import players from './players'
 import session from './session'
 
 import { combineReducers } from 'redux'
 
 export default combineReducers({
-  player,
+  players,
   battlefield,
   session
 })

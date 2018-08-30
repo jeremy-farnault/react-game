@@ -54,10 +54,20 @@ function* loadTiles() {
   }
 }
 
+function* loadPlayersData() {
+  try {
+    if (config.loadTilesFromFile) {
+
+    }
+  } catch (err) {
+  }
+}
+
 function* root() {
   yield fork(loadAllHeroes)
   yield fork(loadTiles)
   yield fork(loadAllCards)
+  yield fork(loadPlayersData)
 }
 
 export default root
