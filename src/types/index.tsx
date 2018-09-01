@@ -1,9 +1,11 @@
-import { ICards, IHeroes, ITile } from "../core/models";
+import { ICards, IHeroes, IPlayer, ITile } from "../core/models";
 
 export namespace IStoreState {
   export interface IRootState {
     battlefield: IBattlefield
-    players: IPlayers
+    players: {
+      [id: string]: IPlayer
+    }
     session: ISession
   }
   export interface IBattlefield {
@@ -11,9 +13,6 @@ export namespace IStoreState {
   }
   export interface IPlayers {
     [id: string]: IPlayer
-  }
-  export interface IPlayer {
-    heroes: IHeroes
   }
   export interface ISession {
     allCards: ICards

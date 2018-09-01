@@ -3,18 +3,18 @@ import {
   ILoadTilesSuccessPayload,
   IUpdateTilesPayload
 } from '../reducers/battlefield'
-import { ILoadHeroesSuccessPayload } from '../reducers/players'
+import { ILoadPlayersSuccessPayload } from "../reducers/players";
 import { ILoadAllCardsSuccessPayload, ILoadAllHeroesSuccessPayload } from "../reducers/session";
 
 import { createAction } from 'redux-actions'
 
 // Heroes loading
 
-export const loadHeroesStart = createAction<{}>(constants.LOAD_HEROES_START)
-export const loadHeroesSuccess = createAction<ILoadHeroesSuccessPayload>(
-  constants.LOAD_HEROES_SUCCESS
+export const loadPlayersStart = createAction<{}>(constants.LOAD_PLAYERS_START)
+export const loadPlayersSuccess = createAction<ILoadPlayersSuccessPayload>(
+  constants.LOAD_PLAYERS_SUCCESS
 )
-export const loadHeroesFail = createAction<{}>(constants.LOAD_HEROES_FAIL)
+export const loadPlayersFail = createAction<{}>(constants.LOAD_PLAYERS_FAIL)
 
 // Tiles Loading
 

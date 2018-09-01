@@ -7,12 +7,16 @@ import {
   loadAllCardsSuccess,
   loadAllHeroesFail,
   loadAllHeroesSuccess,
+  loadPlayersFail,
+  loadPlayersSuccess,
   loadTilesFail,
   loadTilesSuccess
 } from "../actions";
 import { ICards, IHeroes, ITile } from "../models";
 
 import { fork, put } from 'redux-saga/effects'
+import { IStoreState } from "../../types";
+import IPlayers = IStoreState.IPlayers;
 
 function* loadAllHeroes() {
   let response: { data: IHeroes } = { data: {} }
@@ -55,11 +59,15 @@ function* loadTiles() {
 }
 
 function* loadPlayersData() {
+  let response: { data: IPlayers } = { data: {} as IPlayers }
   try {
     if (config.loadTilesFromFile) {
-
+      response = { data: {} }
     }
+    yield loadPlayersSuccess(response)
   } catch (err) {
+    console.warn('loadPlayers failed', JSON.parse(JSON.stringify(err)))
+    yield put(loadPlayersFail(err))
   }
 }
 

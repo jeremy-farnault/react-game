@@ -26,33 +26,33 @@ export interface ILoadAllCardsSuccessPayload {
 
 export default handleActions(
   {
-    [LOAD_ALL_HEROES_START]: (state: IStoreState.IPlayer, action: Action<{}>) => ({
+    [LOAD_ALL_HEROES_START]: (state: IStoreState.ISession, action: Action<{}>) => ({
       ...state
     }),
     [LOAD_ALL_HEROES_SUCCESS]: (
-      state: IStoreState.IPlayer,
+      state: IStoreState.ISession,
       action: Action<ILoadAllHeroesSuccessPayload>
     ) => ({
       ...state,
       allHeroes: action.payload ? action.payload.data : {}
     }),
     [LOAD_ALL_HEROES_FAIL]:
-      (state: IStoreState.IPlayer, action: Action<{}>) => ({
+      (state: IStoreState.ISession, action: Action<{}>) => ({
         ...state,
         allHeroes: {}
       }),
-    [LOAD_ALL_CARDS_START]: (state: IStoreState.IPlayer, action: Action<{}>) => ({
+    [LOAD_ALL_CARDS_START]: (state: IStoreState.ISession, action: Action<{}>) => ({
       ...state
     }),
     [LOAD_ALL_CARDS_SUCCESS]: (
-      state: IStoreState.IPlayer,
+      state: IStoreState.ISession,
       action: Action<ILoadAllCardsSuccessPayload>
     ) => ({
       ...state,
       allCards: action.payload ? action.payload.data : {}
     }),
     [LOAD_ALL_CARDS_FAIL]:
-      (state: IStoreState.IPlayer, action: Action<{}>) => ({
+      (state: IStoreState.ISession, action: Action<{}>) => ({
         ...state,
         allCards: {}
       })

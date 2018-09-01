@@ -7,8 +7,10 @@ import {
 
 import { Action, handleActions } from "redux-actions";
 
-const initialState: IStoreState.IPlayers = {
-  players: {} as IStoreState.IPlayer
+const initialState: IStoreState.IRootState = {
+  battlefield: {} as IStoreState.IBattlefield,
+  session: {} as IStoreState.ISession,
+  players: {} as IStoreState.IPlayers
 };
 
 export interface ILoadPlayersSuccessPayload {
@@ -20,18 +22,17 @@ export default handleActions(
     [LOAD_PLAYERS_START]: (state: IStoreState.IPlayers, action: Action<{}>) => ({
       ...state
     }),
+    [LOAD_PLAYERS_FAIL]: (state: IStoreState.IPlayers, action: Action<{}>) => ({
+      ...state,
+      players: {} as IStoreState.IPlayers
+    }),
     [LOAD_PLAYERS_SUCCESS]: (
       state: IStoreState.IPlayers,
       action: Action<ILoadPlayersSuccessPayload>
     ) => ({
       ...state,
-      players: action.payload ? action.payload.data : {} as IStoreState.IPlayer
+      players: action.payload ? action.payload.data : {} as IStoreState.IPlayers
     }),
-    [LOAD_PLAYERS_FAIL]:
-      (state: IStoreState.IPlayers, action: Action<{}>) => ({
-        ...state,
-        players: {} as IStoreState.IPlayer
-      })
   },
   initialState
 );

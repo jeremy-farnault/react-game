@@ -1,7 +1,16 @@
 // Session
+
 export enum Faction {
   good = 'good',
   evil = 'evil'
+}
+
+// Player
+
+export interface IPlayer {
+  id: string
+  cards: ICards
+  heroes: IHeroes
 }
 
 // Tiles
