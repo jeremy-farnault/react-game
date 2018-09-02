@@ -1,10 +1,10 @@
-import { IHeroesBettlefield } from "../../core/models";
+import { IHeroesBattlefield } from "../../core/models";
 
 import * as React from "react";
 import styled from "styled-components";
 
 interface IProps {
-  heroes: IHeroesBettlefield
+  heroes: IHeroesBattlefield
 }
 
 // interface IState {}
@@ -12,10 +12,12 @@ interface IProps {
 class Heroes extends React.PureComponent<IProps, {}> {
 
   public render() {
+    const h = this.props.heroes
     return (
-      Object.keys(this.props.heroes).map((heroId: string) => {
+      Object.keys(h).map((id: string) => {
+        console.log(h[id].assets.battlefieldPath)
         return (
-          <HeroStyled key={this.props.heroes[heroId].playerId + heroId}/>
+          <HeroStyled key={h[id].playerId + id} src={h[id].assets.battlefieldPath} height={50} width={50}/>
         )
       })
     )
@@ -24,8 +26,6 @@ class Heroes extends React.PureComponent<IProps, {}> {
 
 export default Heroes;
 
-const HeroStyled = styled.div`
-  width: 20px;
-  height: 20px;
-  background-color: aqua;
+const HeroStyled = styled.img`
 `;
+

@@ -10,7 +10,7 @@ import { heroesIds } from './heroesIds'
 export const heroes: IHeroes = {
   [heroesIds.aragorn]: {
     assets: {
-      battlefieldPath: 'assets/heroesBattlefield/aragorn.png',
+      battlefielfPath: require('../assets/heroesBattlefield/aragorn.png',
       miniaturePath: 'assets/heroesMiniatures/aragorn.png',
       tokenInitPath: 'assets/heroesTokensInit/aragorn.png',
       tokenPath: 'assets/heroesTokens/aragorn.png'
@@ -44,7 +44,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/arwen.png',
       tokenInitPath: 'assets/heroesTokensInit/arwen.png',
       miniaturePath: 'assets/heroesMiniatures/arwen.png',
-      battlefieldPath: 'assets/heroesBattlefield/arwen.png'
+      battlefielfPath: require('../assets/heroesBattlefield/arwen.png'
     } as IHeroAssets,
     characteristics: {
       speed: 7,
@@ -74,7 +74,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/balrog.png',
       miniaturePath: 'assets/heroesMiniatures/balrog.png',
       tokenInitPath: 'assets/heroesTokensInit/balrog.png',
-      battlefieldPath: 'assets/heroesBattlefield/balrog.png'
+      battlefielfPath: require('../assets/heroesBattlefield/balrog.png'
     } as IHeroAssets,
     characteristics: {
       speed: 5,
@@ -128,7 +128,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/barrow_wight.png',
       miniaturePath: 'assets/heroesMiniatures/barrow_wight.png',
       tokenInitPath: 'assets/heroesTokensInit/barrow_wight.png',
-      battlefieldPath: 'assets/heroesBattlefield/barrow_wight.png'
+      battlefielfPath: require('../assets/heroesBattlefield/barrow_wight.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.beregond]: {
@@ -158,7 +158,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/beregond.png',
       miniaturePath: 'assets/heroesMiniatures/beregond.png',
       tokenInitPath: 'assets/heroesTokensInit/beregond.png',
-      battlefieldPath: 'assets/heroesBattlefield/beregond.png'
+      battlefielfPath: require('../assets/heroesBattlefield/beregond.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.berserker]: {
@@ -189,7 +189,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/berserker.png',
       miniaturePath: 'assets/heroesMiniatures/berserker.png',
       tokenInitPath: 'assets/heroesTokensInit/berserker.png',
-      battlefieldPath: 'assets/heroesBattlefield/berserker.png'
+      battlefielfPath: require('../assets/heroesBattlefield/berserker.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.bilbo]: {
@@ -220,7 +220,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/bilbo.png',
       miniaturePath: 'assets/heroesMiniatures/bilbo.png',
       tokenInitPath: 'assets/heroesTokensInit/bilbo.png',
-      battlefieldPath: 'assets/heroesBattlefield/bilbo.png'
+      battlefielfPath: require('../assets/heroesBattlefield/bilbo.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.bombadil]: {
@@ -251,7 +251,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/bombadil.png',
       miniaturePath: 'assets/heroesMiniatures/bombadil.png',
       tokenInitPath: 'assets/heroesTokensInit/bombadil.png',
-      battlefieldPath: 'assets/heroesBattlefield/bombadil.png'
+      battlefielfPath: require('../assets/heroesBattlefield/bombadil.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.boromir]: {
@@ -282,7 +282,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/boromir.png',
       miniaturePath: 'assets/heroesMiniatures/boromir.png',
       tokenInitPath: 'assets/heroesTokensInit/boromir.png',
-      battlefieldPath: 'assets/heroesBattlefield/boromir.png'
+      battlefielfPath: require('../assets/heroesBattlefield/boromir.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.caveTroll]: {
@@ -313,7 +313,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/cave_troll.png',
       miniaturePath: 'assets/heroesMiniatures/cave_troll.png',
       tokenInitPath: 'assets/heroesTokensInit/cave_troll.png',
-      battlefieldPath: 'assets/heroesBattlefield/cave_troll.png'
+      battlefielfPath: require('../assets/heroesBattlefield/cave_troll.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.celeborn]: {
@@ -344,7 +344,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/celeborn.png',
       miniaturePath: 'assets/heroesMiniatures/celeborn.png',
       tokenInitPath: 'assets/heroesTokensInit/celeborn.png',
-      battlefieldPath: 'assets/heroesBattlefield/celeborn.png'
+      battlefielfPath: require('../assets/heroesBattlefield/celeborn.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.corsairOfUmbar]: {
@@ -375,7 +375,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/corsair_of_umbar.png',
       miniaturePath: 'assets/heroesMiniatures/corsair_of_umbar.png',
       tokenInitPath: 'assets/heroesTokensInit/corsair_of_umbar.png',
-      battlefieldPath: 'assets/heroesBattlefield/corsair_of_umbar.png'
+      battlefielfPath: require('../assets/heroesBattlefield/corsair_of_umbar.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.denethor]: {
@@ -406,7 +406,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/denethor.png',
       miniaturePath: 'assets/heroesMiniatures/denethor.png',
       tokenInitPath: 'assets/heroesTokensInit/denethor.png',
-      battlefieldPath: 'assets/heroesBattlefield/denethor.png'
+      battlefielfPath: require('../assets/heroesBattlefield/denethor.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.easterling]: {
@@ -437,7 +437,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/easterling.png',
       miniaturePath: 'assets/heroesMiniatures/easterling.png',
       tokenInitPath: 'assets/heroesTokensInit/easterling.png',
-      battlefieldPath: 'assets/heroesBattlefield/easterling.png'
+      battlefielfPath: require('../assets/heroesBattlefield/easterling.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.elendil]: {
@@ -468,7 +468,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/elendil.png',
       miniaturePath: 'assets/heroesMiniatures/elendil.png',
       tokenInitPath: 'assets/heroesTokensInit/elendil.png',
-      battlefieldPath: 'assets/heroesBattlefield/elendil.png'
+      battlefielfPath: require('../assets/heroesBattlefield/elendil.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.elrond]: {
@@ -499,7 +499,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/elrond.png',
       miniaturePath: 'assets/heroesMiniatures/elrond.png',
       tokenInitPath: 'assets/heroesTokensInit/elrond.png',
-      battlefieldPath: 'assets/heroesBattlefield/elrond.png'
+      battlefielfPath: require('../assets/heroesBattlefield/elrond.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.eomer]: {
@@ -530,7 +530,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/eomer.png',
       miniaturePath: 'assets/heroesMiniatures/eomer.png',
       tokenInitPath: 'assets/heroesTokensInit/eomer.png',
-      battlefieldPath: 'assets/heroesBattlefield/eomer.png'
+      battlefielfPath: require('../assets/heroesBattlefield/eomer.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.eowyn]: {
@@ -561,7 +561,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/eowyn.png',
       miniaturePath: 'assets/heroesMiniatures/eowyn.png',
       tokenInitPath: 'assets/heroesTokensInit/eowyn.png',
-      battlefieldPath: 'assets/heroesBattlefield/eowyn.png'
+      battlefielfPath: require('../assets/heroesBattlefield/eowyn.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.faramir]: {
@@ -592,7 +592,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/faramir.png',
       miniaturePath: 'assets/heroesMiniatures/faramir.png',
       tokenInitPath: 'assets/heroesTokensInit/faramir.png',
-      battlefieldPath: 'assets/heroesBattlefield/faramir.png'
+      battlefielfPath: require('../assets/heroesBattlefield/faramir.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.frodo]: {
@@ -623,7 +623,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/frodo.png',
       miniaturePath: 'assets/heroesMiniatures/frodo.png',
       tokenInitPath: 'assets/heroesTokensInit/frodo.png',
-      battlefieldPath: 'assets/heroesBattlefield/frodo.png'
+      battlefielfPath: require('../assets/heroesBattlefield/frodo.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.galadriel]: {
@@ -654,7 +654,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/galadriel.png',
       miniaturePath: 'assets/heroesMiniatures/galadriel.png',
       tokenInitPath: 'assets/heroesTokensInit/galadriel.png',
-      battlefieldPath: 'assets/heroesBattlefield/galadriel.png'
+      battlefielfPath: require('../assets/heroesBattlefield/galadriel.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.gandalf]: {
@@ -685,7 +685,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/gandalf.png',
       miniaturePath: 'assets/heroesMiniatures/gandalf.png',
       tokenInitPath: 'assets/heroesTokensInit/gandalf.png',
-      battlefieldPath: 'assets/heroesBattlefield/gandalf.png'
+      battlefielfPath: require('../assets/heroesBattlefield/gandalf.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.gilGalad]: {
@@ -716,7 +716,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/gil-galad.png',
       miniaturePath: 'assets/heroesMiniatures/gil-galad.png',
       tokenInitPath: 'assets/heroesTokensInit/gil-galad.png',
-      battlefieldPath: 'assets/heroesBattlefield/gil-galad.png'
+      battlefielfPath: require('../assets/heroesBattlefield/gil-galad.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.gimli]: {
@@ -747,7 +747,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/gimli.png',
       miniaturePath: 'assets/heroesMiniatures/gimli.png',
       tokenInitPath: 'assets/heroesTokensInit/gimli.png',
-      battlefieldPath: 'assets/heroesBattlefield/gimli.png'
+      battlefielfPath: require('../assets/heroesBattlefield/gimli.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.gloin]: {
@@ -778,7 +778,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/gloin.png',
       miniaturePath: 'assets/heroesMiniatures/gloin.png',
       tokenInitPath: 'assets/heroesTokensInit/gloin.png',
-      battlefieldPath: 'assets/heroesBattlefield/gloin.png'
+      battlefielfPath: require('../assets/heroesBattlefield/gloin.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.glorfindel]: {
@@ -809,7 +809,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/glorfindel.png',
       miniaturePath: 'assets/heroesMiniatures/glorfindel.png',
       tokenInitPath: 'assets/heroesTokensInit/glorfindel.png',
-      battlefieldPath: 'assets/heroesBattlefield/glorfindel.png'
+      battlefielfPath: require('../assets/heroesBattlefield/glorfindel.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.gollum]: {
@@ -840,7 +840,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/gollum.png',
       miniaturePath: 'assets/heroesMiniatures/gollum.png',
       tokenInitPath: 'assets/heroesTokensInit/gollum.png',
-      battlefieldPath: 'assets/heroesBattlefield/gollum.png'
+      battlefielfPath: require('../assets/heroesBattlefield/gollum.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.gondorianRanger]: {
@@ -871,7 +871,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/gondorian_ranger.png',
       miniaturePath: 'assets/heroesMiniatures/gondorian_ranger.png',
       tokenInitPath: 'assets/heroesTokensInit/gondorian_ranger.png',
-      battlefieldPath: 'assets/heroesBattlefield/gondorian_ranger.png'
+      battlefielfPath: require('../assets/heroesBattlefield/gondorian_ranger.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.gondorianSoldier]: {
@@ -901,7 +901,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/gondorian_soldier.png',
       miniaturePath: 'assets/heroesMiniatures/gondorian_soldier.png',
       tokenInitPath: 'assets/heroesTokensInit/gondorian_soldier.png',
-      battlefieldPath: 'assets/heroesBattlefield/gondorian_soldier.png'
+      battlefielfPath: require('../assets/heroesBattlefield/gondorian_soldier.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.gothmog]: {
@@ -932,7 +932,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/gothmog.png',
       miniaturePath: 'assets/heroesMiniatures/gothmog.png',
       tokenInitPath: 'assets/heroesTokensInit/gothmog.png',
-      battlefieldPath: 'assets/heroesBattlefield/gothmog.png'
+      battlefielfPath: require('../assets/heroesBattlefield/gothmog.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.grima]: {
@@ -963,7 +963,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/grima.png',
       miniaturePath: 'assets/heroesMiniatures/grima.png',
       tokenInitPath: 'assets/heroesTokensInit/grima.png',
-      battlefieldPath: 'assets/heroesBattlefield/grima.png'
+      battlefielfPath: require('../assets/heroesBattlefield/grima.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.grishnakh]: {
@@ -993,7 +993,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/grishnakh.png',
       miniaturePath: 'assets/heroesMiniatures/grishnakh.png',
       tokenInitPath: 'assets/heroesTokensInit/grishnakh.png',
-      battlefieldPath: 'assets/heroesBattlefield/grishnakh.png'
+      battlefielfPath: require('../assets/heroesBattlefield/grishnakh.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.guardOfTheCitadel]: {
@@ -1024,7 +1024,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/citadel_guard.png',
       miniaturePath: 'assets/heroesMiniatures/citadel_guard.png',
       tokenInitPath: 'assets/heroesTokensInit/citadel_guard.png',
-      battlefieldPath: 'assets/heroesBattlefield/citadel_guard.png'
+      battlefielfPath: require('../assets/heroesBattlefield/citadel_guard.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.hama]: {
@@ -1055,7 +1055,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/hama.png',
       miniaturePath: 'assets/heroesMiniatures/hama.png',
       tokenInitPath: 'assets/heroesTokensInit/hama.png',
-      battlefieldPath: 'assets/heroesBattlefield/hama.png'
+      battlefielfPath: require('../assets/heroesBattlefield/hama.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.haldir]: {
@@ -1086,7 +1086,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/haldir.png',
       miniaturePath: 'assets/heroesMiniatures/haldir.png',
       tokenInitPath: 'assets/heroesTokensInit/haldir.png',
-      battlefieldPath: 'assets/heroesBattlefield/haldir.png'
+      battlefielfPath: require('../assets/heroesBattlefield/haldir.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.haradrimWarrior]: {
@@ -1117,7 +1117,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/haradrim_warrior.png',
       miniaturePath: 'assets/heroesMiniatures/haradrim_warrior.png',
       tokenInitPath: 'assets/heroesTokensInit/haradrim_warrior.png',
-      battlefieldPath: 'assets/heroesBattlefield/haradrim_warrior.png'
+      battlefielfPath: require('../assets/heroesBattlefield/haradrim_warrior.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.imrahil]: {
@@ -1148,7 +1148,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/imrahil.png',
       miniaturePath: 'assets/heroesMiniatures/imrahil.png',
       tokenInitPath: 'assets/heroesTokensInit/imrahil.png',
-      battlefieldPath: 'assets/heroesBattlefield/imrahil.png'
+      battlefielfPath: require('../assets/heroesBattlefield/imrahil.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.isildur]: {
@@ -1179,7 +1179,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/isildur.png',
       miniaturePath: 'assets/heroesMiniatures/isildur.png',
       tokenInitPath: 'assets/heroesTokensInit/isildur.png',
-      battlefieldPath: 'assets/heroesBattlefield/isildur.png'
+      battlefielfPath: require('../assets/heroesBattlefield/isildur.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.kingOfTheDead]: {
@@ -1210,7 +1210,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/king_of_the_dead.png',
       miniaturePath: 'assets/heroesMiniatures/king_of_the_dead.png',
       tokenInitPath: 'assets/heroesTokensInit/king_of_the_dead.png',
-      battlefieldPath: 'assets/heroesBattlefield/king_of_the_dead.png'
+      battlefielfPath: require('../assets/heroesBattlefield/king_of_the_dead.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.legolas]: {
@@ -1241,7 +1241,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/legolas.png',
       miniaturePath: 'assets/heroesMiniatures/legolas.png',
       tokenInitPath: 'assets/heroesTokensInit/legolas.png',
-      battlefieldPath: 'assets/heroesBattlefield/legolas.png'
+      battlefielfPath: require('../assets/heroesBattlefield/legolas.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.lothlorienElf]: {
@@ -1272,7 +1272,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/lothlorien_elf.png',
       miniaturePath: 'assets/heroesMiniatures/lothlorien_elf.png',
       tokenInitPath: 'assets/heroesTokensInit/lothlorien_elf.png',
-      battlefieldPath: 'assets/heroesBattlefield/lothlorien_elf.png'
+      battlefielfPath: require('../assets/heroesBattlefield/lothlorien_elf.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.lurtz]: {
@@ -1303,7 +1303,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/lurtz.png',
       miniaturePath: 'assets/heroesMiniatures/lurtz.png',
       tokenInitPath: 'assets/heroesTokensInit/lurtz.png',
-      battlefieldPath: 'assets/heroesBattlefield/lurtz.png'
+      battlefielfPath: require('../assets/heroesBattlefield/lurtz.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.meriadoc]: {
@@ -1334,7 +1334,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/meriadoc.png',
       miniaturePath: 'assets/heroesMiniatures/meriadoc.png',
       tokenInitPath: 'assets/heroesTokensInit/meriadoc.png',
-      battlefieldPath: 'assets/heroesBattlefield/meriadoc.png'
+      battlefielfPath: require('../assets/heroesBattlefield/meriadoc.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.mordorOrc]: {
@@ -1365,7 +1365,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/mordor_orc.png',
       miniaturePath: 'assets/heroesMiniatures/mordor_orc.png',
       tokenInitPath: 'assets/heroesTokensInit/mordor_orc.png',
-      battlefieldPath: 'assets/heroesBattlefield/mordor_orc.png'
+      battlefielfPath: require('../assets/heroesBattlefield/mordor_orc.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.moriaOrc]: {
@@ -1396,7 +1396,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/moria_orc.png',
       miniaturePath: 'assets/heroesMiniatures/moria_orc.png',
       tokenInitPath: 'assets/heroesTokensInit/moria_orc.png',
-      battlefieldPath: 'assets/heroesBattlefield/moria_orc.png'
+      battlefielfPath: require('../assets/heroesBattlefield/moria_orc.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.mouthOfSauron]: {
@@ -1427,7 +1427,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/mouth_of_sauron.png',
       miniaturePath: 'assets/heroesMiniatures/mouth_of_sauron.png',
       tokenInitPath: 'assets/heroesTokensInit/mouth_of_sauron.png',
-      battlefieldPath: 'assets/heroesBattlefield/mouth_of_sauron.png'
+      battlefielfPath: require('../assets/heroesBattlefield/mouth_of_sauron.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.peregrin]: {
@@ -1458,7 +1458,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/peregrin.png',
       miniaturePath: 'assets/heroesMiniatures/peregrin.png',
       tokenInitPath: 'assets/heroesTokensInit/peregrin.png',
-      battlefieldPath: 'assets/heroesBattlefield/peregrin.png'
+      battlefielfPath: require('../assets/heroesBattlefield/peregrin.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.nazgul]: {
@@ -1489,7 +1489,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/nazgul.png',
       miniaturePath: 'assets/heroesMiniatures/nazgul.png',
       tokenInitPath: 'assets/heroesTokensInit/nazgul.png',
-      battlefieldPath: 'assets/heroesBattlefield/nazgul.png'
+      battlefielfPath: require('../assets/heroesBattlefield/nazgul.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.radagast]: {
@@ -1520,7 +1520,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/radagast.png',
       miniaturePath: 'assets/heroesMiniatures/radagast.png',
       tokenInitPath: 'assets/heroesTokensInit/radagast.png',
-      battlefieldPath: 'assets/heroesBattlefield/radagast.png'
+      battlefielfPath: require('../assets/heroesBattlefield/radagast.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.rohirrimSoldier]: {
@@ -1551,7 +1551,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/rohirrim_soldier.png',
       miniaturePath: 'assets/heroesMiniatures/rohirrim_soldier.png',
       tokenInitPath: 'assets/heroesTokensInit/rohirrim_soldier.png',
-      battlefieldPath: 'assets/heroesBattlefield/rohirrim_soldier.png'
+      battlefielfPath: require('../assets/heroesBattlefield/rohirrim_soldier.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.samwise]: {
@@ -1582,7 +1582,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/samwise.png',
       miniaturePath: 'assets/heroesMiniatures/samwise.png',
       tokenInitPath: 'assets/heroesTokensInit/samwise.png',
-      battlefieldPath: 'assets/heroesBattlefield/samwise.png'
+      battlefielfPath: require('../assets/heroesBattlefield/samwise.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.saruman]: {
@@ -1613,7 +1613,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/saruman.png',
       miniaturePath: 'assets/heroesMiniatures/saruman.png',
       tokenInitPath: 'assets/heroesTokensInit/saruman.png',
-      battlefieldPath: 'assets/heroesBattlefield/saruman.png'
+      battlefielfPath: require('../assets/heroesBattlefield/saruman.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.sauron]: {
@@ -1644,7 +1644,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/sauron.png',
       miniaturePath: 'assets/heroesMiniatures/sauron.png',
       tokenInitPath: 'assets/heroesTokensInit/sauron.png',
-      battlefieldPath: 'assets/heroesBattlefield/sauron.png'
+      battlefielfPath: require('../assets/heroesBattlefield/sauron.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.shagrat]: {
@@ -1675,7 +1675,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/shagrat.png',
       miniaturePath: 'assets/heroesMiniatures/shagrat.png',
       tokenInitPath: 'assets/heroesTokensInit/shagrat.png',
-      battlefieldPath: 'assets/heroesBattlefield/shagrat.png'
+      battlefielfPath: require('../assets/heroesBattlefield/shagrat.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.soldierOfTheDead]: {
@@ -1706,7 +1706,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/soldier_of_the_dead.png',
       miniaturePath: 'assets/heroesMiniatures/soldier_of_the_dead.png',
       tokenInitPath: 'assets/heroesTokensInit/soldier_of_the_dead.png',
-      battlefieldPath: 'assets/heroesBattlefield/soldier_of_the_dead.png'
+      battlefielfPath: require('../assets/heroesBattlefield/soldier_of_the_dead.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.theoden]: {
@@ -1737,7 +1737,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/theoden.png',
       miniaturePath: 'assets/heroesMiniatures/theoden.png',
       tokenInitPath: 'assets/heroesTokensInit/theoden.png',
-      battlefieldPath: 'assets/heroesBattlefield/theoden.png'
+      battlefielfPath: require('../assets/heroesBattlefield/theoden.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.urukHai]: {
@@ -1768,7 +1768,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/uruk_hai.png',
       miniaturePath: 'assets/heroesMiniatures/uruk_hai.png',
       tokenInitPath: 'assets/heroesTokensInit/uruk_hai.png',
-      battlefieldPath: 'assets/heroesBattlefield/uruk_hai.png'
+      battlefielfPath: require('../assets/heroesBattlefield/uruk_hai.png'
     } as IHeroAssets
   } as IHero,
   [heroesIds.witchKing]: {
@@ -1799,7 +1799,7 @@ export const heroes: IHeroes = {
       tokenPath: 'assets/heroesTokens/witch_king.png',
       miniaturePath: 'assets/heroesMiniatures/witch_king.png',
       tokenInitPath: 'assets/heroesTokensInit/witch_king.png',
-      battlefieldPath: 'assets/heroesBattlefield/witch_king.png'
+      battlefielfPath: require('../assets/heroesBattlefield/witch_king.png'
     } as IHeroAssets
   } as IHero
 }

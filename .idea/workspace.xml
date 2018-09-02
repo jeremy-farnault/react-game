@@ -2,26 +2,248 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Tiles/Tiles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/actions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/actions/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/create.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/create.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/aragorn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/aragorn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/arwen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/arwen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/balrog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/balrog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/barrow_wight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/barrow_wight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/beregond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/beregond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/berserker.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/berserker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/bilbo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/bilbo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/bombadil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/bombadil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/boromir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/boromir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/cave_troll.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/cave_troll.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/celeborn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/celeborn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/citadel_guard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/citadel_guard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/corsair_of_umbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/corsair_of_umbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/denethor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/denethor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/easterling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/easterling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/elendil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/elendil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/elrond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/elrond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/eomer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/eomer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/eowyn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/eowyn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/faramir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/faramir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/frodo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/frodo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/galadriel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/galadriel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/gandalf.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/gandalf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/gil-galad.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/gil-galad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/gimli.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/gimli.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/gloin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/gloin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/glorfindel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/glorfindel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/gollum.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/gollum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/gondorian_ranger.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/gondorian_ranger.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/gondorian_soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/gondorian_soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/gothmog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/gothmog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/grima.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/grima.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/grishnakh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/grishnakh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/haldir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/haldir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/hama.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/hama.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/haradrim_warrior.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/haradrim_warrior.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/imrahil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/imrahil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/isildur.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/isildur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/king_of_the_dead.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/king_of_the_dead.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/legolas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/legolas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/lothlorien_elf.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/lothlorien_elf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/lurtz.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/lurtz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/meriadoc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/meriadoc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/mordor_orc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/mordor_orc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/moria_orc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/moria_orc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/mouth_of_sauron.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/mouth_of_sauron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/nazgul.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/nazgul.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/peregrin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/peregrin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/radagast.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/radagast.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/rohirrim_soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/rohirrim_soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/samwise.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/samwise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/saruman.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/saruman.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/sauron.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/sauron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/shagrat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/shagrat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/soldier_of_the_dead.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/soldier_of_the_dead.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/theoden.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/theoden.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/uruk_hai.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/uruk_hai.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_battlefield/witch_king.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesBattlefield/witch_king.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/aragorn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/aragorn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/arwen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/arwen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/balrog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/balrog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/barrow_wight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/barrow_wight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/beregond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/beregond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/berserker.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/berserker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/bilbo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/bilbo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/bombadil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/bombadil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/boromir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/boromir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/cave_troll.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/cave_troll.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/celeborn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/celeborn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/citadel_guard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/citadel_guard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/corsair_of_umbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/corsair_of_umbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/denethor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/denethor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/easterling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/easterling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/elendil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/elendil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/elrond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/elrond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/eomer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/eomer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/eowyn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/eowyn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/faramir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/faramir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/frodo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/frodo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/galadriel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/galadriel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/gandalf.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/gandalf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/gil-galad.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/gil-galad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/gimli.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/gimli.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/gloin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/gloin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/glorfindel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/glorfindel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/gollum.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/gollum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/gondorian_ranger.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/gondorian_ranger.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/gondorian_soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/gondorian_soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/gothmog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/gothmog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/grima.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/grima.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/grishnakh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/grishnakh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/haldir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/haldir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/hama.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/hama.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/haradrim_warrior.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/haradrim_warrior.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/imrahil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/imrahil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/isildur.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/isildur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/king_of_the_dead.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/king_of_the_dead.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/legolas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/legolas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/lothlorien_elf.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/lothlorien_elf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/lurtz.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/lurtz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/meriadoc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/meriadoc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/mordor_orc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/mordor_orc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/moria_orc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/moria_orc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/mouth_of_sauron.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/mouth_of_sauron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/nazgul.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/nazgul.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/peregrin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/peregrin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/radagast.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/radagast.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/rohirrim_soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/rohirrim_soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/samwise.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/samwise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/saruman.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/saruman.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/sauron.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/sauron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/shagrat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/shagrat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/soldier_of_the_dead.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/soldier_of_the_dead.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/theoden.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/theoden.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/uruk_hai.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/uruk_hai.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_miniatures/witch_king.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesMiniatures/witch_king.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/aragorn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/aragorn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/arwen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/arwen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/balrog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/balrog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/barrow_wight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/barrow_wight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/beregond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/beregond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/berserker.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/berserker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/bilbo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/bilbo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/bombadil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/bombadil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/boromir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/boromir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/cave_troll.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/cave_troll.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/celeborn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/celeborn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/citadel_guard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/citadel_guard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/corsair_of_umbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/corsair_of_umbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/denethor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/denethor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/easterling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/easterling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/elendil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/elendil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/elrond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/elrond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/eomer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/eomer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/eowyn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/eowyn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/faramir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/faramir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/frodo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/frodo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/galadriel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/galadriel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/gandalf.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/gandalf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/gil-galad.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/gil-galad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/gimli.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/gimli.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/gloin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/gloin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/glorfindel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/glorfindel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/gollum.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/gollum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/gondorian_ranger.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/gondorian_ranger.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/gondorian_soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/gondorian_soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/gothmog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/gothmog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/grima.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/grima.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/grishnakh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/grishnakh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/haldir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/haldir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/hama.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/hama.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/haradrim_warrior.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/haradrim_warrior.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/imrahil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/imrahil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/isildur.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/isildur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/king_of_the_dead.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/king_of_the_dead.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/legolas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/legolas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/lothlorien_elf.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/lothlorien_elf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/lurtz.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/lurtz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/meriadoc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/meriadoc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/mordor_orc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/mordor_orc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/moria_orc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/moria_orc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/mouth_of_sauron.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/mouth_of_sauron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/nazgul.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/nazgul.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/peregrin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/peregrin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/radagast.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/radagast.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/rohirrim_soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/rohirrim_soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/samwise.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/samwise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/saruman.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/saruman.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/sauron.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/sauron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/shagrat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/shagrat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/soldier_of_the_dead.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/soldier_of_the_dead.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/theoden.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/theoden.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/uruk_hai.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/uruk_hai.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens/witch_king.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokens/witch_king.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/aragorn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/aragorn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/arwen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/arwen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/balrog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/balrog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/barrow_wight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/barrow_wight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/beregond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/beregond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/berserker.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/berserker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/bilbo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/bilbo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/bombadil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/bombadil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/boromir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/boromir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/cave_troll.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/cave_troll.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/celeborn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/celeborn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/citadel_guard.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/citadel_guard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/corsair_of_umbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/corsair_of_umbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/denethor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/denethor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/easterling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/easterling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/elendil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/elendil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/elrond.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/elrond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/eomer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/eomer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/eowyn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/eowyn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/faramir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/faramir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/frodo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/frodo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/galadriel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/galadriel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/gandalf.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/gandalf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/gil-galad.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/gil-galad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/gimli.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/gimli.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/gloin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/gloin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/glorfindel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/glorfindel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/gollum.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/gollum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/gondorian_ranger.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/gondorian_ranger.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/gondorian_soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/gondorian_soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/gothmog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/gothmog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/grima.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/grima.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/grishnakh.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/grishnakh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/haldir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/haldir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/hama.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/hama.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/haradrim_warrior.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/haradrim_warrior.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/imrahil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/imrahil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/isildur.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/isildur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/king_of_the_dead.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/king_of_the_dead.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/legolas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/legolas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/lothlorien_elf.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/lothlorien_elf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/lurtz.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/lurtz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/meriadoc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/meriadoc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/mordor_orc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/mordor_orc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/moria_orc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/moria_orc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/mouth_of_sauron.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/mouth_of_sauron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/nazgul.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/nazgul.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/peregrin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/peregrin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/radagast.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/radagast.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/rohirrim_soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/rohirrim_soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/samwise.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/samwise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/saruman.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/saruman.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/sauron.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/sauron.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/shagrat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/shagrat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/soldier_of_the_dead.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/soldier_of_the_dead.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/theoden.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/theoden.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/uruk_hai.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/uruk_hai.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/heroes_tokens_init/witch_king.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/heroesTokensInit/witch_king.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/reducers/players.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/reducers/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/reducers/session.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/saga/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/saga/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbstore/heroes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbstore/heroes.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,50 +253,52 @@
     <session id="977092378">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TsLintLanguageService" value="3" />
-          <entry key="TypeScriptServerServiceImpl" value="10" />
+          <entry key="TsLintLanguageService" value="4" />
+          <entry key="TypeScriptServerServiceImpl" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="533" />
           <entry key="md" value="61" />
-          <entry key="ts" value="24749" />
-          <entry key="tsx" value="3156" />
+          <entry key="ts" value="28702" />
+          <entry key="tsx" value="4289" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="263" />
           <entry key="Markdown" value="61" />
-          <entry key="TypeScript" value="24749" />
-          <entry key="TypeScript JSX" value="3156" />
+          <entry key="TypeScript" value="28702" />
+          <entry key="TypeScript JSX" value="4289" />
           <entry key="tsconfig" value="270" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="4" />
-          <entry key="ts" value="29" />
-          <entry key="tsx" value="7" />
+          <entry key="png" value="1" />
+          <entry key="ts" value="33" />
+          <entry key="tsx" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Image" value="1" />
           <entry key="JSON" value="3" />
-          <entry key="TypeScript" value="29" />
-          <entry key="TypeScript JSX" value="7" />
+          <entry key="TypeScript" value="33" />
+          <entry key="TypeScript JSX" value="9" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
@@ -82,11 +306,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/saga/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+            <state relative-caret-position="765">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -94,59 +318,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="defaults.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/defaults.ts">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dbstore/fakePlayers.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/App/App.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="3975">
+              <caret line="265" column="1" selection-start-line="265" selection-start-column="1" selection-end-line="265" selection-end-column="1" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="n#IPlayers#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/types/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fakePlayers.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dbstore/fakePlayers.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="221" column="33" selection-start-line="221" selection-start-column="33" selection-end-line="221" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/models.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Battlefield.tsx" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state relative-caret-position="390">
+              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -154,35 +342,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tiles.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Tiles/Tiles.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tile.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Tile.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Heroes.tsx" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dbstore/heroes.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -203,6 +376,7 @@
       <find>captainOf</find>
       <find>farm</find>
       <find>HEROES</find>
+      <find>battlefieldPath: '</find>
     </findStrings>
     <replaceStrings>
       <replace>TILES</replace>
@@ -214,6 +388,7 @@
       <replace />
       <replace>ICard</replace>
       <replace>CARDS</replace>
+      <replace>battlefielfPath: require('../</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -233,7 +408,6 @@
         <option value="$PROJECT_DIR$/src/utils/config.ts" />
         <option value="$PROJECT_DIR$/src/utils/defaults.ts" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/dbstore/heroes.ts" />
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/src/core/reducers/heroes.ts" />
         <option value="$PROJECT_DIR$/src/core/reducers/tiles.ts" />
@@ -250,12 +424,13 @@
         <option value="$PROJECT_DIR$/src/core/create.ts" />
         <option value="$PROJECT_DIR$/src/core/reducers/session.ts" />
         <option value="$PROJECT_DIR$/src/core/saga/index.ts" />
-        <option value="$PROJECT_DIR$/src/core/models.ts" />
-        <option value="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" />
         <option value="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" />
         <option value="$PROJECT_DIR$/src/containers/App/App.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Tiles/Tiles.tsx" />
+        <option value="$PROJECT_DIR$/src/core/models.ts" />
+        <option value="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" />
+        <option value="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" />
+        <option value="$PROJECT_DIR$/src/dbstore/heroes.ts" />
       </list>
     </option>
   </component>
@@ -275,10 +450,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
-    <option name="width" value="943" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -306,6 +482,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,6 +499,12 @@
               <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
@@ -355,13 +538,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="Heroes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Tiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
@@ -405,11 +581,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="packa&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;package&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;reamd&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;pac&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/package.json&#10;default.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;config.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/config.ts&#10;config.&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/tsconfig.json&#10;reducer/in&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/reducers/index.ts&#10;types/inde&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/types/index.tsx&#10;create&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/create.ts&#10;Battl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Battlefield/Battlefield.tsx&#10;index.tsx&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/index.tsx&#10;defaults.&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;model&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/models.ts&#10;:w&#9;null&#9;null&#10;tsl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/tslint.json&#10;index.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/actions/index.ts&#10;app.tsx&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/App/App.tsx&#10;default&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts" />
+    <property name="SearchEverywhereHistoryKey" value="heroes&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/dbstore/heroes.ts&#10;packa&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;package&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;reamd&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;pac&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/package.json&#10;default.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;config.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/config.ts&#10;config.&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/tsconfig.json&#10;reducer/in&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/reducers/index.ts&#10;types/inde&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/types/index.tsx&#10;create&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/create.ts&#10;Battl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Battlefield/Battlefield.tsx&#10;index.tsx&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/index.tsx&#10;defaults.&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;model&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/models.ts&#10;:w&#9;null&#9;null&#10;tsl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/tslint.json&#10;index.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/actions/index.ts&#10;app.tsx&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/App/App.tsx&#10;default&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -482,6 +657,7 @@
       <workItem from="1535781714530" duration="4333000" />
       <workItem from="1535857869537" duration="15000" />
       <workItem from="1535862308836" duration="6664000" />
+      <workItem from="1535919828299" duration="2560000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -494,32 +670,32 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64995000" />
+    <option name="totallyTimeSpent" value="67555000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-1" y="23" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12248917" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32823873" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.37934667" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12254902" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32823873" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +709,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Displaying the tiles" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/models/TodoModel.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/reducers/index.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/models/index.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/models/TileModel.ts" />
@@ -556,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/utils/constants.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.test.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -634,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbstore/heroes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="906" column="2" selection-start-line="906" selection-start-column="2" selection-end-line="997" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dbstore/cards.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -648,16 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/reducers/players.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/reducers/players.ts" />
     <entry file="file://$PROJECT_DIR$/src/core/reducers/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -699,30 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbstore/fakePlayers.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="221" column="33" selection-start-line="221" selection-start-column="33" selection-end-line="221" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Tiles/Tiles.tsx" />
     <entry file="file://$PROJECT_DIR$/src/containers/App/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="300">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
@@ -730,57 +866,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
+    <entry file="file://$PROJECT_DIR$/src/types/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Tiles/Tiles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Tile.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="240">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx">
+    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/constants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/defaults.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/saga/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        <state relative-caret-position="765">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/defaults.ts">
+    <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="390">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/heroesBattlefield/aragorn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbstore/fakePlayers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3975">
+          <caret line="265" column="1" selection-start-line="265" selection-start-column="1" selection-end-line="265" selection-end-column="1" />
+          <folding>
+            <element signature="n#IPlayers#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbstore/heroes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>

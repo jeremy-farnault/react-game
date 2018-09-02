@@ -10,6 +10,7 @@ import {
   IPlayer
 } from "../core/models";
 import { IStoreState } from "../types";
+import { constants } from "../utils/constants";
 import { cardsIds } from "./cardsIds";
 import { heroesIds } from "./heroesIds";
 
@@ -18,10 +19,10 @@ export const fakePlayers: IPlayers = {
     heroes: {
       [heroesIds.aragorn]: {
         assets: {
-          battlefieldPath: "assets/heroesBattlefield/aragorn.png",
-          miniaturePath: "assets/heroesMiniatures/aragorn.png",
-          tokenInitPath: "assets/heroesTokensInit/aragorn.png",
-          tokenPath: "assets/heroesTokens/aragorn.png"
+          battlefieldPath: require('../assets/heroesBattlefield/aragorn.png'),
+          miniaturePath: require('../assets/heroesMiniatures/aragorn.png'),
+          tokenInitPath: require('../assets/heroesTokensInit/aragorn.png'),
+          tokenPath: require('../assets/heroesTokens/aragorn.png')
         } as IHeroAssets,
         characteristics: {
           agility: 7,
@@ -48,16 +49,16 @@ export const fakePlayers: IPlayers = {
         unique: true,
         tileX: 0,
         tileY: 0,
-        posX: 0,
-        posY: 0,
+        posX: constants.tileSize,
+        posY: constants.tileSize,
         playerId: 'firstPlayer'
       } as IHeroBattlefield,
       [heroesIds.arwen]: {
         assets: {
-          tokenPath: "assets/heroesTokens/arwen.png",
-          tokenInitPath: "assets/heroesTokensInit/arwen.png",
-          miniaturePath: "assets/heroesMiniatures/arwen.png",
-          battlefieldPath: "assets/heroesBattlefield/arwen.png"
+          tokenPath: require('../assets/heroesTokens/arwen.png'),
+          tokenInitPath: require('../assets/heroesTokensInit/arwen.png'),
+          miniaturePath: require('../assets/heroesMiniatures/arwen.png'),
+          battlefieldPath: require('../assets/heroesBattlefield/arwen.png')
         } as IHeroAssets,
         characteristics: {
           speed: 7,
@@ -82,9 +83,9 @@ export const fakePlayers: IPlayers = {
         skills: ["Hadhafang", "Athelas"],
         unique: true,
         tileX: 0,
-        tileY: 0,
-        posX: 0,
-        posY: 0,
+        tileY: 1,
+        posX: constants.tileSize,
+        posY: constants.tileSize * 2,
         playerId: 'firstPlayer'
       } as IHeroBattlefield
     },
@@ -109,8 +110,8 @@ export const fakePlayers: IPlayers = {
         effect: "Discard a card.",
         description: "Noble",
         assets: {
-          normalPath: "assets/cards_big/arwen_big.png",
-          miniaturePath: "assets/cards_small/arwen_small.png"
+          normalPath: require('../assets/cards_big/arwen_big.png'),
+          miniaturePath: require('../assets/cards_small/arwen_small.png')
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [heroesIds.arwen],
@@ -143,19 +144,19 @@ export const fakePlayers: IPlayers = {
         } as IHeroCharacteristics,
         cost: 90,
         unique: true,
-        tileX: 0,
+        tileX: 15,
         tileY: 0,
-        posX: 0,
-        posY: 0,
+        posX: constants.tileSize * 16,
+        posY: constants.tileSize,
         playerId: 'secondPlayer',
         skills: ["Mace", "Time of the Orc"],
         description:
           "Gothmog was the lieutenant of the Witch-king in the Third Age, from Minas Morgul, notably at the Battle of the Pelennor Fields.",
         assets: {
-          tokenPath: "assets/heroesTokens/gothmog.png",
-          miniaturePath: "assets/heroesMiniatures/gothmog.png",
-          tokenInitPath: "assets/heroesTokensInit/gothmog.png",
-          battlefieldPath: "assets/heroesBattlefield/gothmog.png"
+          tokenPath: require('../assets/heroesTokens/gothmog.png'),
+          miniaturePath: require('../assets/heroesMiniatures/gothmog.png'),
+          tokenInitPath: require('../assets/heroesTokensInit/gothmog.png'),
+          battlefieldPath: require('../assets/heroesBattlefield/gothmog.png')
         } as IHeroAssets
       } as IHeroBattlefield,
       [heroesIds.grima]: {
@@ -178,20 +179,20 @@ export const fakePlayers: IPlayers = {
           attackArmor: 1
         } as IHeroCharacteristics,
         cost: 25,
-        tileX: 0,
-        tileY: 0,
-        posX: 0,
-        posY: 0,
+        tileX: 15,
+        tileY: 1,
+        posX: constants.tileSize * 16,
+        posY: constants.tileSize * 2,
         unique: true,
         playerId: 'secondPlayer',
         skills: ["Switch sides", "Ill advisor"],
         description:
           "Gríma Wormtongue was the chief advisor to King Théoden of Rohan. He was the son of Gálmód.",
         assets: {
-          tokenPath: "assets/heroesTokens/grima.png",
-          miniaturePath: "assets/heroesMiniatures/grima.png",
-          tokenInitPath: "assets/heroesTokensInit/grima.png",
-          battlefieldPath: "assets/heroesBattlefield/grima.png"
+          tokenPath: require('../assets/heroesTokens/grima.png'),
+          miniaturePath: require('../assets/heroesMiniatures/grima.png'),
+          tokenInitPath: require('../assets/heroesTokensInit/grima.png'),
+          battlefieldPath: require('../assets/heroesBattlefield/grima.png')
         } as IHeroAssets
       } as IHeroBattlefield,
       [heroesIds.grishnakh]: {
@@ -215,18 +216,18 @@ export const fakePlayers: IPlayers = {
         } as IHeroCharacteristics,
         cost: 45,
         unique: true,
-        tileX: 0,
-        tileY: 0,
-        posX: 0,
-        posY: 0,
+        tileX: 15,
+        tileY: 2,
+        posX: constants.tileSize * 16,
+        posY: constants.tileSize * 3,
         playerId: 'secondPlayer',
         skills: ["Long arms", "Back to Lugburz"],
         description: "Grishnákh was a captain of Orcs from Mordor.",
         assets: {
-          tokenPath: "assets/heroesTokens/grishnakh.png",
-          miniaturePath: "assets/heroesMiniatures/grishnakh.png",
-          tokenInitPath: "assets/heroesTokensInit/grishnakh.png",
-          battlefieldPath: "assets/heroesBattlefield/grishnakh.png"
+          tokenPath: require('../assets/heroesTokens/grishnakh.png'),
+          miniaturePath: require('../assets/heroesMiniatures/grishnakh.png'),
+          tokenInitPath: require('../assets/heroesTokensInit/grishnakh.png'),
+          battlefieldPath: require('../assets/heroesBattlefield/grishnakh.png')
         } as IHeroAssets
       } as IHeroBattlefield
     },
@@ -237,8 +238,8 @@ export const fakePlayers: IPlayers = {
         effect: "Cannot have non-Morgul attachments.",
         description: "Nazgul",
         assets: {
-          normalPath: "assets/cards_big/fellrider_big.png",
-          miniaturePath: "assets/cards_small/fellrider_small.png"
+          normalPath: require('../assets/cards_big/fellrider_big.png'),
+          miniaturePath: require('../assets/cards_small/fellrider_small.png')
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -251,8 +252,8 @@ export const fakePlayers: IPlayers = {
         effect: "Exhaust the One Ring and spend 1 resource.",
         description: "Hobbit",
         assets: {
-          normalPath: "assets/cards_big/frodo_big.png",
-          miniaturePath: "assets/cards_small/frodo_small.png"
+          normalPath: require('../assets/cards_big/frodo_big.png'),
+          miniaturePath: require('../assets/cards_small/frodo_small.png')
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: ["Hero X", "Hero Y"],

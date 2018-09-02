@@ -10,7 +10,7 @@ export enum Faction {
 export interface IPlayer {
   id: string
   cards: ICards
-  heroes: IHeroesBettlefield
+  heroes: IHeroesBattlefield
 }
 
 // Tiles
@@ -48,7 +48,7 @@ export interface IHero {
   unique: boolean
 }
 
-export interface IHeroesBettlefield {
+export interface IHeroesBattlefield {
   [id: string]: IHeroBattlefield
 }
 
