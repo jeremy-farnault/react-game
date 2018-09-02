@@ -15,8 +15,9 @@ import {
 import { ICards, IHeroes, ITile } from "../models";
 
 import { fork, put } from 'redux-saga/effects'
-import { IStoreState } from "../../types";
 import IPlayers = IStoreState.IPlayers;
+import { fakePlayers } from "../../dbstore/fakePlayers";
+import { IStoreState } from "../../types";
 
 function* loadAllHeroes() {
   let response: { data: IHeroes } = { data: {} }
@@ -61,10 +62,10 @@ function* loadTiles() {
 function* loadPlayersData() {
   let response: { data: IPlayers } = { data: {} as IPlayers }
   try {
-    if (config.loadTilesFromFile) {
-      response = { data: {} }
+    if (config.createFakePlayers) {
+      response = { data: fakePlayers }
     }
-    yield loadPlayersSuccess(response)
+    yield put(loadPlayersSuccess(response))
   } catch (err) {
     console.warn('loadPlayers failed', JSON.parse(JSON.stringify(err)))
     yield put(loadPlayersFail(err))

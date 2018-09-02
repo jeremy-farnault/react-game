@@ -5,7 +5,7 @@ import {
   LOAD_ALL_CARDS_SUCCESS,
   LOAD_ALL_HEROES_FAIL,
   LOAD_ALL_HEROES_START,
-  LOAD_ALL_HEROES_SUCCESS
+  LOAD_ALL_HEROES_SUCCESS, LOAD_PLAYERS_FAIL, LOAD_PLAYERS_START, LOAD_PLAYERS_SUCCESS
 } from "../constants";
 import { ICards, IHeroes } from "../models";
 
@@ -13,7 +13,8 @@ import { Action, handleActions } from "redux-actions";
 
 const initialState: IStoreState.ISession = {
   allCards: {},
-  allHeroes: {}
+  allHeroes: {},
+  players: {}
 };
 
 export interface ILoadAllHeroesSuccessPayload {
@@ -22,6 +23,10 @@ export interface ILoadAllHeroesSuccessPayload {
 
 export interface ILoadAllCardsSuccessPayload {
   data: ICards
+}
+
+export interface ILoadPlayersSuccessPayload {
+  data: IStoreState.IPlayers
 }
 
 export default handleActions(
@@ -55,7 +60,21 @@ export default handleActions(
       (state: IStoreState.ISession, action: Action<{}>) => ({
         ...state,
         allCards: {}
-      })
+      }),
+    [LOAD_PLAYERS_START]: (state: IStoreState.ISession, action: Action<{}>) => ({
+      ...state
+    }),
+    [LOAD_PLAYERS_FAIL]: (state: IStoreState.ISession, action: Action<{}>) => ({
+      ...state,
+      players: {} as IStoreState.IPlayers
+    }),
+    [LOAD_PLAYERS_SUCCESS]: (
+      state: IStoreState.ISession,
+      action: Action<ILoadPlayersSuccessPayload>
+    ) => ({
+      ...state,
+      players: action.payload ? action.payload.data : {} as IStoreState.IPlayers
+    })
   },
   initialState
 );

@@ -8,18 +8,20 @@ import styled from 'styled-components'
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators, Dispatch } from 'redux'
+import IPlayers = IStoreState.IPlayers;
 
 interface IProps {
   tiles: ITile[][]
   heroes: IHeroes
   cards: ICards
+  players: IPlayers
 }
 
 class App extends React.PureComponent<IProps, {}> {
   public render() {
     return (
       <ContainerApp>
-        <Battlefield tiles={this.props.tiles} heroes={this.props.heroes} />
+        <Battlefield tiles={this.props.tiles} players={this.props.players} />
       </ContainerApp>
     )
   }
@@ -29,7 +31,8 @@ function mapStateToProps(state: IStoreState.IRootState) {
   return {
     tiles: state.battlefield.tiles,
     heroes: state.session.allHeroes,
-    cards: state.session.allCards
+    cards: state.session.allCards,
+    players: state.session.players
   }
 }
 

@@ -1,39 +1,38 @@
-import Tile from '../../components/Tile'
-import { IHeroes, ITile } from '../../core/models'
+import { ITile } from "../../core/models";
 
-import * as React from 'react'
-import styled from 'styled-components'
+import * as React from "react";
+import { IStoreState } from "../../types";
+import IPlayers = IStoreState.IPlayers;
+import Heroes from "../Heroes/Heroes";
+import Tiles from "../Tiles/Tiles";
 
 interface IProps {
   tiles: ITile[][]
-  heroes: IHeroes
+  players: IPlayers
 }
 
 // interface IState {}
 
 class Battlefield extends React.PureComponent<IProps, {}> {
   constructor(props: IProps) {
-    super(props)
+    super(props);
   }
 
   public render() {
-    return this.props.tiles.map((c: ITile[], index: number) => {
-      return (
-        <Row key={index}>
-          {c.map((r: ITile) => {
-            return <Tile key={r.uuid} tile={r} />
-          })}
-        </Row>
-      )
-    })
+    return (
+      <div>
+        <Tiles tiles={this.props.tiles}/>
+        {Object.keys(this.props.players).map((playerId: string) => {
+          return (
+            <Heroes key={this.props.players[playerId].id}
+                    heroes={this.props.players[playerId].heroes}/>
+          )
+        })}
+      </div>
+    );
   }
 }
 
-export default Battlefield
+export default Battlefield;
 
-const Row = styled.div`
-  flex-direction: row;
-  display: flex;
-  margin: auto;
-  max-width: 760px;
-`
+

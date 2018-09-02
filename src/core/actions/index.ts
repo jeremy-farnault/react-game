@@ -3,8 +3,11 @@ import {
   ILoadTilesSuccessPayload,
   IUpdateTilesPayload
 } from '../reducers/battlefield'
-import { ILoadPlayersSuccessPayload } from "../reducers/players";
-import { ILoadAllCardsSuccessPayload, ILoadAllHeroesSuccessPayload } from "../reducers/session";
+import {
+  ILoadAllCardsSuccessPayload,
+  ILoadAllHeroesSuccessPayload,
+  ILoadPlayersSuccessPayload
+} from "../reducers/session";
 
 import { createAction } from 'redux-actions'
 
