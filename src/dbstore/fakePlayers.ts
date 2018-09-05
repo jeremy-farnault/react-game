@@ -96,8 +96,8 @@ export const fakePlayers: IPlayers = {
         effect: "Reduce your threat to your starting threat level.",
         description: "Sentinel",
         assets: {
-          miniaturePath: "assets/cards_small/aragorn_small.png",
-          normalPath: "assets/cards_big/aragorn_big.png"
+          miniaturePath: "assets/cardsSmall/aragorn_small.png",
+          normalPath: "assets/cardsBig/aragorn_big.png"
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [heroesIds.aragorn],
@@ -110,8 +110,8 @@ export const fakePlayers: IPlayers = {
         effect: "Discard a card.",
         description: "Noble",
         assets: {
-          normalPath: require('../assets/cards_big/arwen_big.png'),
-          miniaturePath: require('../assets/cards_small/arwen_small.png')
+          normalPath: require('../assets/cardsBig/arwen_big.png'),
+          miniaturePath: require('../assets/cardsSmall/arwen_small.png')
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [heroesIds.arwen],
@@ -238,8 +238,8 @@ export const fakePlayers: IPlayers = {
         effect: "Cannot have non-Morgul attachments.",
         description: "Nazgul",
         assets: {
-          normalPath: require('../assets/cards_big/fellrider_big.png'),
-          miniaturePath: require('../assets/cards_small/fellrider_small.png')
+          normalPath: require('../assets/cardsBig/fellrider_big.png'),
+          miniaturePath: require('../assets/cardsSmall/fellrider_small.png')
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -252,8 +252,8 @@ export const fakePlayers: IPlayers = {
         effect: "Exhaust the One Ring and spend 1 resource.",
         description: "Hobbit",
         assets: {
-          normalPath: require('../assets/cards_big/frodo_big.png'),
-          miniaturePath: require('../assets/cards_small/frodo_small.png')
+          normalPath: require('../assets/cardsBig/frodo_big.png'),
+          miniaturePath: require('../assets/cardsSmall/frodo_small.png')
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: ["Hero X", "Hero Y"],
