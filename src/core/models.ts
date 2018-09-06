@@ -55,8 +55,6 @@ export interface IHeroesBattlefield {
 export interface IHeroBattlefield extends IHero {
   tileX: number
   tileY: number
-  posX: number
-  posY: number
   playerId: string
 }
 

@@ -43,15 +43,15 @@ class Tile extends React.PureComponent<IProps, {}> {
 export default Tile
 
 const StyledTile = styled.div`
-  width: ${constants.tileSize}px;
-  height: ${constants.tileSize}px;
-  background-color: rgba(255, 255, 255, 0);
-  border: solid ${(props: IStyledTile) => props.borderColor};
-  border-width: ${(props: IStyledTile) => props.topWidth}px
-    ${(props: IStyledTile) => props.rightWidth}px
-    ${(props: IStyledTile) => props.bottomWidth}px
-    ${(props: IStyledTile) => props.leftWidth}px;
-  &:hover {
-    background: palevioletred;
-  }
+width: ${constants.tileSize}px;
+height: ${constants.tileSize}px;
+background-color: rgba(255, 255, 255, 0);
+border: solid ${(props: IStyledTile) => props.borderColor};
+border-width: ${(props: IStyledTile) => props.topWidth}px
+  ${(props: IStyledTile) => props.rightWidth}px
+  ${(props: IStyledTile) => props.bottomWidth}px
+  ${(props: IStyledTile) => props.leftWidth}px;
+&:hover {
+  background: palevioletred;
+}
 `

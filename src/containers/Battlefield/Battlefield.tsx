@@ -6,7 +6,9 @@ import IPlayers = IStoreState.IPlayers;
 import Heroes from "../Heroes/Heroes";
 import Tiles from "../Tiles/Tiles";
 
-import styled from "styled-components";
+import { connect } from "react-redux";
+import { bindActionCreators, Dispatch } from "redux";
+import { ContainerBattlefield } from "./BattlefieldStyles";
 
 interface IProps {
   tiles: ITile[][]
@@ -28,17 +30,30 @@ class Battlefield extends React.PureComponent<IProps, {}> {
           return (
             <Heroes key={this.props.players[playerId].id}
                     heroes={this.props.players[playerId].heroes}
-                    tiles={this.props.tiles}/>
+                    tiles={this.props.tiles}
+                    selectHero={this.selectHero}/>
           )
         })}
       </ContainerBattlefield>
     );
   }
+
+  private selectHero = () => {
+    console.log('test')
+  }
 }
 
-export default Battlefield;
+function mapStateToProps(state: IStoreState.IRootState) {
+  return {
+    tiles: state.battlefield.tiles,
+    players: state.session.players
+  }
+}
 
-const ContainerBattlefield = styled.div`
-position: relative;
-`;
-ContainerBattlefield.displayName = 'ContainerBattlefield'
+const mapDispatchToProps = (dispatch: Dispatch) =>
+  bindActionCreators({}, dispatch)
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Battlefield)

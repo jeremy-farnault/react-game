@@ -10,7 +10,6 @@ import {
   IPlayer
 } from "../core/models";
 import { IStoreState } from "../types";
-import { constants } from "../utils/constants";
 import { cardsIds } from "./cardsIds";
 import { heroesIds } from "./heroesIds";
 
@@ -19,10 +18,26 @@ export const fakePlayers: IPlayers = {
     heroes: {
       [heroesIds.aragorn]: {
         assets: {
-          battlefieldPath: require('../assets/heroesBattlefield/aragorn.png'),
-          miniaturePath: require('../assets/heroesMiniatures/aragorn.png'),
-          tokenInitPath: require('../assets/heroesTokensInit/aragorn.png'),
-          tokenPath: require('../assets/heroesTokens/aragorn.png')
+          battlefieldPath: {
+            path: require("../assets/heroesBattlefield/aragorn.png"),
+            height: 50,
+            width: 50
+          },
+          miniaturePath: {
+            path: require("../assets/heroesMiniatures/aragorn.png"),
+            height: 50,
+            width: 50
+          },
+          tokenInitPath: {
+            path: require("../assets/heroesTokensInit/aragorn.png"),
+            height: 50,
+            width: 50
+          },
+          tokenPath: {
+            path: require("../assets/heroesTokens/aragorn.png"),
+            height: 50,
+            width: 50
+          }
         } as IHeroAssets,
         characteristics: {
           agility: 7,
@@ -49,16 +64,30 @@ export const fakePlayers: IPlayers = {
         unique: true,
         tileX: 0,
         tileY: 0,
-        posX: 0,
-        posY: 0,
-        playerId: 'firstPlayer'
+        playerId: "firstPlayer"
       } as IHeroBattlefield,
       [heroesIds.arwen]: {
         assets: {
-          tokenPath: require('../assets/heroesTokens/arwen.png'),
-          tokenInitPath: require('../assets/heroesTokensInit/arwen.png'),
-          miniaturePath: require('../assets/heroesMiniatures/arwen.png'),
-          battlefieldPath: require('../assets/heroesBattlefield/arwen.png')
+          tokenPath: {
+            path: require("../assets/heroesTokens/arwen.png"),
+            height: 50,
+            width: 50
+          },
+          tokenInitPath: {
+            path: require("../assets/heroesTokensInit/arwen.png"),
+            height: 50,
+            width: 50
+          },
+          miniaturePath: {
+            path: require("../assets/heroesMiniatures/arwen.png"),
+            height: 50,
+            width: 50
+          },
+          battlefieldPath: {
+            path: require("../assets/heroesBattlefield/arwen.png"),
+            height: 50,
+            width: 27
+          }
         } as IHeroAssets,
         characteristics: {
           speed: 7,
@@ -84,9 +113,7 @@ export const fakePlayers: IPlayers = {
         unique: true,
         tileX: 0,
         tileY: 1,
-        posX: 0,
-        posY: constants.tileSize,
-        playerId: 'firstPlayer'
+        playerId: "firstPlayer"
       } as IHeroBattlefield
     },
     cards: {
@@ -110,8 +137,8 @@ export const fakePlayers: IPlayers = {
         effect: "Discard a card.",
         description: "Noble",
         assets: {
-          normalPath: require('../assets/cardsBig/arwen_big.png'),
-          miniaturePath: require('../assets/cardsSmall/arwen_small.png')
+          normalPath: require("../assets/cardsBig/arwen_big.png"),
+          miniaturePath: require("../assets/cardsSmall/arwen_small.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [heroesIds.arwen],
@@ -123,113 +150,156 @@ export const fakePlayers: IPlayers = {
   } as IPlayer,
   ["secondPlayer"]: {
     heroes: {
-      [heroesIds.gothmog]: {
-        id: heroesIds.gothmog,
+      [heroesIds.bombadil]: {
+        id: heroesIds.bombadil,
         characteristics: {
-          speed: 5,
-          initiative: 5,
-          lifePoints: 9,
-          magicPoints: 0,
-          armor: 8,
-          range: 0,
-          size: HeroSize.medium,
-          agility: 5,
-          stamina: 7,
-          strength: 9,
-          magic: 0,
-          mental: 5,
-          attack: 9,
-          rangedAttack: 0,
-          attackArmor: 2
-        } as IHeroCharacteristics,
-        cost: 90,
-        unique: true,
-        tileX: 15,
-        tileY: 0,
-        posX: constants.tileSize * 15,
-        posY: 0,
-        playerId: 'secondPlayer',
-        skills: ["Mace", "Time of the Orc"],
-        description:
-          "Gothmog was the lieutenant of the Witch-king in the Third Age, from Minas Morgul, notably at the Battle of the Pelennor Fields.",
-        assets: {
-          tokenPath: require('../assets/heroesTokens/gothmog.png'),
-          miniaturePath: require('../assets/heroesMiniatures/gothmog.png'),
-          tokenInitPath: require('../assets/heroesTokensInit/gothmog.png'),
-          battlefieldPath: require('../assets/heroesBattlefield/gothmog.png')
-        } as IHeroAssets
-      } as IHeroBattlefield,
-      [heroesIds.grima]: {
-        id: heroesIds.grima,
-        characteristics: {
-          speed: 3,
-          initiative: 4,
-          lifePoints: 5,
-          magicPoints: 0,
+          speed: 6,
+          initiative: 10,
+          lifePoints: 8,
+          magicPoints: 20,
           armor: 2,
           range: 0,
           size: HeroSize.medium,
-          agility: 4,
-          stamina: 4,
+          agility: 3,
+          stamina: 6,
           strength: 3,
-          magic: 0,
-          mental: 4,
-          attack: 4,
+          magic: 20,
+          mental: 20,
+          attack: 1,
           rangedAttack: 0,
           attackArmor: 1
         } as IHeroCharacteristics,
-        cost: 25,
-        tileX: 15,
-        tileY: 1,
-        posX: constants.tileSize * 15,
-        posY: constants.tileSize,
+        cost: 130,
         unique: true,
-        playerId: 'secondPlayer',
-        skills: ["Switch sides", "Ill advisor"],
+        skills: ["Resurrect", "Untouch by evil"],
         description:
-          "Gríma Wormtongue was the chief advisor to King Théoden of Rohan. He was the son of Gálmód.",
+          "Tom Bombadil was an enigmatic figure that lived throughout the history of Arda.",
+        tileX: 15,
+        tileY: 0,
+        playerId: "secondPlayer",
         assets: {
-          tokenPath: require('../assets/heroesTokens/grima.png'),
-          miniaturePath: require('../assets/heroesMiniatures/grima.png'),
-          tokenInitPath: require('../assets/heroesTokensInit/grima.png'),
-          battlefieldPath: require('../assets/heroesBattlefield/grima.png')
+          tokenPath: {
+            path: require("../assets/heroesTokens/bombadil.png"),
+            height: 50,
+            width: 50
+          },
+          miniaturePath: {
+            path: require("../assets/heroesMiniatures/bombadil.png"),
+            height: 50,
+            width: 50
+          },
+          tokenInitPath: {
+            path: require("../assets/heroesTokensInit/bombadil.png"),
+            height: 50,
+            width: 50
+          },
+          battlefieldPath: {
+            path: require("../assets/heroesBattlefield/bombadil.png"),
+            height: 50,
+            width: 37
+          }
         } as IHeroAssets
       } as IHeroBattlefield,
-      [heroesIds.grishnakh]: {
-        id: heroesIds.grishnakh,
+      [heroesIds.boromir]: {
+        id: heroesIds.boromir,
         characteristics: {
           speed: 6,
           initiative: 6,
-          lifePoints: 5,
+          lifePoints: 12,
           magicPoints: 0,
-          armor: 5,
+          armor: 9,
           range: 0,
-          size: HeroSize.small,
-          agility: 5,
-          stamina: 5,
-          strength: 5,
+          size: HeroSize.medium,
+          agility: 6,
+          stamina: 9,
+          strength: 8,
           magic: 0,
-          mental: 5,
-          attack: 4,
+          mental: 6,
+          attack: 8,
           rangedAttack: 0,
-          attackArmor: 1
+          attackArmor: 2
         } as IHeroCharacteristics,
-        cost: 45,
+        cost: 95,
         unique: true,
+        skills: ["Horn of Gondor", "Sacrifice"],
+        description:
+          "Boromir was the eldest son of Denethor II, older brother of Faramir.",
+        tileX: 15,
+        tileY: 1,
+        playerId: "secondPlayer",
+        assets: {
+          tokenPath: {
+            path: require("../assets/heroesTokens/boromir.png"),
+            height: 50,
+            width: 50
+          },
+          miniaturePath: {
+            path: require("../assets/heroesMiniatures/boromir.png"),
+            height: 50,
+            width: 50
+          },
+          tokenInitPath: {
+            path: require("../assets/heroesTokensInit/boromir.png"),
+            height: 50,
+            width: 50
+          },
+          battlefieldPath: {
+            path: require("../assets/heroesBattlefield/boromir.png"),
+            height: 50,
+            width: 58
+          }
+        } as IHeroAssets
+      } as IHeroBattlefield,
+      [heroesIds.caveTroll]: {
+        id: heroesIds.caveTroll,
+        characteristics: {
+          speed: 4,
+          initiative: 5,
+          lifePoints: 25,
+          magicPoints: 0,
+          armor: 9,
+          range: 0,
+          size: HeroSize.large,
+          agility: 4,
+          stamina: 8,
+          strength: 10,
+          magic: 0,
+          mental: 3,
+          attack: 10,
+          rangedAttack: 0,
+          attackArmor: 3
+        } as IHeroCharacteristics,
+        cost: 150,
+        unique: false,
+        skills: ["Spear", "Hard skin"],
+        description:
+          "Cave-trolls are a race of trolls found within the caves of the Misty Mountains.",
         tileX: 15,
         tileY: 2,
-        posX: constants.tileSize * 15,
-        posY: constants.tileSize * 2,
-        playerId: 'secondPlayer',
-        skills: ["Long arms", "Back to Lugburz"],
-        description: "Grishnákh was a captain of Orcs from Mordor.",
+        playerId: "secondPlayer",
         assets: {
-          tokenPath: require('../assets/heroesTokens/grishnakh.png'),
-          miniaturePath: require('../assets/heroesMiniatures/grishnakh.png'),
-          tokenInitPath: require('../assets/heroesTokensInit/grishnakh.png'),
-          battlefieldPath: require('../assets/heroesBattlefield/grishnakh.png')
+          tokenPath: {
+            path: require("../assets/heroesTokens/cave_troll.png"),
+            height: 50,
+            width: 50
+          },
+          miniaturePath: {
+            path: require("../assets/heroesMiniatures/cave_troll.png"),
+            height: 50,
+            width: 50
+          },
+          tokenInitPath: {
+            path: require("../assets/heroesTokensInit/cave_troll.png"),
+            height: 50,
+            width: 50
+          },
+          battlefieldPath: {
+            path: require("../assets/heroesBattlefield/cave_troll.png"),
+            height: 50,
+            width: 50
+          }
         } as IHeroAssets
-      } as IHeroBattlefield
+      } as IHeroBattlefield,
     },
     cards: {
       [cardsIds.fellRider]: {
@@ -238,8 +308,8 @@ export const fakePlayers: IPlayers = {
         effect: "Cannot have non-Morgul attachments.",
         description: "Nazgul",
         assets: {
-          normalPath: require('../assets/cardsBig/fellrider_big.png'),
-          miniaturePath: require('../assets/cardsSmall/fellrider_small.png')
+          normalPath: require("../assets/cardsBig/fellrider_big.png"),
+          miniaturePath: require("../assets/cardsSmall/fellrider_small.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -252,8 +322,8 @@ export const fakePlayers: IPlayers = {
         effect: "Exhaust the One Ring and spend 1 resource.",
         description: "Hobbit",
         assets: {
-          normalPath: require('../assets/cardsBig/frodo_big.png'),
-          miniaturePath: require('../assets/cardsSmall/frodo_small.png')
+          normalPath: require("../assets/cardsBig/frodo_big.png"),
+          miniaturePath: require("../assets/cardsSmall/frodo_small.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: ["Hero X", "Hero Y"],

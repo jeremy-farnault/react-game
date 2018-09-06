@@ -2,7 +2,7 @@ import Tile from "../../components/Tile";
 import { ITile } from "../../core/models";
 
 import * as React from "react";
-import styled from "styled-components";
+import { Row } from "./TilesStyles";
 
 interface IProps {
   tiles: ITile[][]
@@ -27,9 +27,3 @@ class Tiles extends React.PureComponent<IProps, {}> {
 
 export default Tiles;
 
-const Row = styled.div`
-flex-direction: row;
-display: flex;
-margin: auto;
-`;
-Row.displayName = 'Row'

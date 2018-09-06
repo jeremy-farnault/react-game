@@ -1,10 +1,12 @@
 import { IHeroesBattlefield, ITile } from "../../core/models";
+import { constants } from "../../utils/constants";
 
 import * as React from "react";
-import styled from "styled-components";
+import { HeroStyled } from "./HeroesStyles";
 
 interface IProps {
   heroes: IHeroesBattlefield
+  selectHero: () => void
   tiles: ITile[][]
 }
 
@@ -16,12 +18,13 @@ class Heroes extends React.PureComponent<IProps, {}> {
     const h = this.props.heroes
     return (
       Object.keys(h).map((id: string) => {
+        const tile = this.props.tiles[h[id].tileY][h[id].tileX]
         return (
           <HeroStyled
-            posX={this.props.tiles[h[id].tileY][h[id].tileX].posX}
-            posY={this.props.tiles[h[id].tileY][h[id].tileX].posY}
+            posX={tile.posX + (constants.tileWithBorder - h[id].assets.battlefieldPath.width) / 2}
+            posY={tile.posY - 4}
             key={h[id].playerId + id}
-            src={h[id].assets.battlefieldPath}
+            src={h[id].assets.battlefieldPath.path}
             height={50}/>
         )
       })
@@ -30,10 +33,3 @@ class Heroes extends React.PureComponent<IProps, {}> {
 }
 
 export default Heroes;
-
-const HeroStyled = styled.img`
-position: absolute;
-top: ${(props: {posX: number, posY: number}) => props.posY}px;
-left: ${(props: {posX: number, posY: number}) => props.posX}px;
-`;
-

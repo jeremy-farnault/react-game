@@ -21,7 +21,7 @@ class App extends React.PureComponent<IProps, {}> {
   public render() {
     return (
       <ContainerApp>
-        <Battlefield tiles={this.props.tiles} players={this.props.players} />
+        <Battlefield />
       </ContainerApp>
     )
   }

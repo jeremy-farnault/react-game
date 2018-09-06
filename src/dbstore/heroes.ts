@@ -4,16 +4,32 @@ import {
   IHeroAssets,
   IHeroCharacteristics,
   IHeroes
-} from '../core/models'
-import { heroesIds } from './heroesIds'
+} from "../core/models";
+import { heroesIds } from "./heroesIds";
 
 export const heroes: IHeroes = {
   [heroesIds.aragorn]: {
     assets: {
-      battlefieldPath: require('../assets/heroesBattlefield/aragorn.png'),
-      miniaturePath: require('../assets/heroesMiniatures/aragorn.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/aragorn.png'),
-      tokenPath: require('../assets/heroesTokens/aragorn.png')
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/aragorn.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/aragorn.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/aragorn.png"),
+        height: 50,
+        width: 50
+      },
+      tokenPath: {
+        path: require("../assets/heroesTokens/aragorn.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets,
     characteristics: {
       agility: 7,
@@ -34,17 +50,33 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 100,
     description:
-      'Aragorn II, son of Arathorn was a Ranger of the North, first introduced with the name Strider at Bree.',
+      "Aragorn II, son of Arathorn was a Ranger of the North, first introduced with the name Strider at Bree.",
     id: heroesIds.aragorn,
-    skills: ['Anduril', 'For Frodo'],
+    skills: ["Anduril", "For Frodo"],
     unique: true
   } as IHero,
   [heroesIds.arwen]: {
     assets: {
-      tokenPath: require('../assets/heroesTokens/arwen.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/arwen.png'),
-      miniaturePath: require('../assets/heroesMiniatures/arwen.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/arwen.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/arwen.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/arwen.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/arwen.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/arwen.png"),
+        height: 50,
+        width: 27
+      }
     } as IHeroAssets,
     characteristics: {
       speed: 7,
@@ -64,17 +96,33 @@ export const heroes: IHeroes = {
       attackArmor: 1
     } as IHeroCharacteristics,
     cost: 75,
-    description: 'Arwen was the Half-Elven daughter of Elrond and Celebrían.',
+    description: "Arwen was the Half-Elven daughter of Elrond and Celebrían.",
     id: heroesIds.arwen,
-    skills: ['Hadhafang', 'Athelas'],
+    skills: ["Hadhafang", "Athelas"],
     unique: true
   } as IHero,
   [heroesIds.balrog]: {
     assets: {
-      tokenPath: require('../assets/heroesTokens/balrog.png'),
-      miniaturePath: require('../assets/heroesMiniatures/balrog.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/balrog.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/balrog.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/balrog.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/balrog.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/balrog.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/balrog.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets,
     characteristics: {
       speed: 5,
@@ -95,9 +143,9 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 200,
     description:
-      'The Balrogs were Maiar corrupted by Morgoth during the creation of Arda, who cloaked themselves in shadow and flame.',
+      "The Balrogs were Maiar corrupted by Morgoth during the creation of Arda, who cloaked themselves in shadow and flame.",
     id: heroesIds.balrog,
-    skills: ['Fire whip', 'Fire blade'],
+    skills: ["Fire whip", "Fire blade"],
     unique: false
   } as IHero,
   [heroesIds.barrowWight]: {
@@ -121,14 +169,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 40,
     unique: false,
-    skills: ['Dead hand', 'Sleep trap'],
+    skills: ["Dead hand", "Sleep trap"],
     description:
-      'The Barrow-wights were a kind of undead-like creatures, dead bones animated by evil spirits.',
+      "The Barrow-wights were a kind of undead-like creatures, dead bones animated by evil spirits.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/barrow_wight.png'),
-      miniaturePath: require('../assets/heroesMiniatures/barrow_wight.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/barrow_wight.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/barrow_wight.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/barrow_wight.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/barrow_wight.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/barrow_wight.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/barrow_wight.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.beregond]: {
@@ -152,13 +216,29 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 60,
     unique: true,
-    skills: ['Steward of Gondor', 'Sea captain'],
-    description: 'Beregond was the twentieth Ruling Steward of Gondor.',
+    skills: ["Steward of Gondor", "Sea captain"],
+    description: "Beregond was the twentieth Ruling Steward of Gondor.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/beregond.png'),
-      miniaturePath: require('../assets/heroesMiniatures/beregond.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/beregond.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/beregond.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/beregond.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/beregond.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/beregond.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/beregond.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.berserker]: {
@@ -182,14 +262,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 45,
     unique: false,
-    skills: ['Berserker blade', 'Blood rage'],
+    skills: ["Berserker blade", "Blood rage"],
     description:
       "Berserkers of Isengard were of the most powerful Uruk-hai ever to come out of Saruman's pits.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/berserker.png'),
-      miniaturePath: require('../assets/heroesMiniatures/berserker.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/berserker.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/berserker.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/berserker.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/berserker.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/berserker.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/berserker.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.bilbo]: {
@@ -213,14 +309,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 35,
     unique: true,
-    skills: ['Elves friend', 'Dwarves friend'],
+    skills: ["Elves friend", "Dwarves friend"],
     description:
-      'Bilbo was the first Hobbit to become famous in the world at large and one of the few to visit the The Undying Lands.',
+      "Bilbo was the first Hobbit to become famous in the world at large and one of the few to visit the The Undying Lands.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/bilbo.png'),
-      miniaturePath: require('../assets/heroesMiniatures/bilbo.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/bilbo.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/bilbo.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/bilbo.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/bilbo.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/bilbo.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/bilbo.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.bombadil]: {
@@ -244,14 +356,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 130,
     unique: true,
-    skills: ['Resurrect', 'Untouch by evil'],
+    skills: ["Resurrect", "Untouch by evil"],
     description:
-      'Tom Bombadil was an enigmatic figure that lived throughout the history of Arda.',
+      "Tom Bombadil was an enigmatic figure that lived throughout the history of Arda.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/bombadil.png'),
-      miniaturePath: require('../assets/heroesMiniatures/bombadil.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/bombadil.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/bombadil.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/bombadil.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/bombadil.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/bombadil.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/bombadil.png"),
+        height: 50,
+        width: 37
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.boromir]: {
@@ -275,14 +403,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 95,
     unique: true,
-    skills: ['Horn of Gondor', 'Sacrifice'],
+    skills: ["Horn of Gondor", "Sacrifice"],
     description:
-      'Boromir was the eldest son of Denethor II, older brother of Faramir.',
+      "Boromir was the eldest son of Denethor II, older brother of Faramir.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/boromir.png'),
-      miniaturePath: require('../assets/heroesMiniatures/boromir.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/boromir.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/boromir.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/boromir.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/boromir.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/boromir.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/boromir.png"),
+        height: 50,
+        width: 58
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.caveTroll]: {
@@ -306,14 +450,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 150,
     unique: false,
-    skills: ['Spear', 'Hard skin'],
+    skills: ["Spear", "Hard skin"],
     description:
-      'Cave-trolls are a race of trolls found within the caves of the Misty Mountains.',
+      "Cave-trolls are a race of trolls found within the caves of the Misty Mountains.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/cave_troll.png'),
-      miniaturePath: require('../assets/heroesMiniatures/cave_troll.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/cave_troll.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/cave_troll.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/cave_troll.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/cave_troll.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/cave_troll.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/cave_troll.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.celeborn]: {
@@ -337,14 +497,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 100,
     unique: true,
-    skills: ['Wisest of all', 'Lord of the Galadhrim'],
+    skills: ["Wisest of all", "Lord of the Galadhrim"],
     description:
-      'Celeborn was the Lord of Lothlórien. His wife was Galadriel. Celeborn was said to be one of the wisest Elves in Middle-earth.',
+      "Celeborn was the Lord of Lothlórien. His wife was Galadriel. Celeborn was said to be one of the wisest Elves in Middle-earth.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/celeborn.png'),
-      miniaturePath: require('../assets/heroesMiniatures/celeborn.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/celeborn.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/celeborn.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/celeborn.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/celeborn.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/celeborn.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/celeborn.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.corsairOfUmbar]: {
@@ -368,14 +544,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 40,
     unique: false,
-    skills: ['Pirate bow', 'Pirate daggers'],
+    skills: ["Pirate bow", "Pirate daggers"],
     description:
-      'The Corsairs of Umbar were sea-raiders and pirates of the Haven of Umbar.',
+      "The Corsairs of Umbar were sea-raiders and pirates of the Haven of Umbar.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/corsair_of_umbar.png'),
-      miniaturePath: require('../assets/heroesMiniatures/corsair_of_umbar.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/corsair_of_umbar.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/corsair_of_umbar.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/corsair_of_umbar.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/corsair_of_umbar.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/corsair_of_umbar.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/corsair_of_umbar.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.denethor]: {
@@ -399,14 +591,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 80,
     unique: true,
-    skills: ['Palantir', 'Call of Power'],
+    skills: ["Palantir", "Call of Power"],
     description:
-      'Denethor II was the twenty-sixth Ruling Steward of Gondor, and father of the War of the Ring heroes Boromir and Faramir.',
+      "Denethor II was the twenty-sixth Ruling Steward of Gondor, and father of the War of the Ring heroes Boromir and Faramir.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/denethor.png'),
-      miniaturePath: require('../assets/heroesMiniatures/denethor.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/denethor.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/denethor.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/denethor.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/denethor.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/denethor.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/denethor.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.easterling]: {
@@ -430,14 +638,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 35,
     unique: false,
-    skills: ['Rhûn halberd', 'Rhûn armor'],
+    skills: ["Rhûn halberd", "Rhûn armor"],
     description:
-      'Easterlings were a race of Men who lived in the vast and uncharted lands of Rhûn, east of Mordor and the Sea of Rhûn.',
+      "Easterlings were a race of Men who lived in the vast and uncharted lands of Rhûn, east of Mordor and the Sea of Rhûn.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/easterling.png'),
-      miniaturePath: require('../assets/heroesMiniatures/easterling.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/easterling.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/easterling.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/easterling.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/easterling.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/easterling.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/easterling.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.elendil]: {
@@ -461,14 +685,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 85,
     unique: true,
-    skills: ['Narsil', 'Founder of Gondor'],
+    skills: ["Narsil", "Founder of Gondor"],
     description:
-      'Elendil was the father of Isildur and Anárion, and the first High King of Gondor and Arnor and first King of all the Dúnedain.',
+      "Elendil was the father of Isildur and Anárion, and the first High King of Gondor and Arnor and first King of all the Dúnedain.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/elendil.png'),
-      miniaturePath: require('../assets/heroesMiniatures/elendil.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/elendil.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/elendil.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/elendil.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/elendil.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/elendil.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/elendil.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.elrond]: {
@@ -492,14 +732,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 80,
     unique: true,
-    skills: ['Water horses', 'Science of healing'],
+    skills: ["Water horses", "Science of healing"],
     description:
-      'Elrond was the Lord of Rivendell and keeper of the great elven ring Vilya.',
+      "Elrond was the Lord of Rivendell and keeper of the great elven ring Vilya.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/elrond.png'),
-      miniaturePath: require('../assets/heroesMiniatures/elrond.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/elrond.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/elrond.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/elrond.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/elrond.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/elrond.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/elrond.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.eomer]: {
@@ -523,14 +779,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 90,
     unique: true,
-    skills: ['Master of horses', 'We ride north'],
+    skills: ["Master of horses", "We ride north"],
     description:
-      'Éomer Éadig, of the House of Eorl, was the eighteenth King of Rohan, and first of the Third Line.',
+      "Éomer Éadig, of the House of Eorl, was the eighteenth King of Rohan, and first of the Third Line.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/eomer.png'),
-      miniaturePath: require('../assets/heroesMiniatures/eomer.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/eomer.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/eomer.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/eomer.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/eomer.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/eomer.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/eomer.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.eowyn]: {
@@ -554,14 +826,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 65,
     unique: true,
-    skills: ['Lady of Rohan', 'For my king'],
+    skills: ["Lady of Rohan", "For my king"],
     description:
-      'Éowyn, the Lady of Rohan, was also known as the Lady of the Shield-arm, the White Lady of Rohan, and Lady of Ithilien.',
+      "Éowyn, the Lady of Rohan, was also known as the Lady of the Shield-arm, the White Lady of Rohan, and Lady of Ithilien.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/eowyn.png'),
-      miniaturePath: require('../assets/heroesMiniatures/eowyn.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/eowyn.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/eowyn.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/eowyn.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/eowyn.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/eowyn.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/eowyn.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.faramir]: {
@@ -585,14 +873,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 85,
     unique: true,
-    skills: ['Ranger leader', 'Righteous'],
+    skills: ["Ranger leader", "Righteous"],
     description:
       "Faramir was the last Ruling Steward of Gondor and the first Prince of Ithilien. The second of Denethor's two sons.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/faramir.png'),
-      miniaturePath: require('../assets/heroesMiniatures/faramir.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/faramir.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/faramir.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/faramir.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/faramir.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/faramir.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/faramir.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.frodo]: {
@@ -616,14 +920,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 40,
     unique: true,
-    skills: ['Light of Earendil', 'Invisibility'],
+    skills: ["Light of Earendil", "Invisibility"],
     description:
-      'Frodo Baggins was a hobbit of the Third Age, the most famous of all Hobbits in the histories for his leading role in the Quest of the Ring.',
+      "Frodo Baggins was a hobbit of the Third Age, the most famous of all Hobbits in the histories for his leading role in the Quest of the Ring.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/frodo.png'),
-      miniaturePath: require('../assets/heroesMiniatures/frodo.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/frodo.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/frodo.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/frodo.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/frodo.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/frodo.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/frodo.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.galadriel]: {
@@ -647,14 +967,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 110,
     unique: true,
-    skills: ['Dark queen', 'Nenya'],
+    skills: ["Dark queen", "Nenya"],
     description:
-      'Galadriel was a Noldo, one of the Calaquendi, and arguably the most famous and powerful elf of the Third Age.',
+      "Galadriel was a Noldo, one of the Calaquendi, and arguably the most famous and powerful elf of the Third Age.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/galadriel.png'),
-      miniaturePath: require('../assets/heroesMiniatures/galadriel.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/galadriel.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/galadriel.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/galadriel.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/galadriel.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/galadriel.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/galadriel.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.gandalf]: {
@@ -678,14 +1014,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 160,
     unique: true,
-    skills: ['You shall not pass', 'Shock Wave'],
+    skills: ["You shall not pass", "Shock Wave"],
     description:
-      'Gandalf was one of the five Istari sent to Middle-earth by the Valar in the Third Age. In Valinor he was known as Olórin.',
+      "Gandalf was one of the five Istari sent to Middle-earth by the Valar in the Third Age. In Valinor he was known as Olórin.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/gandalf.png'),
-      miniaturePath: require('../assets/heroesMiniatures/gandalf.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/gandalf.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/gandalf.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/gandalf.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/gandalf.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/gandalf.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/gandalf.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.gilGalad]: {
@@ -709,14 +1061,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 200,
     unique: true,
-    skills: ['Aeglos', 'Narya and Vilya'],
+    skills: ["Aeglos", "Narya and Vilya"],
     description:
-      'Gil-galad was a Ñoldorin Elf, last High King of the Ñoldor in Middle-earth and bore many titles.',
+      "Gil-galad was a Ñoldorin Elf, last High King of the Ñoldor in Middle-earth and bore many titles.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/gil-galad.png'),
-      miniaturePath: require('../assets/heroesMiniatures/gil-galad.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/gil-galad.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/gil-galad.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/gil-galad.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/gil-galad.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/gil-galad.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/gil-galad.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.gimli]: {
@@ -740,14 +1108,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 90,
     unique: true,
-    skills: ['Wall of steel', 'Not the beard'],
+    skills: ["Wall of steel", "Not the beard"],
     description:
       "Gimli was a dwarf of Durin's Folk, a direct descendant of Durin the Deathless.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/gimli.png'),
-      miniaturePath: require('../assets/heroesMiniatures/gimli.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/gimli.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/gimli.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/gimli.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/gimli.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/gimli.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/gimli.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.gloin]: {
@@ -771,14 +1155,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 80,
     unique: true,
-    skills: ['', ''],
+    skills: ["", ""],
     description:
       "Glóin was one of the dwarves of Thorin II Oakenshield's company and was the father of Gimli",
     assets: {
-      tokenPath: require('../assets/heroesTokens/gloin.png'),
-      miniaturePath: require('../assets/heroesMiniatures/gloin.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/gloin.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/gloin.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/gloin.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/gloin.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/gloin.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/gloin.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.glorfindel]: {
@@ -802,14 +1202,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 150,
     unique: true,
-    skills: ['Balrog killer', 'Firstborn'],
+    skills: ["Balrog killer", "Firstborn"],
     description:
-      'Glorfindel was one of the mighty of the Firstborn, and the Lord of the House of the Golden Flower in Gondolin.',
+      "Glorfindel was one of the mighty of the Firstborn, and the Lord of the House of the Golden Flower in Gondolin.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/glorfindel.png'),
-      miniaturePath: require('../assets/heroesMiniatures/glorfindel.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/glorfindel.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/glorfindel.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/glorfindel.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/glorfindel.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/glorfindel.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/glorfindel.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.gollum]: {
@@ -833,14 +1249,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 40,
     unique: true,
-    skills: ['My precious', 'Filthy little Hobbitses'],
+    skills: ["My precious", "Filthy little Hobbitses"],
     description:
-      'Gollum, also known as Sméagol, was a creature who bore the One Ring. He lived in the Misty Mountains for most of his life.',
+      "Gollum, also known as Sméagol, was a creature who bore the One Ring. He lived in the Misty Mountains for most of his life.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/gollum.png'),
-      miniaturePath: require('../assets/heroesMiniatures/gollum.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/gollum.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/gollum.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/gollum.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/gollum.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/gollum.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/gollum.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.gondorianRanger]: {
@@ -864,14 +1296,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 45,
     unique: false,
-    skills: ['Gondorian bow', 'Gondorian blade'],
+    skills: ["Gondorian bow", "Gondorian blade"],
     description:
-      'The Rangers of Ithilien were a military group whose purpose was to defend Ithilien, the gate to Minas Tirith.',
+      "The Rangers of Ithilien were a military group whose purpose was to defend Ithilien, the gate to Minas Tirith.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/gondorian_ranger.png'),
-      miniaturePath: require('../assets/heroesMiniatures/gondorian_ranger.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/gondorian_ranger.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/gondorian_ranger.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/gondorian_ranger.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/gondorian_ranger.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/gondorian_ranger.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/gondorian_ranger.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.gondorianSoldier]: {
@@ -895,13 +1343,29 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 45,
     unique: false,
-    skills: ['Gondorian blade', 'Gondorian armor'],
-    description: 'Gondorians were descended from the Númenórean colonists.',
+    skills: ["Gondorian blade", "Gondorian armor"],
+    description: "Gondorians were descended from the Númenórean colonists.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/gondorian_soldier.png'),
-      miniaturePath: require('../assets/heroesMiniatures/gondorian_soldier.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/gondorian_soldier.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/gondorian_soldier.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/gondorian_soldier.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/gondorian_soldier.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/gondorian_soldier.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/gondorian_soldier.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.gothmog]: {
@@ -925,14 +1389,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 90,
     unique: true,
-    skills: ['Mace', 'Time of the Orc'],
+    skills: ["Mace", "Time of the Orc"],
     description:
-      'Gothmog was the lieutenant of the Witch-king in the Third Age, from Minas Morgul, notably at the Battle of the Pelennor Fields.',
+      "Gothmog was the lieutenant of the Witch-king in the Third Age, from Minas Morgul, notably at the Battle of the Pelennor Fields.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/gothmog.png'),
-      miniaturePath: require('../assets/heroesMiniatures/gothmog.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/gothmog.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/gothmog.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/gothmog.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/gothmog.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/gothmog.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/gothmog.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.grima]: {
@@ -956,14 +1436,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 25,
     unique: true,
-    skills: ['Switch sides', 'Ill advisor'],
+    skills: ["Switch sides", "Ill advisor"],
     description:
-      'Gríma Wormtongue was the chief advisor to King Théoden of Rohan. He was the son of Gálmód.',
+      "Gríma Wormtongue was the chief advisor to King Théoden of Rohan. He was the son of Gálmód.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/grima.png'),
-      miniaturePath: require('../assets/heroesMiniatures/grima.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/grima.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/grima.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/grima.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/grima.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/grima.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/grima.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.grishnakh]: {
@@ -987,13 +1483,29 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 45,
     unique: true,
-    skills: ['Long arms', 'Back to Lugburz'],
-    description: 'Grishnákh was a captain of Orcs from Mordor.',
+    skills: ["Long arms", "Back to Lugburz"],
+    description: "Grishnákh was a captain of Orcs from Mordor.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/grishnakh.png'),
-      miniaturePath: require('../assets/heroesMiniatures/grishnakh.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/grishnakh.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/grishnakh.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/grishnakh.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/grishnakh.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/grishnakh.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/grishnakh.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.guardOfTheCitadel]: {
@@ -1017,14 +1529,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 55,
     unique: false,
-    skills: ['Gondorian spear', 'Black steel armor'],
+    skills: ["Gondorian spear", "Black steel armor"],
     description:
-      'The Guards of the Citadel, sometimes referred to as The Tower Guards, were an elite unit of soldiers in Gondor.',
+      "The Guards of the Citadel, sometimes referred to as The Tower Guards, were an elite unit of soldiers in Gondor.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/citadel_guard.png'),
-      miniaturePath: require('../assets/heroesMiniatures/citadel_guard.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/citadel_guard.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/citadel_guard.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/citadel_guard.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/citadel_guard.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/citadel_guard.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/citadel_guard.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.hama]: {
@@ -1048,14 +1576,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 55,
     unique: true,
-    skills: ['Doorwald', 'Captain of the Guard'],
+    skills: ["Doorwald", "Captain of the Guard"],
     description:
       "Háma was a Man of Rohan and the doorward of the Meduseld and captain of Théoden's guard.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/hama.png'),
-      miniaturePath: require('../assets/heroesMiniatures/hama.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/hama.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/hama.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/hama.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/hama.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/hama.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/hama.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.haldir]: {
@@ -1079,14 +1623,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 70,
     unique: true,
-    skills: ['Rapid fire', 'Watcher'],
+    skills: ["Rapid fire", "Watcher"],
     description:
       "Haldir was an Elf of Lothlórien, probably a Silvan Elf, and a marchwarden who guarded the forest's northern borders.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/haldir.png'),
-      miniaturePath: require('../assets/heroesMiniatures/haldir.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/haldir.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/haldir.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/haldir.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/haldir.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/haldir.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/haldir.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.haradrimWarrior]: {
@@ -1110,14 +1670,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 35,
     unique: false,
-    skills: ['Harad bow', 'Mumakil teamer'],
+    skills: ["Harad bow", "Mumakil teamer"],
     description:
-      'The Haradrim or the Southrons were the proud and warlike people of the Harad, in the south of Middle-earth.',
+      "The Haradrim or the Southrons were the proud and warlike people of the Harad, in the south of Middle-earth.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/haradrim_warrior.png'),
-      miniaturePath: require('../assets/heroesMiniatures/haradrim_warrior.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/haradrim_warrior.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/haradrim_warrior.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/haradrim_warrior.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/haradrim_warrior.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/haradrim_warrior.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/haradrim_warrior.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.imrahil]: {
@@ -1141,14 +1717,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 75,
     unique: true,
-    skills: ['Desperate Charge', 'Prince Imrahil'],
+    skills: ["Desperate Charge", "Prince Imrahil"],
     description:
-      'Imrahil, also known as Prince Imrahil, was the twenty-second Prince of Dol Amroth.',
+      "Imrahil, also known as Prince Imrahil, was the twenty-second Prince of Dol Amroth.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/imrahil.png'),
-      miniaturePath: require('../assets/heroesMiniatures/imrahil.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/imrahil.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/imrahil.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/imrahil.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/imrahil.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/imrahil.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/imrahil.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.isildur]: {
@@ -1172,14 +1764,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 90,
     unique: true,
-    skills: ['Shards of Narsil', 'Corruption of the Ring'],
+    skills: ["Shards of Narsil", "Corruption of the Ring"],
     description:
-      'Isildur was the son of Elendil and the High King of Gondor and Arnor',
+      "Isildur was the son of Elendil and the High King of Gondor and Arnor",
     assets: {
-      tokenPath: require('../assets/heroesTokens/isildur.png'),
-      miniaturePath: require('../assets/heroesMiniatures/isildur.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/isildur.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/isildur.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/isildur.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/isildur.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/isildur.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/isildur.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.kingOfTheDead]: {
@@ -1203,14 +1811,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 60,
     unique: true,
-    skills: ['Oathbreaker', 'Swarm'],
+    skills: ["Oathbreaker", "Swarm"],
     description:
-      'The King of the Mountains, or later, the King of the Dead, was the ruler of the Oathbreakers.',
+      "The King of the Mountains, or later, the King of the Dead, was the ruler of the Oathbreakers.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/king_of_the_dead.png'),
-      miniaturePath: require('../assets/heroesMiniatures/king_of_the_dead.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/king_of_the_dead.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/king_of_the_dead.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/king_of_the_dead.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/king_of_the_dead.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/king_of_the_dead.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/king_of_the_dead.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.legolas]: {
@@ -1234,14 +1858,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 120,
     unique: true,
-    skills: ['Double Arrow', 'Mortal knife dance'],
+    skills: ["Double Arrow", "Mortal knife dance"],
     description:
-      'Legolas was an elf of the Woodland Realm of Mirkwood. He was of Sindarin heritage, being the only recorded son of King Thranduil.',
+      "Legolas was an elf of the Woodland Realm of Mirkwood. He was of Sindarin heritage, being the only recorded son of King Thranduil.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/legolas.png'),
-      miniaturePath: require('../assets/heroesMiniatures/legolas.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/legolas.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/legolas.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/legolas.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/legolas.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/legolas.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/legolas.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.lothlorienElf]: {
@@ -1265,14 +1905,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 60,
     unique: false,
-    skills: ['Elven bow', 'Elven blade'],
+    skills: ["Elven bow", "Elven blade"],
     description:
-      'Lothlórien was a forest located next to the lower Misty Mountains.',
+      "Lothlórien was a forest located next to the lower Misty Mountains.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/lothlorien_elf.png'),
-      miniaturePath: require('../assets/heroesMiniatures/lothlorien_elf.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/lothlorien_elf.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/lothlorien_elf.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/lothlorien_elf.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/lothlorien_elf.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/lothlorien_elf.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/lothlorien_elf.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.lurtz]: {
@@ -1296,14 +1952,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 95,
     unique: true,
-    skills: ['Isengard bow', 'Born in blood'],
+    skills: ["Isengard bow", "Born in blood"],
     description:
       "Lurtz was the first of Saruman's Uruk-hai to be bred, and led them into battle against the Fellowship of the Ring at Amon Hen.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/lurtz.png'),
-      miniaturePath: require('../assets/heroesMiniatures/lurtz.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/lurtz.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/lurtz.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/lurtz.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/lurtz.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/lurtz.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/lurtz.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.meriadoc]: {
@@ -1327,14 +1999,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 35,
     unique: true,
-    skills: ['Rock Throwing', 'Esquire of Rohan'],
+    skills: ["Rock Throwing", "Esquire of Rohan"],
     description:
-      'Meriadoc Brandybuck, called The Magnificent, was a Hobbit, the son of Saradoc Brandybuck. Merry was the heir of the Brandybucks to Brandy Hall.',
+      "Meriadoc Brandybuck, called The Magnificent, was a Hobbit, the son of Saradoc Brandybuck. Merry was the heir of the Brandybucks to Brandy Hall.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/meriadoc.png'),
-      miniaturePath: require('../assets/heroesMiniatures/meriadoc.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/meriadoc.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/meriadoc.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/meriadoc.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/meriadoc.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/meriadoc.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/meriadoc.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.mordorOrc]: {
@@ -1358,14 +2046,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 30,
     unique: false,
-    skills: ['Mordor blade', 'Mordor armor'],
+    skills: ["Mordor blade", "Mordor armor"],
     description:
       "Many Orcs survived in the deep caves, pits, chambers, and tunnels of Melkor's great underground fortresses of Utumno and Angband.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/mordor_orc.png'),
-      miniaturePath: require('../assets/heroesMiniatures/mordor_orc.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/mordor_orc.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/mordor_orc.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/mordor_orc.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/mordor_orc.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/mordor_orc.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/mordor_orc.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.moriaOrc]: {
@@ -1389,14 +2093,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 30,
     unique: false,
-    skills: ['Moria blade', 'Moria bow'],
+    skills: ["Moria blade", "Moria bow"],
     description:
-      'Moria Orcs were similar to other Orcs of the Misty Mountains.',
+      "Moria Orcs were similar to other Orcs of the Misty Mountains.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/moria_orc.png'),
-      miniaturePath: require('../assets/heroesMiniatures/moria_orc.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/moria_orc.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/moria_orc.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/moria_orc.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/moria_orc.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/moria_orc.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/moria_orc.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.mouthOfSauron]: {
@@ -1420,14 +2140,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 70,
     unique: true,
-    skills: ['My master bid thee welcome', 'Blind servant'],
+    skills: ["My master bid thee welcome", "Blind servant"],
     description:
       "The Mouth of Sauron was the Dark Lord Sauron's servant and representative at the end of the Third Age.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/mouth_of_sauron.png'),
-      miniaturePath: require('../assets/heroesMiniatures/mouth_of_sauron.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/mouth_of_sauron.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/mouth_of_sauron.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/mouth_of_sauron.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/mouth_of_sauron.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/mouth_of_sauron.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/mouth_of_sauron.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.peregrin]: {
@@ -1451,14 +2187,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 35,
     unique: true,
-    skills: ['Rock Throwing', 'Guardian of the Citadel'],
+    skills: ["Rock Throwing", "Guardian of the Citadel"],
     description:
-      'Peregrin Took was one of the Hobbits in the Fellowship of the Ring. He was the youngest of the Company.',
+      "Peregrin Took was one of the Hobbits in the Fellowship of the Ring. He was the youngest of the Company.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/peregrin.png'),
-      miniaturePath: require('../assets/heroesMiniatures/peregrin.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/peregrin.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/peregrin.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/peregrin.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/peregrin.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/peregrin.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/peregrin.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.nazgul]: {
@@ -1482,14 +2234,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 90,
     unique: false,
-    skills: ['Morgul blade', 'Despair'],
+    skills: ["Morgul blade", "Despair"],
     description:
       "The Nazgûl, also known as the Nine Riders or Black Riders (or simply the Nine), were Sauron's most terrible servants in Middle-earth.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/nazgul.png'),
-      miniaturePath: require('../assets/heroesMiniatures/nazgul.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/nazgul.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/nazgul.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/nazgul.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/nazgul.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/nazgul.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/nazgul.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.radagast]: {
@@ -1513,14 +2281,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 130,
     unique: true,
-    skills: ['Powers of the Maiar', 'Animals friend'],
+    skills: ["Powers of the Maiar", "Animals friend"],
     description:
-      'Radagast was one of the five Wizards, or Istari. He was a good friend of Gandalf the Grey, whom he aided occasionally.',
+      "Radagast was one of the five Wizards, or Istari. He was a good friend of Gandalf the Grey, whom he aided occasionally.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/radagast.png'),
-      miniaturePath: require('../assets/heroesMiniatures/radagast.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/radagast.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/radagast.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/radagast.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/radagast.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/radagast.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/radagast.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.rohirrimSoldier]: {
@@ -1544,14 +2328,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 40,
     unique: false,
-    skills: ['Rohan spear', 'Rohan blade'],
+    skills: ["Rohan spear", "Rohan blade"],
     description:
-      'The Rohirrim were a race of people who inhabited the land of Rohan, which was named after their famous Horses.',
+      "The Rohirrim were a race of people who inhabited the land of Rohan, which was named after their famous Horses.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/rohirrim_soldier.png'),
-      miniaturePath: require('../assets/heroesMiniatures/rohirrim_soldier.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/rohirrim_soldier.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/rohirrim_soldier.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/rohirrim_soldier.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/rohirrim_soldier.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/rohirrim_soldier.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/rohirrim_soldier.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.samwise]: {
@@ -1575,14 +2375,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 40,
     unique: true,
-    skills: ['But I can carry you', 'Great courage'],
+    skills: ["But I can carry you", "Great courage"],
     description:
-      'Samwise was Frodo servant and the only member of the fellowship to remain with him till the very end of the journey to Mount Doom.',
+      "Samwise was Frodo servant and the only member of the fellowship to remain with him till the very end of the journey to Mount Doom.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/samwise.png'),
-      miniaturePath: require('../assets/heroesMiniatures/samwise.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/samwise.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/samwise.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/samwise.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/samwise.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/samwise.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/samwise.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.saruman]: {
@@ -1606,14 +2422,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 170,
     unique: true,
-    skills: ['Persuasive voice', 'Elements control'],
+    skills: ["Persuasive voice", "Elements control"],
     description:
-      'Saruman the White was the first of the order of Wizards (or Istari) who came to Middle-earth as Emissaries of the Valar in the Third Age.',
+      "Saruman the White was the first of the order of Wizards (or Istari) who came to Middle-earth as Emissaries of the Valar in the Third Age.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/saruman.png'),
-      miniaturePath: require('../assets/heroesMiniatures/saruman.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/saruman.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/saruman.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/saruman.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/saruman.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/saruman.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/saruman.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.sauron]: {
@@ -1637,14 +2469,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 180,
     unique: true,
-    skills: ['One ring to rule them all', 'And in the darkness bind them'],
+    skills: ["One ring to rule them all", "And in the darkness bind them"],
     description:
-      'Sauron was the greatest and most trusted servant of Morgoth before and during the First Age.',
+      "Sauron was the greatest and most trusted servant of Morgoth before and during the First Age.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/sauron.png'),
-      miniaturePath: require('../assets/heroesMiniatures/sauron.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/sauron.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/sauron.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/sauron.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/sauron.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/sauron.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/sauron.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.shagrat]: {
@@ -1668,14 +2516,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 45,
     unique: true,
-    skills: ['Tower captain', 'Morgul rats'],
+    skills: ["Tower captain", "Morgul rats"],
     description:
-      'Shagrat was an Uruk commanding the garrison of the Tower of Cirith Ungol during the War of the Ring.',
+      "Shagrat was an Uruk commanding the garrison of the Tower of Cirith Ungol during the War of the Ring.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/shagrat.png'),
-      miniaturePath: require('../assets/heroesMiniatures/shagrat.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/shagrat.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/shagrat.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/shagrat.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/shagrat.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/shagrat.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/shagrat.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.soldierOfTheDead]: {
@@ -1699,14 +2563,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 40,
     unique: false,
-    skills: ['Fantomatic blade', 'Fantomatic spear'],
+    skills: ["Fantomatic blade", "Fantomatic spear"],
     description:
-      'The Army of the Dead, also known as the Dead Men of Dunharrow or Oathbreakers, were the ghosts of deceased Men of the White Mountains.',
+      "The Army of the Dead, also known as the Dead Men of Dunharrow or Oathbreakers, were the ghosts of deceased Men of the White Mountains.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/soldier_of_the_dead.png'),
-      miniaturePath: require('../assets/heroesMiniatures/soldier_of_the_dead.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/soldier_of_the_dead.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/soldier_of_the_dead.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/soldier_of_the_dead.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/soldier_of_the_dead.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/soldier_of_the_dead.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/soldier_of_the_dead.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.theoden]: {
@@ -1730,14 +2610,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 60,
     unique: true,
-    skills: ['Death', 'Charge'],
+    skills: ["Death", "Charge"],
     description:
-      'Théoden was the seventeenth King of Rohan. He was the last of the Second Line.',
+      "Théoden was the seventeenth King of Rohan. He was the last of the Second Line.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/theoden.png'),
-      miniaturePath: require('../assets/heroesMiniatures/theoden.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/theoden.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/theoden.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/theoden.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/theoden.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/theoden.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/theoden.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.urukHai]: {
@@ -1761,14 +2657,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 65,
     unique: false,
-    skills: ['Isengard blade', 'Isengard armor'],
+    skills: ["Isengard blade", "Isengard armor"],
     description:
-      'The Uruk-hai were a new breed of Orcs that appeared during the Third Age.',
+      "The Uruk-hai were a new breed of Orcs that appeared during the Third Age.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/uruk_hai.png'),
-      miniaturePath: require('../assets/heroesMiniatures/uruk_hai.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/uruk_hai.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/uruk_hai.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/uruk_hai.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/uruk_hai.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/uruk_hai.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/uruk_hai.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero,
   [heroesIds.witchKing]: {
@@ -1792,14 +2704,30 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 130,
     unique: true,
-    skills: ['Master of the Nine', 'Hideous flail'],
+    skills: ["Master of the Nine", "Hideous flail"],
     description:
-      'The Witch-king of Angmar was the chief of the Nazgûl, King of Angmar and Sauron’s great captain in his wars.',
+      "The Witch-king of Angmar was the chief of the Nazgûl, King of Angmar and Sauron’s great captain in his wars.",
     assets: {
-      tokenPath: require('../assets/heroesTokens/witch_king.png'),
-      miniaturePath: require('../assets/heroesMiniatures/witch_king.png'),
-      tokenInitPath: require('../assets/heroesTokensInit/witch_king.png'),
-      battlefieldPath: require('../assets/heroesBattlefield/witch_king.png')
+      tokenPath: {
+        path: require("../assets/heroesTokens/witch_king.png"),
+        height: 50,
+        width: 50
+      },
+      miniaturePath: {
+        path: require("../assets/heroesMiniatures/witch_king.png"),
+        height: 50,
+        width: 50
+      },
+      tokenInitPath: {
+        path: require("../assets/heroesTokensInit/witch_king.png"),
+        height: 50,
+        width: 50
+      },
+      battlefieldPath: {
+        path: require("../assets/heroesBattlefield/witch_king.png"),
+        height: 50,
+        width: 50
+      }
     } as IHeroAssets
   } as IHero
-}
+};
