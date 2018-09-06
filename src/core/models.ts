@@ -78,11 +78,17 @@ export interface IHeroCharacteristics {
   strength: number
 }
 
+export interface IAsset {
+  path: string
+  width: number
+  height: number
+}
+
 export interface IHeroAssets {
-  battlefieldPath: string
-  miniaturePath: string
-  tokenInitPath: string
-  tokenPath: string
+  battlefieldPath: IAsset
+  miniaturePath: IAsset
+  tokenInitPath: IAsset
+  tokenPath: IAsset
 }
 
 export enum HeroSize {

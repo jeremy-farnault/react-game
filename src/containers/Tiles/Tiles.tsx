@@ -28,8 +28,8 @@ class Tiles extends React.PureComponent<IProps, {}> {
 export default Tiles;
 
 const Row = styled.div`
-  flex-direction: row;
-  display: flex;
-  margin: auto;
-  max-width: 760px;
+flex-direction: row;
+display: flex;
+margin: auto;
 `;
+Row.displayName = 'Row'
