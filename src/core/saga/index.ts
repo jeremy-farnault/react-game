@@ -1,7 +1,10 @@
 import { cards } from '../../dbstore/cards'
+import { fakePlayers } from "../../dbstore/fakePlayers";
 import { heroes } from '../../dbstore/heroes'
+import { IStoreState } from "../../types";
 import config from '../../utils/config'
 import { DefaultTiles } from '../../utils/defaults'
+
 import {
   loadAllCardsFail,
   loadAllCardsSuccess,
@@ -10,14 +13,13 @@ import {
   loadPlayersFail,
   loadPlayersSuccess,
   loadTilesFail,
-  loadTilesSuccess
+  loadTilesSuccess, updateTiles
 } from "../actions";
-import { ICards, IHeroes, ITile } from "../models";
+import { ICards, IHeroes, ITile, TileState } from "../models";
 
+import * as _ from 'lodash'
 import { fork, put } from 'redux-saga/effects'
 import IPlayers = IStoreState.IPlayers;
-import { fakePlayers } from "../../dbstore/fakePlayers";
-import { IStoreState } from "../../types";
 
 function* loadAllHeroes() {
   let response: { data: IHeroes } = { data: {} }
@@ -66,6 +68,17 @@ function* loadPlayersData() {
       response = { data: fakePlayers }
     }
     yield put(loadPlayersSuccess(response))
+    // Update the tiles after fetching the players
+    const tilesToUpdate = Object.keys(response.data).map((playerId: string) => {
+      return Object.keys(response.data[playerId].heroes).map((heroId: string) => {
+        return {
+          tileX: response.data[playerId].heroes[heroId].tileX,
+          tileY: response.data[playerId].heroes[heroId].tileY,
+          tileState: TileState.idleHero
+        }
+      })
+    })
+    yield put(updateTiles({data: _.flatten(tilesToUpdate)}))
   } catch (err) {
     console.warn('loadPlayers failed', JSON.parse(JSON.stringify(err)))
     yield put(loadPlayersFail(err))

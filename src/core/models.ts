@@ -25,11 +25,18 @@ export interface ITile {
 }
 
 export enum TileState {
-  empty
+  empty,
+  idleHero
 }
 
 export enum TileColors {
-  empty = 'orange'
+  empty = 'orange',
+  idleHero = 'rgba(0, 0, 0, 0)'
+}
+
+export enum TileHoverColors {
+  empty = 'violet',
+  idleHero = 'rgba(0, 0, 0, 0)'
 }
 
 // Heroes

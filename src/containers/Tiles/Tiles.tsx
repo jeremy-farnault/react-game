@@ -17,7 +17,7 @@ class Tiles extends React.PureComponent<IProps, {}> {
       return (
         <Row key={index}>
           {c.map((r: ITile) => {
-            return <Tile key={r.uuid} tile={r}/>;
+            return <Tile key={r.uuid} tile={r} tiles={this.props.tiles}/>;
           })}
         </Row>
       );
