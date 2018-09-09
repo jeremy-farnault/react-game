@@ -1,5 +1,5 @@
-import { ITile, TileColors, TileHoverColors, TileState } from "../core/models";
-import { constants } from "../utils/constants";
+import { ITile, TileColors, TileHoverColors, TileState } from "../../core/models";
+import { constants } from "../../utils/constants";
 import { StyledTile } from "./TileStyles";
 
 import * as React from "react";

@@ -1,4 +1,4 @@
-import { ITile } from "../../core/models";
+import { IHeroBattlefield, ITile } from "../../core/models";
 
 import * as React from "react";
 import { IStoreState } from "../../types";
@@ -38,8 +38,8 @@ class Battlefield extends React.PureComponent<IProps, {}> {
     );
   }
 
-  private selectHero = () => {
-    console.log('test')
+  private selectHero = (hero: IHeroBattlefield) => {
+    console.log(hero)
   }
 }
 
@@ -51,7 +51,9 @@ function mapStateToProps(state: IStoreState.IRootState) {
 }
 
 const mapDispatchToProps = (dispatch: Dispatch) =>
-  bindActionCreators({}, dispatch)
+  bindActionCreators({
+
+  }, dispatch)
 
 export default connect(
   mapStateToProps,

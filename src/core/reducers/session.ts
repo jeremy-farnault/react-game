@@ -31,6 +31,7 @@ export interface ILoadPlayersSuccessPayload {
 
 export default handleActions(
   {
+    // LOAD ALL HEROES ACTIONS
     [LOAD_ALL_HEROES_START]: (state: IStoreState.ISession, action: Action<{}>) => ({
       ...state
     }),
@@ -46,6 +47,8 @@ export default handleActions(
         ...state,
         allHeroes: {}
       }),
+
+    // LOAD ALL CARDS ACTIONS
     [LOAD_ALL_CARDS_START]: (state: IStoreState.ISession, action: Action<{}>) => ({
       ...state
     }),
@@ -61,6 +64,8 @@ export default handleActions(
         ...state,
         allCards: {}
       }),
+
+    // LOAD PLAYERS ACTIONS
     [LOAD_PLAYERS_START]: (state: IStoreState.ISession, action: Action<{}>) => ({
       ...state
     }),
@@ -75,6 +80,9 @@ export default handleActions(
       ...state,
       players: action.payload ? action.payload.data : {} as IStoreState.IPlayers
     })
+
+    // UPDATE PLAYERS ACTIONS
+    
   },
   initialState
 );

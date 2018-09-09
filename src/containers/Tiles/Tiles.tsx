@@ -1,4 +1,4 @@
-import Tile from "../../components/Tile";
+import Tile from "../../components/Tile/Tile";
 import { ITile } from "../../core/models";
 
 import * as React from "react";

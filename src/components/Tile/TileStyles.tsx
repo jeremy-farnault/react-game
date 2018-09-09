@@ -1,4 +1,4 @@
-import { constants } from "../utils/constants";
+import { constants } from "../../utils/constants";
 import { IStyledTile } from "./Tile";
 
 import styled from "styled-components";
