@@ -64,7 +64,8 @@ export const fakePlayers: IPlayers = {
         unique: true,
         tileX: 0,
         tileY: 0,
-        playerId: "firstPlayer"
+        playerId: "firstPlayer",
+        selected: false
       } as IHeroBattlefield,
       [heroesIds.arwen]: {
         assets: {
@@ -113,7 +114,8 @@ export const fakePlayers: IPlayers = {
         unique: true,
         tileX: 0,
         tileY: 1,
-        playerId: "firstPlayer"
+        playerId: "firstPlayer",
+        selected: false
       } as IHeroBattlefield
     },
     cards: {
@@ -177,6 +179,7 @@ export const fakePlayers: IPlayers = {
         tileX: 15,
         tileY: 0,
         playerId: "secondPlayer",
+        selected: false,
         assets: {
           tokenPath: {
             path: require("../assets/heroesTokens/bombadil.png"),
@@ -227,6 +230,7 @@ export const fakePlayers: IPlayers = {
         tileX: 15,
         tileY: 1,
         playerId: "secondPlayer",
+        selected: false,
         assets: {
           tokenPath: {
             path: require("../assets/heroesTokens/boromir.png"),
@@ -277,6 +281,7 @@ export const fakePlayers: IPlayers = {
         tileX: 15,
         tileY: 2,
         playerId: "secondPlayer",
+        selected: false,
         assets: {
           tokenPath: {
             path: require("../assets/heroesTokens/cave_troll.png"),

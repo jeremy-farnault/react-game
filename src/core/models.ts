@@ -63,6 +63,7 @@ export interface IHeroBattlefield extends IHero {
   tileX: number
   tileY: number
   playerId: string
+  selected: boolean
 }
 
 export interface IHeroCharacteristics {

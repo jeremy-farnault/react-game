@@ -1,12 +1,14 @@
+import { IStyledHero } from "./Heroes";
+
 import styled from "styled-components";
 
 export const HeroStyled = styled.img`
 position: absolute;
-top: ${(props: { posX: number, posY: number }) => props.posY}px;
-left: ${(props: { posX: number, posY: number }) => props.posX}px;
+top: ${(props: IStyledHero) => props.posY}px;
+left: ${(props: IStyledHero) => props.posX}px;
 &:hover {
 border: 1px solid aqua;
-top: ${(props: { posX: number, posY: number }) => props.posY - 1}px;
-left: ${(props: { posX: number, posY: number }) => props.posX - 1}px;
+top: ${(props: IStyledHero) => props.posY - 1}px;
+left: ${(props: IStyledHero) => props.posX - 1}px;
 }
 `;
