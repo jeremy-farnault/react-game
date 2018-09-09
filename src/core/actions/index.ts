@@ -6,7 +6,7 @@ import {
 import {
   ILoadAllCardsSuccessPayload,
   ILoadAllHeroesSuccessPayload,
-  ILoadPlayersSuccessPayload
+  ILoadPlayersSuccessPayload, ISetHeroSelectedPayload
 } from "../reducers/session";
 
 import { createAction } from 'redux-actions'
@@ -48,3 +48,6 @@ export const loadAllCardsSuccess = createAction<ILoadAllCardsSuccessPayload>(
   constants.LOAD_ALL_CARDS_SUCCESS
 )
 export const loadAllCardsFail = createAction<{}>(constants.LOAD_ALL_CARDS_FAIL)
+
+// Update heroes
+export const setHeroSelected = createAction<ISetHeroSelectedPayload>(constants.SET_HERO_SELECTED)

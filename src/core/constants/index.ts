@@ -57,3 +57,7 @@ export type LOAD_PLAYERS_SUCCESS = typeof LOAD_PLAYERS_SUCCESS
 
 export const LOAD_PLAYERS_FAIL = 'LOAD_PLAYERS_FAIL'
 export type LOAD_PLAYERS_FAIL = typeof LOAD_PLAYERS_FAIL
+
+// Update players
+export const SET_HERO_SELECTED = 'SET_HERO_SELECTED'
+export type SET_HERO_SELECTED = typeof SET_HERO_SELECTED
