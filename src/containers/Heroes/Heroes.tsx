@@ -9,23 +9,41 @@ interface IProps {
   tiles: ITile[][]
 }
 
-// interface IState {}
+interface IState {
+  heroes: IHeroesBattlefield
+  tiles: ITile[][]
+}
 
-class Heroes extends React.PureComponent<IProps, {}> {
+class Heroes extends React.PureComponent<IProps, IState> {
+
+  constructor(props: IProps) {
+    super(props);
+    this.state = {
+      heroes: {},
+      tiles: []
+    };
+  }
+
+  public componentWillReceiveProps(props: IProps) {
+    this.setState({
+      heroes: props.heroes,
+      tiles: props.tiles
+    });
+  }
 
   public render() {
-    const h = this.props.heroes
+    const h = this.props.heroes;
     return (
       Object.keys(h).map((id: string) => {
-        const tile = this.props.tiles[h[id].tileY][h[id].tileX]
+        const tile = this.props.tiles[h[id].tileY][h[id].tileX];
         return (
           <Hero tile={tile}
                 key={h[id].playerId + id}
                 hero={h[id]}
                 selectHero={this.props.selectHero}/>
-        )
+        );
       })
-    )
+    );
   }
 }
 

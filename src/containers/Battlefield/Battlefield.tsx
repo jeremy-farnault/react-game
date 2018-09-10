@@ -16,11 +16,26 @@ interface IProps {
   setHeroSelected: typeof actions.setHeroSelected
 }
 
-// interface IState {}
+interface IState {
+  tiles: ITile[][]
+  players: IPlayers
+}
 
-class Battlefield extends React.PureComponent<IProps, {}> {
+class Battlefield extends React.PureComponent<IProps, IState> {
+
   constructor(props: IProps) {
     super(props);
+    this.state = {
+      tiles: [],
+      players: {}
+    }
+  }
+
+  public componentWillReceiveProps(props: IProps) {
+    this.setState({
+      tiles: props.tiles,
+      players: props.players
+    })
   }
 
   public render() {
@@ -40,7 +55,12 @@ class Battlefield extends React.PureComponent<IProps, {}> {
   }
 
   private selectHero = (hero: IHeroBattlefield) => {
-    console.log(hero);
+    this.props.setHeroSelected({
+      setSelected: true,
+      heroId: hero.id,
+      playerId: hero.playerId
+    });
+    this.forceUpdate();
   };
 }
 
