@@ -96,6 +96,7 @@ export default handleActions(
       if (action.payload && action.payload.playerId && action.payload.heroId) {
         newPLayers[action.payload.playerId].heroes[action.payload.heroId].selected = action.payload.setSelected;
       }
+      console.log('action', newPLayers)
       return ({
         ...state,
         players: newPLayers

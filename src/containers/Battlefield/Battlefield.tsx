@@ -6,6 +6,7 @@ import Heroes from "../Heroes/Heroes";
 import Tiles from "../Tiles/Tiles";
 import { ContainerBattlefield } from "./BattlefieldStyles";
 
+import * as _ from "lodash";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
@@ -17,8 +18,7 @@ interface IProps {
 }
 
 interface IState {
-  tiles: ITile[][]
-  players: IPlayers
+  currentSelectedHero: IHeroBattlefield
 }
 
 class Battlefield extends React.PureComponent<IProps, IState> {
@@ -26,41 +26,32 @@ class Battlefield extends React.PureComponent<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = {
-      tiles: [],
-      players: {}
-    }
-  }
-
-  public componentWillReceiveProps(props: IProps) {
-    this.setState({
-      tiles: props.tiles,
-      players: props.players
-    })
+      currentSelectedHero: {} as IHeroBattlefield
+    };
   }
 
   public render() {
+    const allHeroes = _.flatten(Object.keys(this.props.players)
+      .map((playerId: string) => Object.keys(this.props.players[playerId].heroes)
+        .map((heroId: string) => this.props.players[playerId].heroes[heroId])));
+    console.log('battlefield renderer')
     return (
       <ContainerBattlefield>
         <Tiles tiles={this.props.tiles}/>
-        {Object.keys(this.props.players).map((playerId: string) => {
-          return (
-            <Heroes key={this.props.players[playerId].id}
-                    heroes={this.props.players[playerId].heroes}
-                    tiles={this.props.tiles}
-                    selectHero={this.selectHero}/>
-          );
-        })}
+        <Heroes heroes={allHeroes}
+                tiles={this.props.tiles}
+                selectHero={this.selectHero}/>
       </ContainerBattlefield>
     );
   }
 
   private selectHero = (hero: IHeroBattlefield) => {
+    this.setState({ currentSelectedHero: hero });
     this.props.setHeroSelected({
       setSelected: true,
       heroId: hero.id,
       playerId: hero.playerId
     });
-    this.forceUpdate();
   };
 }
 

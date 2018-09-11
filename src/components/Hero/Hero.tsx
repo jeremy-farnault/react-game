@@ -32,6 +32,7 @@ class Hero extends React.PureComponent<IProps, IState> {
   }
 
   public componentWillReceiveProps(props: IProps) {
+    console.log('componentWillReceiveProps')
     this.setState({
       hero: props.hero,
       tile: props.tile
@@ -39,6 +40,7 @@ class Hero extends React.PureComponent<IProps, IState> {
   }
 
   public render() {
+    console.log('hero renderer')
     return (
       <HeroStyled
         onClick={this.selectHero}
@@ -51,6 +53,7 @@ class Hero extends React.PureComponent<IProps, IState> {
   }
 
   private selectHero = () => {
+    console.log('selectHero', this.props.hero)
     this.props.selectHero(this.props.hero)
   }
 }
