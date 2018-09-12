@@ -92,6 +92,8 @@ export default handleActions(
       state: IStoreState.ISession,
       action: Action<ISetHeroSelectedPayload>
     ) => {
+      console.log('in action', action.payload)
+      console.log('in action 2', state.players[action.payload ? action.payload.playerId : ''].heroes[action.payload ? action.payload.heroId : ''])
       const newPLayers = state.players;
       if (action.payload && action.payload.playerId && action.payload.heroId) {
         newPLayers[action.payload.playerId].heroes[action.payload.heroId].selected = action.payload.setSelected;

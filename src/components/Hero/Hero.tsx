@@ -23,6 +23,8 @@ export interface IStyledHero {
 
 class Hero extends React.PureComponent<IProps, IState> {
 
+  // Change the state. Hero state and hero props are always the same so no rerender
+
   constructor(props: IProps) {
     super(props)
     this.state = {
@@ -33,6 +35,7 @@ class Hero extends React.PureComponent<IProps, IState> {
 
   public componentWillReceiveProps(props: IProps) {
     console.log('componentWillReceiveProps')
+    console.log(props, this.props)
     this.setState({
       hero: props.hero,
       tile: props.tile
@@ -40,7 +43,7 @@ class Hero extends React.PureComponent<IProps, IState> {
   }
 
   public render() {
-    console.log('hero renderer')
+    console.log('hero renderer', this.props.hero)
     return (
       <HeroStyled
         onClick={this.selectHero}

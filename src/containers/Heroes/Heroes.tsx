@@ -15,7 +15,6 @@ class Heroes extends React.PureComponent<IProps, {}> {
 
   public render() {
     const h = this.props.heroes;
-    console.log('heroes renderer')
     return (
       h.map((hero: IHeroBattlefield) => {
         const tile = this.props.tiles[hero.tileY][hero.tileX];
