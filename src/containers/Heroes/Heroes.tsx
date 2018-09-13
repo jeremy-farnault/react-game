@@ -22,6 +22,7 @@ class Heroes extends React.PureComponent<IProps, {}> {
           <Hero tile={tile}
                 key={hero.playerId + hero.id}
                 hero={hero}
+                heroSelected={hero.selected}
                 selectHero={this.props.selectHero}/>
         );
       })
