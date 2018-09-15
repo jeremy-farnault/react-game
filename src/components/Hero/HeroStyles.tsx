@@ -6,7 +6,7 @@ export const HeroStyled = styled.img`
 position: absolute;
 top: ${(props: IStyledHero) => props.selected ? props.posY - 1 : props.posY}px;
 left: ${(props: IStyledHero) => props.selected ? props.posX - 1 : props.posX}px;
-border: ${(props: IStyledHero) => props.selected ? 1 : 0}px solid aqua;
+border: ${(props: IStyledHero) => props.selected ? 1 : 0}px solid blue;
 &:hover {
 border: 1px solid aqua;
 top: ${(props: IStyledHero) => props.posY - 1}px;

@@ -6,6 +6,7 @@ import { Row } from "./TilesStyles";
 
 interface IProps {
   tiles: ITile[][]
+  clickOnTile: (tile: ITile) => void
 }
 
 // interface IState {}
@@ -17,7 +18,13 @@ class Tiles extends React.PureComponent<IProps, {}> {
       return (
         <Row key={index}>
           {c.map((r: ITile) => {
-            return <Tile key={r.uuid} tile={r} tiles={this.props.tiles}/>;
+            return (
+              <Tile
+                key={r.uuid}
+                clickOnTile={this.props.clickOnTile}
+                tile={r}
+                tiles={this.props.tiles}/>
+            );
           })}
         </Row>
       );

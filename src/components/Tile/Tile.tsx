@@ -7,6 +7,7 @@ import * as React from "react";
 interface IProps {
   tile: ITile
   tiles: ITile[][]
+  clickOnTile: (tile: ITile) => void
 }
 
 // interface IState {}
@@ -31,6 +32,7 @@ class Tile extends React.PureComponent<IProps, {}> {
   public render() {
     return (
       <StyledTile
+        onClick={this.clickOnTile}
         hoverColor={TileHoverColors[TileState[this.props.tile.state]]}
         bottomWidth={this.getBorderBottomWidth()}
         bottomColor={this.getBorderBottomColor()}
@@ -42,6 +44,10 @@ class Tile extends React.PureComponent<IProps, {}> {
         topColor={this.getBorderTopColor()}
       />
     );
+  }
+
+  private clickOnTile = () => {
+    this.props.clickOnTile(this.props.tile)
   }
 
   private getBorderRightColor = () => {

@@ -1,5 +1,5 @@
 import * as actions from "../../core/actions/index";
-import { IHeroBattlefield, ITile } from "../../core/models";
+import { IHeroBattlefield, ITile, TileState } from "../../core/models";
 import { IStoreState } from "../../types";
 import IPlayers = IStoreState.IPlayers;
 import Heroes from "../Heroes/Heroes";
@@ -18,7 +18,7 @@ interface IProps {
 }
 
 interface IState {
-  currentSelectedHero: IHeroBattlefield
+  currentSelectedHero: IHeroBattlefield | null
 }
 
 class Battlefield extends React.PureComponent<IProps, IState> {
@@ -36,7 +36,7 @@ class Battlefield extends React.PureComponent<IProps, IState> {
         .map((heroId: string) => this.props.players[playerId].heroes[heroId])));
     return (
       <ContainerBattlefield>
-        <Tiles tiles={this.props.tiles}/>
+        <Tiles tiles={this.props.tiles} clickOnTile={this.clickOnTile}/>
         <Heroes heroes={allHeroes}
                 tiles={this.props.tiles}
                 selectHero={this.selectHero}/>
@@ -47,11 +47,22 @@ class Battlefield extends React.PureComponent<IProps, IState> {
   private selectHero = (hero: IHeroBattlefield) => {
     this.setState({ currentSelectedHero: hero });
     this.props.setHeroSelected({
-      setSelected: true,
+      setSelected: false,
       heroId: hero.id,
       playerId: hero.playerId
     });
   };
+
+  private clickOnTile = (tile: ITile) => {
+    if (tile.state === TileState.empty && !!this.state.currentSelectedHero) {
+      this.props.setHeroSelected({
+        setSelected: true,
+        heroId: this.state.currentSelectedHero.id,
+        playerId: this.state.currentSelectedHero.playerId
+      });
+      this.setState({currentSelectedHero: null})
+    }
+  }
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {
