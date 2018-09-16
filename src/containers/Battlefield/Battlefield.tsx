@@ -33,6 +33,7 @@ class Battlefield extends React.PureComponent<IProps, IState> {
   }
 
   public render() {
+    console.log(this.props.tiles)
     const allHeroes = _.flatten(Object.keys(this.props.players)
       .map((playerId: string) => Object.keys(this.props.players[playerId].heroes)
         .map((heroId: string) => this.props.players[playerId].heroes[heroId])));

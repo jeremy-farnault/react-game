@@ -53,7 +53,7 @@ export default handleActions(
       const newTiles = state.tiles.slice();
       if (action.payload) {
         action.payload.data.forEach((t: INewTile) => {
-          newTiles[t.tileY][t.tileX].state = t.tileState;
+          newTiles[t.tileX][t.tileY].state = t.tileState;
         });
       }
       return ({

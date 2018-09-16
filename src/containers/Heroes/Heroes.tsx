@@ -17,7 +17,7 @@ class Heroes extends React.PureComponent<IProps, {}> {
     const h = this.props.heroes;
     return (
       h.map((hero: IHeroBattlefield) => {
-        const tile = this.props.tiles[hero.tileY][hero.tileX];
+        const tile = this.props.tiles[hero.tileX][hero.tileY];
         return (
           <Hero tile={tile}
                 key={hero.playerId + hero.id}

@@ -13,7 +13,6 @@ export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic
     if (t === 0 && i <= heroCharacteristic + 1 && colInd <= heroCharacteristic + 1) {
       const grid = gridMaster.clone();
       const path = finder.findPath(heroX, heroY, colInd, i, grid);
-      console.log('gr', path)
       if (path.length <= heroCharacteristic + 1) {
         result.push({
           tileState: state,
