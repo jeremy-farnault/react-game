@@ -22,13 +22,14 @@ export interface IStyledHero {
 class Hero extends React.PureComponent<IProps, {}> {
 
   public render() {
+    const h = this.props.hero
     return (
       <HeroStyled
         onClick={this.selectHero}
-        selected={this.props.heroSelected}
-        posX={this.props.tile.posX + (constants.tileWithBorder - this.props.hero.assets.battlefieldPath.width) / 2}
+        selected={h.selected}
+        posX={this.props.tile.posX + (constants.tileWithBorder - h.assets.battlefieldPath.width) / 2}
         posY={this.props.tile.posY - 4}
-        src={this.props.hero.assets.battlefieldPath.path}
+        src={h.assets.battlefieldPath.path}
         height={50}/>
     );
   }

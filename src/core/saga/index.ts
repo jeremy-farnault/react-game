@@ -13,7 +13,8 @@ import {
   loadPlayersFail,
   loadPlayersSuccess,
   loadTilesFail,
-  loadTilesSuccess, updateTiles
+  loadTilesSuccess,
+  updateTiles
 } from "../actions";
 import { ICards, IHeroes, ITile, TileState } from "../models";
 

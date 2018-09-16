@@ -5,7 +5,7 @@ import {
   ICard,
   ICardAssets,
   IHeroAssets,
-  IHeroBattlefield,
+  IHeroBattlefield, IHeroBattlefieldState,
   IHeroCharacteristics,
   IPlayer
 } from "../core/models";
@@ -65,7 +65,8 @@ export const fakePlayers: IPlayers = {
         tileX: 0,
         tileY: 0,
         playerId: "firstPlayer",
-        selected: false
+        selected: false,
+        state: IHeroBattlefieldState.idle
       } as IHeroBattlefield,
       [heroesIds.arwen]: {
         assets: {
@@ -115,7 +116,8 @@ export const fakePlayers: IPlayers = {
         tileX: 0,
         tileY: 1,
         playerId: "firstPlayer",
-        selected: false
+        selected: false,
+        state: IHeroBattlefieldState.idle
       } as IHeroBattlefield
     },
     cards: {
@@ -180,6 +182,7 @@ export const fakePlayers: IPlayers = {
         tileY: 0,
         playerId: "secondPlayer",
         selected: false,
+        state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
             path: require("../assets/heroesTokens/bombadil.png"),
@@ -231,6 +234,7 @@ export const fakePlayers: IPlayers = {
         tileY: 1,
         playerId: "secondPlayer",
         selected: false,
+        state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
             path: require("../assets/heroesTokens/boromir.png"),
@@ -282,6 +286,7 @@ export const fakePlayers: IPlayers = {
         tileY: 2,
         playerId: "secondPlayer",
         selected: false,
+        state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
             path: require("../assets/heroesTokens/cave_troll.png"),

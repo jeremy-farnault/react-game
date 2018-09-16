@@ -1,17 +1,17 @@
-import { IStoreState } from '../../types'
+import { IStoreState } from "../../types";
 import {
   LOAD_TILES_FAIL,
   LOAD_TILES_START,
   LOAD_TILES_SUCCESS,
   UPDATE_TILES
-} from '../constants'
+} from "../constants";
 import { ITile, TileState } from "../models";
 
-import { Action, handleActions } from 'redux-actions'
+import { Action, handleActions } from "redux-actions";
 
 const initialState: IStoreState.IBattlefield = {
   tiles: [] as ITile[][]
-}
+};
 
 export interface ILoadTilesSuccessPayload {
   data: ITile[][]
@@ -21,13 +21,15 @@ export interface IUpdateTilesPayload {
   data: INewTile[]
 }
 
-interface INewTile {
+export interface INewTile {
   tileX: number
   tileY: number
   tileState: TileState
 }
 
-export default handleActions({
+export default handleActions(
+  {
+    // LOAD TILES ACTIONS
     [LOAD_TILES_START]: (state: IStoreState.IBattlefield, action: Action<{}>) => ({
       ...state
     }),
@@ -42,21 +44,23 @@ export default handleActions({
       ...state,
       tiles: []
     }),
+
+    // UPDATE TILES ACTIONS
     [UPDATE_TILES]: (
       state: IStoreState.IBattlefield,
       action: Action<IUpdateTilesPayload>
     ) => {
-      const newTiles = state.tiles.slice()
+      const newTiles = state.tiles.slice();
       if (action.payload) {
         action.payload.data.forEach((t: INewTile) => {
-          newTiles[t.tileY][t.tileX].state = t.tileState
-        })
+          newTiles[t.tileY][t.tileX].state = t.tileState;
+        });
       }
       return ({
         ...state,
         tiles: newTiles
-      })
+      });
     }
   },
   initialState
-)
+);

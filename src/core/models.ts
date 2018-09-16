@@ -26,17 +26,20 @@ export interface ITile {
 
 export enum TileState {
   empty,
-  idleHero
+  idleHero,
+  heroMovement
 }
 
 export enum TileColors {
   empty = 'orange',
-  idleHero = 'rgba(0, 0, 0, 0)'
+  idleHero = 'rgba(0, 0, 0, 0)',
+  heroMovement = 'green'
 }
 
 export enum TileHoverColors {
   empty = 'violet',
-  idleHero = 'rgba(0, 0, 0, 0)'
+  idleHero = 'rgba(0, 0, 0, 0)',
+  heroMovement = 'paleGreen'
 }
 
 // Heroes
@@ -64,6 +67,12 @@ export interface IHeroBattlefield extends IHero {
   tileY: number
   playerId: string
   selected: boolean
+  state: IHeroBattlefieldState
+}
+
+export enum IHeroBattlefieldState {
+  idle,
+  move
 }
 
 export interface IHeroCharacteristics {
