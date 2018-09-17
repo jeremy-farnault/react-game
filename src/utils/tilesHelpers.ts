@@ -16,8 +16,8 @@ export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic
       if (path.length <= heroCharacteristic + 1) {
         result.push({
           tileState: state,
-          tileX: i,
-          tileY: colInd
+          tileX: colInd,
+          tileY: i
         })
       }
     }

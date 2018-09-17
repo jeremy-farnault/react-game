@@ -33,7 +33,6 @@ class Battlefield extends React.PureComponent<IProps, IState> {
   }
 
   public render() {
-    console.log(this.props.tiles)
     const allHeroes = _.flatten(Object.keys(this.props.players)
       .map((playerId: string) => Object.keys(this.props.players[playerId].heroes)
         .map((heroId: string) => this.props.players[playerId].heroes[heroId])));
@@ -57,7 +56,6 @@ class Battlefield extends React.PureComponent<IProps, IState> {
     // todo make the other statuses
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics.speed,
       hero.tileX, hero.tileY, TileState.heroMovement);
-    console.log(newTiles, hero, this.props.tiles)
     this.props.updateTiles({data: newTiles})
   };
 
