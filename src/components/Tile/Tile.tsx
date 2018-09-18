@@ -52,32 +52,32 @@ class Tile extends React.PureComponent<IProps, {}> {
 
   private getBorderRightColor = () => {
     if (this.props.tile.state === TileState.idleHero && this.props.tile.columnIndex < constants.numberOfColumns - 1 &&
-      this.props.tiles[this.props.tile.columnIndex + 1][this.props.tile.lineIndex].state !== TileState.idleHero) {
-      return TileColors[TileState[this.props.tiles[this.props.tile.columnIndex + 1][this.props.tile.lineIndex].state]];
+      this.props.tiles[this.props.tile.lineIndex][this.props.tile.columnIndex + 1].state !== TileState.idleHero) {
+      return TileColors[TileState[this.props.tiles[this.props.tile.lineIndex][this.props.tile.columnIndex + 1].state]];
     }
     return TileColors[TileState[this.props.tile.state]];
   };
 
   private getBorderLeftColor = () => {
     if (this.props.tile.state === TileState.idleHero && this.props.tile.columnIndex - 1 >= 0 &&
-      this.props.tiles[this.props.tile.columnIndex - 1][this.props.tile.lineIndex].state !== TileState.idleHero) {
-      return TileColors[TileState[this.props.tiles[this.props.tile.columnIndex - 1][this.props.tile.lineIndex].state]];
+      this.props.tiles[this.props.tile.lineIndex][this.props.tile.columnIndex - 1].state !== TileState.idleHero) {
+      return TileColors[TileState[this.props.tiles[this.props.tile.lineIndex][this.props.tile.columnIndex - 1].state]];
     }
     return TileColors[TileState[this.props.tile.state]];
   };
 
   private getBorderBottomColor = () => {
     if (this.props.tile.state === TileState.idleHero && this.props.tile.lineIndex + 1 < constants.numberOfLines - 1 &&
-      this.props.tiles[this.props.tile.columnIndex][this.props.tile.lineIndex + 1].state !== TileState.idleHero) {
-      return TileColors[TileState[this.props.tiles[this.props.tile.columnIndex][this.props.tile.lineIndex + 1].state]];
+      this.props.tiles[this.props.tile.lineIndex + 1][this.props.tile.columnIndex].state !== TileState.idleHero) {
+      return TileColors[TileState[this.props.tiles[this.props.tile.lineIndex + 1][this.props.tile.columnIndex].state]];
     }
     return TileColors[TileState[this.props.tile.state]];
   };
 
   private getBorderTopColor = () => {
     if (this.props.tile.state === TileState.idleHero && this.props.tile.lineIndex - 1 >= 0 &&
-      this.props.tiles[this.props.tile.columnIndex][this.props.tile.lineIndex - 1].state !== TileState.idleHero) {
-      return TileColors[TileState[this.props.tiles[this.props.tile.columnIndex][this.props.tile.lineIndex - 1].state]];
+      this.props.tiles[this.props.tile.lineIndex - 1][this.props.tile.columnIndex].state !== TileState.idleHero) {
+      return TileColors[TileState[this.props.tiles[this.props.tile.lineIndex - 1][this.props.tile.columnIndex].state]];
     }
     return TileColors[TileState[this.props.tile.state]];
   };

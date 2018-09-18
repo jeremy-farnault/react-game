@@ -7,17 +7,17 @@ export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic
   const finder = new PF.AStarFinder();
   const result: INewTile[] = []
   // Create a grid to with the walkable nodes
-  const matrix: number[][] = tiles.map((col: ITile[]) => col.map((t: ITile) => t.state !== TileState.idleHero ? 0 : 1))
+  const matrix: number[][] = tiles.map((line: ITile[]) => line.map((t: ITile) => t.state !== TileState.idleHero ? 0 : 1))
   const gridMaster = new PF.Grid(matrix);
-  matrix.forEach((col: number[], colInd: number) => col.forEach((t: number, i: number) => {
-    if (t === 0 && i <= heroCharacteristic + 1 && colInd <= heroCharacteristic + 1) {
+  matrix.forEach((line: number[], lineInd: number) => line.forEach((tile: number, colInd: number) => {
+    if (tile === 0 && Math.abs(colInd - heroX) <= heroCharacteristic + 1 && Math.abs(lineInd - heroY) <= heroCharacteristic + 1) {
       const grid = gridMaster.clone();
-      const path = finder.findPath(heroX, heroY, colInd, i, grid);
+      const path = finder.findPath(heroX, heroY, colInd, lineInd, grid);
       if (path.length <= heroCharacteristic + 1) {
         result.push({
           tileState: state,
           tileX: colInd,
-          tileY: i
+          tileY: lineInd
         })
       }
     }
