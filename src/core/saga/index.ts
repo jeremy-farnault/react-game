@@ -55,7 +55,6 @@ function* loadTiles() {
       response = { data: DefaultTiles }
     }
     const responseData = response.data
-    console.log(responseData)
     yield put(loadTilesSuccess({ data: responseData }))
   } catch (err) {
     console.warn('loadTiles failed', JSON.parse(JSON.stringify(err)))

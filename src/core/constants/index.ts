@@ -20,6 +20,11 @@ export type LOAD_TILES_SUCCESS = typeof LOAD_TILES_SUCCESS
 export const LOAD_TILES_FAIL = 'LOAD_TILES_FAIL'
 export type LOAD_TILES_FAIL = typeof LOAD_TILES_FAIL
 
+// Tiles Reseting
+
+export const RESET_TILES = 'RESET_TILES'
+export type RESET_TILES = typeof RESET_TILES
+
 // Tiles Updating
 
 export const UPDATE_TILES = 'UPDATE_TILES'

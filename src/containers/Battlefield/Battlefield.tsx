@@ -17,6 +17,7 @@ interface IProps {
   players: IPlayers
   setHeroSelected: typeof actions.setHeroSelected
   updateTiles: typeof actions.updateTiles
+  resetTiles: typeof actions.resetTiles
 }
 
 interface IState {
@@ -47,13 +48,13 @@ class Battlefield extends React.PureComponent<IProps, IState> {
   }
 
   private selectHero = (hero: IHeroBattlefield) => {
+    this.props.resetTiles({})
     this.setState({ currentSelectedHero: hero });
     this.props.setHeroSelected({
       setSelected: true,
       heroId: hero.id,
       playerId: hero.playerId
     });
-    // todo make the other statuses
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics.speed,
       hero.tileX, hero.tileY, TileState.heroMovement);
     this.props.updateTiles({data: newTiles})
@@ -82,7 +83,8 @@ function mapStateToProps(state: IStoreState.IRootState) {
 const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators({
     setHeroSelected: actions.setHeroSelected,
-    updateTiles: actions.updateTiles
+    updateTiles: actions.updateTiles,
+    resetTiles: actions.resetTiles
   }, dispatch);
 
 export default connect(

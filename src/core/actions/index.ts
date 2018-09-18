@@ -27,6 +27,10 @@ export const loadTilesSuccess = createAction<ILoadTilesSuccessPayload>(
 )
 export const loadTilesFail = createAction<{}>(constants.LOAD_TILES_FAIL)
 
+// Tiles Resetting
+
+export const resetTiles = createAction<{}>(constants.RESET_TILES)
+
 // Tiles Updating
 
 export const updateTiles = createAction<IUpdateTilesPayload>(

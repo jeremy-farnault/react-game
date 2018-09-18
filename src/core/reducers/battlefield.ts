@@ -1,10 +1,5 @@
 import { IStoreState } from "../../types";
-import {
-  LOAD_TILES_FAIL,
-  LOAD_TILES_START,
-  LOAD_TILES_SUCCESS,
-  UPDATE_TILES
-} from "../constants";
+import { LOAD_TILES_FAIL, LOAD_TILES_START, LOAD_TILES_SUCCESS, RESET_TILES, UPDATE_TILES } from "../constants";
 import { ITile, TileState } from "../models";
 
 import { Action, handleActions } from "redux-actions";
@@ -43,6 +38,25 @@ export default handleActions(
     [LOAD_TILES_FAIL]: (state: IStoreState.IBattlefield, action: Action<{}>) => ({
       ...state,
       tiles: []
+    }),
+
+    // RESET TILES
+    [RESET_TILES]: (state: IStoreState.IBattlefield, action: Action<{}>) => ({
+      ...state,
+      tiles: state.tiles.map((line: ITile[]) => line.map((t: ITile) => {
+        if (t.state !== TileState.idleHero) {
+          return {
+            state: TileState.empty,
+            columnIndex: t.columnIndex,
+            lineIndex: t.lineIndex,
+            posX: t.posX,
+            posY: t.posY,
+            uuid: t.uuid
+          } as ITile;
+        } else {
+          return t;
+        }
+      }))
     }),
 
     // UPDATE TILES ACTIONS
