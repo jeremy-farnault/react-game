@@ -1,8 +1,16 @@
 import { IStoreState } from "../../types";
-import { LOAD_TILES_FAIL, LOAD_TILES_START, LOAD_TILES_SUCCESS, RESET_TILES, UPDATE_TILES } from "../constants";
+import {
+  LOAD_TILES_FAIL,
+  LOAD_TILES_START,
+  LOAD_TILES_SUCCESS,
+  RESET_TILES,
+  SET_HERO_NEW_POSITION,
+  UPDATE_TILES
+} from "../constants";
 import { ITile, TileState } from "../models";
 
 import { Action, handleActions } from "redux-actions";
+import { ISetHeroNewPositionPayload } from "./session";
 
 const initialState: IStoreState.IBattlefield = {
   tiles: [] as ITile[][]
@@ -69,6 +77,20 @@ export default handleActions(
         action.payload.data.forEach((t: INewTile) => {
           newTiles[t.tileY][t.tileX].state = t.tileState;
         });
+      }
+      return ({
+        ...state,
+        tiles: newTiles
+      });
+    },
+    [SET_HERO_NEW_POSITION]: (
+      state: IStoreState.IBattlefield,
+      action: Action<ISetHeroNewPositionPayload>
+    ) => {
+      const newTiles = state.tiles.slice();
+      if (action.payload) {
+        newTiles[action.payload.prevTileY][action.payload.prevTileX].state = TileState.empty
+        newTiles[action.payload.tileY][action.payload.tileX].state = TileState.idleHero
       }
       return ({
         ...state,

@@ -5,7 +5,12 @@ import {
   LOAD_ALL_CARDS_SUCCESS,
   LOAD_ALL_HEROES_FAIL,
   LOAD_ALL_HEROES_START,
-  LOAD_ALL_HEROES_SUCCESS, LOAD_PLAYERS_FAIL, LOAD_PLAYERS_START, LOAD_PLAYERS_SUCCESS, SET_HERO_SELECTED
+  LOAD_ALL_HEROES_SUCCESS,
+  LOAD_PLAYERS_FAIL,
+  LOAD_PLAYERS_START,
+  LOAD_PLAYERS_SUCCESS,
+  SET_HERO_NEW_POSITION,
+  SET_HERO_SELECTED
 } from "../constants";
 import { ICards, IHeroes } from "../models";
 
@@ -33,6 +38,15 @@ export interface ISetHeroSelectedPayload {
   heroId: string
   playerId: string
   setSelected: boolean
+}
+
+export interface ISetHeroNewPositionPayload {
+  heroId: string
+  playerId: string
+  tileX: number
+  tileY: number
+  prevTileX: number
+  prevTileY: number
 }
 
 export default handleActions(
@@ -98,6 +112,20 @@ export default handleActions(
           .forEach((playerId: string) => Object.keys(newPLayers[playerId].heroes)
             .forEach((heroId: string) => newPLayers[playerId].heroes[heroId].selected = false))
         newPLayers[action.payload.playerId].heroes[action.payload.heroId].selected = action.payload.setSelected;
+      }
+      return ({
+        ...state,
+        players: newPLayers
+      });
+    },
+    [SET_HERO_NEW_POSITION]: (
+      state: IStoreState.ISession,
+      action: Action<ISetHeroNewPositionPayload>
+    ) => {
+      const newPLayers = state.players;
+      if (action.payload && action.payload.playerId && action.payload.heroId) {
+        newPLayers[action.payload.playerId].heroes[action.payload.heroId].tileX = action.payload.tileX;
+        newPLayers[action.payload.playerId].heroes[action.payload.heroId].tileY = action.payload.tileY;
       }
       return ({
         ...state,

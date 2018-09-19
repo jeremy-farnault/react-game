@@ -7,9 +7,18 @@
   - ~~BF -> Tiles -> Idle tile, attack tile...~~
 
 1 - ~~Connect battlefield to redux~~
-2 - Create player sub reducer
-    a - Heroes
-    b - Cards
-3 - Create action to update heroes
-4 - Create action to update tiles
-5 - Trigger actions of click on hero
+2 - ~~Create player sub reducer~~
+    a - ~~Heroes~~
+    b - ~~Cards~~
+3 - ~~Create action to update heroes~~
+4 - ~~Create action to update tiles~~
+5 - ~~Trigger actions of click on hero~~
+
+Actions selector for hero
+Different tiles/size/color depending of the action
+    - Movement
+    - Attack
+    - Ranged Attack
+    - Magic
+    
+Hero Details zone
