@@ -42,6 +42,12 @@ export enum TileHoverColors {
   heroMovement = 'paleGreen'
 }
 
+export enum TileSize {
+  empty = 40,
+  idleHero = 40,
+  heroMovement = 30
+}
+
 // Heroes
 
 export interface IHeroes {

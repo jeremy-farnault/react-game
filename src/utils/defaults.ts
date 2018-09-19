@@ -11,8 +11,8 @@ const createDefaultTiles = (): ITile[][] => {
       return {
         columnIndex: j,
         lineIndex: i,
-        posX: j * (constants.tileSize + 2) + 1,
-        posY: i * (constants.tileSize + 2) + 1,
+        posX: j * constants.tileSize,
+        posY: i * constants.tileSize,
         state: TileState.empty,
         uuid: nanoid(6)
       } as ITile

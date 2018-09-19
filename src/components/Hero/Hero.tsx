@@ -27,7 +27,7 @@ class Hero extends React.PureComponent<IProps, {}> {
       <HeroStyled
         onClick={this.selectHero}
         selected={h.selected}
-        posX={this.props.tile.posX + (constants.tileWithBorder - h.assets.battlefieldPath.width) / 2}
+        posX={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2}
         posY={this.props.tile.posY - 4}
         src={h.assets.battlefieldPath.path}
         height={50}/>
