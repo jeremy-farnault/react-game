@@ -15,6 +15,9 @@
 5 - ~~Trigger actions of click on hero~~
 
 Actions selector for hero
+
+Change style of idle hero tile to a circle and remove the border on selected hero
+
 Different tiles/size/color depending of the action
     - Movement
     - Attack

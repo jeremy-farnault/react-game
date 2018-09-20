@@ -13,3 +13,13 @@ top: ${(props: IStyledHero) => props.posY - 1}px;
 left: ${(props: IStyledHero) => props.posX - 1}px;
 }
 `;
+HeroStyled.displayName = 'HeroStyled'
+
+export const ButtonActionStyled = styled.div`
+position: absolute;
+border-radius: 10px;
+width: 20px;
+height: 20px;
+background-color: red;
+`
+ButtonActionStyled.displayName = 'ButtonActionStyled'
