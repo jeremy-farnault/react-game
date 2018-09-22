@@ -16,27 +16,37 @@ interface IProps {
 export interface IStyledHero {
   posX: number
   posY: number
-  selected: boolean
 }
 
 class Hero extends React.PureComponent<IProps, {}> {
 
   public render() {
     const h = this.props.hero;
+    const atk = h.characteristics.attack > 0
+    const rAtk = h.characteristics.rangedAttack > 0
+    const mgc = h.characteristics.magic > 0
+
+    const heightActionZone = constants.buttonActionSize * (1 + (atk ? 1 : 0) + (rAtk ? 1 : 0) + (mgc ? 1 : 0))
+
     return (
       <div>
         <HeroStyled
           onClick={this.selectHero}
-          selected={h.selected}
           posX={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2}
           posY={this.props.tile.posY - 4}
           src={h.assets.battlefieldPath.path}
           height={50}/>
-        {h.selected &&
-        <div style={{position: 'absolute', top: this.props.tile.posY - 4, left: this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2 - 20}}>
 
-          // todo map over magic, attack, ranged and movement if charac value is more than 0
+
+        {h.selected &&
+        <div style={{position: 'absolute',
+          top: this.props.tile.posY - 2 + (constants.tileSize - heightActionZone) / 2,
+          left: this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2 - 20}}>
           <ButtonActionStyled/>
+          {atk && <ButtonActionStyled/>}
+          {rAtk && <ButtonActionStyled/>}
+          {mgc && <ButtonActionStyled/>}
+
 
         </div>}
       </div>

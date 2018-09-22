@@ -14,7 +14,7 @@
 4 - ~~Create action to update tiles~~
 5 - ~~Trigger actions of click on hero~~
 
-Actions selector for hero
+Actions selector for hero -> component
 
 Change style of idle hero tile to a circle and remove the border on selected hero
 
@@ -23,5 +23,5 @@ Different tiles/size/color depending of the action
     - Attack
     - Ranged Attack
     - Magic
-    
+
 Hero Details zone
