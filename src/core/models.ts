@@ -118,6 +118,26 @@ export enum HeroSize {
   large = 'L'
 }
 
+// Action Buttons
+
+export enum ActionsType {
+  movement,
+  attack,
+  rangedAttack,
+  attackArmor,
+  magic,
+  defense
+}
+
+export const ActionButtonIcon = {
+  movement: require("../assets/actionsTokens/movement_action.png"),
+  attack: require("../assets/actionsTokens/attack_action.png"),
+  rangedAttack: require("../assets/actionsTokens/ranged_attack_action.png"),
+  attackArmor: require("../assets/actionsTokens/attack_armor_action.png"),
+  magic: require("../assets/actionsTokens/magic_action.png"),
+  defense: require("../assets/actionsTokens/defense_action.png")
+}
+
 // Cards
 
 export interface ICards {

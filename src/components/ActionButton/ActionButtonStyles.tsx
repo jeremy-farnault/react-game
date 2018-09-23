@@ -9,5 +9,8 @@ height: ${constants.buttonActionSize}px;
 margin-top: 5px;
 margin-bottom: 5px;
 background-color: red;
+&:hover {
+opacity: 0.5;
+}
 `
 ButtonActionStyled.displayName = 'ButtonActionStyled'
