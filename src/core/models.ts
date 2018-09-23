@@ -27,19 +27,34 @@ export interface ITile {
 export enum TileState {
   empty,
   idleHero,
-  heroMovement
+  heroAttack,
+  heroAttackArmor,
+  heroDefense,
+  heroMagic,
+  heroMovement,
+  heroRangedAttack
 }
 
 export enum TileColors {
-  empty = 'orange',
+  empty = '#D2691E',
   idleHero = 'rgba(0, 0, 0, 0)',
-  heroMovement = 'green'
+  heroAttack = '#FF3447',
+  heroAttackArmor = '#E5D964',
+  heroDefense = '#929AEC',
+  heroMagic = '#8EBEBA',
+  heroMovement = '#3CB371',
+  heroRangedAttack = '#A37B5E'
 }
 
 export enum TileHoverColors {
-  empty = 'violet',
+  empty = '#9370DB',
   idleHero = 'rgba(0, 0, 0, 0)',
-  heroMovement = 'paleGreen'
+  heroAttack = '#FF707E',
+  heroAttackArmor = '#ECE492',
+  heroDefense = '#B2B8F1',
+  heroMagic = '#8EBEBA',
+  heroMovement = '#98FB98',
+  heroRangedAttack = '#BEA28E'
 }
 
 export enum TileSize {

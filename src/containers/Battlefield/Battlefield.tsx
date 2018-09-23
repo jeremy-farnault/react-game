@@ -1,5 +1,5 @@
 import * as actions from "../../core/actions/index";
-import { IHeroBattlefield, ITile, TileState } from "../../core/models";
+import { ActionsType, IHeroBattlefield, ITile, TileState } from "../../core/models";
 import { IStoreState } from "../../types";
 import Heroes from "../Heroes/Heroes";
 import Tiles from "../Tiles/Tiles";
@@ -85,6 +85,10 @@ class Battlefield extends React.PureComponent<IProps, IState> {
       this.props.updateTiles({ data: newTiles });
     }
   };
+
+  private changeAction = (action: ActionsType) => {
+
+  }
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {

@@ -14,9 +14,17 @@
 4 - ~~Create action to update tiles~~
 5 - ~~Trigger actions of click on hero~~
 
-Actions selector for hero -> component
+~~Actions selector for hero -> component~~
+~~Change style Action Buttons~~
+Trigger new tiles on click on actions
+Selected action button should be low opacity or other style
 
-Change style of idle hero tile to a circle and remove the border on selected hero
+Find a style for the selected hero
+Change hovered hero style
+
+Put all color values etc in grid and colors file
+http://www.tayloredmktg.com/rgb/
+https://www.color-hex.com/color/ff3447
 
 Different tiles/size/color depending of the action
     - Movement
