@@ -1,4 +1,3 @@
-import { constants } from "../../utils/constants";
 import { IStyledHero } from "./Hero";
 
 import styled from "styled-components";
@@ -14,11 +13,3 @@ left: ${(props: IStyledHero) => props.posX - 1}px;
 }
 `;
 HeroStyled.displayName = 'HeroStyled'
-
-export const ButtonActionStyled = styled.div`
-border-radius: ${constants.buttonActionSize / 2}px;
-width: ${constants.buttonActionSize}px;
-height: ${constants.buttonActionSize}px;
-background-color: red;
-`
-ButtonActionStyled.displayName = 'ButtonActionStyled'
