@@ -60,7 +60,12 @@ export enum TileHoverColors {
 export enum TileSize {
   empty = 40,
   idleHero = 40,
-  heroMovement = 30
+  heroAttack = 30,
+  heroAttackArmor = 30,
+  heroDefense = 30,
+  heroMagic = 30,
+  heroMovement = 30,
+  heroRangedAttack = 30
 }
 
 // Heroes
@@ -136,12 +141,12 @@ export enum HeroSize {
 // Action Buttons
 
 export enum ActionsType {
-  movement,
-  attack,
-  rangedAttack,
-  attackArmor,
-  magic,
-  defense
+  movement = 'heroMovement',
+  attack = 'heroAttack',
+  rangedAttack = 'heroRangedAttack',
+  attackArmor = 'heroAttackArmor',
+  magic = 'heroMagic',
+  defense = 'heroDefense'
 }
 
 export const ActionButtonIcon = {
@@ -151,6 +156,15 @@ export const ActionButtonIcon = {
   attackArmor: require("../assets/actionsTokens/attack_armor_action.png"),
   magic: require("../assets/actionsTokens/magic_action.png"),
   defense: require("../assets/actionsTokens/defense_action.png")
+}
+
+export enum ActionCharacteristic {
+  movement = 'speed',
+  attack = 'attack',
+  rangedAttack = 'rangedAttack',
+  attackArmor = 'attackArmor',
+  magic = 'magic',
+  defense = 'defense'
 }
 
 // Cards

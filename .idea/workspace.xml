@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/colors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/grid.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActionButton/ActionButtonStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionButton/ActionButtonStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/grid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/grid.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,41 +19,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="315">
-                <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              </first_editor>
-              <second_editor />
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/models.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/colors.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Battlefield.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+            <state relative-caret-position="332">
+              <caret line="85" column="2" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/models.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="148" column="24" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grid.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/grid.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionButton.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tiles.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/Tiles/Tiles.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tile.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Tile/Tile.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TileStyles.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Tile/TileStyles.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -166,20 +202,37 @@
         <option value="$PROJECT_DIR$/src/utils/constants.ts" />
         <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx" />
-        <option value="$PROJECT_DIR$/src/utils/grid.ts" />
         <option value="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButtonStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/core/models.ts" />
         <option value="$PROJECT_DIR$/src/utils/colors.ts" />
+        <option value="$PROJECT_DIR$/src/utils/grid.ts" />
+        <option value="$PROJECT_DIR$/src/core/models.ts" />
+        <option value="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="191" />
+    <option name="y" value="22" />
     <option name="width" value="1451" />
-    <option name="height" value="1417" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -358,7 +411,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="fakepl&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;con&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;model&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/models.ts&#10;readme&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;consta&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;Hero&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/components/Hero/Hero.tsx&#10;saga/in&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/saga/index.ts&#10;saga/inde&#9;FILE&#9;file://D:/Code/GitRepos/react-game/build/dist/core/saga/index.js&#10;session&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/reducers/session.ts&#10;fakepla&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;loadplayersda&#9;null&#9;null&#10;fake&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;hero&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/heroes.ts&#10;saga/&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/saga&#10;Battlef&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/containers/Battlefield/Battlefield.tsx&#10;IStoreState&#9;null&#9;null&#10;Tile&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/components/Tile.tsx&#10;tile&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Tiles/Tiles.tsx&#10;constants&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/constants.ts&#10;He&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Heroes/Heroes.tsx&#10;defaultTiles&#9;null&#9;null&#10;defaultT&#9;null&#9;null&#10;default&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;heroes&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/dbstore/heroes.ts&#10;packa&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;package&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;reamd&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;pac&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/package.json&#10;default.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;config.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/config.ts&#10;config.&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/tsconfig.json&#10;reducer/in&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/reducers/index.ts&#10;types/inde&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/types/index.tsx&#10;create&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/create.ts&#10;Battl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Battlefield/Battlefield.tsx&#10;index.tsx&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/index.tsx&#10;defaults.&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;:w&#9;null&#9;null&#10;tsl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/tslint.json&#10;index.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/actions/index.ts&#10;app.tsx&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/App/App.tsx" />
+    <property name="SearchEverywhereHistoryKey" value="grid.ts&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/grid.ts&#10;fakepl&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;con&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;model&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/models.ts&#10;readme&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;consta&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;Hero&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/components/Hero/Hero.tsx&#10;saga/in&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/saga/index.ts&#10;saga/inde&#9;FILE&#9;file://D:/Code/GitRepos/react-game/build/dist/core/saga/index.js&#10;session&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/reducers/session.ts&#10;fakepla&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;loadplayersda&#9;null&#9;null&#10;fake&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;hero&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/heroes.ts&#10;saga/&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/saga&#10;Battlef&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/containers/Battlefield/Battlefield.tsx&#10;IStoreState&#9;null&#9;null&#10;Tile&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/components/Tile.tsx&#10;tile&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Tiles/Tiles.tsx&#10;constants&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/constants.ts&#10;He&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Heroes/Heroes.tsx&#10;defaultTiles&#9;null&#9;null&#10;defaultT&#9;null&#9;null&#10;default&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;heroes&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/dbstore/heroes.ts&#10;packa&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;package&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;reamd&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;pac&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/package.json&#10;default.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;config.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/config.ts&#10;config.&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/tsconfig.json&#10;reducer/in&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/reducers/index.ts&#10;types/inde&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/types/index.tsx&#10;create&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/create.ts&#10;Battl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Battlefield/Battlefield.tsx&#10;index.tsx&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/index.tsx&#10;defaults.&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/defaults.ts&#10;:w&#9;null&#9;null&#10;tsl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/tslint.json&#10;index.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/actions/index.ts&#10;app.tsx&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/App/App.tsx" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -446,6 +499,7 @@
       <workItem from="1537476259562" duration="1260000" />
       <workItem from="1537673805429" duration="4833000" />
       <workItem from="1537734092317" duration="2642000" />
+      <workItem from="1537767740541" duration="1758000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -472,7 +526,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138060000" />
+    <option name="totallyTimeSpent" value="139818000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,30 +538,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1451" height="1417" extended-state="0" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16853146" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32532752" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969433" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="8" weight="0.32969433" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.37845707" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="TypeScript" order="8" weight="0.32969433" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16830066" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32532752" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,20 +602,9 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Displaying the tiles" />
@@ -655,31 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Tiles/Tiles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Tiles/TilesStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tile/Tile.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="135" selection-start-line="27" selection-start-column="135" selection-end-line="27" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tile/TileStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -770,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/grid.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -816,9 +831,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/colors.ts" />
     <entry file="file://$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="170">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
@@ -826,34 +852,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
+    <entry file="file://$PROJECT_DIR$/src/containers/Tiles/Tiles.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="83" column="47" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+        <state relative-caret-position="289">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="315">
-            <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/components/Tile/TileStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tile/Tile.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/grid.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/models.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        <state relative-caret-position="417">
+          <caret line="148" column="24" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/colors.ts">
+    <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="332">
+          <caret line="85" column="2" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
         </state>
       </provider>
     </entry>
