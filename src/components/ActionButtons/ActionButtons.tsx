@@ -6,6 +6,7 @@ import * as React from "react";
 import { ButtonsActionStyled } from "./ActionButtonsStyles";
 
 interface IProps {
+  changeAction: (action: ActionsType, tile: ITile) => void
   hero: IHeroBattlefield
   tile: ITile
 }
@@ -34,14 +35,30 @@ class ActionButtons extends React.PureComponent<IProps, {}> {
       <ButtonsActionStyled
         top={this.props.tile.posY + (constants.tileSize - heightActionZone) / 2}
         left={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2 - 20}>
-        {mvt && <ActionButton actionType={ActionsType.movement}/>}
-        {atk && <ActionButton actionType={ActionsType.attack}/>}
-        {rAtk && <ActionButton actionType={ActionsType.rangedAttack}/>}
-        {atkArm && <ActionButton actionType={ActionsType.attackArmor}/>}
-        {mgc && <ActionButton actionType={ActionsType.magic}/>}
-        {def && <ActionButton actionType={ActionsType.defense}/>}
+        {mvt &&
+        <ActionButton actionType={ActionsType.heroMovement}
+                      changeAction={this.changeAction}/>}
+        {atk &&
+        <ActionButton actionType={ActionsType.heroAttack}
+                      changeAction={this.changeAction}/>}
+        {rAtk &&
+        <ActionButton actionType={ActionsType.heroRangedAttack}
+                      changeAction={this.changeAction}/>}
+        {atkArm &&
+        <ActionButton actionType={ActionsType.heroAttackArmor}
+                      changeAction={this.changeAction}/>}
+        {mgc &&
+        <ActionButton actionType={ActionsType.heroMagic}
+                      changeAction={this.changeAction}/>}
+        {def &&
+        <ActionButton actionType={ActionsType.heroDefense}
+                      changeAction={this.changeAction}/>}
       </ButtonsActionStyled>
     );
+  }
+
+  private changeAction = (action: ActionsType) => {
+    this.props.changeAction(action, this.props.tile)
   }
 }
 

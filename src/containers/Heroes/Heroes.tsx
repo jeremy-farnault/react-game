@@ -1,9 +1,10 @@
-import { IHeroBattlefield, ITile } from "../../core/models";
+import { ActionsType, IHeroBattlefield, ITile } from "../../core/models";
 
 import * as React from "react";
 import Hero from "../../components/Hero/Hero";
 
 interface IProps {
+  changeAction: (action: ActionsType, tile: ITile) => void
   heroes: IHeroBattlefield[]
   selectHero: (hero: IHeroBattlefield) => void
   tiles: ITile[][]
@@ -21,6 +22,7 @@ class Heroes extends React.PureComponent<IProps, {}> {
         return (
           <Hero tile={tile}
                 key={hero.playerId + hero.id}
+                changeAction={this.props.changeAction}
                 hero={hero}
                 heroSelected={hero.selected}
                 selectHero={this.props.selectHero}/>

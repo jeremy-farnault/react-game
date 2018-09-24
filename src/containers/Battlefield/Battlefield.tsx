@@ -43,6 +43,7 @@ class Battlefield extends React.PureComponent<IProps, IState> {
         <Tiles tiles={this.props.tiles} clickOnTile={this.clickOnTile}/>
         <Heroes heroes={allHeroes}
                 tiles={this.props.tiles}
+                changeAction={this.changeAction}
                 selectHero={this.selectHero}/>
       </ContainerBattlefield>
     );
@@ -80,11 +81,12 @@ class Battlefield extends React.PureComponent<IProps, IState> {
         prevTileX: hero.tileX,
         prevTileY: hero.tileY
       });
-      this.changeAction(ActionsType.movement, tile)
+      this.changeAction(ActionsType.heroMovement, tile)
     }
   };
   
   private changeAction = (action: ActionsType, tile: ITile) => {
+    this.props.resetTiles({});
     const hero = this.state.currentSelectedHero as IHeroBattlefield;
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics[ActionCharacteristic[action]],
       tile.columnIndex, tile.lineIndex, TileState[action]);

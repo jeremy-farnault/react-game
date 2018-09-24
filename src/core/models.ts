@@ -141,30 +141,30 @@ export enum HeroSize {
 // Action Buttons
 
 export enum ActionsType {
-  movement = 'heroMovement',
-  attack = 'heroAttack',
-  rangedAttack = 'heroRangedAttack',
-  attackArmor = 'heroAttackArmor',
-  magic = 'heroMagic',
-  defense = 'heroDefense'
+  heroMovement = 'heroMovement',
+  heroAttack = 'heroAttack',
+  heroRangedAttack = 'heroRangedAttack',
+  heroAttackArmor = 'heroAttackArmor',
+  heroMagic = 'heroMagic',
+  heroDefense = 'heroDefense'
 }
 
 export const ActionButtonIcon = {
-  movement: require("../assets/actionsTokens/movement_action.png"),
-  attack: require("../assets/actionsTokens/attack_action.png"),
-  rangedAttack: require("../assets/actionsTokens/ranged_attack_action.png"),
-  attackArmor: require("../assets/actionsTokens/attack_armor_action.png"),
-  magic: require("../assets/actionsTokens/magic_action.png"),
-  defense: require("../assets/actionsTokens/defense_action.png")
+  heroMovement: require("../assets/actionsTokens/movement_action.png"),
+  heroAttack: require("../assets/actionsTokens/attack_action.png"),
+  heroRangedAttack: require("../assets/actionsTokens/ranged_attack_action.png"),
+  heroAttackArmor: require("../assets/actionsTokens/attack_armor_action.png"),
+  heroMagic: require("../assets/actionsTokens/magic_action.png"),
+  heroDefense: require("../assets/actionsTokens/defense_action.png")
 }
 
 export enum ActionCharacteristic {
-  movement = 'speed',
-  attack = 'attack',
-  rangedAttack = 'rangedAttack',
-  attackArmor = 'attackArmor',
-  magic = 'magic',
-  defense = 'defense'
+  heroMovement = 'speed',
+  heroAttack = 'attack',
+  heroRangedAttack = 'rangedAttack',
+  heroAttackArmor = 'attackArmor',
+  heroMagic = 'magic',
+  heroDefense = 'armor'
 }
 
 // Cards
