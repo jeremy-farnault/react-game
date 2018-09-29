@@ -8,6 +8,7 @@ import ActionButtons from "../ActionButtons/ActionButtons";
 interface IProps {
   changeAction: (action: ActionsType, tile: ITile) => void
   hero: IHeroBattlefield
+  currentAction: ActionsType
   heroSelected: boolean
   selectHero: (hero: IHeroBattlefield) => void
   tile: ITile
@@ -35,6 +36,7 @@ class Hero extends React.PureComponent<IProps, {}> {
         {h.selected &&
           <ActionButtons
             hero={h}
+            currentAction={this.props.currentAction}
             changeAction={this.props.changeAction}
             tile={this.props.tile}/>}
       </div>

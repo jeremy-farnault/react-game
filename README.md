@@ -17,8 +17,8 @@
 ~~Actions selector for hero -> component~~
 ~~Change style Action Buttons~~
 ~~Trigger new tiles on click on actions~~
-Selected action button should be low opacity or other style
-Click on a hero already selected shouldnt do anything
+~~Selected action button should be low opacity or other style~~
+~~Click on a hero already selected shouldnt do anything~~
 
 Find a style for the selected hero
 Change hovered hero style

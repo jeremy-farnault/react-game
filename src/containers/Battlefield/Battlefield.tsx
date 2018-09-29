@@ -23,6 +23,7 @@ interface IProps {
 
 interface IState {
   currentSelectedHero: IHeroBattlefield | null
+  currentSelectedAction: ActionsType
 }
 
 class Battlefield extends React.PureComponent<IProps, IState> {
@@ -30,7 +31,8 @@ class Battlefield extends React.PureComponent<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = {
-      currentSelectedHero: {} as IHeroBattlefield
+      currentSelectedHero: {} as IHeroBattlefield,
+      currentSelectedAction: ActionsType.heroMovement
     };
   }
 
@@ -42,6 +44,7 @@ class Battlefield extends React.PureComponent<IProps, IState> {
       <ContainerBattlefield>
         <Tiles tiles={this.props.tiles} clickOnTile={this.clickOnTile}/>
         <Heroes heroes={allHeroes}
+                currentAction={this.state.currentSelectedAction}
                 tiles={this.props.tiles}
                 changeAction={this.changeAction}
                 selectHero={this.selectHero}/>
@@ -50,8 +53,11 @@ class Battlefield extends React.PureComponent<IProps, IState> {
   }
 
   private selectHero = (hero: IHeroBattlefield) => {
+    if (this.state.currentSelectedHero === hero) {
+      return
+    }
     this.props.resetTiles({});
-    this.setState({ currentSelectedHero: hero });
+    this.setState({ currentSelectedHero: hero, currentSelectedAction: ActionsType.heroMovement });
     this.props.setHeroSelected({
       setSelected: true,
       heroId: hero.id,
@@ -84,8 +90,12 @@ class Battlefield extends React.PureComponent<IProps, IState> {
       this.changeAction(ActionsType.heroMovement, tile)
     }
   };
-  
+
   private changeAction = (action: ActionsType, tile: ITile) => {
+    if (this.state.currentSelectedAction === action) {
+      return
+    }
+    this.setState({currentSelectedAction: action})
     this.props.resetTiles({});
     const hero = this.state.currentSelectedHero as IHeroBattlefield;
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics[ActionCharacteristic[action]],

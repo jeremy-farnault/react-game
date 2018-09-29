@@ -5,6 +5,7 @@ import Hero from "../../components/Hero/Hero";
 
 interface IProps {
   changeAction: (action: ActionsType, tile: ITile) => void
+  currentAction: ActionsType
   heroes: IHeroBattlefield[]
   selectHero: (hero: IHeroBattlefield) => void
   tiles: ITile[][]
@@ -23,6 +24,7 @@ class Heroes extends React.PureComponent<IProps, {}> {
           <Hero tile={tile}
                 key={hero.playerId + hero.id}
                 changeAction={this.props.changeAction}
+                currentAction={this.props.currentAction}
                 hero={hero}
                 heroSelected={hero.selected}
                 selectHero={this.props.selectHero}/>

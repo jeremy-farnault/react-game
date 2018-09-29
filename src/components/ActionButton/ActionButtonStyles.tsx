@@ -1,20 +1,20 @@
 import { colors } from "../../utils/colors";
 import { constants } from "../../utils/constants";
 import { grid } from "../../utils/grid";
+import { IStyledActionButton } from "./ActionButton";
 
 import styled from "styled-components";
 
 export const ButtonActionStyled = styled.div`
 border-radius: ${constants.buttonActionSize / 2}px;
-border-color: ${colors.chocolate};
-border-width: 1px;
-border-style: dotted;
+border: 1px dotted ${colors.chocolate};
+background-color: ${(props: IStyledActionButton) => props.selected ? colors.chocolate : colors.transparent}
 width: ${constants.buttonActionSize}px;
 height: ${constants.buttonActionSize}px;
 margin-top: 5px;
 margin-bottom: 5px;
 &:hover {
-opacity: ${grid.opacity};
+opacity: ${(props: IStyledActionButton) => props.selected ? 1 : grid.opacity};
 }
 `
 ButtonActionStyled.displayName = 'ButtonActionStyled'

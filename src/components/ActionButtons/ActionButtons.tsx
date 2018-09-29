@@ -8,6 +8,7 @@ import { ButtonsActionStyled } from "./ActionButtonsStyles";
 interface IProps {
   changeAction: (action: ActionsType, tile: ITile) => void
   hero: IHeroBattlefield
+  currentAction: ActionsType
   tile: ITile
 }
 
@@ -37,21 +38,27 @@ class ActionButtons extends React.PureComponent<IProps, {}> {
         left={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2 - 20}>
         {mvt &&
         <ActionButton actionType={ActionsType.heroMovement}
+                      selected={this.props.currentAction === ActionsType.heroMovement}
                       changeAction={this.changeAction}/>}
         {atk &&
         <ActionButton actionType={ActionsType.heroAttack}
+                      selected={this.props.currentAction === ActionsType.heroAttack}
                       changeAction={this.changeAction}/>}
         {rAtk &&
         <ActionButton actionType={ActionsType.heroRangedAttack}
+                      selected={this.props.currentAction === ActionsType.heroRangedAttack}
                       changeAction={this.changeAction}/>}
         {atkArm &&
         <ActionButton actionType={ActionsType.heroAttackArmor}
+                      selected={this.props.currentAction === ActionsType.heroAttackArmor}
                       changeAction={this.changeAction}/>}
         {mgc &&
         <ActionButton actionType={ActionsType.heroMagic}
+                      selected={this.props.currentAction === ActionsType.heroMagic}
                       changeAction={this.changeAction}/>}
         {def &&
         <ActionButton actionType={ActionsType.heroDefense}
+                      selected={this.props.currentAction === ActionsType.heroDefense}
                       changeAction={this.changeAction}/>}
       </ButtonsActionStyled>
     );
