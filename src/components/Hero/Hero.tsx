@@ -19,6 +19,7 @@ interface IProps {
 export interface IStyledHero {
   posX: number
   posY: number
+  selected: boolean
 }
 
 class Hero extends React.PureComponent<IProps, {}> {
@@ -29,6 +30,7 @@ class Hero extends React.PureComponent<IProps, {}> {
       <div>
         <HeroStyled
           onClick={this.selectHero}
+          selected={h.selected}
           posX={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2}
           posY={this.props.tile.posY - 4}
           src={h.assets.battlefieldPath.path}

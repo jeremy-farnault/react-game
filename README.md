@@ -19,18 +19,23 @@
 ~~Trigger new tiles on click on actions~~
 ~~Selected action button should be low opacity or other style~~
 ~~Click on a hero already selected shouldnt do anything~~
+~~Find a style for the selected hero~~
+~~Change hovered hero style~~
 
-Find a style for the selected hero
-Change hovered hero style
+~~Different tiles/size/color depending of the action~~
+    - ~~Movement~~
+    - ~~Attack~~
+    - ~~Ranged Attack~~
+    - ~~Magic~~
+
+~~Change style idle tiles (use old style)~~
+
+Hero action zone next to the battlefield
+
+Hero Details zone
+
+Heroes initiative zone
 
 Put all color values etc in grid and colors file
 http://www.tayloredmktg.com/rgb/
 https://www.color-hex.com/color/ff3447
-
-Different tiles/size/color depending of the action
-    - Movement
-    - Attack
-    - Ranged Attack
-    - Magic
-
-Hero Details zone

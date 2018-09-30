@@ -36,7 +36,7 @@ export enum TileState {
 }
 
 export enum TileColors {
-  empty = '#D2691E',
+  empty = '#2F4F4F',
   idleHero = 'rgba(0, 0, 0, 0)',
   heroAttack = '#FF3447',
   heroAttackArmor = '#E5D964',
@@ -47,7 +47,7 @@ export enum TileColors {
 }
 
 export enum TileHoverColors {
-  empty = '#9370DB',
+  empty = '#2F4F4F',
   idleHero = 'rgba(0, 0, 0, 0)',
   heroAttack = '#FF707E',
   heroAttackArmor = '#ECE492',
@@ -58,7 +58,7 @@ export enum TileHoverColors {
 }
 
 export enum TileSize {
-  empty = 40,
+  empty = 25,
   idleHero = 40,
   heroAttack = 30,
   heroAttackArmor = 30,
