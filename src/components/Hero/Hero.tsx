@@ -1,14 +1,11 @@
-import { ActionsType, IHeroBattlefield, ITile } from "../../core/models";
+import { IHeroBattlefield, ITile } from "../../core/models";
 import { constants } from "../../utils/constants";
 import { HeroStyled } from "./HeroStyles";
 
 import * as React from "react";
-import ActionButtons from "../ActionButtons/ActionButtons";
 
 interface IProps {
-  changeAction: (action: ActionsType, tile: ITile) => void
   hero: IHeroBattlefield
-  currentAction: ActionsType
   heroSelected: boolean
   selectHero: (hero: IHeroBattlefield) => void
   tile: ITile
@@ -35,12 +32,6 @@ class Hero extends React.PureComponent<IProps, {}> {
           posY={this.props.tile.posY - 4}
           src={h.assets.battlefieldPath.path}
           height={50}/>
-        {h.selected &&
-          <ActionButtons
-            hero={h}
-            currentAction={this.props.currentAction}
-            changeAction={this.props.changeAction}
-            tile={this.props.tile}/>}
       </div>
     );
   }

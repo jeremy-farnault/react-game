@@ -44,9 +44,7 @@ class Battlefield extends React.PureComponent<IProps, IState> {
       <ContainerBattlefield>
         <Tiles tiles={this.props.tiles} clickOnTile={this.clickOnTile}/>
         <Heroes heroes={allHeroes}
-                currentAction={this.state.currentSelectedAction}
                 tiles={this.props.tiles}
-                changeAction={this.changeAction}
                 selectHero={this.selectHero}/>
       </ContainerBattlefield>
     );

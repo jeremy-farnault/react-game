@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/backgrounds/battlefield_big.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tile/TileStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tile/TileStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Battlefield/BattlefieldStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Battlefield/BattlefieldStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/colors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/grid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/grid.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,23 +47,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Battlefield.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
+      <file leaf-file-name="Fight.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+            <state relative-caret-position="196">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fight.tsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
+      <file leaf-file-name="Battlefield.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -86,8 +80,8 @@
       <file leaf-file-name="Heroes.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            <state>
+              <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -95,8 +89,23 @@
       <file leaf-file-name="Hero.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="42" selection-end-column="36" />
+            <state relative-caret-position="272">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionButtons.tsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,15 +204,10 @@
         <option value="$PROJECT_DIR$/src/core/actions/index.ts" />
         <option value="$PROJECT_DIR$/src/core/reducers/session.ts" />
         <option value="$PROJECT_DIR$/src/core/reducers/battlefield.ts" />
-        <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx" />
         <option value="$PROJECT_DIR$/src/utils/constants.ts" />
-        <option value="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" />
-        <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButtonStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/components/Hero/Hero.tsx" />
         <option value="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" />
         <option value="$PROJECT_DIR$/src/utils/colors.ts" />
         <option value="$PROJECT_DIR$/src/core/models.ts" />
         <option value="$PROJECT_DIR$/src/utils/grid.ts" />
@@ -213,6 +217,11 @@
         <option value="$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Battlefield/BattlefieldStyles.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Hero/Hero.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" />
       </list>
     </option>
   </component>
@@ -232,7 +241,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="179" />
     <option name="y" value="17" />
     <option name="width" value="1940" />
@@ -521,7 +530,8 @@
       <workItem from="1537767740541" duration="1758000" />
       <workItem from="1537821298373" duration="1359000" />
       <workItem from="1538209004956" duration="1714000" />
-      <workItem from="1538270495094" duration="8577000" />
+      <workItem from="1538270495094" duration="8707000" />
+      <workItem from="1538289026860" duration="497000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -548,7 +558,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151468000" />
+    <option name="totallyTimeSpent" value="152095000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,7 +580,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.32969433" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22167756" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22167756" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" />
@@ -761,30 +771,10 @@
     <entry file="file://$PROJECT_DIR$/src/assets/actionsTokens/magic_action.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dbstore/fakePlayers.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="60" column="84" selection-start-line="60" selection-start-column="84" selection-end-line="60" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,9 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,9 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,10 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.tsx">
+    <entry file="file://$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="42" selection-end-column="36" />
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -925,33 +909,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        <state relative-caret-position="196">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="91" column="58" selection-start-line="91" selection-start-column="58" selection-end-line="91" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
           </folding>
         </state>
       </provider>

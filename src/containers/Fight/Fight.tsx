@@ -1,4 +1,4 @@
-import { ICards, IHeroes, ITile } from "../../core/models";
+import { ActionsType, ICards, IHeroBattlefield, IHeroes, ITile } from "../../core/models";
 import { IStoreState } from "../../types";
 import Battlefield from "../Battlefield/Battlefield";
 import { BackgroundImage, ContainerScene } from "./FightStyles";
@@ -17,7 +17,8 @@ interface IProps {
 }
 
 interface IState {
-
+  currentSelectedHero: IHeroBattlefield
+  currentSelectedAction: ActionsType
 }
 
 class Fight extends React.PureComponent<IProps, IState> {
@@ -34,11 +35,10 @@ class Fight extends React.PureComponent<IProps, IState> {
 
 
 
-          <ActionButtons
-            hero={h}
-            currentAction={this.props.currentAction}
-            changeAction={this.props.changeAction}
-            tile={this.props.tile}/>
+          {this.state.currentSelectedHero && <ActionButtons
+            hero={this.state.currentSelectedHero}
+            currentAction={this.state.currentSelectedAction}
+            changeAction={this.changeSelectedAction}/>}
 
 
 
