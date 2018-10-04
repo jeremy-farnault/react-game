@@ -9,8 +9,8 @@ import * as _ from "lodash";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
-import IPlayers = IStoreState.IPlayers;
 import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
+import IPlayers = IStoreState.IPlayers;
 
 interface IProps {
   tiles: ITile[][]
@@ -19,22 +19,15 @@ interface IProps {
   updateTiles: typeof actions.updateTiles
   resetTiles: typeof actions.resetTiles
   setHeroNewPosition: typeof actions.setHeroNewPosition
-}
-
-interface IState {
   currentSelectedHero: IHeroBattlefield | null
   currentSelectedAction: ActionsType
+  updateSelectedHero: (hero: IHeroBattlefield | null) => void
+  updateSelectedAction: (action: ActionsType) => void
 }
 
-class Battlefield extends React.PureComponent<IProps, IState> {
+// interface IState {}
 
-  constructor(props: IProps) {
-    super(props);
-    this.state = {
-      currentSelectedHero: {} as IHeroBattlefield,
-      currentSelectedAction: ActionsType.heroMovement
-    };
-  }
+class Battlefield extends React.PureComponent<IProps, {}> {
 
   public render() {
     const allHeroes = _.flatten(Object.keys(this.props.players)
@@ -51,11 +44,12 @@ class Battlefield extends React.PureComponent<IProps, IState> {
   }
 
   private selectHero = (hero: IHeroBattlefield) => {
-    if (this.state.currentSelectedHero === hero) {
-      return
+    if (this.props.currentSelectedHero === hero) {
+      return;
     }
     this.props.resetTiles({});
-    this.setState({ currentSelectedHero: hero, currentSelectedAction: ActionsType.heroMovement });
+    this.props.updateSelectedAction(ActionsType.heroMovement);
+    this.props.updateSelectedHero(hero);
     this.props.setHeroSelected({
       setSelected: true,
       heroId: hero.id,
@@ -68,15 +62,15 @@ class Battlefield extends React.PureComponent<IProps, IState> {
 
   private clickOnTile = async (tile: ITile) => {
     this.props.resetTiles({});
-    if (tile.state === TileState.empty && !!this.state.currentSelectedHero) {
+    if (tile.state === TileState.empty && !!this.props.currentSelectedHero) {
       this.props.setHeroSelected({
         setSelected: false,
-        heroId: this.state.currentSelectedHero.id,
-        playerId: this.state.currentSelectedHero.playerId
+        heroId: this.props.currentSelectedHero.id,
+        playerId: this.props.currentSelectedHero.playerId
       });
-      this.setState({ currentSelectedHero: null });
+      this.props.updateSelectedHero(null);
     } else if (tile.state === TileState.heroMovement) {
-      const hero = this.state.currentSelectedHero as IHeroBattlefield;
+      const hero = this.props.currentSelectedHero as IHeroBattlefield;
       await this.props.setHeroNewPosition({
         heroId: hero.id,
         playerId: hero.playerId,
@@ -85,21 +79,21 @@ class Battlefield extends React.PureComponent<IProps, IState> {
         prevTileX: hero.tileX,
         prevTileY: hero.tileY
       });
-      this.changeAction(ActionsType.heroMovement, tile)
+      this.changeAction(ActionsType.heroMovement, tile);
     }
   };
 
   private changeAction = (action: ActionsType, tile: ITile) => {
-    if (this.state.currentSelectedAction === action) {
-      return
+    if (this.props.currentSelectedAction === action) {
+      return;
     }
-    this.setState({currentSelectedAction: action})
+    this.props.updateSelectedAction(action);
     this.props.resetTiles({});
-    const hero = this.state.currentSelectedHero as IHeroBattlefield;
+    const hero = this.props.currentSelectedHero as IHeroBattlefield;
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics[ActionCharacteristic[action]],
       tile.columnIndex, tile.lineIndex, TileState[action]);
     this.props.updateTiles({ data: newTiles });
-  }
+  };
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {

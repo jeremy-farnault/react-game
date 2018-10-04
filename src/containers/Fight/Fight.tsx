@@ -17,40 +17,49 @@ interface IProps {
 }
 
 interface IState {
-  currentSelectedHero: IHeroBattlefield
+  currentSelectedHero: IHeroBattlefield | null
   currentSelectedAction: ActionsType
 }
 
 class Fight extends React.PureComponent<IProps, IState> {
+
+  constructor(props: IProps) {
+    super(props);
+    this.state = {
+      currentSelectedHero: {} as IHeroBattlefield,
+      currentSelectedAction: ActionsType.heroMovement
+    };
+  }
+
   public render() {
     return (
       <ContainerScene>
         <BackgroundImage
           style={{ position: "absolute", top: -300, left: 0 }}
           src={require("../../assets/backgrounds/battlefield_big.jpg")}/>
-
-
-
-        <div style={{ flexDirection: "row", display: 'flex' }}>
-
-
-
+        <div style={{ flexDirection: "row", display: "flex" }}>
           {this.state.currentSelectedHero && <ActionButtons
             hero={this.state.currentSelectedHero}
             currentAction={this.state.currentSelectedAction}
             changeAction={this.changeSelectedAction}/>}
-
-
-
-          <Battlefield/>
+          <Battlefield
+            currentSelectedAction={this.state.currentSelectedAction}
+            currentSelectedHero={this.state.currentSelectedHero}
+            updateSelectedAction={this.updateSelectedAction}
+            updateSelectedHero={this.updateSelectedHero}/>
         </div>
-
-
-
-
       </ContainerScene>
     );
   }
+
+  private updateSelectedAction = (action: ActionsType) => {
+    this.setState({ currentSelectedAction: action });
+  };
+
+  private updateSelectedHero = (hero: IHeroBattlefield | null) => {
+    this.setState({ currentSelectedHero: hero });
+  };
+
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {
