@@ -31,9 +31,7 @@ class ActionButton extends React.PureComponent<IProps, {}> {
   }
 
   private pressActionButton = () => {
-
     this.props.changeAction(this.props.actionType)
-
   }
 }
 

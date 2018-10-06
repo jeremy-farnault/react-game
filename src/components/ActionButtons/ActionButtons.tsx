@@ -1,11 +1,12 @@
 import { ActionsType, IHeroBattlefield } from "../../core/models";
 import ActionButton from "../ActionButton/ActionButton";
+import { ActionZoneStyled } from "./ActionButtonsStyles";
 
 import * as React from "react";
 
 interface IProps {
   changeAction: (action: ActionsType) => void
-  hero: IHeroBattlefield
+  hero: IHeroBattlefield | null
   currentAction: ActionsType
 }
 
@@ -15,15 +16,14 @@ class ActionButtons extends React.PureComponent<IProps, {}> {
 
   public render() {
     const h = this.props.hero;
-    const mvt = h.characteristics.speed > 0;
-    const atk = h.characteristics.attack > 0;
-    const rAtk = h.characteristics.rangedAttack > 0;
-    const mgc = h.characteristics.magic > 0;
-    const def = h.characteristics.armor > 0;
-    const atkArm = h.characteristics.attackArmor > 0;
-    // Get height with margins
+    const mvt = h && h.characteristics.speed > 0;
+    const atk = h && h.characteristics.attack > 0;
+    const rAtk = h && h.characteristics.rangedAttack > 0;
+    const mgc = h && h.characteristics.magic > 0;
+    const def = h && h.characteristics.armor > 0;
+    const atkArm = h && h.characteristics.attackArmor > 0;
     return (
-      <div>
+      <ActionZoneStyled>
         {mvt &&
         <ActionButton actionType={ActionsType.heroMovement}
                       selected={this.props.currentAction === ActionsType.heroMovement}
@@ -48,7 +48,7 @@ class ActionButtons extends React.PureComponent<IProps, {}> {
         <ActionButton actionType={ActionsType.heroDefense}
                       selected={this.props.currentAction === ActionsType.heroDefense}
                       changeAction={this.changeAction}/>}
-      </div>
+      </ActionZoneStyled>
     );
   }
 

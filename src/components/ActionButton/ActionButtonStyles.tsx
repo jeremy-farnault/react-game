@@ -11,8 +11,7 @@ border: 1px dotted ${colors.chocolate};
 background-color: ${(props: IStyledActionButton) => props.selected ? colors.chocolate : colors.transparent}
 width: ${constants.buttonActionSize}px;
 height: ${constants.buttonActionSize}px;
-margin-top: 5px;
-margin-bottom: 5px;
+margin-bottom: 10px;
 &:hover {
 opacity: ${(props: IStyledActionButton) => props.selected ? 1 : grid.opacity};
 }

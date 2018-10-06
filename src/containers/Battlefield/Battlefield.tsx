@@ -1,5 +1,5 @@
 import * as actions from "../../core/actions/index";
-import { ActionCharacteristic, ActionsType, IHeroBattlefield, ITile, TileState } from "../../core/models";
+import { ActionsType, IHeroBattlefield, ITile, TileState } from "../../core/models";
 import { IStoreState } from "../../types";
 import Heroes from "../Heroes/Heroes";
 import Tiles from "../Tiles/Tiles";
@@ -23,6 +23,7 @@ interface IProps {
   currentSelectedAction: ActionsType
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
   updateSelectedAction: (action: ActionsType) => void
+  changeAction: (action: ActionsType, tile?: ITile) => void
 }
 
 // interface IState {}
@@ -79,20 +80,8 @@ class Battlefield extends React.PureComponent<IProps, {}> {
         prevTileX: hero.tileX,
         prevTileY: hero.tileY
       });
-      this.changeAction(ActionsType.heroMovement, tile);
+      this.props.changeAction(ActionsType.heroMovement, tile);
     }
-  };
-
-  private changeAction = (action: ActionsType, tile: ITile) => {
-    if (this.props.currentSelectedAction === action) {
-      return;
-    }
-    this.props.updateSelectedAction(action);
-    this.props.resetTiles({});
-    const hero = this.props.currentSelectedHero as IHeroBattlefield;
-    const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics[ActionCharacteristic[action]],
-      tile.columnIndex, tile.lineIndex, TileState[action]);
-    this.props.updateTiles({ data: newTiles });
   };
 }
 
