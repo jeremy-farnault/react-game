@@ -30,7 +30,7 @@
 
 ~~Change style idle tiles (use old style)~~
 
-Hero action zone next to the battlefield
+~~Hero action zone next to the battlefield~~
 
 Hero Details zone
 

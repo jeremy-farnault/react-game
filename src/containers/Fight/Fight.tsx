@@ -62,6 +62,13 @@ class Fight extends React.PureComponent<IProps, IState> {
             updateSelectedHero={this.updateSelectedHero}
             changeAction={this.changeAction}/>
         </div>
+
+        <div style={{zIndex: 10}}>
+          <div>
+            <p style={{color: 'red', zIndex: 10}}>TEST TEST TEST TEST</p>
+          </div>
+        </div>
+
       </ContainerScene>
     );
   }
