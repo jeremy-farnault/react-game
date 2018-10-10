@@ -13,7 +13,7 @@ import { IStoreState } from "../../types";
 import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 
 import Battlefield from "../Battlefield/Battlefield";
-import { BackgroundImage, ContainerScene } from "./FightStyles";
+import { BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
 
 import * as React from "react";
 import { connect } from "react-redux";
@@ -48,9 +48,8 @@ class Fight extends React.PureComponent<IProps, IState> {
     return (
       <ContainerScene>
         <BackgroundImage
-          style={{ position: "absolute", top: -300, left: 0 }}
           src={require("../../assets/backgrounds/battlefield_big.jpg")}/>
-        <div style={{ flexDirection: "row", display: "flex" }}>
+        <BattlefieldScene>
           <ActionButtons
             hero={this.state.currentSelectedHero}
             currentAction={this.state.currentSelectedAction}
@@ -61,9 +60,11 @@ class Fight extends React.PureComponent<IProps, IState> {
             updateSelectedAction={this.updateSelectedAction}
             updateSelectedHero={this.updateSelectedHero}
             changeAction={this.changeAction}/>
-        </div>
+        </BattlefieldScene>
 
-        <div style={{zIndex: 10}}>
+
+
+        <div style={{position: 'relative', zIndex: 1}}>
           <div>
             <p style={{color: 'red', zIndex: 10}}>TEST TEST TEST TEST</p>
           </div>
