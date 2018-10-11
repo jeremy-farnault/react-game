@@ -19,6 +19,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
 import IPlayers = IStoreState.IPlayers;
+import { colors } from "../../utils/colors";
 
 interface IProps {
   tiles: ITile[][]
@@ -45,30 +46,48 @@ class Fight extends React.PureComponent<IProps, IState> {
   }
 
   public render() {
+    const hero = this.state.currentSelectedHero;
+    const action = this.state.currentSelectedAction;
     return (
       <ContainerScene>
         <BackgroundImage
           src={require("../../assets/backgrounds/battlefield_big.jpg")}/>
         <BattlefieldScene>
           <ActionButtons
-            hero={this.state.currentSelectedHero}
-            currentAction={this.state.currentSelectedAction}
+            hero={hero}
+            currentAction={action}
             changeAction={this.changeAction}/>
           <Battlefield
-            currentSelectedAction={this.state.currentSelectedAction}
-            currentSelectedHero={this.state.currentSelectedHero}
+            currentSelectedAction={action}
+            currentSelectedHero={hero}
             updateSelectedAction={this.updateSelectedAction}
             updateSelectedHero={this.updateSelectedHero}
             changeAction={this.changeAction}/>
         </BattlefieldScene>
 
 
-
-        <div style={{position: 'relative', zIndex: 1}}>
-          <div>
-            <p style={{color: 'red', zIndex: 10}}>TEST TEST TEST TEST</p>
+        {!!hero &&
+        <div style={{ display: "flex", margin: "auto", maxWidth: 1000, position: "relative", zIndex: 1 }}>
+          <div style={{
+            padding: 20,
+            display: 'flex',
+            flexDirection: "row",
+            borderWidth: 2,
+            borderColor: colors.yellow,
+            borderStyle: "solid",
+            marginTop: 50
+          }}>
+            <img src={hero.assets.tokenPath.path}
+                 width={hero.assets.tokenPath.width}
+                 height={hero.assets.tokenPath.height}/>
+            <div style={{flexDirection: 'column'}}>
+              {Object.keys(hero.characteristics).map(c =>
+                <div key={c + hero.id + hero.playerId}>
+                  {c}: {hero.characteristics[c]}
+                </div>)}
+            </div>
           </div>
-        </div>
+        </div>}
 
       </ContainerScene>
     );
@@ -86,10 +105,10 @@ class Fight extends React.PureComponent<IProps, IState> {
     if (this.state.currentSelectedAction === action) {
       return;
     }
-    this.setState({currentSelectedAction: action});
+    this.setState({ currentSelectedAction: action });
     this.props.resetTiles({});
     const hero = this.state.currentSelectedHero as IHeroBattlefield;
-    const usedTile = !!tile ? tile : this.props.tiles[hero.tileY][hero.tileX]
+    const usedTile = !!tile ? tile : this.props.tiles[hero.tileY][hero.tileX];
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action]);
     this.props.updateTiles({ data: newTiles });
