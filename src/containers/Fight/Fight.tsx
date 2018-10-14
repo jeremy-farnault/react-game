@@ -80,10 +80,11 @@ class Fight extends React.PureComponent<IProps, IState> {
             <img src={hero.assets.tokenPath.path}
                  width={hero.assets.tokenPath.width}
                  height={hero.assets.tokenPath.height}/>
-            <div style={{flexDirection: 'column'}}>
+            <div style={{flexDirection: 'column', marginLeft: 10}}>
               {Object.keys(hero.characteristics).map(c =>
-                <div key={c + hero.id + hero.playerId}>
-                  {c}: {hero.characteristics[c]}
+                <div key={c + hero.id + hero.playerId} style={{flexDirection: 'row', display: 'flex', alignItems: 'center', justifyContent: 'flex-start'}}>
+                  <div style={{color: 'white', fontWeight: 800, fontSize: 14}}>{c}:</div>
+                  <div style={{color: 'white', fontSize: 14, marginLeft: 5}}>{hero.characteristics[c]}</div>
                 </div>)}
             </div>
           </div>
