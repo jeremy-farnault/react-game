@@ -33,8 +33,9 @@
 ~~Hero action zone next to the battlefield~~
 
 Hero Details zone
-    - Sort charateristics alphabetically
-    - Add header zone (Details + name)
+    - ~~Sort charateristics alphabetically~~
+    - ~~Display in non camel case~~
+    - ~~Add header zone (Details + name)~~
     - Add description on hover miniature
     - Add skills
     - Add life points, magic points and armor
