@@ -66,6 +66,11 @@ export const fakePlayers: IPlayers = {
         tileY: 0,
         playerId: "firstPlayer",
         selected: false,
+        points: {
+          currentLifePoints: 10,
+          currentMagicPoints: 0,
+          currentArmorPoints: 7
+        },
         state: IHeroBattlefieldState.idle
       } as IHeroBattlefield,
       [heroesIds.arwen]: {
@@ -117,6 +122,11 @@ export const fakePlayers: IPlayers = {
         tileY: 1,
         playerId: "firstPlayer",
         selected: false,
+        points: {
+          currentLifePoints: 7,
+          currentMagicPoints: 8,
+          currentArmorPoints: 5
+        },
         state: IHeroBattlefieldState.idle
       } as IHeroBattlefield
     },
@@ -182,6 +192,11 @@ export const fakePlayers: IPlayers = {
         tileY: 0,
         playerId: "secondPlayer",
         selected: false,
+        points: {
+          currentLifePoints: 8,
+          currentMagicPoints: 20,
+          currentArmorPoints: 2
+        },
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
@@ -234,6 +249,11 @@ export const fakePlayers: IPlayers = {
         tileY: 1,
         playerId: "secondPlayer",
         selected: false,
+        points: {
+          currentLifePoints: 12,
+          currentMagicPoints: 0,
+          currentArmorPoints: 9
+        },
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
@@ -286,6 +306,11 @@ export const fakePlayers: IPlayers = {
         tileY: 2,
         playerId: "secondPlayer",
         selected: false,
+        points: {
+          currentLifePoints: 25,
+          currentMagicPoints: 0,
+          currentArmorPoints: 9
+        },
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {

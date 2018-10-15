@@ -16,9 +16,10 @@ import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import Battlefield from "../Battlefield/Battlefield";
 import { BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
 
-import * as _ from 'lodash'
+import * as _ from "lodash";
 import * as React from "react";
 import { connect } from "react-redux";
+import * as ReactTooltip from "react-tooltip";
 import { bindActionCreators, Dispatch } from "redux";
 import IPlayers = IStoreState.IPlayers;
 
@@ -76,14 +77,16 @@ class Fight extends React.PureComponent<IProps, IState> {
             borderStyle: "solid",
             marginTop: 50
           }}>
-            <div style={{color: colors.yellow, textAlign: 'center', marginBottom: 10}}>{hero.id} details</div>
+            <div style={{ color: colors.yellow, textAlign: "center", marginBottom: 10 }}>{hero.id} details</div>
             <div style={{
               display: "flex",
               flexDirection: "row"
             }}>
               <img src={hero.assets.tokenPath.path}
+                   data-tip={hero.description}
                    width={hero.assets.tokenPath.width}
                    height={hero.assets.tokenPath.height}/>
+              <ReactTooltip place='top' type='light' multiline={true}/>
               <div style={{ flexDirection: "column", marginLeft: 10 }}>
                 {Object.keys(hero.characteristics).map(c =>
                   <div key={c + hero.id + hero.playerId} style={{
@@ -95,6 +98,28 @@ class Fight extends React.PureComponent<IProps, IState> {
                     <div style={{ color: "white", fontWeight: 800, fontSize: 14 }}>{_.capitalize(_.lowerCase(c))}:</div>
                     <div style={{ color: "white", fontSize: 14, marginLeft: 5 }}>{hero.characteristics[c]}</div>
                   </div>)}
+              </div>
+              <div
+                style={{ flexDirection: "column", justifyContent: "space-between", display: "flex", marginLeft: 10 }}>
+                <div>
+                  {Object.keys(hero.points).map(c =>
+                    <div key={c + hero.id + hero.playerId} style={{
+                      flexDirection: "row",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "flex-start"
+                    }}>
+                      <div style={{ color: "white", fontWeight: 800, fontSize: 14 }}>{_.capitalize(_.lowerCase(c))}:
+                      </div>
+                      <div style={{ color: "white", fontSize: 14, marginLeft: 5 }}>{hero.points[c]}</div>
+                    </div>)}
+                </div>
+                <div>
+                  {hero.skills.map((s: string) =>
+                    <div key={s + hero.id + hero.playerId}
+                         style={{ color: "white", fontWeight: 800, fontSize: 14 }}>{s}</div>
+                  )}
+                </div>
               </div>
             </div>
           </div>

@@ -94,6 +94,11 @@ export interface IHeroBattlefield extends IHero {
   playerId: string
   selected: boolean
   state: IHeroBattlefieldState
+  points: {
+    currentLifePoints: number
+    currentMagicPoints: number
+    currentArmorPoints: number
+  }
 }
 
 export enum IHeroBattlefieldState {
