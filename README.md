@@ -32,7 +32,7 @@
 
 ~~Hero action zone next to the battlefield~~
 
-Hero Details zone
+~~Hero Details zone~~
     - ~~Sort charateristics alphabetically~~
     - ~~Display in non camel case~~
     - ~~Add header zone (Details + name)~~
