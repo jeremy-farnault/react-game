@@ -3,7 +3,7 @@ import {
   BoxStyled,
   CharacteristicsZoneStyled,
   CharacteristicZoneStyled,
-  DetailsZoneStyled,
+  DetailsZoneStyled, PointsZone, SkillsAndPointsZone, TextBoldStyled, TextStyled,
   TitleStyled,
   ZoneStyled
 } from "./DetailsZoneStyles";
@@ -33,32 +33,24 @@ class DetailsZone extends React.PureComponent<IProps, {}> {
             <CharacteristicsZoneStyled>
               {Object.keys(hero.characteristics).map(c =>
                 <CharacteristicZoneStyled key={c + hero.id + hero.playerId}>
-                  <div style={{ color: "white", fontWeight: 800, fontSize: 14 }}>{_.capitalize(_.lowerCase(c))}:</div>
-                  <div style={{ color: "white", fontSize: 14, marginLeft: 5 }}>{hero.characteristics[c]}</div>
+                  <TextBoldStyled>{_.capitalize(_.lowerCase(c))}:</TextBoldStyled>
+                  <TextStyled>{hero.characteristics[c]}</TextStyled>
                 </CharacteristicZoneStyled>)}
             </CharacteristicsZoneStyled>
-            <div
-              style={{ flexDirection: "column", justifyContent: "space-between", display: "flex", marginLeft: 10 }}>
+            <SkillsAndPointsZone>
               <div>
                 {Object.keys(hero.points).map(c =>
-                  <div key={c + hero.id + hero.playerId} style={{
-                    flexDirection: "row",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "flex-start"
-                  }}>
-                    <div style={{ color: "white", fontWeight: 800, fontSize: 14 }}>{_.capitalize(_.lowerCase(c))}:
-                    </div>
-                    <div style={{ color: "white", fontSize: 14, marginLeft: 5 }}>{hero.points[c]}</div>
-                  </div>)}
+                  <PointsZone key={c + hero.id + hero.playerId}>
+                    <TextBoldStyled>{_.capitalize(_.lowerCase(c))}:</TextBoldStyled>
+                    <TextStyled>{hero.points[c]}</TextStyled>
+                  </PointsZone>)}
               </div>
               <div>
                 {hero.skills.map((s: string) =>
-                  <div key={s + hero.id + hero.playerId}
-                       style={{ color: "white", fontWeight: 800, fontSize: 14 }}>{s}</div>
+                  <TextBoldStyled key={s + hero.id + hero.playerId}>{s}</TextBoldStyled>
                 )}
               </div>
-            </div>
+            </SkillsAndPointsZone>
           </DetailsZoneStyled>
         </BoxStyled>
       </ZoneStyled>
