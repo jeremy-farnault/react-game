@@ -64,6 +64,26 @@ class Fight extends React.PureComponent<IProps, IState> {
             updateSelectedHero={this.updateSelectedHero}
             changeAction={this.changeAction}/>
         </BattlefieldScene>
+
+
+
+
+
+        <div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
         {!!hero && <DetailsZone hero={hero}/>}
       </ContainerScene>
     );

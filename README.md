@@ -40,8 +40,15 @@
     - ~~Add skills~~
     - ~~Add life points, magic points and armor~~
 
-Heroes initiative zone
+Heroes initiative zone (see design in notebook)
+    - Sort the heroes
+
+Find a better way to display the details zone (above initiative zone see design in notebook)
+Find a better way to display the actions
+Find a way to separate visually inspected hero and current hero
 
 Put all color values etc in grid and colors file
 http://www.tayloredmktg.com/rgb/
 https://www.color-hex.com/color/ff3447
+
+https://www.google.co.nz/imgres?imgurl=https%3A%2F%2Fwww.destructoid.com%2F%2Ful%2F514993-review-the-banner-saga-3%2Fbs3-3-noscale.jpg&imgrefurl=https%3A%2F%2Fwww.destructoid.com%2Freview-the-banner-saga-3-514993.phtml&docid=50h0THZQV7az4M&tbnid=l8V6ltptY99V4M%3A&vet=10ahUKEwiutO2T4ozeAhXHXisKHX4pBpQQMwgyKAMwAw..i&w=1920&h=1080&bih=1009&biw=1858&q=banner%20saga%203&ved=0ahUKEwiutO2T4ozeAhXHXisKHX4pBpQQMwgyKAMwAw&iact=mrc&uact=8
