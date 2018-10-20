@@ -15,6 +15,7 @@ import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import Battlefield from "../Battlefield/Battlefield";
 import { BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
 
+import * as _ from "lodash";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
@@ -26,13 +27,16 @@ interface IProps {
   heroes: IHeroes
   cards: ICards
   players: IPlayers
+  heroesSorted: IHeroBattlefield[]
   updateTiles: typeof actions.updateTiles
   resetTiles: typeof actions.resetTiles
+  setHeroesOrder: typeof actions.setHeroesOrder
 }
 
 interface IState {
   currentSelectedHero: IHeroBattlefield | null
   currentSelectedAction: ActionsType
+  allHeroes: IHeroBattlefield[]
 }
 
 class Fight extends React.PureComponent<IProps, IState> {
@@ -41,13 +45,21 @@ class Fight extends React.PureComponent<IProps, IState> {
     super(props);
     this.state = {
       currentSelectedHero: null,
-      currentSelectedAction: ActionsType.heroMovement
+      currentSelectedAction: ActionsType.heroMovement,
+      allHeroes: this.getAllHeroesPlayers()
     };
+  }
+
+  public componentDidMount() {
+    const sorted = []
+    
+    this.props.setHeroesOrder({allHeroesPlayers: []})
   }
 
   public render() {
     const hero = this.state.currentSelectedHero;
     const action = this.state.currentSelectedAction;
+    console.log('HEROES', this.props.heroesSorted)
     return (
       <ContainerScene>
         <BackgroundImage
@@ -58,6 +70,7 @@ class Fight extends React.PureComponent<IProps, IState> {
             currentAction={action}
             changeAction={this.changeAction}/>
           <Battlefield
+            allHeroes={this.state.allHeroes}
             currentSelectedAction={action}
             currentSelectedHero={hero}
             updateSelectedAction={this.updateSelectedAction}
@@ -69,15 +82,7 @@ class Fight extends React.PureComponent<IProps, IState> {
 
 
 
-        <div>
 
-
-
-
-
-
-
-        </div>
 
 
 
@@ -87,6 +92,12 @@ class Fight extends React.PureComponent<IProps, IState> {
         {!!hero && <DetailsZone hero={hero}/>}
       </ContainerScene>
     );
+  }
+
+  private getAllHeroesPlayers = () => {
+    return _.flatten(Object.keys(this.props.players)
+      .map((playerId: string) => Object.keys(this.props.players[playerId].heroes)
+        .map((heroId: string) => this.props.players[playerId].heroes[heroId])));
   }
 
   private updateSelectedAction = (action: ActionsType) => {
@@ -116,14 +127,16 @@ function mapStateToProps(state: IStoreState.IRootState) {
     tiles: state.battlefield.tiles,
     heroes: state.session.allHeroes,
     cards: state.session.allCards,
-    players: state.session.players
+    players: state.session.players,
+    heroesSorted: state.session.heroesOrder
   };
 }
 
 const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators({
     updateTiles: actions.updateTiles,
-    resetTiles: actions.resetTiles
+    resetTiles: actions.resetTiles,
+    setHeroesOrder: actions.setHeroesOrder
   }, dispatch);
 
 export default connect(

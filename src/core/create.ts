@@ -1,11 +1,23 @@
+import { IStoreState } from "../types";
 import reducer from './reducers/index'
 import root from './saga'
 
 import { applyMiddleware, compose, createStore as _createStore, Store } from 'redux'
 import createSagaMiddleware from 'redux-saga'
-import { IStoreState } from "../types";
 
-export const initialState: {data: IStoreState.IRootState} = {data: {battlefield: {tiles: []}, session: {allHeroes: {}, allCards: {}, players: {}}}}
+export const initialState: {data: IStoreState.IRootState} = {
+  data: {
+    battlefield: {
+      tiles: []
+    },
+    session: {
+      allHeroes: {},
+      allCards: {},
+      players: {},
+      heroesOrder: []
+    }
+  }
+}
 
 export function createStore(data?: any): Store<IStoreState.IRootState> {
   const sagaMiddleware = createSagaMiddleware()

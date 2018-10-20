@@ -5,7 +5,6 @@ import Heroes from "../Heroes/Heroes";
 import Tiles from "../Tiles/Tiles";
 import { ContainerBattlefield } from "./BattlefieldStyles";
 
-import * as _ from "lodash";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
@@ -13,6 +12,7 @@ import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import IPlayers = IStoreState.IPlayers;
 
 interface IProps {
+  allHeroes: IHeroBattlefield[]
   tiles: ITile[][]
   players: IPlayers
   setHeroSelected: typeof actions.setHeroSelected
@@ -31,13 +31,10 @@ interface IProps {
 class Battlefield extends React.PureComponent<IProps, {}> {
 
   public render() {
-    const allHeroes = _.flatten(Object.keys(this.props.players)
-      .map((playerId: string) => Object.keys(this.props.players[playerId].heroes)
-        .map((heroId: string) => this.props.players[playerId].heroes[heroId])));
     return (
       <ContainerBattlefield>
         <Tiles tiles={this.props.tiles} clickOnTile={this.clickOnTile}/>
-        <Heroes heroes={allHeroes}
+        <Heroes heroes={this.props.allHeroes}
                 tiles={this.props.tiles}
                 selectHero={this.selectHero}/>
       </ContainerBattlefield>

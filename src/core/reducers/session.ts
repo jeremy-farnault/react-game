@@ -10,16 +10,18 @@ import {
   LOAD_PLAYERS_START,
   LOAD_PLAYERS_SUCCESS,
   SET_HERO_NEW_POSITION,
-  SET_HERO_SELECTED
+  SET_HERO_SELECTED,
+  SET_HEROES_ORDER
 } from "../constants";
-import { ICards, IHeroes } from "../models";
+import { ICards, IHeroBattlefield, IHeroes } from "../models";
 
 import { Action, handleActions } from "redux-actions";
 
 const initialState: IStoreState.ISession = {
   allCards: {},
   allHeroes: {},
-  players: {}
+  players: {},
+  heroesOrder: []
 };
 
 export interface ILoadAllHeroesSuccessPayload {
@@ -47,6 +49,10 @@ export interface ISetHeroNewPositionPayload {
   tileY: number
   prevTileX: number
   prevTileY: number
+}
+
+export interface ISetHeroesOrderPayload {
+  allHeroesPlayers: IHeroBattlefield[]
 }
 
 export default handleActions(
@@ -110,7 +116,7 @@ export default handleActions(
       if (action.payload && action.payload.playerId && action.payload.heroId) {
         Object.keys(newPLayers)
           .forEach((playerId: string) => Object.keys(newPLayers[playerId].heroes)
-            .forEach((heroId: string) => newPLayers[playerId].heroes[heroId].selected = false))
+            .forEach((heroId: string) => newPLayers[playerId].heroes[heroId].selected = false));
         newPLayers[action.payload.playerId].heroes[action.payload.heroId].selected = action.payload.setSelected;
       }
       return ({
@@ -131,7 +137,16 @@ export default handleActions(
         ...state,
         players: newPLayers
       });
-    }
+    },
+
+    // HEROES ORDER ACTIONS
+    [SET_HEROES_ORDER]: (
+      state: IStoreState.ISession,
+      action: Action<ISetHeroesOrderPayload>
+    ) => ({
+      ...state,
+      heroesOrder: action.payload ? action.payload.allHeroesPlayers : []
+    })
   },
   initialState
 );
