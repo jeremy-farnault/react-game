@@ -31,6 +31,7 @@ interface IProps {
   updateTiles: typeof actions.updateTiles
   resetTiles: typeof actions.resetTiles
   setHeroesOrder: typeof actions.setHeroesOrder
+  setNextCurrentHero: typeof actions.setNextCurrentHero
 }
 
 interface IState {
@@ -51,15 +52,17 @@ class Fight extends React.PureComponent<IProps, IState> {
   }
 
   public componentDidMount() {
-    const sorted = []
-    
-    this.props.setHeroesOrder({allHeroesPlayers: []})
+    const sorted = _.reverse(_.sortBy(this.state.allHeroes, [
+      (h: IHeroBattlefield) => h.characteristics.initiative,
+      (h: IHeroBattlefield) => h.characteristics.speed,
+      () => Math.random()
+    ]));
+    this.props.setHeroesOrder({ allHeroesPlayers: sorted });
   }
 
   public render() {
     const hero = this.state.currentSelectedHero;
     const action = this.state.currentSelectedAction;
-    console.log('HEROES', this.props.heroesSorted)
     return (
       <ContainerScene>
         <BackgroundImage
@@ -79,16 +82,6 @@ class Fight extends React.PureComponent<IProps, IState> {
         </BattlefieldScene>
 
 
-
-
-
-
-
-
-
-
-
-
         {!!hero && <DetailsZone hero={hero}/>}
       </ContainerScene>
     );
@@ -98,7 +91,7 @@ class Fight extends React.PureComponent<IProps, IState> {
     return _.flatten(Object.keys(this.props.players)
       .map((playerId: string) => Object.keys(this.props.players[playerId].heroes)
         .map((heroId: string) => this.props.players[playerId].heroes[heroId])));
-  }
+  };
 
   private updateSelectedAction = (action: ActionsType) => {
     this.setState({ currentSelectedAction: action });
@@ -136,7 +129,8 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators({
     updateTiles: actions.updateTiles,
     resetTiles: actions.resetTiles,
-    setHeroesOrder: actions.setHeroesOrder
+    setHeroesOrder: actions.setHeroesOrder,
+    setNextCurrentHero: actions.setNextCurrentHero
   }, dispatch);
 
 export default connect(

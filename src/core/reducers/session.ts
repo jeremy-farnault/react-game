@@ -11,7 +11,7 @@ import {
   LOAD_PLAYERS_SUCCESS,
   SET_HERO_NEW_POSITION,
   SET_HERO_SELECTED,
-  SET_HEROES_ORDER
+  SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO
 } from "../constants";
 import { ICards, IHeroBattlefield, IHeroes } from "../models";
 
@@ -146,7 +146,18 @@ export default handleActions(
     ) => ({
       ...state,
       heroesOrder: action.payload ? action.payload.allHeroesPlayers : []
-    })
+    }),
+    [SET_NEXT_CURRENT_HERO]: (
+      state: IStoreState.ISession,
+      action: Action<null>
+    ) => {
+      const newOrder = state.heroesOrder.slice(1)
+      newOrder.push(state.heroesOrder[0])
+      return ({
+        ...state,
+        heroesOrder: newOrder
+      })
+    }
   },
   initialState
 );
