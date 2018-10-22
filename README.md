@@ -47,6 +47,8 @@ Heroes initiative zone (see design in notebook)
     - Style zone
     - Find images for life points magic points and armmor points
     - Add tooltips on everything (name heroes, characs...)
+    - Modal for details on click on hero
+    - Minimal details provided by the zone above the initiative zone
 
 Action points zone
 
