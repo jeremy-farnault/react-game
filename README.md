@@ -42,6 +42,13 @@
 
 Heroes initiative zone (see design in notebook)
     - Sort the heroes
+    - Display only a certain number + button to say if there is more
+    - Button end turn
+    - Style zone
+    - Find images for life points magic points and armmor points
+    - Add tooltips on everything (name heroes, characs...)
+
+Action points zone
 
 Find a better way to display the details zone (above initiative zone see design in notebook)
 Find a better way to display the actions

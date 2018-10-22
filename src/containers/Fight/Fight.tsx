@@ -10,6 +10,7 @@ import {
   TileState
 } from "../../core/models";
 import { IStoreState } from "../../types";
+import { colors } from "../../utils/colors";
 import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 
 import Battlefield from "../Battlefield/Battlefield";
@@ -21,6 +22,7 @@ import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
 import IPlayers = IStoreState.IPlayers;
 import DetailsZone from "../../components/DetailsZone/DetailsZone";
+import { constants } from "../../utils/constants";
 
 interface IProps {
   tiles: ITile[][]
@@ -80,6 +82,39 @@ class Fight extends React.PureComponent<IProps, IState> {
             updateSelectedHero={this.updateSelectedHero}
             changeAction={this.changeAction}/>
         </BattlefieldScene>
+
+
+        <div style={{
+          zIndex: 1,
+          margin: "auto",
+          maxWidth: constants.tileSize * constants.numberOfColumns,
+          position: "relative",
+          marginTop: 50
+        }}>
+          <div style={{
+            backgroundColor: "rgba(70, 70, 70, .5)",
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "center",
+            flexDirection: "row",
+            paddingTop: 10,
+            paddingBottom: 10,
+            paddingLeft: 20,
+            paddingRight: 20,
+            width: 'fit-content',
+            borderRadius: (50 * 1.3 + 20 + 13) / 2
+          }}>
+            {this.props.heroesSorted.map((h: IHeroBattlefield, ind: number) => {
+              const size = h.assets.tokenPath.width * (ind === 0 ? 1.3 : 1)
+              return <div key={h.playerId + h.id} style={{ marginRight: 10, display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+                <img src={h.assets.tokenPath.path}
+                     width={size}
+                     height={size}/>
+                <div style={{borderRadius: 4, width: 8, marginTop: 5, height: 8, backgroundColor: h.playerId === this.props.heroesSorted[0].playerId ? colors.blueGreen : colors.red}}/>
+              </div>
+            })}
+          </div>
+        </div>
 
 
         {!!hero && <DetailsZone hero={hero}/>}
