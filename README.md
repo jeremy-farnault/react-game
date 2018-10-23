@@ -41,7 +41,7 @@
     - ~~Add life points, magic points and armor~~
 
 Heroes initiative zone (see design in notebook)
-    - Sort the heroes
+    - ~~Sort the heroes~~
     - Display only a certain number + button to say if there is more
     - Button end turn
     - Style zone
