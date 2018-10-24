@@ -1,8 +1,8 @@
 // Session
 
 export enum Faction {
-  good = 'good',
-  evil = 'evil'
+  good = "good",
+  evil = "evil"
 }
 
 // Player
@@ -36,25 +36,25 @@ export enum TileState {
 }
 
 export enum TileColors {
-  empty = '#2F4F4F',
-  idleHero = 'rgba(0, 0, 0, 0)',
-  heroAttack = '#FF3447',
-  heroAttackArmor = '#E5D964',
-  heroDefense = '#929AEC',
-  heroMagic = '#8EBEBA',
-  heroMovement = '#3CB371',
-  heroRangedAttack = '#A37B5E'
+  empty = "#2F4F4F",
+  idleHero = "rgba(0, 0, 0, 0)",
+  heroAttack = "#FF3447",
+  heroAttackArmor = "#E5D964",
+  heroDefense = "#929AEC",
+  heroMagic = "#8EBEBA",
+  heroMovement = "#3CB371",
+  heroRangedAttack = "#A37B5E"
 }
 
 export enum TileHoverColors {
-  empty = '#2F4F4F',
-  idleHero = 'rgba(0, 0, 0, 0)',
-  heroAttack = '#FF707E',
-  heroAttackArmor = '#ECE492',
-  heroDefense = '#B2B8F1',
-  heroMagic = '#8EBEBA',
-  heroMovement = '#98FB98',
-  heroRangedAttack = '#BEA28E'
+  empty = "#2F4F4F",
+  idleHero = "rgba(0, 0, 0, 0)",
+  heroAttack = "#FF707E",
+  heroAttackArmor = "#ECE492",
+  heroDefense = "#B2B8F1",
+  heroMagic = "#8EBEBA",
+  heroMovement = "#98FB98",
+  heroRangedAttack = "#BEA28E"
 }
 
 export enum TileSize {
@@ -138,20 +138,20 @@ export interface IHeroAssets {
 }
 
 export enum HeroSize {
-  small = 'S',
-  medium = 'M',
-  large = 'L'
+  small = "S",
+  medium = "M",
+  large = "L"
 }
 
 // Action Buttons
 
 export enum ActionsType {
-  heroMovement = 'heroMovement',
-  heroAttack = 'heroAttack',
-  heroRangedAttack = 'heroRangedAttack',
-  heroAttackArmor = 'heroAttackArmor',
-  heroMagic = 'heroMagic',
-  heroDefense = 'heroDefense'
+  heroMovement = "heroMovement",
+  heroAttack = "heroAttack",
+  heroRangedAttack = "heroRangedAttack",
+  heroAttackArmor = "heroAttackArmor",
+  heroMagic = "heroMagic",
+  heroDefense = "heroDefense"
 }
 
 export const ActionButtonIcon = {
@@ -161,15 +161,15 @@ export const ActionButtonIcon = {
   heroAttackArmor: require("../assets/actionsTokens/attack_armor_action.png"),
   heroMagic: require("../assets/actionsTokens/magic_action.png"),
   heroDefense: require("../assets/actionsTokens/defense_action.png")
-}
+};
 
 export enum ActionCharacteristic {
-  heroMovement = 'speed',
-  heroAttack = 'attack',
-  heroRangedAttack = 'rangedAttack',
-  heroAttackArmor = 'attackArmor',
-  heroMagic = 'magic',
-  heroDefense = 'armor'
+  heroMovement = "speed",
+  heroAttack = "attack",
+  heroRangedAttack = "rangedAttack",
+  heroAttackArmor = "attackArmor",
+  heroMagic = "magic",
+  heroDefense = "armor"
 }
 
 // Cards
@@ -193,3 +193,20 @@ export interface ICardAssets {
   normalPath: string
   miniaturePath: string
 }
+
+// Characteristics Images
+
+export const IHeroBattlefieldPointsIcon = {
+  currentLifePoints: {
+    path: require("../assets/descriptionTokens/life_points.png"),
+    size: 30
+  },
+  currentMagicPoints: {
+    path: require("../assets/descriptionTokens/magic_points.png"),
+    size: 30
+  },
+  currentArmorPoints: {
+    path: require("../assets/descriptionTokens/armor_points.png"),
+    size: 30
+  }
+};
