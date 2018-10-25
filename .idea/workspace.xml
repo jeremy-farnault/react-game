@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/descriptionTokens/armour05platemail.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/descriptionTokens/armor_points.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/descriptionTokens/glass05red.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/descriptionTokens/life_points.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/descriptionTokens/magic03orb.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/descriptionTokens/magic_points.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/TEMP/32sizeassets/magic01crystalwand.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/skillTokens/weapon_skill.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/TEMP/32sizeassets/weapon01crystalsword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/skillTokens/magic_skill.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,33 +21,33 @@
     <session id="977092378">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.2" value="6" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TsLintLanguageService" value="11" />
-          <entry key="TypeScriptServerServiceImpl" value="11" />
+          <entry key="TsLintLanguageService" value="12" />
+          <entry key="TypeScriptServerServiceImpl" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="773" />
+          <entry key="md" value="1014" />
           <entry key="ts" value="3566" />
-          <entry key="tsx" value="17804" />
+          <entry key="tsx" value="21196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Less" value="1" />
-          <entry key="Markdown" value="773" />
+          <entry key="Markdown" value="1014" />
           <entry key="TypeScript" value="3566" />
-          <entry key="TypeScript JSX" value="17803" />
+          <entry key="TypeScript JSX" value="21195" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,23 +71,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="600">
-                <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+              <first_editor relative-caret-position="585">
+                <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
+            <state relative-caret-position="525">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
@@ -99,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/models.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
+            <state relative-caret-position="3150">
               <caret line="210" column="2" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="2" />
             </state>
           </provider>
@@ -220,9 +219,9 @@
         <option value="$PROJECT_DIR$/src/core/constants/index.ts" />
         <option value="$PROJECT_DIR$/src/core/reducers/session.ts" />
         <option value="$PROJECT_DIR$/src/core/actions/index.ts" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/core/models.ts" />
         <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -273,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,6 +302,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="descriptionTokens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="skillTokens" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
@@ -441,7 +448,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -460,16 +466,16 @@
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\GitRepos\react-game\src\assets\backgrounds" />
+      <recent name="D:\Code\GitRepos\react-game\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/skillTokens" />
       <recent name="D:\Code\GitRepos\react-game\src\assets\descriptionTokens" />
       <recent name="D:\Code\GitRepos\react-game\src\assets\TEMP\32sizeassets" />
       <recent name="D:\Code\GitRepos\react-game\src\components\Tile" />
       <recent name="D:\Code\GitRepos\react-game\src\components\Hero" />
-      <recent name="$PROJECT_DIR$/src/utils" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Code\GitRepos\react-game\src\assets\backgrounds" />
-      <recent name="D:\Code\GitRepos\react-game\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -557,6 +563,7 @@
       <workItem from="1540238094472" duration="108000" />
       <workItem from="1540323133152" duration="2172000" />
       <workItem from="1540409820378" duration="1758000" />
+      <workItem from="1540495170987" duration="2924000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -583,7 +590,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186047000" />
+    <option name="totallyTimeSpent" value="188971000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,7 +603,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1170" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23079953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -748,7 +754,7 @@
     <entry file="file://$PROJECT_DIR$/src/assets/TEMP/32sizeassets/weapon02dagger.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/TEMP/32sizeassets/weapon01crystalsword.png">
+    <entry file="file://$PROJECT_DIR$/src/assets/skillTokens/magic_skill.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/TEMP/32sizeassets/magic07scroll.png">
@@ -766,7 +772,7 @@
     <entry file="file://$PROJECT_DIR$/src/assets/TEMP/32sizeassets/magic02spellbook.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/TEMP/32sizeassets/magic01crystalwand.png">
+    <entry file="file://$PROJECT_DIR$/src/assets/skillTokens/weapon_skill.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/TEMP/32sizeassets/glass06green.png">
@@ -804,9 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,6 +844,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="210" column="2" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DetailsZone/DetailsZone.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -851,30 +861,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
+    <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="210" column="2" selection-start-line="210" selection-start-column="2" selection-end-line="210" selection-end-column="2" />
+        <state relative-caret-position="525">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="600">
-            <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+          <first_editor relative-caret-position="585">
+            <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

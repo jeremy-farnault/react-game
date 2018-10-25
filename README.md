@@ -45,10 +45,12 @@ Heroes initiative zone (see design in notebook)
     - Display only a certain number + button to say if there is more
     - Button end turn
     - Style zone
-    - Find images for life points magic points and armmor points
-    - Add tooltips on everything (name heroes, characs...)
+    - Add icons for the skills with description on tooltip
+    - ~~Find images for life points magic points and armmor points~~
+    - ~~Add tooltips on everything (name heroes, characs...)~~
     - Modal for details on click on hero
     - Minimal details provided by the zone above the initiative zone
+    - Zone right of initiative zone used for selected hero (not current one)
 
 Action points zone
 

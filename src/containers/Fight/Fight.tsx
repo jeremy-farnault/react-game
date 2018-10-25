@@ -87,6 +87,22 @@ class Fight extends React.PureComponent<IProps, IState> {
         </BattlefieldScene>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {heroes.length > 0 &&
         <div style={{
           zIndex: 1,
@@ -121,23 +137,74 @@ class Fight extends React.PureComponent<IProps, IState> {
               </div>
             )}
           </div>
+          <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-end'}}>
           <div style={{
             backgroundColor: "rgba(70, 70, 70, .5)",
             display: "flex",
             justifyContent: "flex-start",
-            alignItems: "center",
+            alignItems: "flex-end",
             flexDirection: "row",
             paddingTop: 10,
             paddingBottom: 10,
-            paddingLeft: 20,
-            paddingRight: 20,
+            paddingLeft: 17,
+            paddingRight: 17,
+            height: 'fit-content',
+            width: "fit-content",
+            borderLeftWidth: 2,
+            borderTopWidth: 2,
+            borderBottomWidth: 2,
+            borderRightWidth: 0,
+            borderStyle: 'solid',
+            borderColor: 'rgb(70, 70, 70)',
+            borderTopRightRadius: (50 * 1.6 + 40 + 13) / 2,
+            borderTopLeftRadius: (50 * 1.6 + 40 + 13) / 2,
+            borderBottomLeftRadius: (50 * 1.6 + 40 + 13) / 2
+          }}>
+              <div style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center"
+              }}>
+                <ReactTooltip place='top' type='light' effect='solid' multiline={true}/>
+                <img src={heroes[0].assets.tokenPath.path}
+                     data-tip={heroes[0].id}
+                     width={heroes[0].assets.tokenPath.width * 1.6}
+                     height={heroes[0].assets.tokenPath.width * 1.6}/>
+                <div style={{
+                  borderRadius: 4,
+                  width: 8,
+                  marginTop: 6,
+                  height: 8,
+                  backgroundColor: colors.blueGreen
+                }}/>
+              </div>
+          </div>
+          <div style={{
+            backgroundColor: "rgba(70, 70, 70, .5)",
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "flex-end",
+            flexDirection: "row",
+            paddingTop: 10,
+            height: 'fit-content',
+            borderLeftWidth: 0,
+            borderRightWidth: 2,
+            borderTopWidth: 2,
+            borderBottomWidth: 2,
+            borderStyle: 'solid',
+            borderColor: 'rgb(70, 70, 70)',
+            paddingBottom: 10,
+            paddingRight: 10,
             width: "fit-content",
             borderTopRightRadius: (50 * 1.3 + 20 + 13) / 2,
-            borderBottomRightRadius: (50 * 1.3 + 20 + 13) / 2,
-            borderBottomLeftRadius: (50 * 1.3 + 20 + 13) / 2
+            borderTopLeftRadius: 15,
+            borderBottomRightRadius: (50 * 1.3 + 20 + 13) / 2
           }}>
             {heroes.map((h: IHeroBattlefield, ind: number) => {
-              const size = h.assets.tokenPath.width * (ind === 0 ? 1.3 : 1);
+              if (ind === 0) {
+                return null
+              }
               return <div key={h.playerId + h.id} style={{
                 marginRight: 10,
                 display: "flex",
@@ -148,19 +215,28 @@ class Fight extends React.PureComponent<IProps, IState> {
                 <ReactTooltip place='top' type='light' effect='solid' multiline={true}/>
                 <img src={h.assets.tokenPath.path}
                      data-tip={h.id}
-                     width={size}
-                     height={size}/>
+                     width={h.assets.tokenPath.width * 0.8}
+                     height={h.assets.tokenPath.width * 0.8}/>
                 <div style={{
                   borderRadius: 4,
                   width: 8,
-                  marginTop: 5,
+                  marginTop: 6,
                   height: 8,
                   backgroundColor: h.playerId === heroes[0].playerId ? colors.blueGreen : colors.red
                 }}/>
               </div>;
             })}
           </div>
+          </div>
         </div>}
+
+
+
+
+
+
+
+
 
 
         {!!hero && <DetailsZone hero={hero}/>}
