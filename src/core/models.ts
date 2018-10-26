@@ -80,7 +80,7 @@ export interface IHero {
   cost: number
   description: string
   id: string
-  skills: string[]
+  skills: IHeroSkill[]
   unique: boolean
 }
 
@@ -137,11 +137,26 @@ export interface IHeroAssets {
   tokenPath: IAsset
 }
 
+export interface IHeroSkill {
+  name: string
+  iconType: SkillIconType
+}
+
 export enum HeroSize {
   small = "S",
   medium = "M",
   large = "L"
 }
+
+export enum SkillIconType {
+  specialAttack = "specialAttack",
+  specialMagic = "specialMagic"
+}
+
+export const SkillsIcon = {
+  specialAttack: require("../assets/skillTokens/weapon_skill.png"),
+  specialMagic: require("../assets/skillTokens/magic_skill.png")
+};
 
 // Action Buttons
 

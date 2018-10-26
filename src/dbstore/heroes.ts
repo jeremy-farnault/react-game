@@ -3,7 +3,7 @@ import {
   IHero,
   IHeroAssets,
   IHeroCharacteristics,
-  IHeroes
+  IHeroes, IHeroSkill, SkillIconType
 } from "../core/models";
 import { heroesIds } from "./heroesIds";
 
@@ -53,6 +53,16 @@ export const heroes: IHeroes = {
       "Aragorn II, son of Arathorn was a Ranger of the North, first introduced with the name Strider at Bree.",
     id: heroesIds.aragorn,
     skills: ["Anduril", "For Frodo"],
+    skills: [
+      {
+        name: "Anduril",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     unique: true
   } as IHero,
   [heroesIds.arwen]: {
@@ -99,6 +109,16 @@ export const heroes: IHeroes = {
     description: "Arwen was the Half-Elven daughter of Elrond and Celebrían.",
     id: heroesIds.arwen,
     skills: ["Hadhafang", "Athelas"],
+    skills: [
+      {
+        name: "Hadhafang",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     unique: true
   } as IHero,
   [heroesIds.balrog]: {
@@ -146,6 +166,17 @@ export const heroes: IHeroes = {
       "The Balrogs were Maiar corrupted by Morgoth during the creation of Arda, who cloaked themselves in shadow and flame.",
     id: heroesIds.balrog,
     skills: ["Fire whip", "Fire blade"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     unique: false
   } as IHero,
   [heroesIds.barrowWight]: {
@@ -170,6 +201,17 @@ export const heroes: IHeroes = {
     cost: 40,
     unique: false,
     skills: ["Dead hand", "Sleep trap"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Barrow-wights were a kind of undead-like creatures, dead bones animated by evil spirits.",
     assets: {
@@ -217,6 +259,17 @@ export const heroes: IHeroes = {
     cost: 60,
     unique: true,
     skills: ["Steward of Gondor", "Sea captain"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description: "Beregond was the twentieth Ruling Steward of Gondor.",
     assets: {
       tokenPath: {
@@ -263,6 +316,17 @@ export const heroes: IHeroes = {
     cost: 45,
     unique: false,
     skills: ["Berserker blade", "Blood rage"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Berserkers of Isengard were of the most powerful Uruk-hai ever to come out of Saruman's pits.",
     assets: {
@@ -310,6 +374,17 @@ export const heroes: IHeroes = {
     cost: 35,
     unique: true,
     skills: ["Elves friend", "Dwarves friend"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Bilbo was the first Hobbit to become famous in the world at large and one of the few to visit the The Undying Lands.",
     assets: {
@@ -357,6 +432,17 @@ export const heroes: IHeroes = {
     cost: 130,
     unique: true,
     skills: ["Resurrect", "Untouch by evil"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Tom Bombadil was an enigmatic figure that lived throughout the history of Arda.",
     assets: {
@@ -404,6 +490,17 @@ export const heroes: IHeroes = {
     cost: 95,
     unique: true,
     skills: ["Horn of Gondor", "Sacrifice"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Boromir was the eldest son of Denethor II, older brother of Faramir.",
     assets: {
@@ -451,6 +548,17 @@ export const heroes: IHeroes = {
     cost: 150,
     unique: false,
     skills: ["Spear", "Hard skin"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Cave-trolls are a race of trolls found within the caves of the Misty Mountains.",
     assets: {
@@ -498,6 +606,17 @@ export const heroes: IHeroes = {
     cost: 100,
     unique: true,
     skills: ["Wisest of all", "Lord of the Galadhrim"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Celeborn was the Lord of Lothlórien. His wife was Galadriel. Celeborn was said to be one of the wisest Elves in Middle-earth.",
     assets: {
@@ -545,6 +664,17 @@ export const heroes: IHeroes = {
     cost: 40,
     unique: false,
     skills: ["Pirate bow", "Pirate daggers"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Corsairs of Umbar were sea-raiders and pirates of the Haven of Umbar.",
     assets: {
@@ -592,6 +722,17 @@ export const heroes: IHeroes = {
     cost: 80,
     unique: true,
     skills: ["Palantir", "Call of Power"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Denethor II was the twenty-sixth Ruling Steward of Gondor, and father of the War of the Ring heroes Boromir and Faramir.",
     assets: {
@@ -639,6 +780,17 @@ export const heroes: IHeroes = {
     cost: 35,
     unique: false,
     skills: ["Rhûn halberd", "Rhûn armor"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Easterlings were a race of Men who lived in the vast and uncharted lands of Rhûn, east of Mordor and the Sea of Rhûn.",
     assets: {
@@ -686,6 +838,17 @@ export const heroes: IHeroes = {
     cost: 85,
     unique: true,
     skills: ["Narsil", "Founder of Gondor"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Elendil was the father of Isildur and Anárion, and the first High King of Gondor and Arnor and first King of all the Dúnedain.",
     assets: {
@@ -733,6 +896,17 @@ export const heroes: IHeroes = {
     cost: 80,
     unique: true,
     skills: ["Water horses", "Science of healing"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Elrond was the Lord of Rivendell and keeper of the great elven ring Vilya.",
     assets: {
@@ -780,6 +954,17 @@ export const heroes: IHeroes = {
     cost: 90,
     unique: true,
     skills: ["Master of horses", "We ride north"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Éomer Éadig, of the House of Eorl, was the eighteenth King of Rohan, and first of the Third Line.",
     assets: {
@@ -827,6 +1012,17 @@ export const heroes: IHeroes = {
     cost: 65,
     unique: true,
     skills: ["Lady of Rohan", "For my king"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Éowyn, the Lady of Rohan, was also known as the Lady of the Shield-arm, the White Lady of Rohan, and Lady of Ithilien.",
     assets: {
@@ -874,6 +1070,17 @@ export const heroes: IHeroes = {
     cost: 85,
     unique: true,
     skills: ["Ranger leader", "Righteous"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Faramir was the last Ruling Steward of Gondor and the first Prince of Ithilien. The second of Denethor's two sons.",
     assets: {
@@ -921,6 +1128,17 @@ export const heroes: IHeroes = {
     cost: 40,
     unique: true,
     skills: ["Light of Earendil", "Invisibility"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Frodo Baggins was a hobbit of the Third Age, the most famous of all Hobbits in the histories for his leading role in the Quest of the Ring.",
     assets: {
@@ -968,6 +1186,17 @@ export const heroes: IHeroes = {
     cost: 110,
     unique: true,
     skills: ["Dark queen", "Nenya"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Galadriel was a Noldo, one of the Calaquendi, and arguably the most famous and powerful elf of the Third Age.",
     assets: {
@@ -1015,6 +1244,17 @@ export const heroes: IHeroes = {
     cost: 160,
     unique: true,
     skills: ["You shall not pass", "Shock Wave"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Gandalf was one of the five Istari sent to Middle-earth by the Valar in the Third Age. In Valinor he was known as Olórin.",
     assets: {
@@ -1062,6 +1302,17 @@ export const heroes: IHeroes = {
     cost: 200,
     unique: true,
     skills: ["Aeglos", "Narya and Vilya"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Gil-galad was a Ñoldorin Elf, last High King of the Ñoldor in Middle-earth and bore many titles.",
     assets: {
@@ -1109,6 +1360,17 @@ export const heroes: IHeroes = {
     cost: 90,
     unique: true,
     skills: ["Wall of steel", "Not the beard"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Gimli was a dwarf of Durin's Folk, a direct descendant of Durin the Deathless.",
     assets: {
@@ -1156,6 +1418,17 @@ export const heroes: IHeroes = {
     cost: 80,
     unique: true,
     skills: ["", ""],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Glóin was one of the dwarves of Thorin II Oakenshield's company and was the father of Gimli",
     assets: {
@@ -1203,6 +1476,17 @@ export const heroes: IHeroes = {
     cost: 150,
     unique: true,
     skills: ["Balrog killer", "Firstborn"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Glorfindel was one of the mighty of the Firstborn, and the Lord of the House of the Golden Flower in Gondolin.",
     assets: {
@@ -1250,6 +1534,17 @@ export const heroes: IHeroes = {
     cost: 40,
     unique: true,
     skills: ["My precious", "Filthy little Hobbitses"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Gollum, also known as Sméagol, was a creature who bore the One Ring. He lived in the Misty Mountains for most of his life.",
     assets: {
@@ -1297,6 +1592,17 @@ export const heroes: IHeroes = {
     cost: 45,
     unique: false,
     skills: ["Gondorian bow", "Gondorian blade"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Rangers of Ithilien were a military group whose purpose was to defend Ithilien, the gate to Minas Tirith.",
     assets: {
@@ -1344,6 +1650,17 @@ export const heroes: IHeroes = {
     cost: 45,
     unique: false,
     skills: ["Gondorian blade", "Gondorian armor"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description: "Gondorians were descended from the Númenórean colonists.",
     assets: {
       tokenPath: {
@@ -1390,6 +1707,17 @@ export const heroes: IHeroes = {
     cost: 90,
     unique: true,
     skills: ["Mace", "Time of the Orc"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Gothmog was the lieutenant of the Witch-king in the Third Age, from Minas Morgul, notably at the Battle of the Pelennor Fields.",
     assets: {
@@ -1437,6 +1765,17 @@ export const heroes: IHeroes = {
     cost: 25,
     unique: true,
     skills: ["Switch sides", "Ill advisor"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Gríma Wormtongue was the chief advisor to King Théoden of Rohan. He was the son of Gálmód.",
     assets: {
@@ -1484,6 +1823,17 @@ export const heroes: IHeroes = {
     cost: 45,
     unique: true,
     skills: ["Long arms", "Back to Lugburz"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description: "Grishnákh was a captain of Orcs from Mordor.",
     assets: {
       tokenPath: {
@@ -1530,6 +1880,17 @@ export const heroes: IHeroes = {
     cost: 55,
     unique: false,
     skills: ["Gondorian spear", "Black steel armor"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Guards of the Citadel, sometimes referred to as The Tower Guards, were an elite unit of soldiers in Gondor.",
     assets: {
@@ -1577,6 +1938,17 @@ export const heroes: IHeroes = {
     cost: 55,
     unique: true,
     skills: ["Doorwald", "Captain of the Guard"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Háma was a Man of Rohan and the doorward of the Meduseld and captain of Théoden's guard.",
     assets: {
@@ -1624,6 +1996,17 @@ export const heroes: IHeroes = {
     cost: 70,
     unique: true,
     skills: ["Rapid fire", "Watcher"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Haldir was an Elf of Lothlórien, probably a Silvan Elf, and a marchwarden who guarded the forest's northern borders.",
     assets: {
@@ -1671,6 +2054,17 @@ export const heroes: IHeroes = {
     cost: 35,
     unique: false,
     skills: ["Harad bow", "Mumakil teamer"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Haradrim or the Southrons were the proud and warlike people of the Harad, in the south of Middle-earth.",
     assets: {
@@ -1718,6 +2112,17 @@ export const heroes: IHeroes = {
     cost: 75,
     unique: true,
     skills: ["Desperate Charge", "Prince Imrahil"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Imrahil, also known as Prince Imrahil, was the twenty-second Prince of Dol Amroth.",
     assets: {
@@ -1765,6 +2170,17 @@ export const heroes: IHeroes = {
     cost: 90,
     unique: true,
     skills: ["Shards of Narsil", "Corruption of the Ring"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Isildur was the son of Elendil and the High King of Gondor and Arnor",
     assets: {
@@ -1812,6 +2228,17 @@ export const heroes: IHeroes = {
     cost: 60,
     unique: true,
     skills: ["Oathbreaker", "Swarm"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The King of the Mountains, or later, the King of the Dead, was the ruler of the Oathbreakers.",
     assets: {
@@ -1859,6 +2286,17 @@ export const heroes: IHeroes = {
     cost: 120,
     unique: true,
     skills: ["Double Arrow", "Mortal knife dance"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Legolas was an elf of the Woodland Realm of Mirkwood. He was of Sindarin heritage, being the only recorded son of King Thranduil.",
     assets: {
@@ -1906,6 +2344,17 @@ export const heroes: IHeroes = {
     cost: 60,
     unique: false,
     skills: ["Elven bow", "Elven blade"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Lothlórien was a forest located next to the lower Misty Mountains.",
     assets: {
@@ -1953,6 +2402,17 @@ export const heroes: IHeroes = {
     cost: 95,
     unique: true,
     skills: ["Isengard bow", "Born in blood"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Lurtz was the first of Saruman's Uruk-hai to be bred, and led them into battle against the Fellowship of the Ring at Amon Hen.",
     assets: {
@@ -2000,6 +2460,17 @@ export const heroes: IHeroes = {
     cost: 35,
     unique: true,
     skills: ["Rock Throwing", "Esquire of Rohan"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Meriadoc Brandybuck, called The Magnificent, was a Hobbit, the son of Saradoc Brandybuck. Merry was the heir of the Brandybucks to Brandy Hall.",
     assets: {
@@ -2047,6 +2518,17 @@ export const heroes: IHeroes = {
     cost: 30,
     unique: false,
     skills: ["Mordor blade", "Mordor armor"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Many Orcs survived in the deep caves, pits, chambers, and tunnels of Melkor's great underground fortresses of Utumno and Angband.",
     assets: {
@@ -2094,6 +2576,17 @@ export const heroes: IHeroes = {
     cost: 30,
     unique: false,
     skills: ["Moria blade", "Moria bow"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Moria Orcs were similar to other Orcs of the Misty Mountains.",
     assets: {
@@ -2141,6 +2634,17 @@ export const heroes: IHeroes = {
     cost: 70,
     unique: true,
     skills: ["My master bid thee welcome", "Blind servant"],
+
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Mouth of Sauron was the Dark Lord Sauron's servant and representative at the end of the Third Age.",
     assets: {
@@ -2188,6 +2692,16 @@ export const heroes: IHeroes = {
     cost: 35,
     unique: true,
     skills: ["Rock Throwing", "Guardian of the Citadel"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Peregrin Took was one of the Hobbits in the Fellowship of the Ring. He was the youngest of the Company.",
     assets: {
@@ -2235,6 +2749,16 @@ export const heroes: IHeroes = {
     cost: 90,
     unique: false,
     skills: ["Morgul blade", "Despair"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Nazgûl, also known as the Nine Riders or Black Riders (or simply the Nine), were Sauron's most terrible servants in Middle-earth.",
     assets: {
@@ -2282,6 +2806,16 @@ export const heroes: IHeroes = {
     cost: 130,
     unique: true,
     skills: ["Powers of the Maiar", "Animals friend"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Radagast was one of the five Wizards, or Istari. He was a good friend of Gandalf the Grey, whom he aided occasionally.",
     assets: {
@@ -2329,6 +2863,16 @@ export const heroes: IHeroes = {
     cost: 40,
     unique: false,
     skills: ["Rohan spear", "Rohan blade"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Rohirrim were a race of people who inhabited the land of Rohan, which was named after their famous Horses.",
     assets: {
@@ -2376,6 +2920,16 @@ export const heroes: IHeroes = {
     cost: 40,
     unique: true,
     skills: ["But I can carry you", "Great courage"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Samwise was Frodo servant and the only member of the fellowship to remain with him till the very end of the journey to Mount Doom.",
     assets: {
@@ -2423,6 +2977,16 @@ export const heroes: IHeroes = {
     cost: 170,
     unique: true,
     skills: ["Persuasive voice", "Elements control"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Saruman the White was the first of the order of Wizards (or Istari) who came to Middle-earth as Emissaries of the Valar in the Third Age.",
     assets: {
@@ -2470,6 +3034,16 @@ export const heroes: IHeroes = {
     cost: 180,
     unique: true,
     skills: ["One ring to rule them all", "And in the darkness bind them"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Sauron was the greatest and most trusted servant of Morgoth before and during the First Age.",
     assets: {
@@ -2517,6 +3091,16 @@ export const heroes: IHeroes = {
     cost: 45,
     unique: true,
     skills: ["Tower captain", "Morgul rats"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Shagrat was an Uruk commanding the garrison of the Tower of Cirith Ungol during the War of the Ring.",
     assets: {
@@ -2564,6 +3148,16 @@ export const heroes: IHeroes = {
     cost: 40,
     unique: false,
     skills: ["Fantomatic blade", "Fantomatic spear"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Army of the Dead, also known as the Dead Men of Dunharrow or Oathbreakers, were the ghosts of deceased Men of the White Mountains.",
     assets: {
@@ -2611,6 +3205,16 @@ export const heroes: IHeroes = {
     cost: 60,
     unique: true,
     skills: ["Death", "Charge"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "Théoden was the seventeenth King of Rohan. He was the last of the Second Line.",
     assets: {
@@ -2658,6 +3262,16 @@ export const heroes: IHeroes = {
     cost: 65,
     unique: false,
     skills: ["Isengard blade", "Isengard armor"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Uruk-hai were a new breed of Orcs that appeared during the Third Age.",
     assets: {
@@ -2704,7 +3318,16 @@ export const heroes: IHeroes = {
     } as IHeroCharacteristics,
     cost: 130,
     unique: true,
-    skills: ["Master of the Nine", "Hideous flail"],
+    skills: [
+      {
+        name: "Master of the Nine",
+        iconType: SkillIconType.specialAttack
+      },
+      {
+        name: "Hideous flail",
+        iconType: SkillIconType.specialMagic
+      }
+    ],
     description:
       "The Witch-king of Angmar was the chief of the Nazgûl, King of Angmar and Sauron’s great captain in his wars.",
     assets: {

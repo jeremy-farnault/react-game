@@ -7,7 +7,7 @@ import {
   IHeroAssets,
   IHeroBattlefield, IHeroBattlefieldState,
   IHeroCharacteristics,
-  IPlayer
+  IPlayer, SkillIconType
 } from "../core/models";
 import { IStoreState } from "../types";
 import { cardsIds } from "./cardsIds";
@@ -60,7 +60,16 @@ export const fakePlayers: IPlayers = {
         description:
           "Aragorn II, son of Arathorn was a Ranger of the North, first introduced with the name Strider at Bree.",
         id: heroesIds.aragorn,
-        skills: ["Anduril", "For Frodo"],
+        skills: [
+          {
+            name: "Anduril",
+            iconType: SkillIconType.specialAttack
+          },
+          {
+            name: "For Frodo",
+            iconType: SkillIconType.specialMagic
+          }
+        ],
         unique: true,
         tileX: 0,
         tileY: 0,
@@ -116,7 +125,16 @@ export const fakePlayers: IPlayers = {
         cost: 75,
         description: "Arwen was the Half-Elven daughter of Elrond and Celebrían.",
         id: heroesIds.arwen,
-        skills: ["Hadhafang", "Athelas"],
+        skills: [
+          {
+            name: "Hadhafang",
+            iconType: SkillIconType.specialAttack
+          },
+          {
+            name: "Athelas",
+            iconType: SkillIconType.specialMagic
+          }
+        ],
         unique: true,
         tileX: 0,
         tileY: 1,
@@ -185,7 +203,16 @@ export const fakePlayers: IPlayers = {
         } as IHeroCharacteristics,
         cost: 130,
         unique: true,
-        skills: ["Resurrect", "Untouch by evil"],
+        skills: [
+          {
+            name: "Resurrect",
+            iconType: SkillIconType.specialAttack
+          },
+          {
+            name: "Untouch by evil",
+            iconType: SkillIconType.specialMagic
+          }
+        ],
         description:
           "Tom Bombadil was an enigmatic figure that lived throughout the history of Arda.",
         tileX: 15,
@@ -242,7 +269,16 @@ export const fakePlayers: IPlayers = {
         } as IHeroCharacteristics,
         cost: 95,
         unique: true,
-        skills: ["Horn of Gondor", "Sacrifice"],
+        skills: [
+          {
+            name: "Horn of Gondor",
+            iconType: SkillIconType.specialAttack
+          },
+          {
+            name: "Sacrifice",
+            iconType: SkillIconType.specialMagic
+          }
+        ],
         description:
           "Boromir was the eldest son of Denethor II, older brother of Faramir.",
         tileX: 15,
@@ -299,7 +335,16 @@ export const fakePlayers: IPlayers = {
         } as IHeroCharacteristics,
         cost: 150,
         unique: false,
-        skills: ["Spear", "Hard skin"],
+        skills: [
+          {
+            name: "Spear",
+            iconType: SkillIconType.specialAttack
+          },
+          {
+            name: "Hard skin",
+            iconType: SkillIconType.specialMagic
+          }
+        ],
         description:
           "Cave-trolls are a race of trolls found within the caves of the Misty Mountains.",
         tileX: 15,
