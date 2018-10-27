@@ -1,4 +1,4 @@
-import { IHeroBattlefield } from "../../core/models";
+import { IHeroBattlefield, IHeroSkill } from "../../core/models";
 import {
   BoxStyled,
   CharacteristicsZoneStyled,
@@ -46,8 +46,8 @@ class DetailsZone extends React.PureComponent<IProps, {}> {
                   </PointsZone>)}
               </div>
               <div>
-                {hero.skills.map((s: string) =>
-                  <TextBoldStyled key={s + hero.id + hero.playerId}>{s}</TextBoldStyled>
+                {hero.skills.map((s: IHeroSkill) =>
+                  <TextBoldStyled key={s + hero.id + hero.playerId}>{s.name}</TextBoldStyled>
                 )}
               </div>
             </SkillsAndPointsZone>

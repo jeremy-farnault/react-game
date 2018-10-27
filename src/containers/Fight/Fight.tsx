@@ -7,8 +7,8 @@ import {
   ActionsType,
   ICards,
   IHeroBattlefield, IHeroBattlefieldPointsIcon,
-  IHeroes,
-  ITile,
+  IHeroes, IHeroSkill,
+  ITile, SkillsIcon,
   TileState
 } from "../../core/models";
 import { IStoreState } from "../../types";
@@ -109,19 +109,23 @@ class Fight extends React.PureComponent<IProps, IState> {
           margin: "auto",
           maxWidth: constants.tileSize * constants.numberOfColumns,
           position: "relative",
-          marginTop: 50
+          display: 'flex',
+          flexDirection: 'row',
+          marginTop: 20
         }}>
           <div style={{
             backgroundColor: "rgba(70, 70, 70, .5)",
-            width: "fit-content",
-            borderTopRightRadius: (50 * 1.3 + 20 + 13) / 2,
-            borderTopLeftRadius: (50 * 1.3 + 20 + 13) / 2,
-            paddingTop: 20,
-            paddingBottom: 20,
-            paddingLeft: 20,
-            paddingRight: 20,
+            borderRadius: 10,
+            borderStyle: 'solid',
+            borderColor: 'rgb(70, 70, 70)',
+            borderWidth: 2,
+            padding: 20,
+            width: 'fit-content',
             display: "flex",
-            flexDirection: "column"
+            marginRight: 20,
+            flexDirection: "column",
+            justifyContent: 'center',
+            alignItems: 'center'
           }}>
             {Object.keys(heroes[0].points).map(c =>
               <div key={c + heroes[0].id} style={{
@@ -130,10 +134,21 @@ class Fight extends React.PureComponent<IProps, IState> {
                 justifyContent: "space-between",
                 alignItems: "center"
               }}>
-                <ReactTooltip place='top' type='light' effect='solid' multiline={true}/>
+                <ReactTooltip place='left' type='light' effect='solid' multiline={true}/>
                 <img data-tip={_.capitalize(_.lowerCase(c))} src={IHeroBattlefieldPointsIcon[c].path}
                      height={IHeroBattlefieldPointsIcon[c].size}/>
                 <TextStyled>{heroes[0].points[c]}</TextStyled>
+              </div>
+            )}
+            {heroes[0].skills.map((s: IHeroSkill) =>
+              <div key={s.name + heroes[0].id} style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: 10
+              }}>
+                <ReactTooltip place='left' type='light' effect='solid' multiline={true}/>
+                <img data-tip={s.name} src={SkillsIcon[s.iconType]}
+                     height={40}/>
               </div>
             )}
           </div>
