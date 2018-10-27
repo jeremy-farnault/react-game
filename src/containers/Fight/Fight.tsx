@@ -1,6 +1,5 @@
 import ActionButtons from "../../components/ActionButtons/ActionButtons";
-import DetailsZone from "../../components/DetailsZone/DetailsZone";
-import { TextStyled } from "../../components/DetailsZone/DetailsZoneStyles";
+import { TextStyled } from "../../components/DetailsModal/DetailsModalStyles";
 import * as actions from "../../core/actions";
 import {
   ActionCharacteristic,
@@ -87,52 +86,37 @@ class Fight extends React.PureComponent<IProps, IState> {
         </BattlefieldScene>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {heroes.length > 0 &&
         <div style={{
           zIndex: 1,
           margin: "auto",
           maxWidth: constants.tileSize * constants.numberOfColumns,
           position: "relative",
-          display: 'flex',
-          flexDirection: 'row',
-          marginTop: 20
+          display: "flex",
+          flexDirection: "row",
+          marginTop: 20,
         }}>
           <div style={{
             backgroundColor: "rgba(70, 70, 70, .5)",
             borderRadius: 10,
-            borderStyle: 'solid',
-            borderColor: 'rgb(70, 70, 70)',
+            borderStyle: "solid",
+            borderColor: "rgb(70, 70, 70)",
             borderWidth: 2,
             padding: 20,
-            width: 'fit-content',
+            width: "fit-content",
             display: "flex",
             marginRight: 20,
             flexDirection: "column",
-            justifyContent: 'center',
-            alignItems: 'center'
+            justifyContent: "center",
+            alignItems: "center"
           }}>
             {Object.keys(heroes[0].points).map(c =>
               <div key={c + heroes[0].id} style={{
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
-                alignItems: "center"
+                alignItems: "center",
+                marginBottom: 10
               }}>
                 <ReactTooltip place='left' type='light' effect='solid' multiline={true}/>
                 <img data-tip={_.capitalize(_.lowerCase(c))} src={IHeroBattlefieldPointsIcon[c].path}
@@ -152,109 +136,136 @@ class Fight extends React.PureComponent<IProps, IState> {
               </div>
             )}
           </div>
-          <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-end'}}>
-          <div style={{
-            backgroundColor: "rgba(70, 70, 70, .5)",
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "flex-end",
-            flexDirection: "row",
-            paddingTop: 10,
-            paddingBottom: 10,
-            paddingLeft: 17,
-            paddingRight: 17,
-            height: 'fit-content',
-            width: "fit-content",
-            borderLeftWidth: 2,
-            borderTopWidth: 2,
-            borderBottomWidth: 2,
-            borderRightWidth: 0,
-            borderStyle: 'solid',
-            borderColor: 'rgb(70, 70, 70)',
-            borderTopRightRadius: (50 * 1.6 + 40 + 13) / 2,
-            borderTopLeftRadius: (50 * 1.6 + 40 + 13) / 2,
-            borderBottomLeftRadius: (50 * 1.6 + 40 + 13) / 2
-          }}>
-              <div style={{
-                display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                alignItems: "center"
-              }}>
-                <ReactTooltip place='top' type='light' effect='solid' multiline={true}/>
-                <img src={heroes[0].assets.tokenPath.path}
-                     data-tip={heroes[0].id}
-                     width={heroes[0].assets.tokenPath.width * 1.6}
-                     height={heroes[0].assets.tokenPath.width * 1.6}/>
-                <div style={{
-                  borderRadius: 4,
-                  width: 8,
-                  marginTop: 6,
-                  height: 8,
-                  backgroundColor: colors.blueGreen
-                }}/>
+          <div
+            style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "flex-end" }}>
+            {!!hero &&
+            <div style={{ borderWidth: 2, marginBottom: 20, borderStyle: "solid", padding: 20, borderColor: hero.playerId === heroes[0].playerId ? colors.blueGreen : colors.paleRed, borderRadius: 10, flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <div style={{ color: hero.playerId === heroes[0].playerId ? colors.blueGreen : colors.paleRed, marginBottom: 10 }}>{hero.id}</div>
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                {Object.keys(hero.points).map(c =>
+                  <div key={c + hero.id} style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    marginLeft: 10,
+                    marginRight: 10
+                  }}>
+                    <ReactTooltip place='bottom' type='light' effect='solid' multiline={true}/>
+                    <img data-tip={_.capitalize(_.lowerCase(c))} src={IHeroBattlefieldPointsIcon[c].path}
+                         height={IHeroBattlefieldPointsIcon[c].size}/>
+                    <TextStyled>{hero.points[c]}</TextStyled>
+                  </div>
+                )}
+                {hero.skills.map((s: IHeroSkill) =>
+                  <div key={s.name + hero.id} style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginLeft: 10,
+                    marginRight: 10
+                  }}>
+                    <ReactTooltip place='bottom' type='light' effect='solid' multiline={true}/>
+                    <img data-tip={s.name} src={SkillsIcon[s.iconType]}
+                         height={40}/>
+                  </div>
+                )}
               </div>
-          </div>
-          <div style={{
-            backgroundColor: "rgba(70, 70, 70, .5)",
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "flex-end",
-            flexDirection: "row",
-            paddingTop: 10,
-            height: 'fit-content',
-            borderLeftWidth: 0,
-            borderRightWidth: 2,
-            borderTopWidth: 2,
-            borderBottomWidth: 2,
-            borderStyle: 'solid',
-            borderColor: 'rgb(70, 70, 70)',
-            paddingBottom: 10,
-            paddingRight: 10,
-            width: "fit-content",
-            borderTopRightRadius: (50 * 1.3 + 20 + 13) / 2,
-            borderTopLeftRadius: 15,
-            borderBottomRightRadius: (50 * 1.3 + 20 + 13) / 2
-          }}>
-            {heroes.map((h: IHeroBattlefield, ind: number) => {
-              if (ind === 0) {
-                return null
-              }
-              return <div key={h.playerId + h.id} style={{
-                marginRight: 10,
+            </div>}
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "flex-end" }}>
+              <div style={{
+                backgroundColor: "rgba(70, 70, 70, .5)",
                 display: "flex",
-                justifyContent: "center",
-                flexDirection: "column",
-                alignItems: "center"
+                justifyContent: "flex-start",
+                alignItems: "flex-end",
+                flexDirection: "row",
+                paddingTop: 10,
+                paddingBottom: 10,
+                paddingLeft: 17,
+                paddingRight: 17,
+                height: "fit-content",
+                width: "fit-content",
+                borderLeftWidth: 2,
+                borderTopWidth: 2,
+                borderBottomWidth: 2,
+                borderRightWidth: 0,
+                borderStyle: "solid",
+                borderColor: "rgb(70, 70, 70)",
+                borderTopRightRadius: (50 * 1.6 + 40 + 13) / 2,
+                borderTopLeftRadius: (50 * 1.6 + 40 + 13) / 2,
+                borderBottomLeftRadius: (50 * 1.6 + 40 + 13) / 2
               }}>
-                <ReactTooltip place='top' type='light' effect='solid' multiline={true}/>
-                <img src={h.assets.tokenPath.path}
-                     data-tip={h.id}
-                     width={h.assets.tokenPath.width * 0.8}
-                     height={h.assets.tokenPath.width * 0.8}/>
                 <div style={{
-                  borderRadius: 4,
-                  width: 8,
-                  marginTop: 6,
-                  height: 8,
-                  backgroundColor: h.playerId === heroes[0].playerId ? colors.blueGreen : colors.red
-                }}/>
-              </div>;
-            })}
-          </div>
+                  display: "flex",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  alignItems: "center"
+                }}>
+                  <ReactTooltip place='top' type='light' effect='solid' multiline={true}/>
+                  <img src={heroes[0].assets.tokenPath.path}
+                       data-tip={heroes[0].id}
+                       width={heroes[0].assets.tokenPath.width * 1.6}
+                       height={heroes[0].assets.tokenPath.width * 1.6}/>
+                  <div style={{
+                    borderRadius: 4,
+                    width: 8,
+                    marginTop: 6,
+                    height: 8,
+                    backgroundColor: colors.blueGreen
+                  }}/>
+                </div>
+              </div>
+              <div style={{
+                backgroundColor: "rgba(70, 70, 70, .5)",
+                display: "flex",
+                justifyContent: "flex-start",
+                alignItems: "flex-end",
+                flexDirection: "row",
+                paddingTop: 10,
+                height: "fit-content",
+                borderLeftWidth: 0,
+                borderRightWidth: 2,
+                borderTopWidth: 2,
+                borderBottomWidth: 2,
+                borderStyle: "solid",
+                borderColor: "rgb(70, 70, 70)",
+                paddingBottom: 10,
+                paddingRight: 10,
+                width: "fit-content",
+                borderTopRightRadius: (50 * 1.3 + 20 + 13) / 2,
+                borderTopLeftRadius: 15,
+                borderBottomRightRadius: (50 * 1.3 + 20 + 13) / 2
+              }}>
+                {heroes.map((h: IHeroBattlefield, ind: number) => {
+                  if (ind === 0) {
+                    return null;
+                  }
+                  return <div key={h.playerId + h.id} style={{
+                    marginRight: 10,
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    alignItems: "center"
+                  }}>
+                    <ReactTooltip place='top' type='light' effect='solid' multiline={true}/>
+                    <img src={h.assets.tokenPath.path}
+                         data-tip={h.id}
+                         width={h.assets.tokenPath.width * 0.8}
+                         height={h.assets.tokenPath.width * 0.8}/>
+                    <div style={{
+                      borderRadius: 4,
+                      width: 8,
+                      marginTop: 6,
+                      height: 8,
+                      backgroundColor: h.playerId === heroes[0].playerId ? colors.blueGreen : colors.paleRed
+                    }}/>
+                  </div>;
+                })}
+              </div>
+            </div>
           </div>
         </div>}
 
 
-
-
-
-
-
-
-
-
-        {!!hero && <DetailsZone hero={hero}/>}
       </ContainerScene>
     );
   }

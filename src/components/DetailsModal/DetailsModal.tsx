@@ -6,7 +6,7 @@ import {
   DetailsZoneStyled, PointsZone, SkillsAndPointsZone, TextBoldStyled, TextStyled,
   TitleStyled,
   ZoneStyled
-} from "./DetailsZoneStyles";
+} from "./DetailsModalStyles";
 
 import * as _ from "lodash";
 import * as React from "react";
@@ -16,7 +16,7 @@ interface IProps {
   hero: IHeroBattlefield
 }
 
-class DetailsZone extends React.PureComponent<IProps, {}> {
+class DetailsModal extends React.PureComponent<IProps, {}> {
 
   public render() {
     const {hero} = this.props
@@ -58,4 +58,4 @@ class DetailsZone extends React.PureComponent<IProps, {}> {
   }
 }
 
-export default DetailsZone;
+export default DetailsModal;
