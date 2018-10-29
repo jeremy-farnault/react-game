@@ -1,9 +1,11 @@
+import { colors } from "../../utils/colors";
+
 import styled from "styled-components";
 
 export const DetailsCurrentHeroContainer = styled.div`
-background-color: rgba(70, 70, 70, .5);
+background-color: ${colors.greyOpacity};
 border-radius: 10px;
-border: 2px solid rgb(70, 70, 70);
+border: 2px solid ${colors.grey};;
 padding: 20px;
 width: fit-content;
 display: flex;

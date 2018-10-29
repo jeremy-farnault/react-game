@@ -1,4 +1,5 @@
 import { IHeroBattlefield } from "../../core/models";
+import { colors } from "../../utils/colors";
 import {
   CurrentHero,
   CurrentHeroTeam,
@@ -7,7 +8,7 @@ import {
   SecondaryHeroesZone, SecondaryHeroTeam
 } from "./InitiativeZoneStyles";
 
-import DeleteSharpIcon from '@material-ui/icons/DeleteSharp';
+import { Icon } from "@material-ui/core";
 import * as React from "react";
 import * as ReactTooltip from "react-tooltip";
 
@@ -18,6 +19,8 @@ interface IProps {
 // interface IState {}
 
 class InitiativeZone extends React.PureComponent<IProps, {}> {
+
+  // todo CHANGE 2 TO 9
 
   public render() {
     const heroes = this.props.heroesSorted;
@@ -35,7 +38,7 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
         </CurrentHeroZone>
         <SecondaryHeroesZone>
           {heroes.map((h: IHeroBattlefield, ind: number) => {
-            if (ind === 0) {
+            if (ind === 0 || ind > 2) {
               return null;
             }
             return <SecondaryHero key={h.playerId + h.id}>
@@ -47,8 +50,22 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
               <SecondaryHeroTeam sameTeam={h.playerId === heroes[0].playerId}/>
             </SecondaryHero>;
           })}
+
+
+
+
+
+          {heroes.length > 2 &&
+            <div style={{marginBottom: 14, marginRight: 10, display: 'flex', justifyContent: 'center', alignItems: 'center', width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(0, 0, 0, 0.5)'}}>
+          <Icon style={{
+            fontSize: 36,
+            color: colors.paleBlue
+          }}>more_horiz</Icon></div>}
+
+
+
+
         </SecondaryHeroesZone>
-        <DeleteSharpIcon />
       </InitiativeContainer>
     );
   }

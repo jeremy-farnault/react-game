@@ -51,6 +51,7 @@ Heroes initiative zone (see design in notebook)
     - Display only a certain number + button to say if there is more
     - Button end turn
     - Modal for details on click on hero
+    - Fix buggy tooltips
 
 Action points zone
 

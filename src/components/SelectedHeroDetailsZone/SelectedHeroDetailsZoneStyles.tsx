@@ -3,7 +3,7 @@ import { colors } from "../../utils/colors";
 import styled from "styled-components";
 
 export const DetailsContainer = styled.div`
-background-color: rgba(70, 70, 70, 0.5);
+background-color: ${colors.greyOpacity};
 margin-bottom: 20px;
 padding: 20px;
 border: 2px solid ${(props: { sameTeam: boolean }) => props.sameTeam ? colors.blueGreen : colors.paleRed};
