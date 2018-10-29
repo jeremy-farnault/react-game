@@ -7,6 +7,7 @@ import {
   SecondaryHeroesZone, SecondaryHeroTeam
 } from "./InitiativeZoneStyles";
 
+import DeleteSharpIcon from '@material-ui/icons/DeleteSharp';
 import * as React from "react";
 import * as ReactTooltip from "react-tooltip";
 
@@ -47,6 +48,7 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
             </SecondaryHero>;
           })}
         </SecondaryHeroesZone>
+        <DeleteSharpIcon />
       </InitiativeContainer>
     );
   }
