@@ -48,10 +48,10 @@ Heroes initiative zone (see design in notebook)
     - ~~Add tooltips on everything (name heroes, characs...)~~
     - ~~Minimal details provided by the zone above the initiative zone~~
     - ~~Zone right of initiative zone used for selected hero (not current one)~~
+    - ~~Fix buggy tooltips~~
     - Display only a certain number + button to say if there is more
     - Button end turn
     - Modal for details on click on hero
-    - Fix buggy tooltips
 
 Action points zone
 

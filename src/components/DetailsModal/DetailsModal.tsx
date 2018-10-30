@@ -10,7 +10,6 @@ import {
 
 import * as _ from "lodash";
 import * as React from "react";
-import * as ReactTooltip from "react-tooltip";
 
 interface IProps {
   hero: IHeroBattlefield
@@ -27,9 +26,9 @@ class DetailsModal extends React.PureComponent<IProps, {}> {
           <DetailsZoneStyled>
             <img src={hero.assets.tokenPath.path}
                  data-tip={hero.description}
+                 data-place='top'
                  width={hero.assets.tokenPath.width}
                  height={hero.assets.tokenPath.height}/>
-            <ReactTooltip place='top' type='light' multiline={true}/>
             <CharacteristicsZoneStyled>
               {Object.keys(hero.characteristics).map(c =>
                 <CharacteristicZoneStyled key={c + hero.id + hero.playerId}>

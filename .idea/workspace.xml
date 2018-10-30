@@ -4,14 +4,11 @@
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHeroStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHeroStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZoneStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZoneStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DetailsModal/DetailsModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DetailsModal/DetailsModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZone.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZone.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/colors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,33 +25,33 @@
         <counts>
           <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.2" value="6" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TsLintLanguageService" value="13" />
-          <entry key="TypeScriptServerServiceImpl" value="13" />
+          <entry key="TsLintLanguageService" value="14" />
+          <entry key="TypeScriptServerServiceImpl" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="7" />
-          <entry key="md" value="1063" />
+          <entry key="md" value="1119" />
           <entry key="ts" value="3699" />
-          <entry key="tsx" value="22858" />
+          <entry key="tsx" value="27315" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="7" />
           <entry key="Less" value="1" />
-          <entry key="Markdown" value="1063" />
+          <entry key="Markdown" value="1119" />
           <entry key="TypeScript" value="3699" />
-          <entry key="TypeScript JSX" value="22857" />
+          <entry key="TypeScript JSX" value="27314" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -63,7 +60,7 @@
           <entry key="html" value="1" />
           <entry key="png" value="4" />
           <entry key="ts" value="9" />
-          <entry key="tsx" value="21" />
+          <entry key="tsx" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -72,7 +69,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="4" />
           <entry key="TypeScript" value="9" />
-          <entry key="TypeScript JSX" value="21" />
+          <entry key="TypeScript JSX" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -87,8 +84,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="795">
-                <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+              <first_editor relative-caret-position="765">
+                <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -98,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+            <state relative-caret-position="465">
+              <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
@@ -107,34 +104,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state relative-caret-position="320">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="932">
-              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,6 +149,7 @@
       <find>DetailsAndInitiativeZone</find>
       <find>material</find>
       <find>70,</find>
+      <find>ReactTooltip</find>
     </findStrings>
     <replaceStrings>
       <replace>TILES</replace>
@@ -234,21 +211,21 @@
         <option value="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" />
         <option value="$PROJECT_DIR$/src/components/DetailsZone/DetailsZone.tsx" />
         <option value="$PROJECT_DIR$/src/dbstore/heroes.ts" />
-        <option value="$PROJECT_DIR$/src/components/DetailsModal/DetailsModal.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" />
-        <option value="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZone.tsx" />
         <option value="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetailsStyles.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
-        <option value="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx" />
-        <option value="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHero.tsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/utils/colors.ts" />
         <option value="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZoneStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHeroStyles.tsx" />
         <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" />
+        <option value="$PROJECT_DIR$/src/components/DetailsModal/DetailsModal.tsx" />
+        <option value="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx" />
+        <option value="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZone.tsx" />
+        <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
+        <option value="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHero.tsx" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" />
       </list>
     </option>
   </component>
@@ -271,7 +248,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="2560" />
-    <option name="height" value="1417" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -299,6 +276,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,6 +332,13 @@
               <item name="react-game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="DetailsModal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="InitiativeAndDetails" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -393,7 +378,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -515,6 +499,7 @@
       <workItem from="1540679492901" duration="11229000" />
       <workItem from="1540789909213" duration="2028000" />
       <workItem from="1540841395822" duration="1954000" />
+      <workItem from="1540928299325" duration="2297000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -541,7 +526,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209654000" />
+    <option name="totallyTimeSpent" value="211951000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -553,12 +538,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84446764" visible="true" weight="0.18077983" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.62711865" visible="true" weight="0.18077983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info active="true" id="npm" order="2" sideWeight="0.37288135" side_tool="true" visible="true" weight="0.18077983" />
       <window_info id="Favorites" order="3" sideWeight="0.15553236" side_tool="true" weight="0.18082789" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32532752" />
@@ -732,13 +717,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/DetailsModal/DetailsModalStyles.tsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DetailsModal/DetailsModal.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -752,9 +730,6 @@
     <entry file="file://$PROJECT_DIR$/src/containers/Heroes/HeroesStyles.tsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZone.tsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetailsStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -765,23 +740,6 @@
     <entry file="file://$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHero.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/README.md" />
     <entry file="file://$PROJECT_DIR$/node_modules/material-design-icons/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -791,23 +749,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/icons/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -839,6 +780,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="932">
@@ -849,20 +797,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DetailsModal/DetailsModal.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="795">
-            <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <first_editor relative-caret-position="765">
+            <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZone.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="64" lean-forward="true" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHero.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="82" column="37" lean-forward="true" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        <state relative-caret-position="320">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
