@@ -1,5 +1,6 @@
 import { IHeroBattlefield } from "../../core/models";
 import { colors } from "../../utils/colors";
+import { constants } from "../../utils/constants";
 import {
   CurrentHero,
   CurrentHeroTeam,
@@ -19,17 +20,10 @@ interface IProps {
 
 class InitiativeZone extends React.PureComponent<IProps, {}> {
 
-  // todo CHANGE 2 TO 9
-
   public render() {
     const heroes = this.props.heroesSorted;
-
-
-    const test = heroes.map((h: IHeroBattlefield) => h.id).reverse()
-    console.log(test)
-    const remainingHeroes = "<div><div>" + test.map(s => s) + "<SecondaryHeroTeam sameTeam={h.playerId === heroes[0].playerId}/>" + "</div>"
-
-
+    const test = heroes.slice(constants.maxNumberOfHeroesInitiative + 1).map((h: IHeroBattlefield) => ({hero: h.id, player: h.playerId}))
+    const remainingHeroes = "<div>" + test.map(s => `<p>` + s.hero + ' (' + s.player + ')</p>').join('') + "</div>"
     return (
       <InitiativeContainer>
         <CurrentHeroZone>
@@ -44,7 +38,7 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
         </CurrentHeroZone>
         <SecondaryHeroesZone>
           {heroes.map((h: IHeroBattlefield, ind: number) => {
-            if (ind === 0 || ind > 2) {
+            if (ind === 0 || ind > constants.maxNumberOfHeroesInitiative) {
               return null;
             }
             return <SecondaryHero key={h.playerId + h.id}>
@@ -58,7 +52,7 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
           })}
 
 
-          {heroes.length > 2 &&
+          {heroes.length > constants.maxNumberOfHeroesInitiative &&
           <div
             data-place='top'
             data-type='dark'
