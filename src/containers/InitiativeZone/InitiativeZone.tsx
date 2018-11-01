@@ -1,10 +1,10 @@
-import { IHeroBattlefield } from "../../core/models";
+import { IHeroBattlefield, VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
 import { constants } from "../../utils/constants";
 import {
   CurrentHero,
   CurrentHeroTeam,
-  CurrentHeroZone,
+  CurrentHeroZone, DisplayMoreButton,
   InitiativeContainer, SecondaryHero,
   SecondaryHeroesZone, SecondaryHeroTeam
 } from "./InitiativeZoneStyles";
@@ -22,8 +22,11 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
 
   public render() {
     const heroes = this.props.heroesSorted;
-    const test = heroes.slice(constants.maxNumberOfHeroesInitiative + 1).map((h: IHeroBattlefield) => ({hero: h.id, player: h.playerId}))
-    const remainingHeroes = "<div>" + test.map(s => `<p>` + s.hero + ' (' + s.player + ')</p>').join('') + "</div>"
+    const test = heroes.slice(constants.maxNumberOfHeroesInitiative + 1).map((h: IHeroBattlefield) => ({
+      hero: h.id,
+      player: h.playerId
+    }));
+    const remainingHeroes = "<div>" + test.map(s => `<p>` + s.hero + " (" + s.player + ")</p>").join("") + "</div>";
     return (
       <InitiativeContainer>
         <CurrentHeroZone>
@@ -50,32 +53,19 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
               <SecondaryHeroTeam sameTeam={h.playerId === heroes[0].playerId}/>
             </SecondaryHero>;
           })}
-
-
           {heroes.length > constants.maxNumberOfHeroesInitiative &&
-          <div
+          <DisplayMoreButton
             data-place='top'
             data-type='dark'
             data-html='true'
-            data-tip={remainingHeroes}
-            style={{
-              marginBottom: 14,
-              marginRight: 10,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: 40,
-              height: 40,
-              borderRadius: 20,
-              backgroundColor: "rgba(0, 0, 0, 0.5)"
-            }}>
-            <Icon style={{
-              fontSize: 36,
-              color: colors.paleBlue
-            }}>more_horiz</Icon></div>}
-
-
+            data-tip={remainingHeroes}>
+            <Icon style={{ fontSize: 36, color: colors.paleBlue }}>
+              more_horiz
+            </Icon>
+          </DisplayMoreButton>}
         </SecondaryHeroesZone>
+
+        <img src={VariousAssets.endTurn.path} height={VariousAssets.endTurn.size}/>
       </InitiativeContainer>
     );
   }

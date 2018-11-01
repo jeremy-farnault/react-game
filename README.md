@@ -49,13 +49,14 @@ Heroes initiative zone (see design in notebook)
     - ~~Minimal details provided by the zone above the initiative zone~~
     - ~~Zone right of initiative zone used for selected hero (not current one)~~
     - ~~Fix buggy tooltips~~
-    - Display only a certain number + button to say if there is more
+    - ~~Display only a certain number + button to say if there is more~~
     - Button end turn
+    - Button zoom on small details hero to open real details
     - Modal for details on click on hero
 
 Action points zone
 
-Find a better way to display the details zone (above initiative zone see design in notebook)
+~~Find a better way to display the details zone (above initiative zone see design in notebook)~~
 Find a better way to display the actions
 Find a way to separate visually inspected hero and current hero
 

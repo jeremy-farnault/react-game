@@ -79,3 +79,19 @@ height: 8px;
 background-color: ${(props: {sameTeam: boolean}) => props.sameTeam ? colors.blueGreen : colors.paleRed};
 `
 SecondaryHeroTeam.displayName = 'SecondaryHeroTeam'
+
+export const DisplayMoreButton = styled.div`
+margin-bottom: 14px;
+margin-right: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+border-radius: 20px;
+background-color: ${colors.blackMediumOpacity};
+&:hover {
+background-color: ${colors.blackLowOpacity};
+}
+`
+DisplayMoreButton.displayName = 'DisplayMoreButton'

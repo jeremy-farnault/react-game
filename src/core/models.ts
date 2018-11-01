@@ -225,3 +225,12 @@ export const IHeroBattlefieldPointsIcon = {
     size: 30
   }
 };
+
+// Various Assets
+
+export const VariousAssets = {
+  endTurn: {
+    path: require("../assets/various/hourglass_end_turn.png"),
+    size: 60
+  }
+};
