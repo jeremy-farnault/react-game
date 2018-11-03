@@ -2,22 +2,6 @@ import { colors } from "../../utils/colors";
 
 import styled from "styled-components";
 
-export const ZoneStyled = styled.div`
-display: flex;
-margin: auto;
-max-width: 1000px;
-position: relative;
-z-index: 1;
-`
-ZoneStyled.displayName = 'ZoneStyled'
-
-export const BoxStyled = styled.div`
-padding: 20px;
-border: 2px solid ${colors.paleYellow};
-margin-top: 50px;
-`
-BoxStyled.displayName = 'BoxStyled'
-
 export const TitleStyled = styled.div`
 color: ${colors.yellow};
 text-align: center;

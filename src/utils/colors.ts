@@ -1,5 +1,6 @@
 export const colors = {
   blackLowOpacity: 'rgba(0, 0, 0, .2)',
+  blackHighOpacity: 'rgba(0, 0, 0, .8)',
   blackMediumOpacity: 'rgba(0, 0, 0, .5)',
   blue: '#929AEC',
   blueGreen: '#8EBEBA',

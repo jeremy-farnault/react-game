@@ -50,9 +50,10 @@ Heroes initiative zone (see design in notebook)
     - ~~Zone right of initiative zone used for selected hero (not current one)~~
     - ~~Fix buggy tooltips~~
     - ~~Display only a certain number + button to say if there is more~~
-    - Button end turn
-    - Button zoom on small details hero to open real details
-    - Modal for details on click on hero
+    - ~~Button end turn~~
+    - ~~Button zoom on small details hero to open real details~~
+    - ~~Modal for details on click on hero~~
+    - Click on hero in initiative get selected
 
 Action points zone
 
