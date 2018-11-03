@@ -53,9 +53,10 @@ Heroes initiative zone (see design in notebook)
     - ~~Button end turn~~
     - ~~Button zoom on small details hero to open real details~~
     - ~~Modal for details on click on hero~~
-    - Click on hero in initiative get selected
+    - ~~Click on hero in initiative get selected~~
 
 Action points zone
+    - Display it somewhere at the bottom. Near the current hero detail zone
 
 ~~Find a better way to display the details zone (above initiative zone see design in notebook)~~
 Find a better way to display the actions

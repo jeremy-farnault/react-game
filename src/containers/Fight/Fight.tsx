@@ -82,6 +82,7 @@ class Fight extends React.PureComponent<IProps, IState> {
         </BattlefieldScene>
         {heroes.length > 0 &&
         <InitiativeAndDetails heroesSorted={heroes}
+                              updateSelectedHero={this.updateSelectedHero}
                               setNextCurrentHero={this.props.setNextCurrentHero}
                               selectedHero={hero}/>}
       </ContainerScene>

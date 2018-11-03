@@ -12,10 +12,12 @@ import {
 
 import { Icon } from "@material-ui/core";
 import * as React from "react";
+import InitiativeHeroPortrait from "../../components/InitiativeHeroPortrait/InitiativeHeroPortrait";
 
 interface IProps {
   heroesSorted: IHeroBattlefield[]
   setNextCurrentHero: typeof actions.setNextCurrentHero
+  updateSelectedHero: (hero: IHeroBattlefield | null) => void
 }
 
 // interface IState {}
@@ -33,11 +35,13 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
       <InitiativeContainer>
         <CurrentHeroZone>
           <CurrentHero>
-            <img src={heroes[0].assets.tokenPath.path}
-                 data-place='top'
-                 data-tip={heroes[0].id}
-                 width={heroes[0].assets.tokenPath.width * 1.6}
-                 height={heroes[0].assets.tokenPath.width * 1.6}/>
+            <InitiativeHeroPortrait
+              hero={heroes[0]}
+              updateSelectedHero={this.props.updateSelectedHero}
+              src={heroes[0].assets.tokenPath.path}
+              dataTip={heroes[0].id}
+              width={heroes[0].assets.tokenPath.width * 1.6}
+              height={heroes[0].assets.tokenPath.width * 1.6}/>
             <CurrentHeroTeam/>
           </CurrentHero>
         </CurrentHeroZone>
@@ -47,11 +51,13 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
               return null;
             }
             return <SecondaryHero key={h.playerId + h.id}>
-              <img src={h.assets.tokenPath.path}
-                   data-place='top'
-                   data-tip={h.id}
-                   width={h.assets.tokenPath.width * 0.8}
-                   height={h.assets.tokenPath.width * 0.8}/>
+              <InitiativeHeroPortrait
+                hero={h}
+                updateSelectedHero={this.props.updateSelectedHero}
+                src={h.assets.tokenPath.path}
+                dataTip={h.id}
+                width={h.assets.tokenPath.width * 0.8}
+                height={h.assets.tokenPath.width * 0.8}/>
               <SecondaryHeroTeam sameTeam={h.playerId === heroes[0].playerId}/>
             </SecondaryHero>;
           })}
@@ -76,8 +82,8 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
   }
 
   private clickEndTurn = () => {
-    this.props.setNextCurrentHero()
-  }
+    this.props.setNextCurrentHero();
+  };
 }
 
 export default InitiativeZone;

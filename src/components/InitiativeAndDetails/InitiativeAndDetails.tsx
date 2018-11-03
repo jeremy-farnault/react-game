@@ -12,6 +12,7 @@ interface IProps {
   heroesSorted: IHeroBattlefield[]
   selectedHero: IHeroBattlefield | null
   setNextCurrentHero: typeof actions.setNextCurrentHero
+  updateSelectedHero: (hero: IHeroBattlefield | null) => void
 }
 
 // interface IState {}
@@ -19,14 +20,15 @@ interface IProps {
 class InitiativeAndDetails extends React.PureComponent<IProps, {}> {
 
   public render() {
-    const heroes = this.props.heroesSorted
-    const hero = this.props.selectedHero
+    const heroes = this.props.heroesSorted;
+    const hero = this.props.selectedHero;
     return <DetailsAndInitiativeContainer>
       <ReactTooltip type='light' effect='solid' multiline={true}/>
       <DetailsCurrentHero heroesSorted={heroes}/>
       <DetailsAndInitiativeZone>
         {!!hero && <SelectedHeroDetailsZone selectedHero={hero} heroesSorted={heroes}/>}
-        <InitiativeZone heroesSorted={heroes} setNextCurrentHero={this.props.setNextCurrentHero}/>
+        <InitiativeZone heroesSorted={heroes} setNextCurrentHero={this.props.setNextCurrentHero}
+                        updateSelectedHero={this.props.updateSelectedHero}/>
       </DetailsAndInitiativeZone>
     </DetailsAndInitiativeContainer>;
   }
