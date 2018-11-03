@@ -1,10 +1,17 @@
-import { constants } from "../../utils/constants";
+import { colors } from "../../utils/colors";
 
 import styled from "styled-components";
 
 export const ActionZoneStyled = styled.div`
-z-index: 10;
-margin-right: 10px;
-min-width: ${constants.buttonActionSize + 2}px;
+background-color: ${colors.greyOpacity};
+border-radius: 10px;
+border: 2px solid ${colors.grey};;
+padding: 20px;
+min-width: 80px;
+display: flex;
+margin-right: 20px;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 `
 ActionZoneStyled.displayName = 'ActionZoneStyled'

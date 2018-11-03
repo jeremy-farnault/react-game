@@ -6,6 +6,7 @@ export const colors = {
   blueGreen: '#8EBEBA',
   brow: '#A37B5E',
   chocolate: '#D2691E',
+  chocolateOpacity: 'rgba(210, 105, 30, .5)',
   darkSlateGray: '#2F4F4F',
   green: '#3CB371',
   grey: 'rgb(70, 70, 70)',

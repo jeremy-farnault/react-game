@@ -169,6 +169,15 @@ export enum ActionsType {
   heroDefense = "heroDefense"
 }
 
+export enum ActionsTypeText {
+  heroMovement = "Movement",
+  heroAttack = "Attack",
+  heroRangedAttack = "Ranged attack",
+  heroAttackArmor = "Attack armor",
+  heroMagic = "Magic",
+  heroDefense = "Defense"
+}
+
 export const ActionButtonIcon = {
   heroMovement: require("../assets/actionsTokens/movement_action.png"),
   heroAttack: require("../assets/actionsTokens/attack_action.png"),

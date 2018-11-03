@@ -3,6 +3,7 @@ import ActionButton from "../ActionButton/ActionButton";
 import { ActionZoneStyled } from "./ActionButtonsStyles";
 
 import * as React from "react";
+import ReactTooltip = require("react-tooltip");
 
 interface IProps {
   changeAction: (action: ActionsType) => void
@@ -24,6 +25,7 @@ class ActionButtons extends React.PureComponent<IProps, {}> {
     const atkArm = h && h.characteristics.attackArmor > 0;
     return (
       <ActionZoneStyled>
+        <ReactTooltip type='light' effect='solid' multiline={true}/>
         {mvt &&
         <ActionButton actionType={ActionsType.heroMovement}
                       selected={this.props.currentAction === ActionsType.heroMovement}

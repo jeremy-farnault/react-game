@@ -3,5 +3,5 @@ export const constants = {
   numberOfLines: 12,
   tileSize: 54,
   buttonActionSize: 30,
-  maxNumberOfHeroesInitiative: 7
+  maxNumberOfHeroesInitiative: 9
 }

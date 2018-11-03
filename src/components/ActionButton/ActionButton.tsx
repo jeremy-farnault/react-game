@@ -1,4 +1,4 @@
-import { ActionButtonIcon, ActionsType} from "../../core/models";
+import { ActionButtonIcon, ActionsType, ActionsTypeText } from "../../core/models";
 import { constants } from "../../utils/constants";
 import { ButtonActionStyled } from "./ActionButtonStyles";
 
@@ -21,6 +21,8 @@ class ActionButton extends React.PureComponent<IProps, {}> {
   public render() {
     return (
       <ButtonActionStyled
+        data-place="left"
+        data-tip={ActionsTypeText[this.props.actionType]}
         selected={this.props.selected}
         onClick={this.pressActionButton}>
         <img src={ActionButtonIcon[ActionsType[this.props.actionType]]}

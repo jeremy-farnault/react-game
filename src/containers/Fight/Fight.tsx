@@ -1,4 +1,4 @@
-import ActionButtons from "../../components/ActionButtons/ActionButtons";
+import BottomSection from "../../components/BottomSection/BottomSection";
 import * as actions from "../../core/actions";
 import {
   ActionCharacteristic,
@@ -12,14 +12,13 @@ import {
 import { IStoreState } from "../../types";
 import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import Battlefield from "../Battlefield/Battlefield";
-import { BackgroundImage, BattlefieldScene, ContainerScene} from "./FightStyles";
+import { BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
 
 import * as _ from "lodash";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
 import IPlayers = IStoreState.IPlayers;
-import InitiativeAndDetails from "../../components/InitiativeAndDetails/InitiativeAndDetails";
 
 interface IProps {
   tiles: ITile[][]
@@ -68,10 +67,6 @@ class Fight extends React.PureComponent<IProps, IState> {
         <BackgroundImage
           src={require("../../assets/backgrounds/battlefield_big.jpg")}/>
         <BattlefieldScene>
-          <ActionButtons
-            hero={hero}
-            currentAction={action}
-            changeAction={this.changeAction}/>
           <Battlefield
             allHeroes={this.state.allHeroes}
             currentSelectedAction={action}
@@ -80,11 +75,13 @@ class Fight extends React.PureComponent<IProps, IState> {
             updateSelectedHero={this.updateSelectedHero}
             changeAction={this.changeAction}/>
         </BattlefieldScene>
-        {heroes.length > 0 &&
-        <InitiativeAndDetails heroesSorted={heroes}
-                              updateSelectedHero={this.updateSelectedHero}
-                              setNextCurrentHero={this.props.setNextCurrentHero}
-                              selectedHero={hero}/>}
+        <BottomSection
+          heroesSorted={heroes}
+          selectedHero={hero}
+          setNextCurrentHero={this.props.setNextCurrentHero}
+          updateSelectedHero={this.updateSelectedHero}
+          changeAction={this.changeAction}
+          selectedAction={action}/>
       </ContainerScene>
     );
   }

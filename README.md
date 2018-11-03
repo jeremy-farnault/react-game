@@ -40,7 +40,7 @@
     - ~~Add skills~~
     - ~~Add life points, magic points and armor~~
 
-Heroes initiative zone (see design in notebook)
+~~Heroes initiative zone (see design in notebook)~~
     - ~~Sort the heroes~~
     - ~~Style zone~~
     - ~~Add icons for the skills with description on tooltip~~
@@ -56,9 +56,13 @@ Heroes initiative zone (see design in notebook)
     - ~~Click on hero in initiative get selected~~
 
 Action points zone
-    - Display it somewhere at the bottom. Near the current hero detail zone
+    - ~~Display it somewhere at the bottom. Near the current hero detail zone~~
+    - ~~Fix selection of actions~~
+    - When click on hero on battlefield stop changing the tiles
+    - Change the tiles on change current hero
 
 ~~Find a better way to display the details zone (above initiative zone see design in notebook)~~
+Remove vertical scroll
 Find a better way to display the actions
 Find a way to separate visually inspected hero and current hero
 

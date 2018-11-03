@@ -1,3 +1,5 @@
+import { constants } from "../../utils/constants";
+
 import styled from "styled-components";
 
 export const ContainerScene = styled.div`
@@ -17,7 +19,7 @@ BackgroundImage.displayName = 'BackgroundImage'
 export const BattlefieldScene = styled.div`
 flex-direction: row;
 display: flex;
-max-width: 960px;
+max-width: ${constants.tileSize * constants.numberOfColumns}px;
 margin: auto;
 `
 BattlefieldScene.displayName = 'BattlefieldScene'
