@@ -1,4 +1,5 @@
 import InitiativeZone from "../../containers/InitiativeZone/InitiativeZone";
+import * as actions from "../../core/actions";
 import { IHeroBattlefield } from "../../core/models";
 import DetailsCurrentHero from "../DetailsCurrentHero/DetailsCurrentHero";
 import SelectedHeroDetailsZone from "../SelectedHeroDetailsZone/SelectedHeroDetailsZone";
@@ -10,6 +11,7 @@ import ReactTooltip = require("react-tooltip");
 interface IProps {
   heroesSorted: IHeroBattlefield[]
   selectedHero: IHeroBattlefield | null
+  setNextCurrentHero: typeof actions.setNextCurrentHero
 }
 
 // interface IState {}
@@ -24,7 +26,7 @@ class InitiativeAndDetails extends React.PureComponent<IProps, {}> {
       <DetailsCurrentHero heroesSorted={heroes}/>
       <DetailsAndInitiativeZone>
         {!!hero && <SelectedHeroDetailsZone selectedHero={hero} heroesSorted={heroes}/>}
-        <InitiativeZone heroesSorted={heroes}/>
+        <InitiativeZone heroesSorted={heroes} setNextCurrentHero={this.props.setNextCurrentHero}/>
       </DetailsAndInitiativeZone>
     </DetailsAndInitiativeContainer>;
   }

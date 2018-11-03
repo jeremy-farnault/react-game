@@ -1,4 +1,6 @@
+import { VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
+import { grid } from "../../utils/grid";
 
 import styled from "styled-components";
 
@@ -95,3 +97,13 @@ background-color: ${colors.blackLowOpacity};
 }
 `
 DisplayMoreButton.displayName = 'DisplayMoreButton'
+
+export const EndTurnButton = styled.img`
+height: ${VariousAssets.endTurn.size}px;
+margin-bottom: 12px;
+margin-left: 20px;
+&:hover {
+opacity: ${grid.opacity};
+}
+`
+EndTurnButton.displayName = 'EndTurnButton'

@@ -64,4 +64,4 @@ export const setHeroNewPosition = createAction<ISetHeroNewPositionPayload>(const
 // Set heroes order
 
 export const setHeroesOrder = createAction<ISetHeroesOrderPayload>(constants.SET_HEROES_ORDER)
-export const setNextCurrentHero = createAction<null>(constants.SET_NEXT_CURRENT_HERO)
+export const setNextCurrentHero = createAction(constants.SET_NEXT_CURRENT_HERO)

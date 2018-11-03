@@ -1,10 +1,11 @@
+import * as actions from "../../core/actions";
 import { IHeroBattlefield, VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
 import { constants } from "../../utils/constants";
 import {
   CurrentHero,
   CurrentHeroTeam,
-  CurrentHeroZone, DisplayMoreButton,
+  CurrentHeroZone, DisplayMoreButton, EndTurnButton,
   InitiativeContainer, SecondaryHero,
   SecondaryHeroesZone, SecondaryHeroTeam
 } from "./InitiativeZoneStyles";
@@ -14,6 +15,7 @@ import * as React from "react";
 
 interface IProps {
   heroesSorted: IHeroBattlefield[]
+  setNextCurrentHero: typeof actions.setNextCurrentHero
 }
 
 // interface IState {}
@@ -64,10 +66,17 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
             </Icon>
           </DisplayMoreButton>}
         </SecondaryHeroesZone>
-
-        <img src={VariousAssets.endTurn.path} height={VariousAssets.endTurn.size}/>
+        <EndTurnButton
+          onClick={this.clickEndTurn}
+          src={VariousAssets.endTurn.path}
+          data-place='top'
+          data-tip={VariousAssets.endTurn.text}/>
       </InitiativeContainer>
     );
+  }
+
+  private clickEndTurn = () => {
+    this.props.setNextCurrentHero()
   }
 }
 

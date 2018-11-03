@@ -231,6 +231,7 @@ export const IHeroBattlefieldPointsIcon = {
 export const VariousAssets = {
   endTurn: {
     path: require("../assets/various/hourglass_end_turn.png"),
-    size: 60
+    size: 54,
+    text: 'End turn'
   }
 };
