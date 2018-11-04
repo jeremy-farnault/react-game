@@ -58,13 +58,22 @@
 Action points zone
     - ~~Display it somewhere at the bottom. Near the current hero detail zone~~
     - ~~Fix selection of actions~~
-    - When click on hero on battlefield stop changing the tiles
-    - Change the tiles on change current hero
+    - ~~When click on hero on battlefield stop changing the tiles~~
+    - ~~Change the tiles on change current hero~~
+    - Initialize tiles with first hero on component mount
 
 ~~Find a better way to display the details zone (above initiative zone see design in notebook)~~
 Remove vertical scroll
-Find a better way to display the actions
-Find a way to separate visually inspected hero and current hero
+~~Find a better way to display the actions~~
+~~Find a way to separate visually inspected hero and current hero~~
+
+Finish fixing actions and behaviors ;
+Set up action points visual and usage ;
+Set up timer visual and usage ;
+Set up points per team visual ;
+Set up cards visual and basic usage;
+
+Voyage sur la carte comme dans The Dwarves
 
 Put all color values etc in grid and colors file
 http://www.tayloredmktg.com/rgb/

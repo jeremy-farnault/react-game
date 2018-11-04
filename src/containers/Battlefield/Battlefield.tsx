@@ -8,7 +8,6 @@ import { ContainerBattlefield } from "./BattlefieldStyles";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
-import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import IPlayers = IStoreState.IPlayers;
 
 interface IProps {
@@ -36,27 +35,10 @@ class Battlefield extends React.PureComponent<IProps, {}> {
         <Tiles tiles={this.props.tiles} clickOnTile={this.clickOnTile}/>
         <Heroes heroes={this.props.allHeroes}
                 tiles={this.props.tiles}
-                selectHero={this.selectHero}/>
+                selectHero={this.props.updateSelectedHero}/>
       </ContainerBattlefield>
     );
   }
-
-  private selectHero = (hero: IHeroBattlefield) => {
-    if (this.props.currentSelectedHero === hero) {
-      return;
-    }
-    this.props.resetTiles({});
-    this.props.updateSelectedAction(ActionsType.heroMovement);
-    this.props.updateSelectedHero(hero);
-    this.props.setHeroSelected({
-      setSelected: true,
-      heroId: hero.id,
-      playerId: hero.playerId
-    });
-    const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics.speed,
-      hero.tileX, hero.tileY, TileState.heroMovement);
-    this.props.updateTiles({ data: newTiles });
-  };
 
   private clickOnTile = async (tile: ITile) => {
     this.props.resetTiles({});

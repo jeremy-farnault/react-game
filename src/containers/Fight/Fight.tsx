@@ -26,6 +26,7 @@ interface IProps {
   cards: ICards
   players: IPlayers
   heroesSorted: IHeroBattlefield[]
+  setHeroSelected: typeof actions.setHeroSelected
   updateTiles: typeof actions.updateTiles
   resetTiles: typeof actions.resetTiles
   setHeroesOrder: typeof actions.setHeroesOrder
@@ -43,7 +44,7 @@ class Fight extends React.PureComponent<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = {
-      currentSelectedHero: null,
+      currentSelectedHero: this.props.heroesSorted[0],
       currentSelectedAction: ActionsType.heroMovement,
       allHeroes: this.getAllHeroesPlayers()
     };
@@ -66,22 +67,25 @@ class Fight extends React.PureComponent<IProps, IState> {
       <ContainerScene>
         <BackgroundImage
           src={require("../../assets/backgrounds/battlefield_big.jpg")}/>
-        <BattlefieldScene>
-          <Battlefield
-            allHeroes={this.state.allHeroes}
-            currentSelectedAction={action}
-            currentSelectedHero={hero}
-            updateSelectedAction={this.updateSelectedAction}
+        {heroes.length > 0 &&
+        <div>
+          <BattlefieldScene>
+            <Battlefield
+              allHeroes={this.state.allHeroes}
+              currentSelectedAction={action}
+              currentSelectedHero={heroes[0]}
+              updateSelectedAction={this.updateSelectedAction}
+              updateSelectedHero={this.updateSelectedHero}
+              changeAction={this.changeAction}/>
+          </BattlefieldScene>
+          <BottomSection
+            heroesSorted={heroes}
+            selectedHero={hero}
+            setNextCurrentHero={this.setNextCurrentHero}
             updateSelectedHero={this.updateSelectedHero}
-            changeAction={this.changeAction}/>
-        </BattlefieldScene>
-        <BottomSection
-          heroesSorted={heroes}
-          selectedHero={hero}
-          setNextCurrentHero={this.props.setNextCurrentHero}
-          updateSelectedHero={this.updateSelectedHero}
-          changeAction={this.changeAction}
-          selectedAction={action}/>
+            changeAction={this.changeAction}
+            selectedAction={action}/>
+        </div>}
       </ContainerScene>
     );
   }
@@ -112,6 +116,21 @@ class Fight extends React.PureComponent<IProps, IState> {
       usedTile.columnIndex, usedTile.lineIndex, TileState[action]);
     this.props.updateTiles({ data: newTiles });
   };
+
+  private setNextCurrentHero = () => {
+    const hero = this.props.heroesSorted[1]
+    this.props.setNextCurrentHero()
+    this.props.resetTiles({});
+    this.updateSelectedAction(ActionsType.heroMovement);
+    this.props.setHeroSelected({
+      setSelected: true,
+      heroId: hero.id,
+      playerId: hero.playerId
+    });
+    const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics.speed,
+      hero.tileX, hero.tileY, TileState.heroMovement);
+    this.props.updateTiles({ data: newTiles });
+  }
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {
@@ -126,6 +145,7 @@ function mapStateToProps(state: IStoreState.IRootState) {
 
 const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators({
+    setHeroSelected: actions.setHeroSelected,
     updateTiles: actions.updateTiles,
     resetTiles: actions.resetTiles,
     setHeroesOrder: actions.setHeroesOrder,

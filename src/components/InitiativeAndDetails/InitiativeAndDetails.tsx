@@ -1,5 +1,4 @@
 import InitiativeZone from "../../containers/InitiativeZone/InitiativeZone";
-import * as actions from "../../core/actions";
 import { IHeroBattlefield } from "../../core/models";
 import DetailsCurrentHero from "../DetailsCurrentHero/DetailsCurrentHero";
 import SelectedHeroDetailsZone from "../SelectedHeroDetailsZone/SelectedHeroDetailsZone";
@@ -11,7 +10,7 @@ import ReactTooltip = require("react-tooltip");
 interface IProps {
   heroesSorted: IHeroBattlefield[]
   selectedHero: IHeroBattlefield | null
-  setNextCurrentHero: typeof actions.setNextCurrentHero
+  setNextCurrentHero: () => void
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
 }
 

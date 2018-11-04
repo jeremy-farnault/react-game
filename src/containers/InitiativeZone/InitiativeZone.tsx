@@ -1,4 +1,3 @@
-import * as actions from "../../core/actions";
 import { IHeroBattlefield, VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
 import { constants } from "../../utils/constants";
@@ -16,7 +15,7 @@ import InitiativeHeroPortrait from "../../components/InitiativeHeroPortrait/Init
 
 interface IProps {
   heroesSorted: IHeroBattlefield[]
-  setNextCurrentHero: typeof actions.setNextCurrentHero
+  setNextCurrentHero: () => void
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
 }
 
