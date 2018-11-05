@@ -12,7 +12,7 @@ import {
 import { IStoreState } from "../../types";
 import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import Battlefield from "../Battlefield/Battlefield";
-import { BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
+import { ActionPointsZoneStyled, BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
 
 import * as _ from "lodash";
 import * as React from "react";
@@ -45,7 +45,7 @@ class Fight extends React.PureComponent<IProps, IState> {
     super(props);
     this.state = {
       currentSelectedHero: this.props.heroesSorted[0],
-      currentSelectedAction: ActionsType.heroMovement,
+      currentSelectedAction: ActionsType.heroAttack,
       allHeroes: this.getAllHeroesPlayers()
     };
   }
@@ -57,6 +57,7 @@ class Fight extends React.PureComponent<IProps, IState> {
       () => Math.random()
     ]));
     this.props.setHeroesOrder({ allHeroesPlayers: sorted });
+    this.changeAction(ActionsType.heroMovement, undefined, sorted[0])
   }
 
   public render() {
@@ -70,6 +71,19 @@ class Fight extends React.PureComponent<IProps, IState> {
         {heroes.length > 0 &&
         <div>
           <BattlefieldScene>
+
+
+
+            <ActionPointsZoneStyled>
+              test
+            </ActionPointsZoneStyled>
+
+
+
+
+
+
+
             <Battlefield
               allHeroes={this.state.allHeroes}
               currentSelectedAction={action}
@@ -104,15 +118,15 @@ class Fight extends React.PureComponent<IProps, IState> {
     this.setState({ currentSelectedHero: hero });
   };
 
-  private changeAction = (action: ActionsType, tile?: ITile) => {
+  private changeAction = (action: ActionsType, tile?: ITile, hero?: IHeroBattlefield) => {
     if (this.state.currentSelectedAction === action) {
       return;
     }
     this.setState({ currentSelectedAction: action });
     this.props.resetTiles({});
-    const hero = this.state.currentSelectedHero as IHeroBattlefield;
-    const usedTile = !!tile ? tile : this.props.tiles[hero.tileY][hero.tileX];
-    const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics[ActionCharacteristic[action]],
+    const usedHero = !!hero ? hero : this.props.heroesSorted[0];
+    const usedTile = !!tile ? tile : this.props.tiles[usedHero.tileY][usedHero.tileX];
+    const newTiles = getNewTileStateByHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action]);
     this.props.updateTiles({ data: newTiles });
   };

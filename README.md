@@ -55,25 +55,31 @@
     - ~~Modal for details on click on hero~~
     - ~~Click on hero in initiative get selected~~
 
-Action points zone
+~~Action points zone~~
     - ~~Display it somewhere at the bottom. Near the current hero detail zone~~
     - ~~Fix selection of actions~~
     - ~~When click on hero on battlefield stop changing the tiles~~
     - ~~Change the tiles on change current hero~~
-    - Initialize tiles with first hero on component mount
+    - ~~Initialize tiles with first hero on component mount~~
+    - ~~Click on hero then action, recalculate the tiles even for non current hero~~
 
 ~~Find a better way to display the details zone (above initiative zone see design in notebook)~~
-Remove vertical scroll
 ~~Find a better way to display the actions~~
 ~~Find a way to separate visually inspected hero and current hero~~
 
-Finish fixing actions and behaviors ;
-Set up action points visual and usage ;
+Set up action points visual and usage
+    - Above the action zone make a zone for the action points
+    - Add actions points current in the IHeroBattlefield class
+    - 3 actions points per hero
+    - Remove an action points on action taken for the moment
+
 Set up timer visual and usage ;
 Set up points per team visual ;
 Set up cards visual and basic usage;
 
-Voyage sur la carte comme dans The Dwarves
+Map travel based on The Dwarves
+
+Find background the right height
 
 Put all color values etc in grid and colors file
 http://www.tayloredmktg.com/rgb/
