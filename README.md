@@ -68,9 +68,9 @@
 ~~Find a way to separate visually inspected hero and current hero~~
 
 Set up action points visual and usage
-    - Above the action zone make a zone for the action points
-    - Add actions points current in the IHeroBattlefield class
-    - 3 actions points per hero
+    - ~~Above the action zone make a zone for the action points~~
+    - ~~Add actions points current in the IHeroBattlefield class~~
+    - ~~3 actions points per hero~~
     - Remove an action points on action taken for the moment
 
 Set up timer visual and usage ;

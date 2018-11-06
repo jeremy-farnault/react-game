@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const BottomSectionContainer = styled.div`
 z-index: 1;
-max-width: ${constants.tileSize * constants.numberOfColumns + 288}px;
+max-width: ${constants.tileSize * constants.numberOfColumns + 200}px;
 position: relative;
 display: flex;
 flex-direction: row;

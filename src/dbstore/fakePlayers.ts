@@ -80,6 +80,7 @@ export const fakePlayers: IPlayers = {
           currentMagicPoints: 0,
           currentArmorPoints: 7
         },
+        currentActionPoints: 3,
         state: IHeroBattlefieldState.idle
       } as IHeroBattlefield,
       [heroesIds.arwen]: {
@@ -145,6 +146,7 @@ export const fakePlayers: IPlayers = {
           currentMagicPoints: 8,
           currentArmorPoints: 5
         },
+        currentActionPoints: 3,
         state: IHeroBattlefieldState.idle
       } as IHeroBattlefield
     },
@@ -224,6 +226,7 @@ export const fakePlayers: IPlayers = {
           currentMagicPoints: 20,
           currentArmorPoints: 2
         },
+        currentActionPoints: 3,
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
@@ -290,6 +293,7 @@ export const fakePlayers: IPlayers = {
           currentMagicPoints: 0,
           currentArmorPoints: 9
         },
+        currentActionPoints: 3,
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
@@ -356,6 +360,7 @@ export const fakePlayers: IPlayers = {
           currentMagicPoints: 0,
           currentArmorPoints: 9
         },
+        currentActionPoints: 3,
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {

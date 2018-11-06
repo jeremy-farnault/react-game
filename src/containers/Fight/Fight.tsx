@@ -12,13 +12,14 @@ import {
 import { IStoreState } from "../../types";
 import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import Battlefield from "../Battlefield/Battlefield";
-import { ActionPointsZoneStyled, BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
+import { BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
 
 import * as _ from "lodash";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
 import IPlayers = IStoreState.IPlayers;
+import ActionPoints from "../../components/ActionPoints/ActionPoints";
 
 interface IProps {
   tiles: ITile[][]
@@ -71,19 +72,7 @@ class Fight extends React.PureComponent<IProps, IState> {
         {heroes.length > 0 &&
         <div>
           <BattlefieldScene>
-
-
-
-            <ActionPointsZoneStyled>
-              test
-            </ActionPointsZoneStyled>
-
-
-
-
-
-
-
+            <ActionPoints currentHero={heroes[0]}/>
             <Battlefield
               allHeroes={this.state.allHeroes}
               currentSelectedAction={action}

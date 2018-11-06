@@ -98,7 +98,8 @@ export interface IHeroBattlefield extends IHero {
     currentLifePoints: number
     currentMagicPoints: number
     currentArmorPoints: number
-  }
+  },
+  currentActionPoints: number
 }
 
 export enum IHeroBattlefieldState {
@@ -234,6 +235,19 @@ export const IHeroBattlefieldPointsIcon = {
     size: 30
   }
 };
+
+// Action Points Icons
+
+export const ActionPointsIcon = {
+  actionPointFull: {
+    path: require("../assets/various/action_point_unused.png"),
+    size: 40
+  },
+  actionPointEmpty: {
+    path: require("../assets/various/action_point_used.png"),
+    size: 40
+  }
+}
 
 // Various Assets
 
