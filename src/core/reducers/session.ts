@@ -1,5 +1,7 @@
 import { IStoreState } from "../../types";
 import {
+  DECREMENT_ACTION_POINTS,
+  INCREMENT_ACTION_POINTS,
   LOAD_ALL_CARDS_FAIL,
   LOAD_ALL_CARDS_START,
   LOAD_ALL_CARDS_SUCCESS,
@@ -21,7 +23,7 @@ const initialState: IStoreState.ISession = {
   allCards: {},
   allHeroes: {},
   players: {},
-  heroesOrder: []
+  heroesFight: []
 };
 
 export interface ILoadAllHeroesSuccessPayload {
@@ -53,6 +55,12 @@ export interface ISetHeroNewPositionPayload {
 
 export interface ISetHeroesOrderPayload {
   allHeroesPlayers: IHeroBattlefield[]
+}
+
+export interface IChangeActionPointsPayload {
+  playerId: string
+  heroId: string
+  heroIndex: number
 }
 
 export default handleActions(
@@ -151,12 +159,38 @@ export default handleActions(
       state: IStoreState.ISession,
       action: Action<null>
     ) => {
-      const newOrder = state.heroesOrder.slice(1)
-      newOrder.push(state.heroesOrder[0])
+      const newOrder = state.heroesFight.slice(1);
+      newOrder.push(state.heroesFight[0]);
       return ({
         ...state,
         heroesOrder: newOrder
-      })
+      });
+    },
+
+    // HEROES ACTION POINTS ACTIONS
+    [INCREMENT_ACTION_POINTS]: (
+      state: IStoreState.ISession,
+      action: Action<IChangeActionPointsPayload>
+    ) => {
+      const newHeroes = state.heroesFight.slice();
+      if (!!action.payload &&
+        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
+        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
+        newHeroes[action.payload.heroIndex].currentActionPoints++;
+      }
+      return ({ ...state, heroesOrder: newHeroes });
+    },
+    [DECREMENT_ACTION_POINTS]: (
+      state: IStoreState.ISession,
+      action: Action<IChangeActionPointsPayload>
+    ) => {
+      const newHeroes = state.heroesFight.slice();
+      if (!!action.payload &&
+        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
+        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
+        newHeroes[action.payload.heroIndex].currentActionPoints--;
+      }
+      return ({ ...state, heroesOrder: newHeroes });
     }
   },
   initialState

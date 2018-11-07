@@ -4,6 +4,7 @@ import {
   IUpdateTilesPayload
 } from '../reducers/battlefield'
 import {
+  IChangeActionPointsPayload,
   ILoadAllCardsSuccessPayload,
   ILoadAllHeroesSuccessPayload,
   ILoadPlayersSuccessPayload,
@@ -65,3 +66,8 @@ export const setHeroNewPosition = createAction<ISetHeroNewPositionPayload>(const
 
 export const setHeroesOrder = createAction<ISetHeroesOrderPayload>(constants.SET_HEROES_ORDER)
 export const setNextCurrentHero = createAction(constants.SET_NEXT_CURRENT_HERO)
+
+// Heroes action points
+
+export const incrementActionPoints = createAction<IChangeActionPointsPayload>(constants.INCREMENT_ACTION_POINTS)
+export const decrementActionPoints = createAction<IChangeActionPointsPayload>(constants.DECREMENT_ACTION_POINTS)

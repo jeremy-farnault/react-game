@@ -72,6 +72,7 @@ Set up action points visual and usage
     - ~~Add actions points current in the IHeroBattlefield class~~
     - ~~3 actions points per hero~~
     - Remove an action points on action taken for the moment
+    - No more action if no action point left
 
 Set up timer visual and usage ;
 Set up points per team visual ;

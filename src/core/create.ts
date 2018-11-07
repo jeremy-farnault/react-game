@@ -14,7 +14,7 @@ export const initialState: {data: IStoreState.IRootState} = {
       allHeroes: {},
       allCards: {},
       players: {},
-      heroesOrder: []
+      heroesFight: []
     }
   }
 }
