@@ -9,12 +9,30 @@ interface IProps {
   currentHero: IHeroBattlefield
 }
 
-// interface IState {}
+interface IState {
+  currentAP: number
+}
 
-class ActionPoints extends React.PureComponent<IProps, {}> {
+class ActionPoints extends React.PureComponent<IProps, IState> {
+
+  constructor(props: IProps) {
+    super(props)
+    this.state = {
+      currentAP: this.props.currentHero.currentActionPoints
+    }
+  }
+
+  public componentWillReceiveProps(nextProps: IProps) {
+    if (nextProps.currentHero.currentActionPoints !== this.state.currentAP) {
+      this.setState({
+        currentAP: nextProps.currentHero.currentActionPoints
+      })
+    }
+  }
 
   public render() {
-    const cp = this.props.currentHero.currentActionPoints
+    const cp = this.state.currentAP
+    console.log('ap render')
     return (
       <ActionPointsZoneStyled>
         {_.range(constants.actionPoints).reverse().map((i: number) =>

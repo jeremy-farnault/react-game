@@ -30,7 +30,7 @@ interface IProps {
   resetTiles: typeof actions.resetTiles
   setHeroesOrder: typeof actions.setHeroesOrder
   setNextCurrentHero: typeof actions.setNextCurrentHero
-  incrementActionPoints: typeof actions.incrementActionPoints
+  decrementActionPoints: typeof actions.decrementActionPoints
 }
 
 interface IState {
@@ -64,6 +64,7 @@ class Fight extends React.PureComponent<IProps, IState> {
     const hero = this.state.currentSelectedHero;
     const action = this.state.currentSelectedAction;
     const heroes = this.props.heroesFight;
+    console.log('fight render')
     return (
       <ContainerScene>
         <BackgroundImage
@@ -78,7 +79,8 @@ class Fight extends React.PureComponent<IProps, IState> {
               currentSelectedHero={heroes[0]}
               updateSelectedAction={this.updateSelectedAction}
               updateSelectedHero={this.updateSelectedHero}
-              changeAction={this.changeAction}/>
+              changeAction={this.changeAction}
+              decrementActionPoints={this.props.decrementActionPoints}/>
           </BattlefieldScene>
           <BottomSection
             heroesSorted={heroes}
@@ -151,7 +153,7 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
     resetTiles: actions.resetTiles,
     setHeroesOrder: actions.setHeroesOrder,
     setNextCurrentHero: actions.setNextCurrentHero,
-    incrementActionPoints: actions.incrementActionPoints
+    decrementActionPoints: actions.decrementActionPoints
   }, dispatch);
 
 export default connect(

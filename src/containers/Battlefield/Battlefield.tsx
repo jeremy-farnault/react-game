@@ -23,6 +23,7 @@ interface IProps {
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
   updateSelectedAction: (action: ActionsType) => void
   changeAction: (action: ActionsType, tile?: ITile) => void
+  decrementActionPoints: typeof actions.decrementActionPoints
 }
 
 // interface IState {}
@@ -59,6 +60,11 @@ class Battlefield extends React.PureComponent<IProps, {}> {
         prevTileX: hero.tileX,
         prevTileY: hero.tileY
       });
+      this.props.decrementActionPoints({
+        heroIndex: 0,
+        heroId: hero.id,
+        playerId: hero.playerId
+      })
       this.props.changeAction(ActionsType.heroMovement, tile);
     }
   };

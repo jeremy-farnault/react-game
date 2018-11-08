@@ -151,10 +151,12 @@ export default handleActions(
     [SET_HEROES_ORDER]: (
       state: IStoreState.ISession,
       action: Action<ISetHeroesOrderPayload>
-    ) => ({
-      ...state,
-      heroesOrder: action.payload ? action.payload.allHeroesPlayers : []
-    }),
+    ) => {
+      return ({
+        ...state,
+        heroesFight: action.payload ? action.payload.allHeroesPlayers : []
+      });
+    },
     [SET_NEXT_CURRENT_HERO]: (
       state: IStoreState.ISession,
       action: Action<null>
@@ -163,7 +165,7 @@ export default handleActions(
       newOrder.push(state.heroesFight[0]);
       return ({
         ...state,
-        heroesOrder: newOrder
+        heroesFight: newOrder
       });
     },
 
@@ -178,7 +180,7 @@ export default handleActions(
         newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
         newHeroes[action.payload.heroIndex].currentActionPoints++;
       }
-      return ({ ...state, heroesOrder: newHeroes });
+      return ({ ...state, heroesFight: newHeroes });
     },
     [DECREMENT_ACTION_POINTS]: (
       state: IStoreState.ISession,
@@ -190,7 +192,7 @@ export default handleActions(
         newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
         newHeroes[action.payload.heroIndex].currentActionPoints--;
       }
-      return ({ ...state, heroesOrder: newHeroes });
+      return ({ ...state, heroesFight: newHeroes });
     }
   },
   initialState
