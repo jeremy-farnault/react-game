@@ -21,7 +21,6 @@ export interface IStyledActionButton {
 class ActionButton extends React.PureComponent<IProps, {}> {
 
   public render() {
-    console.log('render actionbutton')
     return (
       <ButtonActionStyled
         data-place="left"

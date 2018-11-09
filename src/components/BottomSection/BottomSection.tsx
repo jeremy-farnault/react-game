@@ -26,6 +26,7 @@ class BottomSection extends React.PureComponent<IProps, {}> {
       <BottomSectionContainer>
         <ActionButtons
           hero={heroes[0]}
+          currentActionPoints={heroes[0].currentActionPoints}
           currentAction={action}
           changeAction={this.props.changeAction}/>
         <InitiativeAndDetails heroesSorted={heroes}

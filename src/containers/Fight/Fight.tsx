@@ -64,7 +64,6 @@ class Fight extends React.PureComponent<IProps, IState> {
     const hero = this.state.currentSelectedHero;
     const action = this.state.currentSelectedAction;
     const heroes = this.props.heroesFight;
-    console.log('fight render')
     return (
       <ContainerScene>
         <BackgroundImage
