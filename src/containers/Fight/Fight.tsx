@@ -109,7 +109,7 @@ class Fight extends React.PureComponent<IProps, IState> {
   };
 
   private changeAction = (action: ActionsType, tile?: ITile, hero?: IHeroBattlefield) => {
-    if (this.state.currentSelectedAction === action) {
+    if (this.props.heroesFight.length > 0 && this.props.heroesFight[0].currentActionPoints < 1) {
       return;
     }
     this.setState({ currentSelectedAction: action });

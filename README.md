@@ -72,9 +72,9 @@ Set up action points visual and usage
     - ~~Add actions points current in the IHeroBattlefield class~~
     - ~~3 actions points per hero~~
     - ~~Remove an action points on action taken for the moment~~
-    - No more action if no action point left
+    - ~~Fix after movement hero has no action selected~~
+    - No more action if no action point left (disable actions and change design)
     - Fix first hero don't have the red halo
-    - Fix after movement hero has no action selected
 
 Set up timer visual and usage ;
 Set up points per team visual ;
