@@ -57,6 +57,11 @@ class Fight extends React.PureComponent<IProps, IState> {
       () => Math.random()
     ]));
     this.props.setHeroesOrder({ allHeroesPlayers: sorted });
+    this.props.setHeroSelected({
+      setSelected: true,
+      heroId: sorted[0].id,
+      playerId: sorted[0].playerId
+    })
     this.changeAction(ActionsType.heroMovement, undefined, sorted[0])
   }
 

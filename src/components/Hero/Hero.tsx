@@ -24,15 +24,13 @@ class Hero extends React.PureComponent<IProps, {}> {
   public render() {
     const h = this.props.hero;
     return (
-      <div>
-        <HeroStyled
-          onClick={this.selectHero}
-          selected={h.selected}
-          posX={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2}
-          posY={this.props.tile.posY - 4}
-          src={h.assets.battlefieldPath.path}
-          height={50}/>
-      </div>
+      <HeroStyled
+        onClick={this.selectHero}
+        selected={h.selected}
+        posX={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2}
+        posY={this.props.tile.posY - 4}
+        src={h.assets.battlefieldPath.path}
+        height={50}/>
     );
   }
 

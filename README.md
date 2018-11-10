@@ -74,7 +74,7 @@ Set up action points visual and usage
     - ~~Remove an action points on action taken for the moment~~
     - ~~Fix after movement hero has no action selected~~
     - ~~No more action if no action point left (disable actions and change design)~~
-    - Fix first hero don't have the red halo
+    - ~~Fix first hero don't have the red halo~~
 
 Set up timer visual and usage ;
 Set up points per team visual ;
