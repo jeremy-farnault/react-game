@@ -32,7 +32,6 @@ class ActionPoints extends React.PureComponent<IProps, IState> {
 
   public render() {
     const cp = this.state.currentAP
-    console.log('ap render')
     return (
       <ActionPointsZoneStyled>
         {_.range(constants.actionPoints).reverse().map((i: number) =>

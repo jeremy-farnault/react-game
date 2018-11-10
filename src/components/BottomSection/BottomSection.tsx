@@ -1,6 +1,7 @@
 import { ActionsType, IHeroBattlefield } from "../../core/models";
 import ActionButtons from "../ActionButtons/ActionButtons";
 import InitiativeAndDetails from "../InitiativeAndDetails/InitiativeAndDetails";
+import Timer from "../Timer/Timer";
 import { BottomSectionContainer } from "./BottomSectionStyles";
 
 import * as React from "react";
@@ -21,21 +22,28 @@ class BottomSection extends React.PureComponent<IProps, {}> {
   public render() {
     const heroes = this.props.heroesSorted;
     const hero = this.props.selectedHero;
-    const action = this.props.selectedAction
+    const action = this.props.selectedAction;
     return (
       <BottomSectionContainer>
-        <ActionButtons
-          hero={heroes[0]}
-          currentActionPoints={heroes[0].currentActionPoints}
-          currentAction={action}
-          changeAction={this.props.changeAction}/>
-        <InitiativeAndDetails heroesSorted={heroes}
-                              updateSelectedHero={this.props.updateSelectedHero}
-                              setNextCurrentHero={this.props.setNextCurrentHero}
-                              selectedHero={hero}/>
+        <div>
+          <ActionButtons
+            hero={heroes[0]}
+            currentActionPoints={heroes[0].currentActionPoints}
+            currentAction={action}
+            changeAction={this.props.changeAction}/>
+          <InitiativeAndDetails heroesSorted={heroes}
+                                updateSelectedHero={this.props.updateSelectedHero}
+                                setNextCurrentHero={this.props.setNextCurrentHero}
+                                selectedHero={hero}/>
+        </div>
+        <Timer minutesTurn={1} secondsTurn={0} nextHero={this.nextHero}/>
       </BottomSectionContainer>
     );
   }
+
+  private nextHero = () => {
+    console.log("next");
+  };
 }
 
 export default BottomSection;
