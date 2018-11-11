@@ -21,5 +21,6 @@ export const colors = {
   purple: '#9370DB',
   red: '#FF3447',
   transparent: 'rgba(0, 0, 0, 0)',
+  white: '#FFFFFF',
   yellow: '#E5D964'
 }

@@ -25,7 +25,7 @@ class BottomSection extends React.PureComponent<IProps, {}> {
     const action = this.props.selectedAction;
     return (
       <BottomSectionContainer>
-        <div>
+        <div style={{ flexDirection: "row", display: "flex" }}>
           <ActionButtons
             hero={heroes[0]}
             currentActionPoints={heroes[0].currentActionPoints}
@@ -36,14 +36,12 @@ class BottomSection extends React.PureComponent<IProps, {}> {
                                 setNextCurrentHero={this.props.setNextCurrentHero}
                                 selectedHero={hero}/>
         </div>
-        <Timer minutesTurn={1} secondsTurn={0} nextHero={this.nextHero}/>
+        <div style={{marginRight: 55}}>
+          <Timer minutesTurn={1} secondsTurn={0} nextHero={this.props.setNextCurrentHero}/>
+        </div>
       </BottomSectionContainer>
     );
   }
-
-  private nextHero = () => {
-    console.log("next");
-  };
 }
 
 export default BottomSection;

@@ -1,3 +1,6 @@
+import { constants } from "../../utils/constants";
+import { TimerStyled, TimerZoneStyled } from "./TimerStyles";
+
 import * as React from "react";
 
 interface IProps {
@@ -22,17 +25,19 @@ class Timer extends React.PureComponent<IProps, IState> {
   }
 
   public componentDidMount() {
-    this.startTimer()
+    this.startTimer();
   }
 
   public render() {
     const { totalTime } = this.state;
     return (
-      <div>
-        <div>
-          <span>{this.formatTime(totalTime)}</span>
-        </div>
-      </div>
+      <TimerZoneStyled>
+        <TimerStyled
+          isWarning={totalTime <= constants.timerWarning}
+          isAlert={totalTime <= constants.timerAlert}>
+          {this.formatTime(totalTime)}
+        </TimerStyled>
+      </TimerZoneStyled>
     );
   }
 

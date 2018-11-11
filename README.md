@@ -67,7 +67,7 @@
 ~~Find a better way to display the actions~~
 ~~Find a way to separate visually inspected hero and current hero~~
 
-Set up action points visual and usage
+~~Set up action points visual and usage~~
     - ~~Above the action zone make a zone for the action points~~
     - ~~Add actions points current in the IHeroBattlefield class~~
     - ~~3 actions points per hero~~
@@ -76,9 +76,18 @@ Set up action points visual and usage
     - ~~No more action if no action point left (disable actions and change design)~~
     - ~~Fix first hero don't have the red halo~~
 
-Set up timer visual and usage ;
-Set up points per team visual ;
+~~Set up timer visual and usage~~
+    - ~~Timer visual~~
+    - ~~Different colors with time passing~~
+    - ~~Select next hero automatically~~
+
+Set up points per team visual;
+    - 2 zones on top of battlefield on both sides
+    - Color of text depends on the current hero. Same team or other team
+    - Count points based on the list and when it changes
+
 Set up cards visual and basic usage;
+Attack and kill heroes to win the game;
 
 Map travel based on The Dwarves
 

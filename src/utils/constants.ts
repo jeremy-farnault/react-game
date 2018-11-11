@@ -1,8 +1,10 @@
 export const constants = {
+  actionPoints: 3,
+  buttonActionSize: 30,
+  maxNumberOfHeroesInitiative: 9,
   numberOfColumns: 16,
   numberOfLines: 12,
   tileSize: 54,
-  buttonActionSize: 30,
-  maxNumberOfHeroesInitiative: 9,
-  actionPoints: 3
+  timerAlert: 10,
+  timerWarning: 20
 }
