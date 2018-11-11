@@ -82,7 +82,7 @@
     - ~~Select next hero automatically~~
 
 Set up points per team visual;
-    - 2 zones on top of battlefield on both sides
+    - ~~2 zones on top of battlefield on both sides~~
     - Color of text depends on the current hero. Same team or other team
     - Count points based on the list and when it changes
 

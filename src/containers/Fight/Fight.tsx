@@ -1,4 +1,6 @@
+import ActionPoints from "../../components/ActionPoints/ActionPoints";
 import BottomSection from "../../components/BottomSection/BottomSection";
+import PointsZone from "../../components/PointsZone/PointsZone";
 import * as actions from "../../core/actions";
 import {
   ActionCharacteristic,
@@ -11,14 +13,13 @@ import {
 import { IStoreState } from "../../types";
 import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import Battlefield from "../Battlefield/Battlefield";
-import { BackgroundImage, BattlefieldScene, ContainerScene } from "./FightStyles";
+import { BackgroundImage, BattlefieldScene, ContainerScene, LeftSection, RightSection } from "./FightStyles";
 
 import * as _ from "lodash";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
 import IPlayers = IStoreState.IPlayers;
-import ActionPoints from "../../components/ActionPoints/ActionPoints";
 
 interface IProps {
   tiles: ITile[][]
@@ -61,8 +62,8 @@ class Fight extends React.PureComponent<IProps, IState> {
       setSelected: true,
       heroId: sorted[0].id,
       playerId: sorted[0].playerId
-    })
-    this.changeAction(ActionsType.heroMovement, undefined, sorted[0])
+    });
+    this.changeAction(ActionsType.heroMovement, undefined, sorted[0]);
   }
 
   public render() {
@@ -76,7 +77,10 @@ class Fight extends React.PureComponent<IProps, IState> {
         {heroes.length > 0 &&
         <div>
           <BattlefieldScene>
-            <ActionPoints currentHero={heroes[0]}/>
+            <LeftSection>
+              <PointsZone/>
+              <ActionPoints currentHero={heroes[0]}/>
+            </LeftSection>
             <Battlefield
               allHeroes={this.state.allHeroes}
               currentSelectedAction={action}
@@ -85,6 +89,9 @@ class Fight extends React.PureComponent<IProps, IState> {
               updateSelectedHero={this.updateSelectedHero}
               changeAction={this.changeAction}
               decrementActionPoints={this.props.decrementActionPoints}/>
+            <RightSection>
+              <PointsZone/>
+            </RightSection>
           </BattlefieldScene>
           <BottomSection
             heroesSorted={heroes}
@@ -126,8 +133,8 @@ class Fight extends React.PureComponent<IProps, IState> {
   };
 
   private setNextCurrentHero = () => {
-    const hero = this.props.heroesFight[1]
-    this.props.setNextCurrentHero()
+    const hero = this.props.heroesFight[1];
+    this.props.setNextCurrentHero();
     this.props.resetTiles({});
     this.updateSelectedAction(ActionsType.heroMovement);
     this.props.setHeroSelected({
@@ -138,7 +145,7 @@ class Fight extends React.PureComponent<IProps, IState> {
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics.speed,
       hero.tileX, hero.tileY, TileState.heroMovement);
     this.props.updateTiles({ data: newTiles });
-  }
+  };
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {

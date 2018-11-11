@@ -11,7 +11,6 @@ padding: 20px;
 height: fit-content;
 min-width: 80px;
 display: flex;
-margin-right: 20px;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;

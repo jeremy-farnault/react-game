@@ -2,7 +2,7 @@ import { ActionsType, IHeroBattlefield } from "../../core/models";
 import ActionButtons from "../ActionButtons/ActionButtons";
 import InitiativeAndDetails from "../InitiativeAndDetails/InitiativeAndDetails";
 import Timer from "../Timer/Timer";
-import { BottomSectionContainer } from "./BottomSectionStyles";
+import { BottomSectionContainer, LeftSection, RightSection } from "./BottomSectionStyles";
 
 import * as React from "react";
 
@@ -25,7 +25,7 @@ class BottomSection extends React.PureComponent<IProps, {}> {
     const action = this.props.selectedAction;
     return (
       <BottomSectionContainer>
-        <div style={{ flexDirection: "row", display: "flex" }}>
+        <LeftSection>
           <ActionButtons
             hero={heroes[0]}
             currentActionPoints={heroes[0].currentActionPoints}
@@ -35,10 +35,10 @@ class BottomSection extends React.PureComponent<IProps, {}> {
                                 updateSelectedHero={this.props.updateSelectedHero}
                                 setNextCurrentHero={this.props.setNextCurrentHero}
                                 selectedHero={hero}/>
-        </div>
-        <div style={{marginRight: 55}}>
+        </LeftSection>
+        <RightSection>
           <Timer minutesTurn={1} secondsTurn={0} nextHero={this.props.setNextCurrentHero}/>
-        </div>
+        </RightSection>
       </BottomSectionContainer>
     );
   }

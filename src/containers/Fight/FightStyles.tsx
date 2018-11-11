@@ -21,7 +21,22 @@ flex-direction: row;
 display: flex;
 max-width: ${constants.tileSize * constants.numberOfColumns + 200}px;
 justify-content: flex-start;
-align-items: flex-end;
 margin: auto;
 `
 BattlefieldScene.displayName = 'BattlefieldScene'
+
+export const LeftSection = styled.div`
+margin-right: 20px;
+z-index: 2;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: space-between;
+`
+LeftSection.displayName = 'LeftSection'
+
+export const RightSection = styled.div`
+z-index: 2;
+margin-left: 20px;
+`
+RightSection.displayName = 'RightSection'
