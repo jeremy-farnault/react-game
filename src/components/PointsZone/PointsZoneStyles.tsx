@@ -12,3 +12,8 @@ align-items: center;
 justify-content: center;
 `
 PointsZoneStyled.displayName = 'PointsZoneStyled'
+
+export const TextZoneStyled = styled.div`
+color: ${(props: {isCurrentPlayer: boolean}) =>props.isCurrentPlayer ? colors.blueGreen : colors.paleRed};
+`
+TextZoneStyled.displayName = 'TextZoneStyled'

@@ -78,7 +78,10 @@ class Fight extends React.PureComponent<IProps, IState> {
         <div>
           <BattlefieldScene>
             <LeftSection>
-              <PointsZone/>
+              <PointsZone
+                player={Object.keys(this.props.players)[0]}
+                heroes={heroes}
+                isCurrentPlayer={Object.keys(this.props.players)[0] === heroes[0].playerId}/>
               <ActionPoints currentHero={heroes[0]}/>
             </LeftSection>
             <Battlefield
@@ -90,7 +93,10 @@ class Fight extends React.PureComponent<IProps, IState> {
               changeAction={this.changeAction}
               decrementActionPoints={this.props.decrementActionPoints}/>
             <RightSection>
-              <PointsZone/>
+              <PointsZone
+                player={Object.keys(this.props.players)[1]}
+                heroes={heroes}
+                isCurrentPlayer={Object.keys(this.props.players)[1] === heroes[0].playerId}/>
             </RightSection>
           </BattlefieldScene>
           <BottomSection
