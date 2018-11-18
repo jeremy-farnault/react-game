@@ -252,6 +252,10 @@ export const ActionPointsIcon = {
 // Various Assets
 
 export const VariousAssets = {
+  cardBack: {
+    path: require("../assets/various/cards_back.png"),
+    height: 264
+  },
   endTurn: {
     path: require("../assets/various/hourglass_end_turn.png"),
     size: 54,

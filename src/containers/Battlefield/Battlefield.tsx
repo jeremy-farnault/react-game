@@ -42,7 +42,6 @@ class Battlefield extends React.PureComponent<IProps, {}> {
   }
 
   private clickOnTile = async (tile: ITile) => {
-    this.props.resetTiles({});
     if (tile.state === TileState.empty && !!this.props.currentSelectedHero) {
       this.props.setHeroSelected({
         setSelected: false,

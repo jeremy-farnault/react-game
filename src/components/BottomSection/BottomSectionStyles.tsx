@@ -1,10 +1,13 @@
+import { VariousAssets } from "../../core/models";
+import { colors } from "../../utils/colors";
 import { constants } from "../../utils/constants";
+import { grid } from "../../utils/grid";
 
 import styled from "styled-components";
 
 export const BottomSectionContainer = styled.div`
 z-index: 1;
-max-width: ${constants.tileSize * constants.numberOfColumns + 200}px;
+max-width: ${constants.tileSize * constants.numberOfColumns + 355}px;
 justify-content: space-between;
 position: relative;
 display: flex;
@@ -20,6 +23,17 @@ display: flex;
 LeftSection.displayName = 'LeftSection'
 
 export const RightSection = styled.div`
-margin-right: 55px;
+display: flex;
+flex-direction: row;
 `
 RightSection.displayName = 'RightSection'
+
+export const DeckImage = styled.img`
+height: ${VariousAssets.cardBack.height}px;
+border: 2px solid ${colors.transparent};
+&:hover {
+opacity: ${grid.lowOpacity};
+border-color: ${colors.paleYellow};
+}
+`
+DeckImage.displayName = 'DeckImage'

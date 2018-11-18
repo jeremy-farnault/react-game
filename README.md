@@ -81,12 +81,20 @@
     - ~~Different colors with time passing~~
     - ~~Select next hero automatically~~
 
-Set up points per team visual;
+~~Set up points per team visual;~~
     - ~~2 zones on top of battlefield on both sides~~
     - ~~Color of text depends on the current hero. Same team or other team~~
-    - Count points based on the list and when it changes
+    - ~~Count points based on the list and when it changes~~
 
 Set up cards visual and basic usage;
+    - ~~Deck design on the battlefield~~
+    - Modal to see the current hand
+    - Decide maximum hand size
+    - Play a card takes an action
+    - Draw a card takes an action
+    - Can't draw if maximum hand size is reached
+    - Can zoom on the card
+
 Attack and kill heroes to win the game;
 
 Map travel based on The Dwarves

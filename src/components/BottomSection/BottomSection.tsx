@@ -1,8 +1,8 @@
-import { ActionsType, IHeroBattlefield } from "../../core/models";
+import { ActionsType, IHeroBattlefield, VariousAssets } from "../../core/models";
 import ActionButtons from "../ActionButtons/ActionButtons";
 import InitiativeAndDetails from "../InitiativeAndDetails/InitiativeAndDetails";
 import Timer from "../Timer/Timer";
-import { BottomSectionContainer, LeftSection, RightSection } from "./BottomSectionStyles";
+import { BottomSectionContainer, DeckImage, LeftSection, RightSection } from "./BottomSectionStyles";
 
 import * as React from "react";
 
@@ -37,7 +37,9 @@ class BottomSection extends React.PureComponent<IProps, {}> {
                                 selectedHero={hero}/>
         </LeftSection>
         <RightSection>
-          <Timer minutesTurn={1} secondsTurn={0} nextHero={this.props.setNextCurrentHero}/>
+          <Timer hero={heroes[0]} minutesTurn={1} secondsTurn={0}
+                 nextHero={this.props.setNextCurrentHero}/>
+          <DeckImage src={VariousAssets.cardBack.path}/>
         </RightSection>
       </BottomSectionContainer>
     );

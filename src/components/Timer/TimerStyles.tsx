@@ -6,6 +6,7 @@ export const TimerZoneStyled = styled.div`
 background-color: ${colors.greyOpacity};
 border-radius: 10px;
 border: 2px solid ${colors.grey};
+margin-right: 20px;
 padding: 20px;
 display: flex;
 height: fit-content;

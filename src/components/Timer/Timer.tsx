@@ -1,3 +1,4 @@
+import { IHeroBattlefield } from "../../core/models";
 import { constants } from "../../utils/constants";
 import { TimerStyled, TimerZoneStyled } from "./TimerStyles";
 
@@ -7,6 +8,7 @@ interface IProps {
   nextHero: () => void
   minutesTurn: number
   secondsTurn: number
+  hero: IHeroBattlefield
 }
 
 interface IState {
@@ -26,6 +28,13 @@ class Timer extends React.PureComponent<IProps, IState> {
 
   public componentDidMount() {
     this.startTimer();
+  }
+
+  public componentWillReceiveProps(nextProps: IProps) {
+    if (this.props.hero.id !== nextProps.hero.id
+      && this.props.hero.playerId !== nextProps.hero.playerId) {
+      this.stopTimer()
+    }
   }
 
   public render() {
