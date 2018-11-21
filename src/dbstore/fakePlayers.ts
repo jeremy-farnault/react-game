@@ -178,6 +178,118 @@ export const fakePlayers: IPlayers = {
         linkedTo: [heroesIds.arwen],
         available: 2,
         limitedTo: 10
+      } as ICard,
+      [cardsIds.barlimanButterbur]: {
+        id: cardsIds.barlimanButterbur,
+        cost: 3,
+        effect: "Damage may be assigned to Barliman.",
+        description: "Hobbit",
+        assets: {
+          normalPath: require("../assets/cardsBig/barlimanbutterbur_big.png"),
+          miniaturePath: require("../assets/cardsSmall/barlimanbutterbur_small.png")
+        } as ICardAssets,
+        faction: Faction.good,
+        linkedTo: [],
+        available: 3,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.beregond]: {
+        id: cardsIds.beregond,
+        cost: 4,
+        effect: "Lower the cost of weapons by 2.",
+        description: "Gondor",
+        assets: {
+          normalPath: require("../assets/cardsBig/beregond_big.png"),
+          miniaturePath: require("../assets/cardsSmall/beregond_small.png")
+        } as ICardAssets,
+        faction: Faction.good,
+        linkedTo: [],
+        available: 1,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.bilbo]: {
+        id: cardsIds.bilbo,
+        cost: 3,
+        effect: "The first player gains control of Bilbo.",
+        description: "Hobbit",
+        assets: {
+          normalPath: require("../assets/cardsBig/bilbo_big.png"),
+          miniaturePath: require("../assets/cardsSmall/bilbo_small.png")
+        } as ICardAssets,
+        faction: Faction.good,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 4,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.billFerny]: {
+        id: cardsIds.billFerny,
+        cost: 5,
+        effect: "Raise threat by 1 for each non hero.",
+        description: "Bree",
+        assets: {
+          normalPath: require("../assets/cardsBig/billferny_big.png"),
+          miniaturePath: require("../assets/cardsSmall/billferny_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: [],
+        available: 1,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.billThePony]: {
+        id: cardsIds.billThePony,
+        cost: 2,
+        effect: "Each hobbit gets +1 hit point.",
+        description: "Pony",
+        assets: {
+          normalPath: require("../assets/cardsBig/billpony_big.png"),
+          miniaturePath: require("../assets/cardsSmall/billpony_small.png")
+        } as ICardAssets,
+        faction: Faction.good,
+        linkedTo: [],
+        available: 2,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.boromir]: {
+        id: cardsIds.boromir,
+        cost: 5,
+        effect: "Gondor allies get +1 hit point.",
+        description: "Warrior",
+        assets: {
+          normalPath: require("../assets/cardsBig/boromir_big.png"),
+          miniaturePath: require("../assets/cardsSmall/boromir_small.png")
+        } as ICardAssets,
+        faction: Faction.good,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 3,
+        limitedTo: 2
+      } as ICard,
+      [cardsIds.captainOfHarad]: {
+        id: cardsIds.captainOfHarad,
+        cost: 5,
+        effect: "Each Harad enemy gets +1 hit points.",
+        description: "Harad",
+        assets: {
+          normalPath: require("../assets/cardsBig/haradcaptain_big.png"),
+          miniaturePath: require("../assets/cardsSmall/haradcaptain_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 1,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.caveTroll]: {
+        id: cardsIds.caveTroll,
+        cost: 7,
+        effect: "You must damage another character you control.",
+        description: "Troll",
+        assets: {
+          normalPath: require("../assets/cardsBig/cavetroll_big.png"),
+          miniaturePath: require("../assets/cardsSmall/cavetroll_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: [],
+        available: 1,
+        limitedTo: 1
       } as ICard
     },
     id: "firstPlayer"
@@ -384,7 +496,7 @@ export const fakePlayers: IPlayers = {
             width: 50
           }
         } as IHeroAssets
-      } as IHeroBattlefield,
+      } as IHeroBattlefield
     },
     cards: {
       [cardsIds.fellRider]: {
@@ -414,6 +526,118 @@ export const fakePlayers: IPlayers = {
         linkedTo: ["Hero X", "Hero Y"],
         available: 2,
         limitedTo: 10
+      } as ICard,
+      [cardsIds.umbarAssassin]: {
+        id: cardsIds.umbarAssassin,
+        cost: 5,
+        effect: "Archery 2. Player must deal 3 damage to a hero.",
+        description: "Brigand",
+        assets: {
+          normalPath: require("../assets/cardsBig/umbarassassin_big.png"),
+          miniaturePath: require("../assets/cardsSmall/umbarassassin_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 1,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.umbarCaptain]: {
+        id: cardsIds.umbarCaptain,
+        cost: 5,
+        effect: "Characters you control cannot attack Ship ennemies.",
+        description: "Corsair",
+        assets: {
+          normalPath: require("../assets/cardsBig/umbarcaptain_big.png"),
+          miniaturePath: require("../assets/cardsSmall/umbarcaptain_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 1,
+        limitedTo: 2
+      } as ICard,
+      [cardsIds.umbarRaider]: {
+        id: cardsIds.umbarRaider,
+        cost: 4,
+        effect: "Gets +1 hit points for each resource on it.",
+        description: "Corsair",
+        assets: {
+          normalPath: require("../assets/cardsBig/umbarraider_big.png"),
+          miniaturePath: require("../assets/cardsSmall/umbarraider_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: [],
+        available: 1,
+        limitedTo: 2
+      } as ICard,
+      [cardsIds.urukHaiFighter]: {
+        id: cardsIds.urukHaiFighter,
+        cost: 3,
+        effect: "Toughness 2. Returns it to the staging area.",
+        description: "Uruk-hai",
+        assets: {
+          normalPath: require("../assets/cardsBig/urukhaifighter_big.png"),
+          miniaturePath: require("../assets/cardsSmall/urukhaifighter_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 3,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.urukLieutenant]: {
+        id: cardsIds.urukLieutenant,
+        cost: 3,
+        effect: "Add an Orc ennemy to the staging area.",
+        description: "Uruk",
+        assets: {
+          normalPath: require("../assets/cardsBig/uruklieutenant_big.png"),
+          miniaturePath: require("../assets/cardsSmall/uruklieutenant_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 2,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.urukSoldier]: {
+        id: cardsIds.urukSoldier,
+        cost: 2,
+        effect: "Destroys a character.",
+        description: "Uruk-hai",
+        assets: {
+          normalPath: require("../assets/cardsBig/uruksoldier_big.png"),
+          miniaturePath: require("../assets/cardsSmall/uruksoldier_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 2,
+        limitedTo: 2
+      } as ICard,
+      [cardsIds.wargs]: {
+        id: cardsIds.wargs,
+        cost: 3,
+        effect: "Return Wargs to the staging area after it attacks.",
+        description: "Creature",
+        assets: {
+          normalPath: require("../assets/cardsBig/wargs_big.png"),
+          miniaturePath: require("../assets/cardsSmall/wargs_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: [],
+        available: 3,
+        limitedTo: 10
+      } as ICard,
+      [cardsIds.witchKing]: {
+        id: cardsIds.witchKing,
+        cost: 11,
+        effect: "Player cannot play attachments on the Witch-King.",
+        description: "Nazgul",
+        assets: {
+          normalPath: require("../assets/cardsBig/witchking_big.png"),
+          miniaturePath: require("../assets/cardsSmall/witchking_small.png")
+        } as ICardAssets,
+        faction: Faction.evil,
+        linkedTo: ["Hero X", "Hero Y"],
+        available: 1,
+        limitedTo: 1
       } as ICard
     },
     id: "secondPlayer"

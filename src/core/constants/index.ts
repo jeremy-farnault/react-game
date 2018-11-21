@@ -86,3 +86,14 @@ export type INCREMENT_ACTION_POINTS = typeof INCREMENT_ACTION_POINTS
 
 export const DECREMENT_ACTION_POINTS = 'DECREMENT_ACTION_POINTS'
 export type DECREMENT_ACTION_POINTS = typeof DECREMENT_ACTION_POINTS
+
+// Set and update cards Battlefield
+
+export const INITIALIZE_DECK_HAND = 'INITIALIZE_DECK_HAND'
+export type INITIALIZE_DECK_HAND = typeof INITIALIZE_DECK_HAND
+
+export const DRAW_CARD = 'DRAW_CARD'
+export type DRAW_CARD = typeof DRAW_CARD
+
+export const PLAY_CARD = 'PLAY_CARD'
+export type PLAY_CARD = typeof PLAY_CARD

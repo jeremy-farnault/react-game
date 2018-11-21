@@ -219,6 +219,12 @@ export interface ICardAssets {
   miniaturePath: string
 }
 
+export interface ICardsBattlefield {
+  playerId: string
+  currentHand: ICards
+  currentDeck: ICards
+}
+
 // Characteristics Images
 
 export const IHeroBattlefieldPointsIcon = {

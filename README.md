@@ -88,6 +88,10 @@
 
 Set up cards visual and basic usage;
     - ~~Deck design on the battlefield~~
+    - Redux actions to:
+        - Load the cards in the session (hand and deck)
+        - Play a card (remove from hand put at the end of the deck)
+        - Draw a card (remove from deck put in the hand)
     - Modal to see the current hand
     - Decide maximum hand size
     - Play a card takes an action

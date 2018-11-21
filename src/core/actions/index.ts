@@ -4,7 +4,7 @@ import {
   IUpdateTilesPayload
 } from '../reducers/battlefield'
 import {
-  IChangeActionPointsPayload,
+  IChangeActionPointsPayload, IDrawPlayCardPayload,
   ILoadAllCardsSuccessPayload,
   ILoadAllHeroesSuccessPayload,
   ILoadPlayersSuccessPayload,
@@ -17,23 +17,23 @@ import { createAction } from 'redux-actions'
 
 // Heroes loading
 
-export const loadPlayersStart = createAction<{}>(constants.LOAD_PLAYERS_START)
+export const loadPlayersStart = createAction(constants.LOAD_PLAYERS_START)
 export const loadPlayersSuccess = createAction<ILoadPlayersSuccessPayload>(
   constants.LOAD_PLAYERS_SUCCESS
 )
-export const loadPlayersFail = createAction<{}>(constants.LOAD_PLAYERS_FAIL)
+export const loadPlayersFail = createAction(constants.LOAD_PLAYERS_FAIL)
 
 // Tiles Loading
 
-export const loadTilesStart = createAction<{}>(constants.LOAD_TILES_START)
+export const loadTilesStart = createAction(constants.LOAD_TILES_START)
 export const loadTilesSuccess = createAction<ILoadTilesSuccessPayload>(
   constants.LOAD_TILES_SUCCESS
 )
-export const loadTilesFail = createAction<{}>(constants.LOAD_TILES_FAIL)
+export const loadTilesFail = createAction(constants.LOAD_TILES_FAIL)
 
 // Tiles Resetting
 
-export const resetTiles = createAction<{}>(constants.RESET_TILES)
+export const resetTiles = createAction(constants.RESET_TILES)
 
 // Tiles Updating
 
@@ -43,19 +43,19 @@ export const updateTiles = createAction<IUpdateTilesPayload>(
 
 // All Heroes loading
 
-export const loadAllHeroesStart = createAction<{}>(constants.LOAD_ALL_HEROES_START)
+export const loadAllHeroesStart = createAction(constants.LOAD_ALL_HEROES_START)
 export const loadAllHeroesSuccess = createAction<ILoadAllHeroesSuccessPayload>(
   constants.LOAD_ALL_HEROES_SUCCESS
 )
-export const loadAllHeroesFail = createAction<{}>(constants.LOAD_ALL_HEROES_FAIL)
+export const loadAllHeroesFail = createAction(constants.LOAD_ALL_HEROES_FAIL)
 
 // All Cards loading
 
-export const loadAllCardsStart = createAction<{}>(constants.LOAD_ALL_CARDS_START)
+export const loadAllCardsStart = createAction(constants.LOAD_ALL_CARDS_START)
 export const loadAllCardsSuccess = createAction<ILoadAllCardsSuccessPayload>(
   constants.LOAD_ALL_CARDS_SUCCESS
 )
-export const loadAllCardsFail = createAction<{}>(constants.LOAD_ALL_CARDS_FAIL)
+export const loadAllCardsFail = createAction(constants.LOAD_ALL_CARDS_FAIL)
 
 // Update heroes
 
@@ -71,3 +71,9 @@ export const setNextCurrentHero = createAction(constants.SET_NEXT_CURRENT_HERO)
 
 export const incrementActionPoints = createAction<IChangeActionPointsPayload>(constants.INCREMENT_ACTION_POINTS)
 export const decrementActionPoints = createAction<IChangeActionPointsPayload>(constants.DECREMENT_ACTION_POINTS)
+
+// Set and update cards Battlefield
+
+export const initializeDeckHand = createAction(constants.INITIALIZE_DECK_HAND)
+export const drawCard = createAction<IDrawPlayCardPayload>(constants.DRAW_CARD)
+export const playCard = createAction<IDrawPlayCardPayload>(constants.PLAY_CARD)

@@ -1,7 +1,7 @@
 import { IStoreState } from "../../types";
 import {
-  DECREMENT_ACTION_POINTS,
-  INCREMENT_ACTION_POINTS,
+  DECREMENT_ACTION_POINTS, DRAW_CARD,
+  INCREMENT_ACTION_POINTS, INITIALIZE_DECK_HAND,
   LOAD_ALL_CARDS_FAIL,
   LOAD_ALL_CARDS_START,
   LOAD_ALL_CARDS_SUCCESS,
@@ -10,7 +10,7 @@ import {
   LOAD_ALL_HEROES_SUCCESS,
   LOAD_PLAYERS_FAIL,
   LOAD_PLAYERS_START,
-  LOAD_PLAYERS_SUCCESS,
+  LOAD_PLAYERS_SUCCESS, PLAY_CARD,
   SET_HERO_NEW_POSITION,
   SET_HERO_SELECTED,
   SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO
@@ -23,7 +23,8 @@ const initialState: IStoreState.ISession = {
   allCards: {},
   allHeroes: {},
   players: {},
-  heroesFight: []
+  heroesFight: [],
+  cardsFight: []
 };
 
 export interface ILoadAllHeroesSuccessPayload {
@@ -61,6 +62,10 @@ export interface IChangeActionPointsPayload {
   playerId: string
   heroId: string
   heroIndex: number
+}
+
+export interface IDrawPlayCardPayload {
+  playerId: string
 }
 
 export default handleActions(
@@ -185,6 +190,45 @@ export default handleActions(
     [DECREMENT_ACTION_POINTS]: (
       state: IStoreState.ISession,
       action: Action<IChangeActionPointsPayload>
+    ) => {
+      const newHeroes = state.heroesFight.slice();
+      if (!!action.payload &&
+        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
+        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
+        newHeroes[action.payload.heroIndex].currentActionPoints--;
+      }
+      return ({ ...state, heroesFight: newHeroes });
+    },
+
+    // CARDS BATTLEFIELD ACTIONS
+
+    [INITIALIZE_DECK_HAND]: (
+      state: IStoreState.ISession,
+      action: Action<>
+    ) => {
+      const newHeroes = state.heroesFight.slice();
+      if (!!action.payload &&
+        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
+        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
+        newHeroes[action.payload.heroIndex].currentActionPoints--;
+      }
+      return ({ ...state, heroesFight: newHeroes });
+    },
+    [DRAW_CARD]: (
+      state: IStoreState.ISession,
+      action: Action<>
+    ) => {
+      const newHeroes = state.heroesFight.slice();
+      if (!!action.payload &&
+        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
+        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
+        newHeroes[action.payload.heroIndex].currentActionPoints--;
+      }
+      return ({ ...state, heroesFight: newHeroes });
+    },
+    [PLAY_CARD]: (
+      state: IStoreState.ISession,
+      action: Action<>
     ) => {
       const newHeroes = state.heroesFight.slice();
       if (!!action.payload &&
