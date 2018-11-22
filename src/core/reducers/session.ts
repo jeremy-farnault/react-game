@@ -15,8 +15,9 @@ import {
   SET_HERO_SELECTED,
   SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO
 } from "../constants";
-import { ICards, IHeroBattlefield, IHeroes } from "../models";
+import { ICard, ICards, ICardsBattlefield, IHeroBattlefield, IHeroes } from "../models";
 
+import * as _ from 'lodash'
 import { Action, handleActions } from "redux-actions";
 
 const initialState: IStoreState.ISession = {
@@ -64,8 +65,13 @@ export interface IChangeActionPointsPayload {
   heroIndex: number
 }
 
-export interface IDrawPlayCardPayload {
+export interface IDrawCardPayload {
   playerId: string
+}
+
+export interface IPlayCardPayload {
+  playerId: string,
+  card: ICard
 }
 
 export default handleActions(
@@ -200,43 +206,59 @@ export default handleActions(
       return ({ ...state, heroesFight: newHeroes });
     },
 
-    // CARDS BATTLEFIELD ACTIONS
 
+
+
+
+
+    // CARDS BATTLEFIELD ACTIONS
     [INITIALIZE_DECK_HAND]: (
       state: IStoreState.ISession,
-      action: Action<>
+      action: Action<{}>
     ) => {
-      const newHeroes = state.heroesFight.slice();
-      if (!!action.payload &&
-        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
-        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
-        newHeroes[action.payload.heroIndex].currentActionPoints--;
-      }
-      return ({ ...state, heroesFight: newHeroes });
+
+
+
+      const cardsFight: ICardsBattlefield[] = Object.keys(state.players).map(k => {
+        return {
+          currentHand: [],
+          currentDeck: [],
+          playerId: k
+        }
+      })
+
+
+
+      return ({ ...state, cardsFight });
     },
     [DRAW_CARD]: (
       state: IStoreState.ISession,
-      action: Action<>
+      action: Action<IDrawCardPayload>
     ) => {
-      const newHeroes = state.heroesFight.slice();
-      if (!!action.payload &&
-        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
-        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
-        newHeroes[action.payload.heroIndex].currentActionPoints--;
+      const index = state.cardsFight.findIndex((c: ICardsBattlefield) => !!action.payload && c.playerId === action.payload.playerId);
+      state.cardsFight[index].currentDeck.splice(0, 1)
+      state.cardsFight[index].currentHand.push(_.first((state.cardsFight[index] as ICardsBattlefield).currentDeck) as ICard)
+      const newCardsPlayer: ICardsBattlefield = {
+        playerId: (action.payload as IDrawCardPayload).playerId,
+        currentHand: state.cardsFight[index].currentHand,
+        currentDeck: state.cardsFight[index].currentDeck
       }
-      return ({ ...state, heroesFight: newHeroes });
+      return ({ ...state, cardsFight: state.cardsFight.splice(index, 1, newCardsPlayer) });
     },
     [PLAY_CARD]: (
       state: IStoreState.ISession,
-      action: Action<>
+      action: Action<IPlayCardPayload>
     ) => {
-      const newHeroes = state.heroesFight.slice();
-      if (!!action.payload &&
-        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
-        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
-        newHeroes[action.payload.heroIndex].currentActionPoints--;
+      const index = state.cardsFight.findIndex((c: ICardsBattlefield) => !!action.payload && c.playerId === action.payload.playerId);
+      state.cardsFight[index].currentDeck.push((action.payload as IPlayCardPayload).card)
+      const indexCard = state.cardsFight[index].currentHand.findIndex((c: ICard) => !!action.payload && c === action.payload.card)
+      state.cardsFight[index].currentHand.splice(indexCard, 1)
+      const newCardsPlayer: ICardsBattlefield = {
+        playerId: (action.payload as IPlayCardPayload).playerId,
+        currentHand: state.cardsFight[index].currentHand,
+        currentDeck: state.cardsFight[index].currentDeck
       }
-      return ({ ...state, heroesFight: newHeroes });
+      return ({ ...state, cardsFight: state.cardsFight.splice(index, 1, newCardsPlayer) });
     }
   },
   initialState

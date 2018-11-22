@@ -221,8 +221,8 @@ export interface ICardAssets {
 
 export interface ICardsBattlefield {
   playerId: string
-  currentHand: ICards
-  currentDeck: ICards
+  currentHand: ICard[]
+  currentDeck: ICard[]
 }
 
 // Characteristics Images
