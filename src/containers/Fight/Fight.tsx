@@ -6,6 +6,7 @@ import {
   ActionCharacteristic,
   ActionsType,
   ICards,
+  ICardsBattlefield,
   IHeroBattlefield,
   ITile,
   TileState
@@ -26,12 +27,16 @@ interface IProps {
   cards: ICards
   players: IPlayers
   heroesFight: IHeroBattlefield[]
+  cardsFight: ICardsBattlefield[]
   setHeroSelected: typeof actions.setHeroSelected
   updateTiles: typeof actions.updateTiles
   resetTiles: typeof actions.resetTiles
   setHeroesOrder: typeof actions.setHeroesOrder
   setNextCurrentHero: typeof actions.setNextCurrentHero
   decrementActionPoints: typeof actions.decrementActionPoints
+  initializeDeckHand: typeof actions.initializeDeckHand
+  drawCard: typeof actions.drawCard
+  playCard: typeof actions.playCard
 }
 
 interface IState {
@@ -52,6 +57,7 @@ class Fight extends React.PureComponent<IProps, IState> {
   }
 
   public componentDidMount() {
+    this.props.initializeDeckHand()
     const sorted = _.reverse(_.sortBy(this.state.allHeroes, [
       (h: IHeroBattlefield) => h.characteristics.initiative,
       (h: IHeroBattlefield) => h.characteristics.speed,
@@ -105,6 +111,9 @@ class Fight extends React.PureComponent<IProps, IState> {
             setNextCurrentHero={this.setNextCurrentHero}
             updateSelectedHero={this.updateSelectedHero}
             changeAction={this.changeAction}
+            cardsFight={this.props.cardsFight}
+            drawCard={this.props.drawCard}
+            playCard={this.props.playCard}
             selectedAction={action}/>
         </div>}
       </ContainerScene>
@@ -159,7 +168,8 @@ function mapStateToProps(state: IStoreState.IRootState) {
     tiles: state.battlefield.tiles,
     cards: state.session.allCards,
     players: state.session.players,
-    heroesFight: state.session.heroesFight
+    heroesFight: state.session.heroesFight,
+    cardsFight: state.session.cardsFight
   };
 }
 
@@ -170,7 +180,10 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
     resetTiles: actions.resetTiles,
     setHeroesOrder: actions.setHeroesOrder,
     setNextCurrentHero: actions.setNextCurrentHero,
-    decrementActionPoints: actions.decrementActionPoints
+    decrementActionPoints: actions.decrementActionPoints,
+    initializeDeckHand: actions.initializeDeckHand,
+    drawCard: actions.drawCard,
+    playCard: actions.playCard
   }, dispatch);
 
 export default connect(

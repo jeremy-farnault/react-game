@@ -1,4 +1,5 @@
-import { ActionsType, IHeroBattlefield, VariousAssets } from "../../core/models";
+import * as actions from "../../core/actions";
+import { ActionsType, ICardsBattlefield, IHeroBattlefield, VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
 import ActionButtons from "../ActionButtons/ActionButtons";
 import InitiativeAndDetails from "../InitiativeAndDetails/InitiativeAndDetails";
@@ -15,6 +16,9 @@ interface IProps {
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
   selectedAction: ActionsType
   changeAction: (action: ActionsType) => void
+  cardsFight: ICardsBattlefield[]
+  drawCard: typeof actions.drawCard
+  playCard: typeof actions.playCard
 }
 
 interface IState {
@@ -73,12 +77,19 @@ class BottomSection extends React.PureComponent<IProps, IState> {
                  nextHero={this.props.setNextCurrentHero}/>
           <DeckImage src={VariousAssets.cardBack.path} onClick={this.openModal}/>
         </RightSection>
+
+
+
         <Modal
           style={customStyles}
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeModal}>
-          <div>TEST</div>
+          <div>DRAW</div>
+          <div>PLAY</div>
         </Modal>
+
+
+
       </BottomSectionContainer>
     );
   }

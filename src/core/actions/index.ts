@@ -4,10 +4,10 @@ import {
   IUpdateTilesPayload
 } from '../reducers/battlefield'
 import {
-  IChangeActionPointsPayload, IDrawPlayCardPayload,
+  IChangeActionPointsPayload, IDrawCardPayload,
   ILoadAllCardsSuccessPayload,
   ILoadAllHeroesSuccessPayload,
-  ILoadPlayersSuccessPayload,
+  ILoadPlayersSuccessPayload, IPlayCardPayload,
   ISetHeroesOrderPayload,
   ISetHeroNewPositionPayload,
   ISetHeroSelectedPayload
@@ -75,5 +75,5 @@ export const decrementActionPoints = createAction<IChangeActionPointsPayload>(co
 // Set and update cards Battlefield
 
 export const initializeDeckHand = createAction(constants.INITIALIZE_DECK_HAND)
-export const drawCard = createAction<IDrawPlayCardPayload>(constants.DRAW_CARD)
-export const playCard = createAction<IDrawPlayCardPayload>(constants.PLAY_CARD)
+export const drawCard = createAction<IDrawCardPayload>(constants.DRAW_CARD)
+export const playCard = createAction<IPlayCardPayload>(constants.PLAY_CARD)
