@@ -209,6 +209,7 @@ export interface ICard {
   effect: string
   description: string
   faction: Faction
+  id: string
   linkedTo: string[]
   available: number
   limitedTo: number
@@ -220,7 +221,10 @@ export interface ICardAssets {
 }
 
 export interface ICardsBattlefield {
-  playerId: string
+  [playerId: string]: ICardsBattlefieldPlayer
+}
+
+export interface ICardsBattlefieldPlayer {
   currentHand: ICard[]
   currentDeck: ICard[]
 }

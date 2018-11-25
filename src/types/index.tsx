@@ -13,7 +13,7 @@ export namespace IStoreState {
     allHeroes: IHeroes
     players: IPlayers
     heroesFight: IHeroBattlefield[]
-    cardsFight: ICardsBattlefield[]
+    cardsFight: ICardsBattlefield
   }
   export interface IPlayers {
     [id: string]: IPlayer

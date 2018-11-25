@@ -27,7 +27,7 @@ interface IProps {
   cards: ICards
   players: IPlayers
   heroesFight: IHeroBattlefield[]
-  cardsFight: ICardsBattlefield[]
+  cardsFight: ICardsBattlefield
   setHeroSelected: typeof actions.setHeroSelected
   updateTiles: typeof actions.updateTiles
   resetTiles: typeof actions.resetTiles

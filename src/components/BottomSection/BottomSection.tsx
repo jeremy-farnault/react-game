@@ -1,5 +1,5 @@
 import * as actions from "../../core/actions";
-import { ActionsType, ICardsBattlefield, IHeroBattlefield, VariousAssets } from "../../core/models";
+import { ActionsType, ICard, ICardsBattlefield, IHeroBattlefield, VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
 import ActionButtons from "../ActionButtons/ActionButtons";
 import InitiativeAndDetails from "../InitiativeAndDetails/InitiativeAndDetails";
@@ -16,7 +16,7 @@ interface IProps {
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
   selectedAction: ActionsType
   changeAction: (action: ActionsType) => void
-  cardsFight: ICardsBattlefield[]
+  cardsFight: ICardsBattlefield
   drawCard: typeof actions.drawCard
   playCard: typeof actions.playCard
 }
@@ -59,6 +59,7 @@ class BottomSection extends React.PureComponent<IProps, IState> {
     const heroes = this.props.heroesSorted;
     const hero = this.props.selectedHero;
     const action = this.props.selectedAction;
+    const cardsCurrentHero = this.props.cardsFight[heroes[0].playerId].currentHand
     return (
       <BottomSectionContainer>
         <LeftSection>
@@ -84,8 +85,14 @@ class BottomSection extends React.PureComponent<IProps, IState> {
           style={customStyles}
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeModal}>
-          <div>DRAW</div>
-          <div>PLAY</div>
+
+          {cardsCurrentHero.map((c: ICard) =>
+            <img key={c.id + heroes[0].playerId} src={c.assets.normalPath}/>
+          )}
+
+
+          <div style={{color: 'white'}}>DRAW</div>
+          <div style={{color: 'white'}}>PLAY</div>
         </Modal>
 
 

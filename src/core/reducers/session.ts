@@ -15,7 +15,7 @@ import {
   SET_HERO_SELECTED,
   SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO
 } from "../constants";
-import { ICard, ICards, ICardsBattlefield, IHeroBattlefield, IHeroes } from "../models";
+import { ICard, ICards, ICardsBattlefield, ICardsBattlefieldPlayer, IHeroBattlefield, IHeroes } from "../models";
 
 import * as _ from "lodash";
 import { Action, handleActions } from "redux-actions";
@@ -25,7 +25,7 @@ const initialState: IStoreState.ISession = {
   allHeroes: {},
   players: {},
   heroesFight: [],
-  cardsFight: []
+  cardsFight: {}
 };
 
 export interface ILoadAllHeroesSuccessPayload {
@@ -211,7 +211,7 @@ export default handleActions(
       state: IStoreState.ISession,
       action: Action<{}>
     ) => {
-      const cardsFight: ICardsBattlefield[] = Object.keys(state.players).map(k => {
+      const cardsFightTemp = Object.keys(state.players).map(k => {
         const playerCards = Object.keys(state.players[k].cards).map(c => state.players[k].cards[c]);
         const hand = _.range(3).map(i => {
           const index = Math.floor(Math.random() * playerCards.length);
@@ -225,36 +225,44 @@ export default handleActions(
           playerId: k
         };
       });
+      const cardsFight: ICardsBattlefield = {
+        [cardsFightTemp[0].playerId]: {
+          currentDeck: cardsFightTemp[0].currentDeck,
+          currentHand: cardsFightTemp[0].currentHand
+        },
+        [cardsFightTemp[1].playerId]: {
+          currentDeck: cardsFightTemp[1].currentDeck,
+          currentHand: cardsFightTemp[1].currentHand
+        }
+      }
       return ({ ...state, cardsFight });
     },
     [DRAW_CARD]: (
       state: IStoreState.ISession,
       action: Action<IDrawCardPayload>
     ) => {
-      const index = state.cardsFight.findIndex((c: ICardsBattlefield) => !!action.payload && c.playerId === action.payload.playerId);
-      state.cardsFight[index].currentDeck.splice(0, 1);
-      state.cardsFight[index].currentHand.push(_.first((state.cardsFight[index] as ICardsBattlefield).currentDeck) as ICard);
-      const newCardsPlayer: ICardsBattlefield = {
-        playerId: (action.payload as IDrawCardPayload).playerId,
-        currentHand: state.cardsFight[index].currentHand,
-        currentDeck: state.cardsFight[index].currentDeck
+      const id = action.payload ? action.payload.playerId : "";
+      state.cardsFight[id].currentDeck.splice(0, 1);
+      state.cardsFight[id].currentHand.push(_.first(state.cardsFight[id].currentDeck) as ICard);
+      const newCardsPlayer: ICardsBattlefieldPlayer = {
+        currentHand: state.cardsFight[id].currentHand,
+        currentDeck: state.cardsFight[id].currentDeck
       };
-      return ({ ...state, cardsFight: state.cardsFight.splice(index, 1, newCardsPlayer) });
+      return ({ ...state, cardsFight: state.cardsFight[id] = newCardsPlayer });
     },
     [PLAY_CARD]: (
       state: IStoreState.ISession,
       action: Action<IPlayCardPayload>
     ) => {
-      const index = state.cardsFight.findIndex((c: ICardsBattlefield) => !!action.payload && c.playerId === action.payload.playerId);
-      state.cardsFight[index].currentDeck.push((action.payload as IPlayCardPayload).card);
-      const indexCard = state.cardsFight[index].currentHand.findIndex((c: ICard) => !!action.payload && c === action.payload.card);
-      state.cardsFight[index].currentHand.splice(indexCard, 1);
-      const newCardsPlayer: ICardsBattlefield = {
-        playerId: (action.payload as IPlayCardPayload).playerId,
-        currentHand: state.cardsFight[index].currentHand,
-        currentDeck: state.cardsFight[index].currentDeck
+      const id = action.payload ? action.payload.playerId : "";
+      state.cardsFight[id].currentDeck.push((action.payload as IPlayCardPayload).card);
+      const indexCard = state.cardsFight[id].currentHand.findIndex((c: ICard) => !!action.payload && c === action.payload.card);
+      state.cardsFight[id].currentHand.splice(indexCard, 1);
+      const newCardsPlayer: ICardsBattlefieldPlayer = {
+        currentHand: state.cardsFight[id].currentHand,
+        currentDeck: state.cardsFight[id].currentDeck
       };
-      return ({ ...state, cardsFight: state.cardsFight.splice(index, 1, newCardsPlayer) });
+      return ({ ...state, cardsFight: state.cardsFight[id] = newCardsPlayer });
     }
   },
   initialState
