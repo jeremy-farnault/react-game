@@ -157,8 +157,8 @@ export const fakePlayers: IPlayers = {
         effect: "Reduce your threat to your starting threat level.",
         description: "Sentinel",
         assets: {
-          miniaturePath: "assets/cardsSmall/aragorn_small.png",
-          normalPath: "assets/cardsBig/aragorn_big.png"
+          miniaturePath: require("../assets/cardsSmall/aragorn_small.png"),
+          normalPath: require("../assets/cardsBig/aragorn_big.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [heroesIds.aragorn],

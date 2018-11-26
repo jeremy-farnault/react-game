@@ -28,7 +28,7 @@ interface IState {
 const customStyles = {
   overlay: {
     zIndex: 10,
-    backgroundColor: colors.blackHighOpacity
+    backgroundColor: colors.blackMediumOpacity
   },
   content: {
     top: "50%",
@@ -60,6 +60,7 @@ class BottomSection extends React.PureComponent<IProps, IState> {
     const hero = this.props.selectedHero;
     const action = this.props.selectedAction;
     const cardsCurrentHero = this.props.cardsFight[heroes[0].playerId].currentHand
+    console.log(cardsCurrentHero)
     return (
       <BottomSectionContainer>
         <LeftSection>
@@ -87,7 +88,7 @@ class BottomSection extends React.PureComponent<IProps, IState> {
           onRequestClose={this.closeModal}>
 
           {cardsCurrentHero.map((c: ICard) =>
-            <img key={c.id + heroes[0].playerId} src={c.assets.normalPath}/>
+            <img key={c.id + heroes[0].playerId} src={c.assets.normalPath} height={250}/>
           )}
 
 

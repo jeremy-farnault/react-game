@@ -98,6 +98,8 @@ Set up cards visual and basic usage;
     - Draw a card takes an action
     - Can't draw if maximum hand size is reached
     - Can zoom on the card
+    https://github.com/inooid/react-redux-card-game
+    https://github.com/inooid/react-redux-card-game/blob/master/src/components/Card/Card.scss
 
 Attack and kill heroes to win the game;
 
