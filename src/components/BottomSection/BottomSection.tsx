@@ -1,13 +1,12 @@
 import * as actions from "../../core/actions";
-import { ActionsType, ICard, ICardsBattlefield, IHeroBattlefield, VariousAssets } from "../../core/models";
-import { colors } from "../../utils/colors";
+import { ActionsType, ICardsBattlefield, IHeroBattlefield, VariousAssets } from "../../core/models";
 import ActionButtons from "../ActionButtons/ActionButtons";
 import InitiativeAndDetails from "../InitiativeAndDetails/InitiativeAndDetails";
 import Timer from "../Timer/Timer";
 import { BottomSectionContainer, DeckImage, LeftSection, RightSection } from "./BottomSectionStyles";
 
 import * as React from "react";
-import * as Modal from "react-modal";
+import ModalCards from "../ModalCards/ModalCards";
 
 interface IProps {
   heroesSorted: IHeroBattlefield[]
@@ -25,26 +24,6 @@ interface IState {
   modalOpen: boolean
 }
 
-const customStyles = {
-  overlay: {
-    zIndex: 10,
-    backgroundColor: colors.blackMediumOpacity
-  },
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    backgroundColor: "black",
-    padding: 20,
-    borderSize: 2,
-    borderStyle: "solid",
-    borderColor: colors.paleYellow
-  }
-};
-
 class BottomSection extends React.PureComponent<IProps, IState> {
 
   constructor(props: IProps) {
@@ -54,13 +33,10 @@ class BottomSection extends React.PureComponent<IProps, IState> {
     };
   }
 
-
   public render() {
     const heroes = this.props.heroesSorted;
     const hero = this.props.selectedHero;
     const action = this.props.selectedAction;
-    const cardsCurrentHero = this.props.cardsFight[heroes[0].playerId].currentHand
-    console.log(cardsCurrentHero)
     return (
       <BottomSectionContainer>
         <LeftSection>
@@ -79,25 +55,12 @@ class BottomSection extends React.PureComponent<IProps, IState> {
                  nextHero={this.props.setNextCurrentHero}/>
           <DeckImage src={VariousAssets.cardBack.path} onClick={this.openModal}/>
         </RightSection>
-
-
-
-        <Modal
-          style={customStyles}
-          isOpen={this.state.modalOpen}
-          onRequestClose={this.closeModal}>
-
-          {cardsCurrentHero.map((c: ICard) =>
-            <img key={c.id + heroes[0].playerId} src={c.assets.normalPath} height={250}/>
-          )}
-
-
-          <div style={{color: 'white'}}>DRAW</div>
-          <div style={{color: 'white'}}>PLAY</div>
-        </Modal>
-
-
-
+        <ModalCards isOpen={this.state.modalOpen}
+                    heroes={heroes}
+                    drawCard={this.props.drawCard}
+                    playCard={this.props.playCard}
+                    cardsFight={this.props.cardsFight}
+                    closeModal={this.closeModal}/>
       </BottomSectionContainer>
     );
   }
