@@ -92,14 +92,14 @@ Set up cards visual and basic usage;
         - ~~Load the cards in the session (hand and deck)~~
         - ~~Play a card (remove from hand put at the end of the deck)~~
         - ~~Draw a card (remove from deck put in the hand)~~
-    - Modal to see the current hand
-    - Decide maximum hand size
+    - ~~Modal to see the current hand~~
+    - ~~Decide maximum hand size~~
     - Play a card takes an action
     - Draw a card takes an action
+        - ~~Bug on draw card~~
+        - Hand not refreshing on draw
     - Can't draw if maximum hand size is reached
-    - Can zoom on the card
-    https://github.com/inooid/react-redux-card-game
-    https://github.com/inooid/react-redux-card-game/blob/master/src/components/Card/Card.scss
+    - ~~Can zoom on the card~~
 
 Attack and kill heroes to win the game;
 
@@ -112,3 +112,4 @@ http://www.tayloredmktg.com/rgb/
 https://www.color-hex.com/color/ff3447
 
 https://www.google.co.nz/imgres?imgurl=https%3A%2F%2Fwww.destructoid.com%2F%2Ful%2F514993-review-the-banner-saga-3%2Fbs3-3-noscale.jpg&imgrefurl=https%3A%2F%2Fwww.destructoid.com%2Freview-the-banner-saga-3-514993.phtml&docid=50h0THZQV7az4M&tbnid=l8V6ltptY99V4M%3A&vet=10ahUKEwiutO2T4ozeAhXHXisKHX4pBpQQMwgyKAMwAw..i&w=1920&h=1080&bih=1009&biw=1858&q=banner%20saga%203&ved=0ahUKEwiutO2T4ozeAhXHXisKHX4pBpQQMwgyKAMwAw&iact=mrc&uact=8
+https://github.com/inooid/react-redux-card-game

@@ -248,7 +248,9 @@ export default handleActions(
         currentHand: state.cardsFight[id].currentHand,
         currentDeck: state.cardsFight[id].currentDeck
       };
-      return ({ ...state, cardsFight: state.cardsFight[id] = newCardsPlayer });
+      const cardsFight = state.cardsFight
+      cardsFight[id] = newCardsPlayer
+      return ({ ...state, cardsFight });
     },
     [PLAY_CARD]: (
       state: IStoreState.ISession,

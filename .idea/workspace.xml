@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ModalCards/ModalCardsStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModalCards/ModalCardsStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalCards/ModalCardsStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/reducers/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/reducers/session.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +27,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="519">
-                <caret line="96" column="27" lean-forward="true" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+              <first_editor relative-caret-position="570">
+                <caret line="101" selection-start-line="101" selection-end-line="101" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -40,11 +40,8 @@
       <file leaf-file-name="Fight.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#70#0" expanded="true" />
-              </folding>
+            <state>
+              <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -52,17 +49,8 @@
       <file leaf-file-name="BottomSection.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-263">
-              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModalCards.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="51" column="94" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
+            <state relative-caret-position="179">
+              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -70,11 +58,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModalCardsStyles.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModalCards.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModalCardsStyles.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCardsStyles.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state>
+              <caret column="46" selection-start-column="46" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/reducers/session.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="255" column="35" selection-start-line="255" selection-start-column="35" selection-end-line="255" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,18 +190,18 @@
         <option value="$PROJECT_DIR$/src/components/Timer/TimerStyles.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" />
         <option value="$PROJECT_DIR$/src/components/BottomSection/BottomSectionStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" />
         <option value="$PROJECT_DIR$/src/core/create.ts" />
         <option value="$PROJECT_DIR$/src/core/constants/index.ts" />
         <option value="$PROJECT_DIR$/src/core/actions/index.ts" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/types/index.tsx" />
-        <option value="$PROJECT_DIR$/src/core/reducers/session.ts" />
         <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
         <option value="$PROJECT_DIR$/src/core/models.ts" />
         <option value="$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx" />
-        <option value="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" />
+        <option value="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" />
         <option value="$PROJECT_DIR$/src/components/ModalCards/ModalCardsStyles.tsx" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" />
+        <option value="$PROJECT_DIR$/src/core/reducers/session.ts" />
       </list>
     </option>
   </component>
@@ -198,6 +210,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -453,7 +468,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="fake&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;session.&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/reducers/session.ts&#10;Fight&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/containers/Fight/Fight.tsx&#10;rea&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;model&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/models.ts&#10;const&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;colors&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/colors.ts&#10;Fi&#9;FILE&#9;file://D:/Code/GitRepos/react-game/tsconfig.json&#10;tsconf&#9;FILE&#9;file://D:/Code/GitRepos/react-game/tsconfig.json&#10;package&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;Reamd&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/README.md&#10;session&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/reducers/session.ts&#10;batt&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/reducers/battlefield.ts&#10;create.t&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/create.ts&#10;fi&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Fight/Fight.tsx&#10;model.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/models.ts&#10;App&#9;null&#9;null&#10;consta&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;grid&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/grid.ts&#10;cons&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;index.html&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/public/index.html&#10;material&#9;FILE&#9;file://D:/Code/GitRepos/react-game/node_modules/material-design-icons&#10;package.&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;Deta&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/components/DetailsZone/DetailsZone.tsx&#10;heroes&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/heroes.ts&#10;fakepla&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;fakepl&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/dbstore/fakePlayers.ts&#10;fig&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Fight/Fight.tsx&#10;readme&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;sess&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/reducers/session.ts&#10;create.ts&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/create.ts&#10;read&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;gri&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/grid.ts&#10;config&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/config.ts&#10;grid.ts&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/grid.ts&#10;con&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;Hero&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/components/Hero/Hero.tsx&#10;saga/in&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/saga/index.ts&#10;saga/inde&#9;FILE&#9;file://D:/Code/GitRepos/react-game/build/dist/core/saga/index.js&#10;loadplayersda&#9;null&#9;null&#10;hero&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/heroes.ts&#10;saga/&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/saga&#10;Battlef&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/containers/Battlefield/Battlefield.tsx&#10;IStoreState&#9;null&#9;null&#10;Tile&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/components/Tile.tsx&#10;tile&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Tiles/Tiles.tsx&#10;constants&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/constants.ts&#10;He&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Heroes/Heroes.tsx&#10;defaultTiles&#9;null&#9;null&#10;defaultT&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="fakepl&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;car&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/cards.ts&#10;fake&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;session.&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/reducers/session.ts&#10;Fight&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/containers/Fight/Fight.tsx&#10;rea&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;model&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/models.ts&#10;const&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;colors&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/colors.ts&#10;Fi&#9;FILE&#9;file://D:/Code/GitRepos/react-game/tsconfig.json&#10;tsconf&#9;FILE&#9;file://D:/Code/GitRepos/react-game/tsconfig.json&#10;package&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;Reamd&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/README.md&#10;session&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/reducers/session.ts&#10;batt&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/reducers/battlefield.ts&#10;create.t&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/create.ts&#10;fi&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Fight/Fight.tsx&#10;model.ts&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/core/models.ts&#10;App&#9;null&#9;null&#10;consta&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;grid&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/grid.ts&#10;cons&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;index.html&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/public/index.html&#10;material&#9;FILE&#9;file://D:/Code/GitRepos/react-game/node_modules/material-design-icons&#10;package.&#9;FILE&#9;file://D:/Code/GitRepos/react-game/package.json&#10;Deta&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/components/DetailsZone/DetailsZone.tsx&#10;heroes&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/heroes.ts&#10;fakepla&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/fakePlayers.ts&#10;fig&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Fight/Fight.tsx&#10;readme&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;sess&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/reducers/session.ts&#10;create.ts&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/create.ts&#10;read&#9;FILE&#9;file://D:/Code/GitRepos/react-game/README.md&#10;gri&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/grid.ts&#10;config&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/config.ts&#10;grid.ts&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/grid.ts&#10;con&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/utils/constants.ts&#10;Hero&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/components/Hero/Hero.tsx&#10;saga/in&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/saga/index.ts&#10;saga/inde&#9;FILE&#9;file://D:/Code/GitRepos/react-game/build/dist/core/saga/index.js&#10;loadplayersda&#9;null&#9;null&#10;hero&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/dbstore/heroes.ts&#10;saga/&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/core/saga&#10;Battlef&#9;FILE&#9;file://D:/Code/GitRepos/react-game/src/containers/Battlefield/Battlefield.tsx&#10;IStoreState&#9;null&#9;null&#10;Tile&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/components/Tile.tsx&#10;tile&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Tiles/Tiles.tsx&#10;constants&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/utils/constants.ts&#10;He&#9;FILE&#9;file:///Users/jfarnaul/Projects/react-game/src/containers/Heroes/Heroes.tsx&#10;defaultTiles&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -594,6 +609,7 @@
       <workItem from="1543029974013" duration="2246000" />
       <workItem from="1543107301981" duration="4632000" />
       <workItem from="1543634426644" duration="1714000" />
+      <workItem from="1543713458175" duration="9118000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -641,7 +657,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278575000" />
+    <option name="totallyTimeSpent" value="287693000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,39 +672,27 @@
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969433" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.37787056" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="npm" order="2" sideWeight="0.15762004" side_tool="true" weight="0.18627451" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.32969433" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8425499" visible="true" weight="0.17973857" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969433" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.37787056" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="3" sideWeight="0.15553236" side_tool="true" weight="0.18082789" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.37787056" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" sideWeight="0.15762004" side_tool="true" weight="0.18627451" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8425499" visible="true" weight="0.17999212" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969433" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32985386" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="CSS-X-Fire" order="12" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3245997" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info id="Favorites" order="3" sideWeight="0.15553236" side_tool="true" weight="0.18082789" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -887,24 +891,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbstore/cards.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="1013" selection-start-line="1013" selection-end-line="1013" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/constants/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/actions/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -932,38 +922,66 @@
     <entry file="file://$PROJECT_DIR$/src/assets/cardsBig/aragorn_big.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSectionStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
+        <state>
+          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
           <folding>
-            <element signature="e#0#70#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbstore/cards.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="1013" selection-start-line="1013" selection-end-line="1013" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/actions/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCardsStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dbstore/fakePlayers.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/reducers/session.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1613">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="519">
-            <caret line="96" column="27" lean-forward="true" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+          <first_editor relative-caret-position="570">
+            <caret line="101" selection-start-line="101" selection-end-line="101" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -971,37 +989,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSectionStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="51" column="94" selection-start-line="51" selection-start-column="94" selection-end-line="51" selection-end-column="94" />
+        <state relative-caret-position="476">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCardsStyles.tsx">
+    <entry file="file://$PROJECT_DIR$/src/core/reducers/session.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="621">
+          <caret line="255" column="35" selection-start-line="255" selection-start-column="35" selection-end-line="255" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
