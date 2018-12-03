@@ -1,3 +1,4 @@
+import { colors } from "../../utils/colors";
 import { ICardImageProps } from "./ModalCards";
 
 import styled from "styled-components";
@@ -20,3 +21,20 @@ z-index: 1;
 }
 `
 CardImage.displayName = 'CardImage'
+
+export const DrawButton = styled.div`
+color: white;
+width: fit-content;
+padding: 10px 20px;
+border-style: double;
+border-color: grey;
+border-width: 2px;
+background-color: ${colors.greyOpacity};
+opacity: ${(props: { disabled: boolean }) => props.disabled ? 0.5 : 1};
+margin: auto;
+&:hover {
+cursor: pointer;
+opacity: 0.5;
+}
+`
+DrawButton.displayName = 'DrawButton'

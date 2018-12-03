@@ -1,7 +1,7 @@
 import * as actions from "../../core/actions";
 import { ICard, ICardsBattlefield, IHeroBattlefield } from "../../core/models";
 import { colors } from "../../utils/colors";
-import { CardImage } from "./ModalCardsStyles";
+import { CardImage, DrawButton } from "./ModalCardsStyles";
 
 import * as React from "react";
 import * as Modal from "react-modal";
@@ -32,11 +32,13 @@ const customStyles = {
     backgroundColor: colors.blackMediumOpacity,
     paddingLeft: 150,
     paddingRight: 150,
-    paddingTop: 100,
+    paddingTop: 30,
     paddingBottom: 50,
     borderSize: 2,
     borderStyle: "solid",
-    borderColor: colors.grey
+    borderColor: colors.grey,
+    justifyContent: "center",
+    alignItems: "center"
   }
 };
 
@@ -44,13 +46,15 @@ export interface ICardImageProps {
   transform: string
 }
 
+const maxHandSize = 6;
+
 class ModalCards extends React.PureComponent<IProps, {}> {
 
   public render() {
     const heroes = this.props.heroes;
-    console.log(this.props.cardsFight, heroes[0].playerId, this.props.cardsFight[heroes[0].playerId])
     const cardsCurrentHero = this.props.cardsFight[heroes[0].playerId].currentHand;
     const transforms = this.getTransform();
+    const disabled = cardsCurrentHero.length === maxHandSize;
     return (
       <div>
         <Modal
@@ -65,15 +69,20 @@ class ModalCards extends React.PureComponent<IProps, {}> {
                 transform={transforms[cardsCurrentHero.length][ind]}/>;
             }
           )}
-          <div style={{ color: "white" }} onClick={this.drawCard}>DRAW</div>
+          <DrawButton onClick={this.drawCard} disabled={disabled}>
+            Draw
+          </DrawButton>
         </Modal>
       </div>
     );
   }
 
   private drawCard = () => {
-    this.props.drawCard({playerId: this.props.heroes[0].playerId})
-  }
+    if (this.props.cardsFight[this.props.heroes[0].playerId].currentHand.length === maxHandSize) {
+      return;
+    }
+    this.props.drawCard({ playerId: this.props.heroes[0].playerId });
+  };
 
   private fixCardAlignment = (total: number, current: number) => {
     const half = total / 2;

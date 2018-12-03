@@ -98,7 +98,7 @@ Set up cards visual and basic usage;
     - Draw a card takes an action
         - ~~Bug on draw card~~
         - Hand not refreshing on draw
-    - Can't draw if maximum hand size is reached
+    - ~~Can't draw if maximum hand size is reached~~
     - ~~Can zoom on the card~~
 
 Attack and kill heroes to win the game;
