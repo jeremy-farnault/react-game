@@ -72,10 +72,17 @@ class Fight extends React.PureComponent<IProps, IState> {
     this.changeAction(ActionsType.heroMovement, undefined, sorted[0]);
   }
 
+
+
+  public componentWillReceiveProps(nextProps: Readonly<IProps>, nextContext: any): void {
+    console.log('test', nextProps.cardsFight)
+  }
+
   public render() {
     const hero = this.state.currentSelectedHero;
     const action = this.state.currentSelectedAction;
     const heroes = this.props.heroesFight;
+    console.log('RENDER FIGHT')
     return (
       <ContainerScene>
         <BackgroundImage
@@ -190,4 +197,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Fight);
-

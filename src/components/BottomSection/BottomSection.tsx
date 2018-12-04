@@ -37,6 +37,7 @@ class BottomSection extends React.PureComponent<IProps, IState> {
     const heroes = this.props.heroesSorted;
     const hero = this.props.selectedHero;
     const action = this.props.selectedAction;
+    console.log('BOTTOM RENDER')
     return (
       <BottomSectionContainer>
         <LeftSection>

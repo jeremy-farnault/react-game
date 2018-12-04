@@ -250,6 +250,7 @@ export default handleActions(
       };
       const cardsFight = state.cardsFight
       cardsFight[id] = newCardsPlayer
+      console.log('IN ACTON', cardsFight)
       return ({ ...state, cardsFight });
     },
     [PLAY_CARD]: (

@@ -15,7 +15,9 @@ interface IProps {
   playCard: typeof actions.playCard
 }
 
-// interface IState {}
+interface IState {
+  currentHand: ICard[]
+}
 
 const customStyles = {
   overlay: {
@@ -48,25 +50,39 @@ export interface ICardImageProps {
 
 const maxHandSize = 6;
 
-class ModalCards extends React.PureComponent<IProps, {}> {
+class ModalCards extends React.PureComponent<IProps, IState> {
+
+  constructor(props: IProps) {
+    super(props)
+    this.state = {
+      currentHand: this.props.cardsFight[this.props.heroes[0].playerId].currentHand
+    }
+  }
+
+  public componentWillReceiveProps(nextProps: IProps) {
+    console.log('WILL RECEIVE')
+    this.setState({
+      currentHand: nextProps.cardsFight[nextProps.heroes[0].playerId].currentHand
+    })
+  }
 
   public render() {
     const heroes = this.props.heroes;
-    const cardsCurrentHero = this.props.cardsFight[heroes[0].playerId].currentHand;
     const transforms = this.getTransform();
-    const disabled = cardsCurrentHero.length === maxHandSize;
+    const disabled = this.state.currentHand.length === maxHandSize;
+    console.log('RENDER')
     return (
       <div>
         <Modal
           style={customStyles}
           isOpen={this.props.isOpen}
           onRequestClose={this.props.closeModal}>
-          {cardsCurrentHero.map((c: ICard, ind: number) => {
+          {this.state.currentHand.map((c: ICard, ind: number) => {
               return <CardImage
                 key={c.id + heroes[1].playerId}
                 // onClick={this.playCard}
                 src={c.assets.normalPath}
-                transform={transforms[cardsCurrentHero.length][ind]}/>;
+                transform={transforms[this.state.currentHand.length][ind]}/>;
             }
           )}
           <DrawButton onClick={this.drawCard} disabled={disabled}>
@@ -78,7 +94,7 @@ class ModalCards extends React.PureComponent<IProps, {}> {
   }
 
   private drawCard = () => {
-    if (this.props.cardsFight[this.props.heroes[0].playerId].currentHand.length === maxHandSize) {
+    if (this.state.currentHand.length === maxHandSize) {
       return;
     }
     this.props.drawCard({ playerId: this.props.heroes[0].playerId });
