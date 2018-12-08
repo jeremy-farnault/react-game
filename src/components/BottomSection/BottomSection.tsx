@@ -16,6 +16,7 @@ interface IProps {
   selectedAction: ActionsType
   changeAction: (action: ActionsType) => void
   cardsFight: ICardsBattlefield
+  decrementActionPoints: () => void
   drawCard: typeof actions.drawCard
   playCard: typeof actions.playCard
 }
@@ -37,7 +38,6 @@ class BottomSection extends React.PureComponent<IProps, IState> {
     const heroes = this.props.heroesSorted;
     const hero = this.props.selectedHero;
     const action = this.props.selectedAction;
-    console.log('BOTTOM RENDER')
     return (
       <BottomSectionContainer>
         <LeftSection>
@@ -60,6 +60,7 @@ class BottomSection extends React.PureComponent<IProps, IState> {
                     heroes={heroes}
                     drawCard={this.props.drawCard}
                     playCard={this.props.playCard}
+                    decrementActionPoints={this.props.decrementActionPoints}
                     cardsFight={this.props.cardsFight}
                     closeModal={this.closeModal}/>
       </BottomSectionContainer>

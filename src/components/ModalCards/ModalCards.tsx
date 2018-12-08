@@ -13,6 +13,7 @@ interface IProps {
   cardsFight: ICardsBattlefield
   drawCard: typeof actions.drawCard
   playCard: typeof actions.playCard
+  decrementActionPoints: () => void
 }
 
 interface IState {
@@ -60,7 +61,6 @@ class ModalCards extends React.PureComponent<IProps, IState> {
   }
 
   public componentWillReceiveProps(nextProps: IProps) {
-    console.log('WILL RECEIVE')
     this.setState({
       currentHand: nextProps.cardsFight[nextProps.heroes[0].playerId].currentHand
     })
@@ -70,7 +70,6 @@ class ModalCards extends React.PureComponent<IProps, IState> {
     const heroes = this.props.heroes;
     const transforms = this.getTransform();
     const disabled = this.state.currentHand.length === maxHandSize;
-    console.log('RENDER')
     return (
       <div>
         <Modal
@@ -97,6 +96,7 @@ class ModalCards extends React.PureComponent<IProps, IState> {
     if (this.state.currentHand.length === maxHandSize) {
       return;
     }
+    this.props.decrementActionPoints()
     this.props.drawCard({ playerId: this.props.heroes[0].playerId });
   };
 

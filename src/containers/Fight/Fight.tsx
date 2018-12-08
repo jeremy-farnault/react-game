@@ -72,17 +72,10 @@ class Fight extends React.PureComponent<IProps, IState> {
     this.changeAction(ActionsType.heroMovement, undefined, sorted[0]);
   }
 
-
-
-  public componentWillReceiveProps(nextProps: Readonly<IProps>, nextContext: any): void {
-    console.log('test', nextProps.cardsFight)
-  }
-
   public render() {
     const hero = this.state.currentSelectedHero;
     const action = this.state.currentSelectedAction;
     const heroes = this.props.heroesFight;
-    console.log('RENDER FIGHT')
     return (
       <ContainerScene>
         <BackgroundImage
@@ -121,10 +114,19 @@ class Fight extends React.PureComponent<IProps, IState> {
             cardsFight={this.props.cardsFight}
             drawCard={this.props.drawCard}
             playCard={this.props.playCard}
+            decrementActionPoints={this.decrementActionPoints}
             selectedAction={action}/>
         </div>}
       </ContainerScene>
     );
+  }
+
+  private decrementActionPoints = () => {
+    this.props.decrementActionPoints({
+      playerId: this.props.heroesFight[0].playerId,
+      heroId: this.props.heroesFight[0].id,
+      heroIndex: 0
+    })
   }
 
   private getAllHeroesPlayers = () => {
