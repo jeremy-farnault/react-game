@@ -14,6 +14,7 @@ interface IProps {
   drawCard: typeof actions.drawCard
   playCard: typeof actions.playCard
   decrementActionPoints: () => void
+  currentActionPoints: number
 }
 
 interface IState {
@@ -69,7 +70,8 @@ class ModalCards extends React.PureComponent<IProps, IState> {
   public render() {
     const heroes = this.props.heroes;
     const transforms = this.getTransform();
-    const disabled = this.state.currentHand.length === maxHandSize;
+    const disabled = this.state.currentHand.length === maxHandSize ||
+      this.props.currentActionPoints < 1;
     return (
       <div>
         <Modal

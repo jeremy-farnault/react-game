@@ -60,6 +60,7 @@ class BottomSection extends React.PureComponent<IProps, IState> {
                     heroes={heroes}
                     drawCard={this.props.drawCard}
                     playCard={this.props.playCard}
+                    currentActionPoints={heroes[0].currentActionPoints}
                     decrementActionPoints={this.props.decrementActionPoints}
                     cardsFight={this.props.cardsFight}
                     closeModal={this.closeModal}/>

@@ -94,13 +94,13 @@ Set up cards visual and basic usage;
         - ~~Draw a card (remove from deck put in the hand)~~
     - ~~Modal to see the current hand~~
     - ~~Decide maximum hand size~~
-    - Play a card takes an action
-    - Draw a card takes an action
+    - ~~Draw a card takes an action~~
         - ~~Bug on draw card~~
         - ~~Hand not refreshing on draw~~
     - ~~Can't draw if maximum hand size is reached~~
     - ~~Can zoom on the card~~
-    - Can't draw if no action points
+    - ~~Can't draw if no action points~~
+    - Play a card takes an action
 
 Attack and kill heroes to win the game;
 
@@ -114,3 +114,6 @@ https://www.color-hex.com/color/ff3447
 
 https://www.google.co.nz/imgres?imgurl=https%3A%2F%2Fwww.destructoid.com%2F%2Ful%2F514993-review-the-banner-saga-3%2Fbs3-3-noscale.jpg&imgrefurl=https%3A%2F%2Fwww.destructoid.com%2Freview-the-banner-saga-3-514993.phtml&docid=50h0THZQV7az4M&tbnid=l8V6ltptY99V4M%3A&vet=10ahUKEwiutO2T4ozeAhXHXisKHX4pBpQQMwgyKAMwAw..i&w=1920&h=1080&bih=1009&biw=1858&q=banner%20saga%203&ved=0ahUKEwiutO2T4ozeAhXHXisKHX4pBpQQMwgyKAMwAw&iact=mrc&uact=8
 https://github.com/inooid/react-redux-card-game
+
+
+http://react-dnd.github.io/react-dnd/about
