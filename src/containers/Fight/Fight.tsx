@@ -158,8 +158,8 @@ class Fight extends React.PureComponent<IProps, IState> {
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action], areHeroesWall);
     const newStateHeroes = getNewHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
-      usedTile.columnIndex, usedTile.lineIndex, TileState[action], this.props.heroesFight);
-    this.props.updateHeroesState({ newStateHeroes });
+      usedTile.columnIndex, usedTile.lineIndex, TileState[action], this.props.heroesFight)
+    this.props.updateHeroesState(newStateHeroes)
     this.props.updateTiles({ data: newTiles });
   };
 

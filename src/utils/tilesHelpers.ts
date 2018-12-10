@@ -6,7 +6,7 @@ import {
   TileState
 } from "../core/models";
 import { INewTile } from "../core/reducers/battlefield";
-import { IUpdateHeroState } from "../core/reducers/session";
+import { IUpdateHeroState, IUpdateHeroStatePayload } from "../core/reducers/session";
 
 import * as PF from "pathfinding";
 
@@ -34,7 +34,7 @@ export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic
 };
 
 export const getNewHeroStatus = (tiles: ITile[][], heroCharacteristic: number, heroX: number, heroY: number,
-                                 state: TileState, currentHeroes: IHeroBattlefield[]): IUpdateHeroState[] => {
+                                 state: TileState, currentHeroes: IHeroBattlefield[]): IUpdateHeroStatePayload => {
   const finder = new PF.AStarFinder();
   const result: IUpdateHeroState[] = [];
   const matrix: number[][] = tiles.map((line: ITile[]) => line.map(() => 0));
@@ -49,12 +49,12 @@ export const getNewHeroStatus = (tiles: ITile[][], heroCharacteristic: number, h
         if (!!heroOnTile && heroOnTile.playerId !== currentHeroes[0].playerId) {
           result.push({
             newState: IHeroBattlefieldState[ITileStateToHeroBattlefieldState[state]] as IHeroBattlefieldState,
-            heroId: heroOnTile.id,
-            playerId: heroOnTile.playerId
-          });
+            playerId: heroOnTile.playerId,
+            heroId: heroOnTile.id
+          })
         }
       }
     }
   }));
-  return result;
+  return {newStateHeroes: result};
 };

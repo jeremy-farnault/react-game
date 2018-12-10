@@ -41,7 +41,7 @@ export enum ITileStateToHeroBattlefieldState {
   heroAttackArmor = "attackedArmor",
   heroDefense = "defending",
   heroMagic = "attackedMagic",
-  heroMovement = "move",
+  heroMovement = "idle",
   heroRangedAttack = "attackedRanged"
 }
 

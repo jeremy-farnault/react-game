@@ -174,7 +174,7 @@ export default handleActions(
       const newStates = state.heroesFight.slice();
       if (action.payload) {
         action.payload.newStateHeroes.forEach((t: IUpdateHeroState) => {
-          const ind = newStates.findIndex((h: IHeroBattlefield) => h.playerId === t.playerId && h.id === t.heroId)
+          const ind = newStates.findIndex((h: IHeroBattlefield) => h.id === t.heroId && h.playerId === t.playerId)
           newStates[ind].state = t.newState
         });
       }
