@@ -1,7 +1,7 @@
 import * as actions from "../../core/actions";
 import { ICard, ICardsBattlefield, IHeroBattlefield } from "../../core/models";
 import { colors } from "../../utils/colors";
-import { CardImage, DrawButton } from "./ModalCardsStyles";
+import { CardImage, CastButton, DrawButton } from "./ModalCardsStyles";
 
 import * as React from "react";
 import * as Modal from "react-modal";
@@ -36,7 +36,7 @@ const customStyles = {
     backgroundColor: colors.blackMediumOpacity,
     paddingLeft: 150,
     paddingRight: 150,
-    paddingTop: 30,
+    paddingTop: 100,
     paddingBottom: 50,
     borderSize: 2,
     borderStyle: "solid",
@@ -78,6 +78,9 @@ class ModalCards extends React.PureComponent<IProps, IState> {
           style={customStyles}
           isOpen={this.props.isOpen}
           onRequestClose={this.props.closeModal}>
+          <CastButton disabled={disabled}>
+            <div>Cast</div>
+          </CastButton>
           {this.state.currentHand.map((c: ICard, ind: number) => {
               return <CardImage
                 key={c.id + heroes[1].playerId}
