@@ -84,6 +84,7 @@ class ModalCards extends React.PureComponent<IProps, IState> {
               return <Card
                 key={c.id + ind} card={c} heroes={this.props.heroes}
                 currentHand={this.state.currentHand} index={ind}
+                playCard={this.playCard}
               />;
             }
           )}
@@ -103,6 +104,13 @@ class ModalCards extends React.PureComponent<IProps, IState> {
     this.props.drawCard({ playerId: this.props.heroes[0].playerId });
   };
 
+  private playCard = (playerId: string, card: ICard) => {
+    this.props.decrementActionPoints()
+    this.props.playCard({
+      playerId,
+      card
+    })
+  }
 }
 
 export default ModalCards;

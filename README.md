@@ -100,7 +100,7 @@ Set up cards visual and basic usage;
     - ~~Can't draw if maximum hand size is reached~~
     - ~~Can zoom on the card~~
     - ~~Can't draw if no action points~~
-    - Play a card takes an action
+    - ~~Play a card takes an action~~
 
 Attack and kill heroes to win the game;
 

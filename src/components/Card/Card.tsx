@@ -10,6 +10,7 @@ interface IProps {
   heroes: IHeroBattlefield[]
   currentHand: ICard[]
   index: number
+  playCard: (id: string, card: ICard) => void
 }
 
 // interface IState {}
@@ -43,11 +44,15 @@ class Card extends React.PureComponent<IProps, {}> {
     const ind = this.props.index
     return (
       <CardImage
-        key={c.id + heroes[1].playerId}
-        // onClick={this.playCard}
+        key={c.id + heroes[0].playerId}
+        onClick={this.playCard}
         src={c.assets.normalPath}
         transform={transforms[hand.length][ind]}/>
   )}
+
+  private playCard = () => {
+    this.props.playCard(this.props.heroes[0].playerId, this.props.card)
+  }
 
   private fixCardAlignment = (total: number, current: number) => {
     const half = total / 2;
