@@ -1,10 +1,14 @@
 import * as actions from "../../core/actions";
 import { ICard, ICardsBattlefield, IHeroBattlefield } from "../../core/models";
 import { colors } from "../../utils/colors";
-import { CardImage, CastButton, DrawButton } from "./ModalCardsStyles";
+import { CastButton, DrawButton } from "./ModalCardsStyles";
 
 import * as React from "react";
+import { DragDropContextProvider } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
 import * as Modal from "react-modal";
+import Card from "../Card/Card";
+
 
 interface IProps {
   closeModal: () => void
@@ -46,9 +50,6 @@ const customStyles = {
   }
 };
 
-export interface ICardImageProps {
-  transform: string
-}
 
 const maxHandSize = 6;
 
@@ -68,12 +69,10 @@ class ModalCards extends React.PureComponent<IProps, IState> {
   }
 
   public render() {
-    const heroes = this.props.heroes;
-    const transforms = this.getTransform();
     const disabled = this.state.currentHand.length === maxHandSize ||
       this.props.currentActionPoints < 1;
     return (
-      <div>
+      <DragDropContextProvider backend={HTML5Backend}>
         <Modal
           style={customStyles}
           isOpen={this.props.isOpen}
@@ -82,18 +81,17 @@ class ModalCards extends React.PureComponent<IProps, IState> {
             <div>Cast</div>
           </CastButton>
           {this.state.currentHand.map((c: ICard, ind: number) => {
-              return <CardImage
-                key={c.id + heroes[1].playerId}
-                // onClick={this.playCard}
-                src={c.assets.normalPath}
-                transform={transforms[this.state.currentHand.length][ind]}/>;
+              return <Card
+                key={c.id + ind} card={c} heroes={this.props.heroes}
+                currentHand={this.state.currentHand} index={ind}
+              />;
             }
           )}
           <DrawButton onClick={this.drawCard} disabled={disabled}>
             Draw
           </DrawButton>
         </Modal>
-      </div>
+      </DragDropContextProvider>
     );
   }
 
@@ -105,33 +103,6 @@ class ModalCards extends React.PureComponent<IProps, IState> {
     this.props.drawCard({ playerId: this.props.heroes[0].playerId });
   };
 
-  private fixCardAlignment = (total: number, current: number) => {
-    const half = total / 2;
-    if (current < half) {
-      return `${-30 + -7 * (current + 1)}%`;
-    } else {
-      return `${-40 + -7 * ((total - 1) - current)}%`;
-    }
-  };
-
-  private curve = (total: number, current: number, range: number) => {
-    const base = -range / 2;
-    const modifier = (total - 1 === 0) ? 0 : current / (total - 1);
-    return base + (range * modifier);
-  };
-
-  private getTransform = () => {
-    const res = [];
-    for (let i = 0; i < 10; i++) {
-      const midRes = [];
-      const range = 50 * (i / 10);
-      for (let j = 0; j <= i; j++) {
-        midRes.push(`scale(0.4) rotate(${this.curve(i, j, range)}deg) translateY(${this.fixCardAlignment(i, j)})`);
-      }
-      res.push(midRes);
-    }
-    return res;
-  };
 }
 
 export default ModalCards;
