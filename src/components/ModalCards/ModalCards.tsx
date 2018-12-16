@@ -1,13 +1,14 @@
 import * as actions from "../../core/actions";
 import { ICard, ICardsBattlefield, IHeroBattlefield } from "../../core/models";
 import { colors } from "../../utils/colors";
-import { CastButton, DrawButton } from "./ModalCardsStyles";
+import { DrawButton } from "./ModalCardsStyles";
 
 import * as React from "react";
 import { DragDropContextProvider } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import * as Modal from "react-modal";
 import Card from "../Card/Card";
+import CastButton from "../CastButton/CastButton";
 
 
 interface IProps {
@@ -77,9 +78,7 @@ class ModalCards extends React.PureComponent<IProps, IState> {
           style={customStyles}
           isOpen={this.props.isOpen}
           onRequestClose={this.props.closeModal}>
-          <CastButton disabled={disabled}>
-            <div>Cast</div>
-          </CastButton>
+          <CastButton disabled={disabled}/>
           {this.state.currentHand.map((c: ICard, ind: number) => {
               return <Card
                 key={c.id + ind} card={c} heroes={this.props.heroes}
