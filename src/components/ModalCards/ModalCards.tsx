@@ -4,8 +4,6 @@ import { colors } from "../../utils/colors";
 import { DrawButton } from "./ModalCardsStyles";
 
 import * as React from "react";
-import { DragDropContextProvider } from 'react-dnd';
-import HTML5Backend from 'react-dnd-html5-backend';
 import * as Modal from "react-modal";
 import Card from "../Card/Card";
 import CastButton from "../CastButton/CastButton";
@@ -57,41 +55,39 @@ const maxHandSize = 6;
 class ModalCards extends React.PureComponent<IProps, IState> {
 
   constructor(props: IProps) {
-    super(props)
+    super(props);
     this.state = {
       currentHand: this.props.cardsFight[this.props.heroes[0].playerId].currentHand
-    }
+    };
   }
 
   public componentWillReceiveProps(nextProps: IProps) {
     this.setState({
       currentHand: nextProps.cardsFight[nextProps.heroes[0].playerId].currentHand
-    })
+    });
   }
 
   public render() {
     const disabled = this.state.currentHand.length === maxHandSize ||
       this.props.currentActionPoints < 1;
     return (
-      <DragDropContextProvider backend={HTML5Backend}>
-        <Modal
-          style={customStyles}
-          isOpen={this.props.isOpen}
-          onRequestClose={this.props.closeModal}>
-          <CastButton disabled={disabled}/>
-          {this.state.currentHand.map((c: ICard, ind: number) => {
-              return <Card
-                key={c.id + ind} card={c} heroes={this.props.heroes}
-                currentHand={this.state.currentHand} index={ind}
-                playCard={this.playCard}
-              />;
-            }
-          )}
-          <DrawButton onClick={this.drawCard} disabled={disabled}>
-            Draw
-          </DrawButton>
-        </Modal>
-      </DragDropContextProvider>
+      <Modal
+        style={customStyles}
+        isOpen={this.props.isOpen}
+        onRequestClose={this.props.closeModal}>
+        <CastButton disabled={disabled}/>
+        {this.state.currentHand.map((c: ICard, ind: number) => {
+            return <Card
+              key={c.id + ind} card={c} heroes={this.props.heroes}
+              currentHand={this.state.currentHand} index={ind}
+              playCard={this.playCard}
+            />;
+          }
+        )}
+        <DrawButton onClick={this.drawCard} disabled={disabled}>
+          Draw
+        </DrawButton>
+      </Modal>
     );
   }
 
@@ -99,17 +95,17 @@ class ModalCards extends React.PureComponent<IProps, IState> {
     if (this.state.currentHand.length === maxHandSize) {
       return;
     }
-    this.props.decrementActionPoints()
+    this.props.decrementActionPoints();
     this.props.drawCard({ playerId: this.props.heroes[0].playerId });
   };
 
   private playCard = (playerId: string, card: ICard) => {
-    this.props.decrementActionPoints()
+    this.props.decrementActionPoints();
     this.props.playCard({
       playerId,
       card
-    })
-  }
+    });
+  };
 }
 
 export default ModalCards;

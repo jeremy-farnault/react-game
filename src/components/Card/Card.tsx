@@ -1,5 +1,4 @@
 import { ICard, IHeroBattlefield } from "../../core/models";
-import { CardImage } from "./CardStyles";
 
 import * as React from "react";
 import {
@@ -26,7 +25,9 @@ interface ICollectedProps {
   isDragging?: boolean
 }
 
-// interface IState {}
+interface IState {
+  focused: boolean
+}
 
 export interface ICardImageProps {
   transform: string
@@ -39,13 +40,20 @@ const cardSource = {
 };
 
 const collect: DragSourceCollector<ICollectedProps> = (connect: DragSourceConnector,
-                                              monitor: DragSourceMonitor) => ({
+                                                       monitor: DragSourceMonitor) => ({
   connectDragSource: connect.dragSource(),
   connectDragPreview: connect.dragPreview(),
   isDragging: monitor.isDragging()
 });
 
-class Card extends React.PureComponent<IProps & ICollectedProps, {}> {
+class Card extends React.PureComponent<IProps & ICollectedProps, IState> {
+
+  constructor(props: IProps & ICollectedProps) {
+    super(props)
+    this.state = {
+      focused: false
+    }
+  }
 
   public render() {
     const transforms = this.getTransform();
@@ -54,13 +62,36 @@ class Card extends React.PureComponent<IProps & ICollectedProps, {}> {
     const hand = this.props.currentHand;
     const ind = this.props.index;
     const { connectDragSource } = this.props;
+    console.log('focused', this.state.focused)
     return connectDragSource(
-      <CardImage
+      <img
         key={c.id + heroes[0].playerId}
         onClick={this.playCard}
         src={c.assets.normalPath}
-        transform={transforms[hand.length][ind]}/>
+        onMouseEnter={this.cardFocus}
+        onMouseLeave={this.cardFocus}
+        style={{
+          transform: this.state.focused ?
+            'scale(0.8) translateY(-25%)' :
+            transforms[hand.length][ind],
+          margin: '0 -13vh',
+          background: '#776557',
+          transition: 'transform 0.15s',
+          position: 'relative',
+          width: '35vh',
+          height: '47vh',
+          boxShadow: '0 0 20px rgba(0,0,0,0.3)',
+          borderRadius: 8,
+          transformOrigin: 'center bottom',
+          cursor: 'pointer',
+          zIndex: 1
+        }}/>
+        // transform={transforms[hand.length][ind]}/>
     );
+  }
+
+  private cardFocus = () => {
+    this.setState({focused: !this.state.focused})
   }
 
   private playCard = () => {

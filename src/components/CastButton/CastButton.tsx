@@ -43,9 +43,11 @@ class CastButton extends React.PureComponent<IProps & ICollectedProps, {}> {
   public render() {
     const { connectDropTarget } = this.props;
     return connectDropTarget(
-      <CastButtonDiv disabled={this.props.disabled}>
-        <div>Cast</div>
-      </CastButtonDiv>
+      <div>
+        <CastButtonDiv disabled={this.props.disabled}>
+          <div>Cast</div>
+        </CastButtonDiv>
+      </div>
     );
   }
 }
