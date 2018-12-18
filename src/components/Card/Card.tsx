@@ -2,7 +2,14 @@ import { ICard, IHeroBattlefield } from "../../core/models";
 import { CardImage } from "./CardStyles";
 
 import * as React from "react";
-import { DragSource } from 'react-dnd';
+import {
+  ConnectDragPreview,
+  ConnectDragSource,
+  DragSource,
+  DragSourceCollector,
+  DragSourceConnector,
+  DragSourceMonitor
+} from "react-dnd";
 
 
 interface IProps {
@@ -13,6 +20,12 @@ interface IProps {
   playCard: (id: string, card: ICard) => void
 }
 
+interface ICollectedProps {
+  connectDragSource: ConnectDragSource
+  connectDragPreview: ConnectDragPreview
+  isDragging?: boolean
+}
+
 // interface IState {}
 
 export interface ICardImageProps {
@@ -21,38 +34,38 @@ export interface ICardImageProps {
 
 const cardSource = {
   beginDrag(props: any) {
-    console.log('CARD SOURCE', props)
-    return {}
+    return {};
   }
-}
+};
 
-const collect = (connect: any, monitor: any) => {
-  console.log('COLLECT', connect, monitor)
-  return {
-    connectDragSource: connect.dragSource(),
-    isDragging: monitor.isDragging()
-  }
-}
+const collect: DragSourceCollector<ICollectedProps> = (connect: DragSourceConnector,
+                                              monitor: DragSourceMonitor) => ({
+  connectDragSource: connect.dragSource(),
+  connectDragPreview: connect.dragPreview(),
+  isDragging: monitor.isDragging()
+});
 
-class Card extends React.PureComponent<IProps, {}> {
+class Card extends React.PureComponent<IProps & ICollectedProps, {}> {
 
   public render() {
     const transforms = this.getTransform();
-    const c = this.props.card
+    const c = this.props.card;
     const heroes = this.props.heroes;
-    const hand = this.props.currentHand
-    const ind = this.props.index
-    return (
+    const hand = this.props.currentHand;
+    const ind = this.props.index;
+    const { connectDragSource } = this.props;
+    return connectDragSource(
       <CardImage
         key={c.id + heroes[0].playerId}
         onClick={this.playCard}
         src={c.assets.normalPath}
         transform={transforms[hand.length][ind]}/>
-  )}
+    );
+  }
 
   private playCard = () => {
-    this.props.playCard(this.props.heroes[0].playerId, this.props.card)
-  }
+    this.props.playCard(this.props.heroes[0].playerId, this.props.card);
+  };
 
   private fixCardAlignment = (total: number, current: number) => {
     const half = total / 2;
@@ -83,4 +96,4 @@ class Card extends React.PureComponent<IProps, {}> {
   };
 }
 
-export default DragSource('CARD', cardSource, collect)(Card);
+export default DragSource("CARD", cardSource, collect)(Card);

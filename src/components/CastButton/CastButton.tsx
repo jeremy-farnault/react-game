@@ -1,40 +1,48 @@
 import { CastButtonDiv } from "./CastButtonStyles";
 
 import * as React from "react";
-import { DropTarget } from 'react-dnd';
+import { ConnectDropTarget, DropTarget, DropTargetCollector, DropTargetConnector, DropTargetMonitor } from "react-dnd";
 
 interface IProps {
   disabled: boolean
 }
 
+interface ICollectedProps {
+  isOver: boolean
+  canDrop: boolean
+  connectDropTarget: ConnectDropTarget
+}
+
 // interface IState {}
 
 const roundTarget = {
-  canDrop(props: any) {
-    console.log('CAN DROP', props)
-    return true
+  canDrop(props: IProps) {
+    console.log("CAN DROP");
+    return true;
     // return canMoveCard(props.x, props.y)
   },
 
-  drop(props: any) {
-    console.log('ROUND TARGET', props)
+  drop(props: IProps) {
+    console.log("DROP");
+    return true;
     // moveCard(props.x, props.y)
   }
-}
+};
 
-const collect = (connect: any, monitor: any) => {
-  console.log('COLLECT CAST', connect, monitor)
-  return {
-    connectDropTarget: connect.dropTarget(),
-    isOver: monitor.isOver(),
-    canDrop: monitor.canDrop()
-  }
-}
+const collect: DropTargetCollector<ICollectedProps> =
+  (connect: DropTargetConnector, monitor: DropTargetMonitor) => {
+    return {
+      connectDropTarget: connect.dropTarget(),
+      isOver: monitor.isOver(),
+      canDrop: monitor.canDrop()
+    };
+  };
 
-class CastButton extends React.PureComponent<IProps, {}> {
+class CastButton extends React.PureComponent<IProps & ICollectedProps, {}> {
 
   public render() {
-    return (
+    const { connectDropTarget } = this.props;
+    return connectDropTarget(
       <CastButtonDiv disabled={this.props.disabled}>
         <div>Cast</div>
       </CastButtonDiv>
@@ -42,4 +50,4 @@ class CastButton extends React.PureComponent<IProps, {}> {
   }
 }
 
-export default DropTarget('CARD', roundTarget, collect)(CastButton);
+export default DropTarget("CARD", roundTarget, collect)(CastButton);
