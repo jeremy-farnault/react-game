@@ -15,16 +15,19 @@ interface ICollectedProps {
 
 // interface IState {}
 
+export interface ICastButtonDivProps {
+  disabled: boolean
+  isOver: boolean
+}
+
 const roundTarget = {
   canDrop(props: IProps) {
-    console.log("CAN DROP");
     return true;
     // return canMoveCard(props.x, props.y)
   },
 
   drop(props: IProps) {
-    console.log("DROP");
-    return true;
+    return undefined;
     // moveCard(props.x, props.y)
   }
 };
@@ -44,7 +47,8 @@ class CastButton extends React.PureComponent<IProps & ICollectedProps, {}> {
     const { connectDropTarget } = this.props;
     return connectDropTarget(
       <div>
-        <CastButtonDiv disabled={this.props.disabled}>
+        <CastButtonDiv disabled={this.props.disabled}
+                       isOver={this.props.isOver}>
           <div>Cast</div>
         </CastButtonDiv>
       </div>

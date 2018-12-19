@@ -62,11 +62,9 @@ class Card extends React.PureComponent<IProps & ICollectedProps, IState> {
     const hand = this.props.currentHand;
     const ind = this.props.index;
     const { connectDragSource } = this.props;
-    console.log('focused', this.state.focused)
     return connectDragSource(
       <img
         key={c.id + heroes[0].playerId}
-        onClick={this.playCard}
         src={c.assets.normalPath}
         onMouseEnter={this.cardFocus}
         onMouseLeave={this.cardFocus}
@@ -75,6 +73,7 @@ class Card extends React.PureComponent<IProps & ICollectedProps, IState> {
             'scale(0.8) translateY(-25%)' :
             transforms[hand.length][ind],
           margin: '0 -13vh',
+          opacity: this.props.isDragging ? 0.1 : 1,
           background: '#776557',
           transition: 'transform 0.15s',
           position: 'relative',
@@ -86,7 +85,6 @@ class Card extends React.PureComponent<IProps & ICollectedProps, IState> {
           cursor: 'pointer',
           zIndex: 1
         }}/>
-        // transform={transforms[hand.length][ind]}/>
     );
   }
 
@@ -94,9 +92,9 @@ class Card extends React.PureComponent<IProps & ICollectedProps, IState> {
     this.setState({focused: !this.state.focused})
   }
 
-  private playCard = () => {
-    this.props.playCard(this.props.heroes[0].playerId, this.props.card);
-  };
+  // private playCard = () => {
+  //   this.props.playCard(this.props.heroes[0].playerId, this.props.card);
+  // };
 
   private fixCardAlignment = (total: number, current: number) => {
     const half = total / 2;
