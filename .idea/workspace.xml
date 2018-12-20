@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CastButton/CastButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CastButton/CastButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CastButton/CastButtonStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CastButton/CastButtonStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +25,13 @@
     <splitter split-orientation="horizontal" split-proportion="0.35832977">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor />
+                  <first_editor relative-caret-position="1009">
+                    <caret line="104" column="46" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+                  </first_editor>
                   <second_editor />
                 </state>
               </provider>
@@ -51,7 +55,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/containers/App/App.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="285">
@@ -67,14 +71,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#46#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="90">
+                  <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -82,10 +83,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/CastButton/CastButton.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+                <state relative-caret-position="840">
+                  <caret line="56" column="3" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
                   <folding>
-                    <element signature="e#0#51#0" expanded="true" />
+                    <element signature="e#1#43#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -94,8 +95,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/CastButton/CastButtonStyles.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+                <state relative-caret-position="495">
+                  <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
                   <folding>
                     <element signature="e#0#44#0" expanded="true" />
                   </folding>
@@ -103,11 +104,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Card/Card.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="554">
-                  <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+                <state relative-caret-position="600">
+                  <caret line="40" selection-start-line="40" selection-end-line="40" />
                   <folding>
                     <element signature="e#0#60#0" expanded="true" />
                   </folding>
@@ -221,13 +222,13 @@
         <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
         <option value="$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx" />
         <option value="$PROJECT_DIR$/src/components/Card/CardStyles.tsx" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/ModalCards/ModalCardsStyles.tsx" />
         <option value="$PROJECT_DIR$/src/containers/App/App.tsx" />
-        <option value="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" />
-        <option value="$PROJECT_DIR$/src/components/CastButton/CastButton.tsx" />
         <option value="$PROJECT_DIR$/src/components/CastButton/CastButtonStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/Card/Card.tsx" />
+        <option value="$PROJECT_DIR$/src/components/CastButton/CastButton.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -603,6 +604,7 @@
       <workItem from="1544987994222" duration="3691000" />
       <workItem from="1545162576418" duration="3119000" />
       <workItem from="1545247880267" duration="1668000" />
+      <workItem from="1545333343402" duration="3748000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -650,7 +652,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307384000" />
+    <option name="totallyTimeSpent" value="311132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,7 +664,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="2560" height="1417" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8425499" visible="true" weight="0.21031903" />
@@ -957,11 +959,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/components/Card/CardStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -989,50 +990,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Card/CardStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/Card/Card.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CastButton/CastButton.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CastButton/CastButtonStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Card/Card.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/CastButton/CastButton.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+        <state relative-caret-position="840">
+          <caret line="56" column="3" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
           <folding>
-            <element signature="e#0#60#0" expanded="true" />
+            <element signature="e#1#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ModalCards/ModalCards.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1009">
+            <caret line="104" column="46" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

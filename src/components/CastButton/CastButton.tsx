@@ -1,3 +1,4 @@
+import { ICard } from "../../core/models";
 import { CastButtonDiv } from "./CastButtonStyles";
 
 import * as React from "react";
@@ -5,11 +6,13 @@ import { ConnectDropTarget, DropTarget, DropTargetCollector, DropTargetConnector
 
 interface IProps {
   disabled: boolean
+  playCard: (card: ICard) => void
 }
 
 interface ICollectedProps {
   isOver: boolean
   canDrop: boolean
+  dropped: any
   connectDropTarget: ConnectDropTarget
 }
 
@@ -23,12 +26,10 @@ export interface ICastButtonDivProps {
 const roundTarget = {
   canDrop(props: IProps) {
     return true;
-    // return canMoveCard(props.x, props.y)
   },
 
-  drop(props: IProps) {
-    return undefined;
-    // moveCard(props.x, props.y)
+  drop(props: IProps, monitor: DropTargetMonitor) {
+    return monitor.getItem();
   }
 };
 
@@ -37,7 +38,8 @@ const collect: DropTargetCollector<ICollectedProps> =
     return {
       connectDropTarget: connect.dropTarget(),
       isOver: monitor.isOver(),
-      canDrop: monitor.canDrop()
+      canDrop: monitor.canDrop(),
+      dropped: monitor.getDropResult()
     };
   };
 
@@ -45,6 +47,7 @@ class CastButton extends React.PureComponent<IProps & ICollectedProps, {}> {
 
   public render() {
     const { connectDropTarget } = this.props;
+    this.checkDroppedCard()
     return connectDropTarget(
       <div>
         <CastButtonDiv disabled={this.props.disabled}
@@ -53,6 +56,12 @@ class CastButton extends React.PureComponent<IProps & ICollectedProps, {}> {
         </CastButtonDiv>
       </div>
     );
+  }
+
+  private checkDroppedCard = () => {
+    if (!!this.props.dropped) {
+      this.props.playCard(this.props.dropped)
+    }
   }
 }
 

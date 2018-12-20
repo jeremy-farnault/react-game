@@ -102,6 +102,8 @@ Set up cards visual and basic usage;
     - ~~Can't draw if no action points~~
     - ~~Play a card takes an action~~
 
+BUG: CANT DRAW AND PLAY EVEN IF BUTTON DISABLED
+
 Attack and kill heroes to win the game;
 
 Map travel based on The Dwarves

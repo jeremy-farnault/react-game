@@ -16,7 +16,6 @@ interface IProps {
   heroes: IHeroBattlefield[]
   currentHand: ICard[]
   index: number
-  playCard: (id: string, card: ICard) => void
 }
 
 interface ICollectedProps {
@@ -34,8 +33,12 @@ export interface ICardImageProps {
 }
 
 const cardSource = {
-  beginDrag(props: any) {
-    return {};
+  beginDrag(props: IProps) {
+    return props.card;
+  },
+
+  endDrag(props: IProps) {
+    return props.card
   }
 };
 

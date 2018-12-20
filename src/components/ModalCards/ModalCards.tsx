@@ -75,12 +75,12 @@ class ModalCards extends React.PureComponent<IProps, IState> {
         style={customStyles}
         isOpen={this.props.isOpen}
         onRequestClose={this.props.closeModal}>
-        <CastButton disabled={disabled}/>
+        <CastButton disabled={disabled}
+                    playCard={this.playCard}/>
         {this.state.currentHand.map((c: ICard, ind: number) => {
             return <Card
               key={c.id + ind} card={c} heroes={this.props.heroes}
               currentHand={this.state.currentHand} index={ind}
-              playCard={this.playCard}
             />;
           }
         )}
@@ -99,10 +99,10 @@ class ModalCards extends React.PureComponent<IProps, IState> {
     this.props.drawCard({ playerId: this.props.heroes[0].playerId });
   };
 
-  private playCard = (playerId: string, card: ICard) => {
+  private playCard = (card: ICard) => {
     this.props.decrementActionPoints();
     this.props.playCard({
-      playerId,
+      playerId: this.props.heroes[0].playerId,
       card
     });
   };
