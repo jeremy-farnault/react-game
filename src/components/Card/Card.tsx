@@ -95,10 +95,6 @@ class Card extends React.PureComponent<IProps & ICollectedProps, IState> {
     this.setState({focused: !this.state.focused})
   }
 
-  // private playCard = () => {
-  //   this.props.playCard(this.props.heroes[0].playerId, this.props.card);
-  // };
-
   private fixCardAlignment = (total: number, current: number) => {
     const half = total / 2;
     if (current < half) {

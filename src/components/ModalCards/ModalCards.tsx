@@ -92,7 +92,8 @@ class ModalCards extends React.PureComponent<IProps, IState> {
   }
 
   private drawCard = () => {
-    if (this.state.currentHand.length === maxHandSize) {
+    if (this.state.currentHand.length === maxHandSize ||
+        this.props.currentActionPoints < 1) {
       return;
     }
     this.props.decrementActionPoints();
@@ -100,6 +101,9 @@ class ModalCards extends React.PureComponent<IProps, IState> {
   };
 
   private playCard = (card: ICard) => {
+    if (this.props.currentActionPoints < 1) {
+      return
+    }
     this.props.decrementActionPoints();
     this.props.playCard({
       playerId: this.props.heroes[0].playerId,
