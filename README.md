@@ -86,7 +86,7 @@
     - ~~Color of text depends on the current hero. Same team or other team~~
     - ~~Count points based on the list and when it changes~~
 
-Set up cards visual and basic usage;
+~~Set up cards visual and basic usage;~~
     - ~~Deck design on the battlefield~~
     - ~~Redux actions to:~~
         - ~~Load the cards in the session (hand and deck)~~
@@ -103,6 +103,7 @@ Set up cards visual and basic usage;
     - ~~Play a card takes an action~~
 
 ~~BUG: CANT DRAW AND PLAY EVEN IF BUTTON DISABLED~~
+BUG: Can't pass multiple times and order wrong
 
 Attack and kill heroes to win the game
     - Attack mode enable click on ennemy

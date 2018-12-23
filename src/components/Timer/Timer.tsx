@@ -2,6 +2,7 @@ import { IHeroBattlefield } from "../../core/models";
 import { constants } from "../../utils/constants";
 import { TimerStyled, TimerZoneStyled } from "./TimerStyles";
 
+import * as _ from 'lodash'
 import * as React from "react";
 
 interface IProps {
@@ -24,6 +25,7 @@ class Timer extends React.PureComponent<IProps, IState> {
     this.state = {
       totalTime: this.props.minutesTurn * 60 + this.props.secondsTurn
     };
+    this.stopTimer = _.throttle(this.stopTimer, 3000, {leading: false, trailing: true})
   }
 
   public componentDidMount() {
