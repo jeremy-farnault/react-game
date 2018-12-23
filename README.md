@@ -103,7 +103,8 @@
     - ~~Play a card takes an action~~
 
 ~~BUG: CANT DRAW AND PLAY EVEN IF BUTTON DISABLED~~
-BUG: Can't pass multiple times and order wrong
+~~BUG: Can't pass multiple times and order wrong~~
+~~BUG: Pass turn still buggy~~
 
 Attack and kill heroes to win the game
     - Attack mode enable click on ennemy

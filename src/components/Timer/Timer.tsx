@@ -25,7 +25,7 @@ class Timer extends React.PureComponent<IProps, IState> {
     this.state = {
       totalTime: this.props.minutesTurn * 60 + this.props.secondsTurn
     };
-    this.stopTimer = _.throttle(this.stopTimer, 3000, {leading: false, trailing: true})
+    this.stopTimer = _.debounce(this.stopTimer, 0, {leading: true, trailing: false})
   }
 
   public componentDidMount() {
@@ -62,7 +62,6 @@ class Timer extends React.PureComponent<IProps, IState> {
     clearInterval(this.interval);
     this.setState({ totalTime: this.props.minutesTurn * 60 + this.props.secondsTurn });
     this.startTimer();
-    this.props.nextHero();
   };
 
   private formatTime = (totalTime: number): string => {
@@ -72,6 +71,7 @@ class Timer extends React.PureComponent<IProps, IState> {
       return `${minutes < 10 ? "0" : "0"}${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
     } else {
       this.stopTimer();
+      this.props.nextHero();
       return "00:00";
     }
   };
