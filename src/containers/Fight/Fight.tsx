@@ -91,6 +91,7 @@ class Fight extends React.PureComponent<IProps, IState> {
               <ActionPoints currentHero={heroes[0]}/>
             </LeftSection>
             <Battlefield
+              currentHero={heroes[0]}
               allHeroes={this.state.allHeroes}
               currentSelectedAction={action}
               currentSelectedHero={heroes[0]}
@@ -144,11 +145,11 @@ class Fight extends React.PureComponent<IProps, IState> {
   };
 
   private changeAction = (action: ActionsType, tile?: ITile, hero?: IHeroBattlefield) => {
+    this.props.resetTiles({});
     if (this.props.heroesFight.length > 0 && this.props.heroesFight[0].currentActionPoints < 1) {
       return;
     }
     this.setState({ currentSelectedAction: action });
-    this.props.resetTiles({});
     const usedHero = !!hero ? hero : this.props.heroesFight[0];
     const usedTile = !!tile ? tile : this.props.tiles[usedHero.tileY][usedHero.tileX];
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],

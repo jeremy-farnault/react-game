@@ -12,6 +12,7 @@ import IPlayers = IStoreState.IPlayers;
 
 interface IProps {
   allHeroes: IHeroBattlefield[]
+  currentHero: IHeroBattlefield
   tiles: ITile[][]
   players: IPlayers
   setHeroSelected: typeof actions.setHeroSelected
@@ -42,7 +43,9 @@ class Battlefield extends React.PureComponent<IProps, {}> {
   }
 
   private clickOnTile = async (tile: ITile) => {
-    if (tile.state === TileState.empty && !!this.props.currentSelectedHero) {
+    if (!!this.props.currentSelectedHero &&
+      (tile.state === TileState.empty ||
+        this.props.currentHero.currentActionPoints < 1)) {
       this.props.setHeroSelected({
         setSelected: false,
         heroId: this.props.currentSelectedHero.id,
@@ -63,7 +66,7 @@ class Battlefield extends React.PureComponent<IProps, {}> {
         heroIndex: 0,
         heroId: hero.id,
         playerId: hero.playerId
-      })
+      });
       this.props.changeAction(ActionsType.heroMovement, tile);
     }
   };
