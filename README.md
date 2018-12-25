@@ -107,6 +107,7 @@
 ~~BUG: Pass turn still buggy~~
 
 Attack and kill heroes to win the game
+    - Use different algo as the one used to move
     - Attack mode enable click on ennemy
     - Deal damage equal to simple rule
     - Remove life points

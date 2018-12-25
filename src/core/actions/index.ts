@@ -71,6 +71,7 @@ export const setNextCurrentHero = createAction(constants.SET_NEXT_CURRENT_HERO)
 
 export const incrementActionPoints = createAction<IChangeActionPointsPayload>(constants.INCREMENT_ACTION_POINTS)
 export const decrementActionPoints = createAction<IChangeActionPointsPayload>(constants.DECREMENT_ACTION_POINTS)
+export const resetActionPoints = createAction<IChangeActionPointsPayload>(constants.RESET_ACTION_POINTS)
 
 // Set and update cards Battlefield
 

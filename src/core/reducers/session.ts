@@ -10,7 +10,7 @@ import {
   LOAD_ALL_HEROES_SUCCESS,
   LOAD_PLAYERS_FAIL,
   LOAD_PLAYERS_START,
-  LOAD_PLAYERS_SUCCESS, PLAY_CARD,
+  LOAD_PLAYERS_SUCCESS, PLAY_CARD, RESET_ACTION_POINTS,
   SET_HERO_NEW_POSITION,
   SET_HERO_SELECTED,
   SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO
@@ -202,6 +202,18 @@ export default handleActions(
         newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
         newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
         newHeroes[action.payload.heroIndex].currentActionPoints--;
+      }
+      return ({ ...state, heroesFight: newHeroes });
+    },
+    [RESET_ACTION_POINTS]: (
+      state: IStoreState.ISession,
+      action: Action<IChangeActionPointsPayload>
+    ) => {
+      const newHeroes = state.heroesFight.slice();
+      if (!!action.payload &&
+        newHeroes[action.payload.heroIndex].playerId === action.payload.playerId &&
+        newHeroes[action.payload.heroIndex].id === action.payload.heroId) {
+        newHeroes[action.payload.heroIndex].currentActionPoints = 3;
       }
       return ({ ...state, heroesFight: newHeroes });
     },

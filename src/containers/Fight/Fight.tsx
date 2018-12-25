@@ -34,6 +34,7 @@ interface IProps {
   setHeroesOrder: typeof actions.setHeroesOrder
   setNextCurrentHero: typeof actions.setNextCurrentHero
   decrementActionPoints: typeof actions.decrementActionPoints
+  resetActionPoints: typeof actions.resetActionPoints
   initializeDeckHand: typeof actions.initializeDeckHand
   drawCard: typeof actions.drawCard
   playCard: typeof actions.playCard
@@ -158,6 +159,11 @@ class Fight extends React.PureComponent<IProps, IState> {
   };
 
   private setNextCurrentHero = () => {
+    this.props.resetActionPoints({
+      playerId: this.props.heroesFight[0].playerId,
+      heroId: this.props.heroesFight[0].id,
+      heroIndex: 0
+    })
     const hero = this.props.heroesFight[1];
     this.props.setNextCurrentHero();
     this.props.resetTiles({});
@@ -191,6 +197,7 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
     setHeroesOrder: actions.setHeroesOrder,
     setNextCurrentHero: actions.setNextCurrentHero,
     decrementActionPoints: actions.decrementActionPoints,
+    resetActionPoints: actions.resetActionPoints,
     initializeDeckHand: actions.initializeDeckHand,
     drawCard: actions.drawCard,
     playCard: actions.playCard
