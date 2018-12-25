@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/actions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/actions/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/constants/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/reducers/session.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/reducers/session.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/tilesHelpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/tilesHelpers.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="485">
-                <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
+              <first_editor relative-caret-position="519">
+                <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -41,8 +39,8 @@
       <file leaf-file-name="Fight.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="162" selection-start-line="162" selection-end-line="162" />
+            <state relative-caret-position="434">
+              <caret line="164" column="42" selection-start-line="164" selection-start-column="42" selection-end-line="164" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -50,47 +48,8 @@
       <file leaf-file-name="tilesHelpers.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/tilesHelpers.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Battlefield.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/reducers/session.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="152" column="44" lean-forward="true" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/actions/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="73" column="102" selection-start-line="73" selection-start-column="102" selection-end-line="73" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/constants/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="90" column="59" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
+            <state relative-caret-position="119">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -155,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/DetailsZone/DetailsZone.tsx" />
         <option value="$PROJECT_DIR$/src/dbstore/heroes.ts" />
         <option value="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
@@ -201,11 +159,12 @@
         <option value="$PROJECT_DIR$/src/components/Timer/Timer.tsx" />
         <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/core/constants/index.ts" />
         <option value="$PROJECT_DIR$/src/core/actions/index.ts" />
         <option value="$PROJECT_DIR$/src/core/reducers/session.ts" />
         <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
+        <option value="$PROJECT_DIR$/src/utils/tilesHelpers.ts" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -582,7 +541,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315912000" />
+    <option name="totallyTimeSpent" value="317965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -926,25 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/tilesHelpers.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="485">
-            <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/constants/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
@@ -969,10 +909,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/tilesHelpers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="519">
+            <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        <state relative-caret-position="434">
+          <caret line="164" column="42" selection-start-line="164" selection-start-column="42" selection-end-line="164" selection-end-column="42" />
         </state>
       </provider>
     </entry>
