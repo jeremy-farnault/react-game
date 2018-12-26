@@ -107,9 +107,10 @@
 ~~BUG: Pass turn still buggy~~
 
 Attack and kill heroes to win the game
-    - BUG: Heroes no longer in the tiles list after a few turn
+    - ~~BUG: Heroes no longer in the tiles list after changing action~~
     - Use different algo as the one used to move
-        - Change tile style if hero is attackable
+        - ~~Heroes should not block the way for attacks~~
+        - Add new tile states
     - Attack mode enable click on ennemy
     - Deal damage equal to simple rule
     - Remove life points
