@@ -104,7 +104,11 @@ export interface IHeroBattlefield extends IHero {
 
 export enum IHeroBattlefieldState {
   idle,
-  move
+  move,
+  attacked,
+  attackedRanged,
+  attackedMagic,
+  defending
 }
 
 export interface IHeroCharacteristics {
