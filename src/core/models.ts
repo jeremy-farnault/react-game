@@ -103,12 +103,23 @@ export interface IHeroBattlefield extends IHero {
 }
 
 export enum IHeroBattlefieldState {
-  idle,
-  move,
-  attacked,
-  attackedRanged,
-  attackedMagic,
-  defending
+  idle = ‘idle’,
+  move = ‘move’,
+  attacked = ‘attacked’,
+  attackedRanged = ‘attackedRanged’,
+  attackedArmor = ‘attackedArmor’,
+  attackedMagic = ‘attackedMagic’,
+  defending = ‘defending’
+}
+
+export enum IHeroBattlefieldStateToTileState {
+  idle = ‘idleHero’,
+  attacked = ‘heroAttack’,
+  attackedArmor = ‘heroAttackArmor’,
+  defending = ‘heroDefense’,
+  attackedMagic = ‘heroMagic’,
+  move = ‘heroMovement’,
+  attackedRanged = ‘heroRangedAttack’
 }
 
 export interface IHeroCharacteristics {
