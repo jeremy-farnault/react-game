@@ -35,6 +35,16 @@ export enum TileState {
   heroRangedAttack
 }
 
+export enum ITileStateToHeroBattlefieldState {
+  idleHero = ‘idle’,
+  heroAttack = ‘attacked’,
+  heroAttackArmor = ‘attackedArmor’,
+  heroDefense = ‘defending’,
+  heroMagic = ‘attackedMagic’,
+  heroMovement = ‘move’,
+  heroRangedAttack = ‘attackedRanged’
+}
+
 export enum TileColors {
   empty = "#2F4F4F",
   idleHero = "rgba(0, 0, 0, 0)",
@@ -110,16 +120,6 @@ export enum IHeroBattlefieldState {
   attackedArmor = ‘attackedArmor’,
   attackedMagic = ‘attackedMagic’,
   defending = ‘defending’
-}
-
-export enum IHeroBattlefieldStateToTileState {
-  idle = ‘idleHero’,
-  attacked = ‘heroAttack’,
-  attackedArmor = ‘heroAttackArmor’,
-  defending = ‘heroDefense’,
-  attackedMagic = ‘heroMagic’,
-  move = ‘heroMovement’,
-  attackedRanged = ‘heroRangedAttack’
 }
 
 export interface IHeroCharacteristics {
