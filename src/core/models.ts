@@ -122,6 +122,16 @@ export enum IHeroBattlefieldState {
   defending = ‘defending’
 }
 
+export enum HeroShadowColors {
+  idle = "rgba(0, 0, 0, 0)",
+  attacked = "#FF3447",
+  attackedArmor = "#E5D964",
+  defending = "#929AEC",
+  attackedMagic = "#8EBEBA",
+  move = "#3CB371",
+  attackedRanged = "#A37B5E"
+}
+
 export interface IHeroCharacteristics {
   agility: number
   armor: number
