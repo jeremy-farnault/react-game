@@ -35,7 +35,10 @@ class Hero extends React.PureComponent<IProps, {}> {
   }
 
   private selectHero = () => {
-    this.props.selectHero(this.props.hero);
+    switch (this.props.hero.state) {
+  default:
+this.props.selectHero(this.props.hero);
+}
   };
 }
 
