@@ -58,7 +58,7 @@ class Hero extends React.PureComponent<IProps, {}> {
     this.props.selectHero(this.props.hero);
     break
   default:
-this.props.selectHero(this.props.hero);
+    this.props.selectHero(this.props.hero);
     break
 }
   };
