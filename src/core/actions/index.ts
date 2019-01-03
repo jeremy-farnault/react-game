@@ -57,12 +57,13 @@ export const loadAllCardsSuccess = createAction<ILoadAllCardsSuccessPayload>(
 )
 export const loadAllCardsFail = createAction(constants.LOAD_ALL_CARDS_FAIL)
 
-// Update heroes
+// Update Heroes
 
 export const setHeroSelected = createAction<ISetHeroSelectedPayload>(constants.SET_HERO_SELECTED)
 export const setHeroNewPosition = createAction<ISetHeroNewPositionPayload>(constants.SET_HERO_NEW_POSITION)
+export const updateHeroState = createAction<IUpdateHeroStatePayload>(constants.UPDATE_HERO_STATE)
 
-// Set heroes order
+// Set Heroes order
 
 export const setHeroesOrder = createAction<ISetHeroesOrderPayload>(constants.SET_HEROES_ORDER)
 export const setNextCurrentHero = createAction(constants.SET_NEXT_CURRENT_HERO)
