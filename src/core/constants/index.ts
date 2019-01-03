@@ -71,6 +71,9 @@ export type SET_HERO_SELECTED = typeof SET_HERO_SELECTED
 export const SET_HERO_NEW_POSITION = 'SET_HERO_NEW_POSITION'
 export type SET_HERO_NEW_POSITION = typeof SET_HERO_NEW_POSITION
 
+export const UPDATE_HERO_STATE = ‘UPDATE_HERO_STATE’
+export type UPDATE_HERO_STATE = typeof UPDATE_HERO_STATE
+
 // Set heroes order
 
 export const SET_HEROES_ORDER = 'SET_HEROES_ORDER'
