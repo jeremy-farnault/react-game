@@ -74,6 +74,12 @@ export interface IPlayCardPayload {
   card: ICard
 }
 
+export interface IUpdateHeroStatePayload {
+  playerId: string
+  heroId: string
+  newState: IHeroState
+}
+
 export default handleActions(
   {
     // LOAD ALL HEROES ACTIONS
