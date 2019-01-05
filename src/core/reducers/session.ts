@@ -163,6 +163,15 @@ export default handleActions(
         players: newPLayers
       });
     },
+    [UPDATE_HERO_STATE]: (
+      state: IStoreState.ISession,
+      action: Action<IUpdateHeroStatePayload>
+    ) => {
+      return ({
+        ...state,
+        players: newPLayers
+      });
+    },
 
     // HEROES ORDER ACTIONS
     [SET_HEROES_ORDER]: (
