@@ -167,6 +167,10 @@ export default handleActions(
       state: IStoreState.ISession,
       action: Action<IUpdateHeroStatePayload>
     ) => {
+      const newPLayers = state.players;
+      if (action.payload && action.payload.playerId && action.payload.heroId) {
+     newPLayers[action.payload.playerId].heroes[action.payload.heroId].state = action.payload.state;
+      }
       return ({
         ...state,
         players: newPLayers
