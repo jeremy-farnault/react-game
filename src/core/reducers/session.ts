@@ -13,9 +13,9 @@ import {
   LOAD_PLAYERS_SUCCESS, PLAY_CARD, RESET_ACTION_POINTS,
   SET_HERO_NEW_POSITION,
   SET_HERO_SELECTED,
-  SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO
+  SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO, UPDATE_HERO_STATE
 } from "../constants";
-import { ICard, ICards, ICardsBattlefield, IHeroBattlefield, IHeroes } from "../models";
+import { ICard, ICards, ICardsBattlefield, IHeroBattlefield, IHeroBattlefieldState, IHeroes } from "../models";
 
 import * as _ from "lodash";
 import { Action, handleActions } from "redux-actions";
@@ -77,7 +77,7 @@ export interface IPlayCardPayload {
 export interface IUpdateHeroStatePayload {
   playerId: string
   heroId: string
-  newState: IHeroState
+  newState: IHeroBattlefieldState
 }
 
 export default handleActions(
@@ -169,7 +169,7 @@ export default handleActions(
     ) => {
       const newPLayers = state.players;
       if (action.payload && action.payload.playerId && action.payload.heroId) {
-     newPLayers[action.payload.playerId].heroes[action.payload.heroId].state = action.payload.state;
+        newPLayers[action.payload.playerId].heroes[action.payload.heroId].state = action.payload.newState;
       }
       return ({
         ...state,
@@ -265,7 +265,7 @@ export default handleActions(
           currentDeck: cardsFightTemp[1].currentDeck,
           currentHand: cardsFightTemp[1].currentHand
         }
-      }
+      };
       return ({ ...state, cardsFight });
     },
     [DRAW_CARD]: (
@@ -273,7 +273,7 @@ export default handleActions(
       action: Action<IDrawCardPayload>
     ) => {
       const id = action.payload ? action.payload.playerId : "";
-      const cardsFight = Object.assign({}, state.cardsFight)
+      const cardsFight = Object.assign({}, state.cardsFight);
       cardsFight[id].currentDeck.splice(0, 1);
       cardsFight[id].currentHand.push(_.first(state.cardsFight[id].currentDeck) as ICard);
       return ({ ...state, cardsFight });
@@ -283,7 +283,7 @@ export default handleActions(
       action: Action<IPlayCardPayload>
     ) => {
       const id = action.payload ? action.payload.playerId : "";
-      const cardsFight = Object.assign({}, state.cardsFight)
+      const cardsFight = Object.assign({}, state.cardsFight);
       const indexCard = cardsFight[id].currentHand.findIndex((c: ICard) => !!action.payload && c === action.payload.card);
       cardsFight[id].currentDeck.push((action.payload as IPlayCardPayload).card);
       cardsFight[id].currentHand.splice(indexCard, 1);

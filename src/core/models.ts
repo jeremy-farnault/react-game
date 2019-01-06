@@ -36,13 +36,13 @@ export enum TileState {
 }
 
 export enum ITileStateToHeroBattlefieldState {
-  idleHero = ‘idle’,
-  heroAttack = ‘attacked’,
-  heroAttackArmor = ‘attackedArmor’,
-  heroDefense = ‘defending’,
-  heroMagic = ‘attackedMagic’,
-  heroMovement = ‘move’,
-  heroRangedAttack = ‘attackedRanged’
+  idleHero = "idle",
+  heroAttack = "attacked",
+  heroAttackArmor = "attackedArmor",
+  heroDefense = "defending",
+  heroMagic = "attackedMagic",
+  heroMovement = "move",
+  heroRangedAttack = "attackedRanged"
 }
 
 export enum TileColors {
@@ -113,13 +113,13 @@ export interface IHeroBattlefield extends IHero {
 }
 
 export enum IHeroBattlefieldState {
-  idle = ‘idle’,
-  move = ‘move’,
-  attacked = ‘attacked’,
-  attackedRanged = ‘attackedRanged’,
-  attackedArmor = ‘attackedArmor’,
-  attackedMagic = ‘attackedMagic’,
-  defending = ‘defending’
+  idle = "idle",
+  move = "move",
+  attacked = "attacked",
+  attackedRanged = "attackedRanged",
+  attackedArmor = "attackedArmor",
+  attackedMagic = "attackedMagic",
+  defending = "defending"
 }
 
 export enum HeroShadowColors {
@@ -282,7 +282,7 @@ export const ActionPointsIcon = {
     path: require("../assets/various/action_point_used.png"),
     size: 40
   }
-}
+};
 
 // Various Assets
 
@@ -294,6 +294,6 @@ export const VariousAssets = {
   endTurn: {
     path: require("../assets/various/hourglass_end_turn.png"),
     size: 54,
-    text: 'End turn'
+    text: "End turn"
   }
 };

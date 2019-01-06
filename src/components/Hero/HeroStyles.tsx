@@ -2,7 +2,6 @@ import { grid } from "../../utils/grid";
 import { IStyledHero } from "./Hero";
 
 import styled from "styled-components";
-import { colors } from "../../utils/colors";
 
 export const HeroStyled = styled.img`
 position: absolute;
@@ -14,4 +13,4 @@ drop-shadow(-2px -2px 0 ${(props: IStyledHero) => props.shadowColor});
 opacity: ${grid.opacity};
 }
 `;
-HeroStyled.displayName = 'HeroStyled'
+HeroStyled.displayName = "HeroStyled";
