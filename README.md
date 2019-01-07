@@ -110,8 +110,9 @@ Attack and kill heroes to win the game
     - ~~BUG: Heroes no longer in the tiles list after changing action~~
     - Use different algo as the one used to move
         - ~~Heroes should not block the way for attacks~~
-        - Add new tile states
-    - Attack mode enable click on ennemy
+        - ~~Add new tile states~~
+        - Change hero state
+    - Attack mode enable click on enemy
     - Deal damage equal to simple rule
     - Remove life points
     - Remove hero if dead
