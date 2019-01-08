@@ -12,7 +12,7 @@ import {
   TileState
 } from "../../core/models";
 import { IStoreState } from "../../types";
-import { getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
+import { getNewHeroStatus, getNewTileStateByHeroStatus } from "../../utils/tilesHelpers";
 import Battlefield from "../Battlefield/Battlefield";
 import { BackgroundImage, BattlefieldScene, ContainerScene, LeftSection, RightSection } from "./FightStyles";
 
@@ -156,10 +156,14 @@ class Fight extends React.PureComponent<IProps, IState> {
     const areHeroesWall = action === ActionsType.heroMovement
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action], areHeroesWall);
+    const newHeroesState = getNewHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
+      usedTile.columnIndex, usedTile.lineIndex, TileState[action], this.props.heroesFight)
+    console.log('newHeroesState', newHeroesState)
     this.props.updateTiles({ data: newTiles });
   };
 
-  private setNextCurrentHero = () => {
+  private setNextCurrentHero = async () => {
+    await this.props.resetTiles({});
     this.props.resetActionPoints({
       playerId: this.props.heroesFight[0].playerId,
       heroId: this.props.heroesFight[0].id,
@@ -167,7 +171,6 @@ class Fight extends React.PureComponent<IProps, IState> {
     })
     const hero = this.props.heroesFight[1];
     this.props.setNextCurrentHero();
-    this.props.resetTiles({});
     this.updateSelectedAction(ActionsType.heroMovement);
     this.props.setHeroSelected({
       setSelected: true,

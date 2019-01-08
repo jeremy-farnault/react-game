@@ -116,6 +116,8 @@ Attack and kill heroes to win the game
     - Deal damage equal to simple rule
     - Remove life points
     - Remove hero if dead
+    
+~~BUG: Tiles not reset before changing hero~~
 
 Map travel based on The Dwarves
 Simple animation (react move)
