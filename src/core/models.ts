@@ -25,14 +25,14 @@ export interface ITile {
 }
 
 export enum TileState {
-  empty,
-  idleHero,
-  heroAttack,
-  heroAttackArmor,
-  heroDefense,
-  heroMagic,
-  heroMovement,
-  heroRangedAttack
+  empty = "empty",
+  idleHero = "idleHero",
+  heroAttack = "heroAttack",
+  heroAttackArmor = "heroAttackArmor",
+  heroDefense = "heroDefense",
+  heroMagic = "heroMagic",
+  heroMovement = "heroMovement",
+  heroRangedAttack = "heroRangedAttack"
 }
 
 export enum ITileStateToHeroBattlefieldState {

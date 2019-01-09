@@ -145,8 +145,8 @@ class Fight extends React.PureComponent<IProps, IState> {
     this.setState({ currentSelectedHero: hero });
   };
 
-  private changeAction = (action: ActionsType, tile?: ITile, hero?: IHeroBattlefield) => {
-    this.props.resetTiles({});
+  private changeAction = async (action: ActionsType, tile?: ITile, hero?: IHeroBattlefield) => {
+    await this.props.resetTiles({});
     if (this.props.heroesFight.length > 0 && this.props.heroesFight[0].currentActionPoints < 1) {
       return;
     }
@@ -158,7 +158,9 @@ class Fight extends React.PureComponent<IProps, IState> {
       usedTile.columnIndex, usedTile.lineIndex, TileState[action], areHeroesWall);
     const newHeroesState = getNewHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action], this.props.heroesFight)
-    console.log('newHeroesState', newHeroesState)
+
+    console.log('NEWHEROESSTATE', newHeroesState)
+
     this.props.updateTiles({ data: newTiles });
   };
 

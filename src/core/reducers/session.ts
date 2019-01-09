@@ -13,7 +13,7 @@ import {
   LOAD_PLAYERS_SUCCESS, PLAY_CARD, RESET_ACTION_POINTS,
   SET_HERO_NEW_POSITION,
   SET_HERO_SELECTED,
-  SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO, UPDATE_HERO_STATE
+  SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO, UPDATE_HEROES_STATE
 } from "../constants";
 import { ICard, ICards, ICardsBattlefield, IHeroBattlefield, IHeroBattlefieldState, IHeroes } from "../models";
 
@@ -75,6 +75,10 @@ export interface IPlayCardPayload {
 }
 
 export interface IUpdateHeroStatePayload {
+  newStateHeroes: IUpdateHeroState[]
+}
+
+interface IUpdateHeroState {
   playerId: string
   heroId: string
   newState: IHeroBattlefieldState
@@ -163,17 +167,23 @@ export default handleActions(
         players: newPLayers
       });
     },
-    [UPDATE_HERO_STATE]: (
+    [UPDATE_HEROES_STATE]: (
       state: IStoreState.ISession,
       action: Action<IUpdateHeroStatePayload>
     ) => {
-      const newPLayers = state.players;
-      if (action.payload && action.payload.playerId && action.payload.heroId) {
-        newPLayers[action.payload.playerId].heroes[action.payload.heroId].state = action.payload.newState;
+      const newStates = state.heroesFight.slice();
+
+
+      if (action.payload) {
+        action.payload.newStateHeroes.forEach((t: IUpdateHeroState) => {
+
+        });
       }
+
+
       return ({
         ...state,
-        players: newPLayers
+        heroesFight: newStates
       });
     },
 
