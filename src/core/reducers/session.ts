@@ -78,7 +78,7 @@ export interface IUpdateHeroStatePayload {
   newStateHeroes: IUpdateHeroState[]
 }
 
-interface IUpdateHeroState {
+export interface IUpdateHeroState {
   playerId: string
   heroId: string
   newState: IHeroBattlefieldState
@@ -172,15 +172,12 @@ export default handleActions(
       action: Action<IUpdateHeroStatePayload>
     ) => {
       const newStates = state.heroesFight.slice();
-
-
       if (action.payload) {
         action.payload.newStateHeroes.forEach((t: IUpdateHeroState) => {
-
+          const ind = newStates.findIndex((h: IHeroBattlefield) => h.id === t.heroId && h.playerId === t.playerId)
+          newStates[ind].state = t.newState
         });
       }
-
-
       return ({
         ...state,
         heroesFight: newStates

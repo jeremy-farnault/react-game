@@ -30,6 +30,7 @@ interface IProps {
   cardsFight: ICardsBattlefield
   setHeroSelected: typeof actions.setHeroSelected
   updateTiles: typeof actions.updateTiles
+  updateHeroesState: typeof actions.updateHeroState
   resetTiles: typeof actions.resetTiles
   setHeroesOrder: typeof actions.setHeroesOrder
   setNextCurrentHero: typeof actions.setNextCurrentHero
@@ -156,11 +157,9 @@ class Fight extends React.PureComponent<IProps, IState> {
     const areHeroesWall = action === ActionsType.heroMovement
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action], areHeroesWall);
-    const newHeroesState = getNewHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
+    const newStateHeroes = getNewHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action], this.props.heroesFight)
-
-    console.log('NEWHEROESSTATE', newHeroesState)
-
+    this.props.updateHeroesState(newStateHeroes)
     this.props.updateTiles({ data: newTiles });
   };
 
@@ -199,6 +198,7 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators({
     setHeroSelected: actions.setHeroSelected,
     updateTiles: actions.updateTiles,
+    updateHeroesState: actions.updateHeroState,
     resetTiles: actions.resetTiles,
     setHeroesOrder: actions.setHeroesOrder,
     setNextCurrentHero: actions.setNextCurrentHero,
