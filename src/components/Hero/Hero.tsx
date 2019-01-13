@@ -2,8 +2,7 @@ import {
   HeroShadowColors,
   IHeroBattlefield,
   IHeroBattlefieldState,
-  ITile,
-  ITileStateToHeroBattlefieldState
+  ITile
 } from "../../core/models";
 import { constants } from "../../utils/constants";
 import { HeroStyled } from "./HeroStyles";
@@ -12,6 +11,7 @@ import * as React from "react";
 
 interface IProps {
   hero: IHeroBattlefield
+  heroState: IHeroBattlefieldState
   heroSelected: boolean
   selectHero: (hero: IHeroBattlefield) => void
   tile: ITile
@@ -32,7 +32,7 @@ class Hero extends React.PureComponent<IProps, {}> {
     return (
       <HeroStyled
         onClick={this.selectHero}
-        shadowColor={HeroShadowColors[ITileStateToHeroBattlefieldState[this.props.tile.state]]}
+        shadowColor={HeroShadowColors[this.props.heroState]}
         posX={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2}
         posY={this.props.tile.posY - 4}
         src={h.assets.battlefieldPath.path}
