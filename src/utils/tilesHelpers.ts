@@ -6,6 +6,7 @@ import {
   TileState
 } from "../core/models";
 import { INewTile } from "../core/reducers/battlefield";
+import { IUpdateHeroState } from "../core/reducers/session";
 
 import * as PF from "pathfinding";
 
@@ -33,9 +34,9 @@ export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic
 };
 
 export const getNewHeroStatus = (tiles: ITile[][], heroCharacteristic: number, heroX: number, heroY: number,
-                                 state: TileState, currentHeroes: IHeroBattlefield[]): IHeroBattlefield[] => {
+                                 state: TileState, currentHeroes: IHeroBattlefield[]): IUpdateHeroState[] => {
   const finder = new PF.AStarFinder();
-  const result: IHeroBattlefield[] = [];
+  const result: IUpdateHeroState[] = [];
   const matrix: number[][] = tiles.map((line: ITile[]) => line.map(() => 0));
   const gridMaster = new PF.Grid(matrix);
   matrix.forEach((line: number[], lineInd: number) => line.forEach((tile: number, colInd: number) => {
@@ -46,8 +47,11 @@ export const getNewHeroStatus = (tiles: ITile[][], heroCharacteristic: number, h
         const heroOnTile = currentHeroes.find((h: IHeroBattlefield) =>
           h.tileX === colInd && h.tileY === lineInd);
         if (!!heroOnTile && heroOnTile.playerId !== currentHeroes[0].playerId) {
-          heroOnTile.state = IHeroBattlefieldState[ITileStateToHeroBattlefieldState[state]] as IHeroBattlefieldState;
-          result.push(heroOnTile);
+          result.push({
+            newState: IHeroBattlefieldState[ITileStateToHeroBattlefieldState[state]] as IHeroBattlefieldState,
+            heroId: heroOnTile.id,
+            playerId: heroOnTile.playerId
+          });
         }
       }
     }

@@ -30,6 +30,7 @@ interface IProps {
   cardsFight: ICardsBattlefield
   setHeroSelected: typeof actions.setHeroSelected
   updateTiles: typeof actions.updateTiles
+  updateHeroesState: typeof actions.updateHeroState
   resetTiles: typeof actions.resetTiles
   setHeroesOrder: typeof actions.setHeroesOrder
   setNextCurrentHero: typeof actions.setNextCurrentHero
@@ -58,7 +59,7 @@ class Fight extends React.PureComponent<IProps, IState> {
   }
 
   public componentDidMount() {
-    this.props.initializeDeckHand()
+    this.props.initializeDeckHand();
     const sorted = _.reverse(_.sortBy(this.state.allHeroes, [
       (h: IHeroBattlefield) => h.characteristics.initiative,
       (h: IHeroBattlefield) => h.characteristics.speed,
@@ -128,8 +129,8 @@ class Fight extends React.PureComponent<IProps, IState> {
       playerId: this.props.heroesFight[0].playerId,
       heroId: this.props.heroesFight[0].id,
       heroIndex: 0
-    })
-  }
+    });
+  };
 
   private getAllHeroesPlayers = () => {
     return _.flatten(Object.keys(this.props.players)
@@ -153,14 +154,12 @@ class Fight extends React.PureComponent<IProps, IState> {
     this.setState({ currentSelectedAction: action });
     const usedHero = !!hero ? hero : this.props.heroesFight[0];
     const usedTile = !!tile ? tile : this.props.tiles[usedHero.tileY][usedHero.tileX];
-    const areHeroesWall = action === ActionsType.heroMovement
+    const areHeroesWall = action === ActionsType.heroMovement;
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action], areHeroesWall);
-    const newHeroesState = getNewHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
-      usedTile.columnIndex, usedTile.lineIndex, TileState[action], this.props.heroesFight)
-
-    console.log('NEWHEROESSTATE', newHeroesState)
-
+    const newStateHeroes = getNewHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
+      usedTile.columnIndex, usedTile.lineIndex, TileState[action], this.props.heroesFight);
+    this.props.updateHeroesState({ newStateHeroes });
     this.props.updateTiles({ data: newTiles });
   };
 
@@ -170,7 +169,7 @@ class Fight extends React.PureComponent<IProps, IState> {
       playerId: this.props.heroesFight[0].playerId,
       heroId: this.props.heroesFight[0].id,
       heroIndex: 0
-    })
+    });
     const hero = this.props.heroesFight[1];
     this.props.setNextCurrentHero();
     this.updateSelectedAction(ActionsType.heroMovement);
@@ -199,6 +198,7 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
   bindActionCreators({
     setHeroSelected: actions.setHeroSelected,
     updateTiles: actions.updateTiles,
+    updateHeroesState: actions.updateHeroState,
     resetTiles: actions.resetTiles,
     setHeroesOrder: actions.setHeroesOrder,
     setNextCurrentHero: actions.setNextCurrentHero,
