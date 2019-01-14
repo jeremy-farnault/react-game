@@ -62,6 +62,7 @@ export const loadAllCardsFail = createAction(constants.LOAD_ALL_CARDS_FAIL);
 export const setHeroSelected = createAction<ISetHeroSelectedPayload>(constants.SET_HERO_SELECTED);
 export const setHeroNewPosition = createAction<ISetHeroNewPositionPayload>(constants.SET_HERO_NEW_POSITION);
 export const updateHeroState = createAction<IUpdateHeroStatePayload>(constants.UPDATE_HEROES_STATE);
+export const resetHeroesState = createAction(constants.RESET_HEROES_STATE);
 
 // Set Heroes order
 

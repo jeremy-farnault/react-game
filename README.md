@@ -113,6 +113,7 @@ Attack and kill heroes to win the game
         - ~~Add new tile states~~
         - ~~Change hero state~~
     - ~~BUG: Ennemy state is changed to move. Should stay idle~~
+    - ~~Reset heroes state on change action or change hero turn~~
     - Attack mode enable click on enemy
     - Deal damage equal to simple rule
     - Remove life points

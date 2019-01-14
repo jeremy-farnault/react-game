@@ -36,6 +36,7 @@ interface IProps {
   setNextCurrentHero: typeof actions.setNextCurrentHero
   decrementActionPoints: typeof actions.decrementActionPoints
   resetActionPoints: typeof actions.resetActionPoints
+  resetHeroesState: typeof actions.resetHeroesState
   initializeDeckHand: typeof actions.initializeDeckHand
   drawCard: typeof actions.drawCard
   playCard: typeof actions.playCard
@@ -147,6 +148,7 @@ class Fight extends React.PureComponent<IProps, IState> {
   };
 
   private changeAction = async (action: ActionsType, tile?: ITile, hero?: IHeroBattlefield) => {
+    await this.props.resetHeroesState({});
     await this.props.resetTiles({});
     if (this.props.heroesFight.length > 0 && this.props.heroesFight[0].currentActionPoints < 1) {
       return;
@@ -164,6 +166,7 @@ class Fight extends React.PureComponent<IProps, IState> {
   };
 
   private setNextCurrentHero = async () => {
+    await this.props.resetHeroesState({});
     await this.props.resetTiles({});
     this.props.resetActionPoints({
       playerId: this.props.heroesFight[0].playerId,
@@ -204,6 +207,7 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
     setNextCurrentHero: actions.setNextCurrentHero,
     decrementActionPoints: actions.decrementActionPoints,
     resetActionPoints: actions.resetActionPoints,
+    resetHeroesState: actions.resetHeroesState,
     initializeDeckHand: actions.initializeDeckHand,
     drawCard: actions.drawCard,
     playCard: actions.playCard

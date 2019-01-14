@@ -1,7 +1,9 @@
 import { IStoreState } from "../../types";
 import {
-  DECREMENT_ACTION_POINTS, DRAW_CARD,
-  INCREMENT_ACTION_POINTS, INITIALIZE_DECK_HAND,
+  DECREMENT_ACTION_POINTS,
+  DRAW_CARD,
+  INCREMENT_ACTION_POINTS,
+  INITIALIZE_DECK_HAND,
   LOAD_ALL_CARDS_FAIL,
   LOAD_ALL_CARDS_START,
   LOAD_ALL_CARDS_SUCCESS,
@@ -10,10 +12,15 @@ import {
   LOAD_ALL_HEROES_SUCCESS,
   LOAD_PLAYERS_FAIL,
   LOAD_PLAYERS_START,
-  LOAD_PLAYERS_SUCCESS, PLAY_CARD, RESET_ACTION_POINTS,
+  LOAD_PLAYERS_SUCCESS,
+  PLAY_CARD,
+  RESET_ACTION_POINTS,
+  RESET_HEROES_STATE,
   SET_HERO_NEW_POSITION,
   SET_HERO_SELECTED,
-  SET_HEROES_ORDER, SET_NEXT_CURRENT_HERO, UPDATE_HEROES_STATE
+  SET_HEROES_ORDER,
+  SET_NEXT_CURRENT_HERO,
+  UPDATE_HEROES_STATE
 } from "../constants";
 import { ICard, ICards, ICardsBattlefield, IHeroBattlefield, IHeroBattlefieldState, IHeroes } from "../models";
 
@@ -174,14 +181,22 @@ export default handleActions(
       const newStates = state.heroesFight.slice();
       if (action.payload) {
         action.payload.newStateHeroes.forEach((t: IUpdateHeroState) => {
-          const ind = newStates.findIndex((h: IHeroBattlefield) => h.id === t.heroId && h.playerId === t.playerId)
-          newStates[ind].state = t.newState
+          const ind = newStates.findIndex((h: IHeroBattlefield) => h.id === t.heroId && h.playerId === t.playerId);
+          newStates[ind].state = t.newState;
         });
       }
       return ({
         ...state,
         heroesFight: newStates
       });
+    },
+    [RESET_HEROES_STATE]: (
+      state: IStoreState.ISession,
+      action: Action<{}>
+    ) => {
+      const newStates = state.heroesFight.slice();
+      newStates.forEach((h: IHeroBattlefield) => h.state = IHeroBattlefieldState.idle)
+      return ({ ...state, heroesFight: newStates });
     },
 
     // HEROES ORDER ACTIONS
