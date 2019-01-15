@@ -62,6 +62,13 @@ export interface ISetHeroNewPositionPayload {
   prevTileY: number
 }
 
+export interface IUpdateHeroPointsPayload {
+  heroId: string
+  playerId: string
+  pointLabel: string
+  newValue: number
+}
+
 export interface ISetHeroesOrderPayload {
   allHeroesPlayers: IHeroBattlefield[]
 }
@@ -198,6 +205,23 @@ export default handleActions(
       newStates.forEach((h: IHeroBattlefield) => h.state = IHeroBattlefieldState.idle)
       return ({ ...state, heroesFight: newStates });
     },
+
+
+
+
+    [UPDATE_HEROES_STATE]: (
+      state: IStoreState.ISession,
+      action: Action<IUpdateHeroPointsPayload>
+    ) => {
+      const newPLayers = state.players;
+      return ({
+        ...state,
+        players: newPLayers
+      });
+    },
+
+
+
 
     // HEROES ORDER ACTIONS
     [SET_HEROES_ORDER]: (

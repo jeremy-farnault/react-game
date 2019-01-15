@@ -10,7 +10,7 @@ import {
   ILoadPlayersSuccessPayload, IPlayCardPayload,
   ISetHeroesOrderPayload,
   ISetHeroNewPositionPayload,
-  ISetHeroSelectedPayload, IUpdateHeroStatePayload
+  ISetHeroSelectedPayload, IUpdateHeroPointsPayload, IUpdateHeroStatePayload
 } from "../reducers/session";
 
 import { createAction } from "redux-actions";
@@ -63,6 +63,7 @@ export const setHeroSelected = createAction<ISetHeroSelectedPayload>(constants.S
 export const setHeroNewPosition = createAction<ISetHeroNewPositionPayload>(constants.SET_HERO_NEW_POSITION);
 export const updateHeroState = createAction<IUpdateHeroStatePayload>(constants.UPDATE_HEROES_STATE);
 export const resetHeroesState = createAction(constants.RESET_HEROES_STATE);
+export const updateHeroPoints = createAction<IUpdateHeroPointsPayload>(constants.UPDATE_HERO_POINTS);
 
 // Set Heroes order
 

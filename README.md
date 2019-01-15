@@ -118,6 +118,8 @@ Attack and kill heroes to win the game
     - Deal damage equal to simple rule
     - Remove life points
     - Remove hero if dead
+    
+Defending should put the current hero on shadow color and not the foes
 
 ~~BUG: Tiles not reset before changing hero~~
 

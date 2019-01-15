@@ -77,6 +77,9 @@ export type UPDATE_HEROES_STATE = typeof UPDATE_HEROES_STATE
 export const RESET_HEROES_STATE = "RESET_HEROES_STATE";
 export type RESET_HEROES_STATE = typeof RESET_HEROES_STATE
 
+export const UPDATE_HERO_POINTS = "UPDATE_HERO_POINTS";
+export type UPDATE_HERO_POINTS = typeof UPDATE_HERO_POINTS;
+
 // Set heroes order
 
 export const SET_HEROES_ORDER = "SET_HEROES_ORDER";
