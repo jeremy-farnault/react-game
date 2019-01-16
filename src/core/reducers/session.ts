@@ -19,7 +19,7 @@ import {
   SET_HERO_NEW_POSITION,
   SET_HERO_SELECTED,
   SET_HEROES_ORDER,
-  SET_NEXT_CURRENT_HERO,
+  SET_NEXT_CURRENT_HERO, UPDATE_HERO_POINTS,
   UPDATE_HEROES_STATE
 } from "../constants";
 import { ICard, ICards, ICardsBattlefield, IHeroBattlefield, IHeroBattlefieldState, IHeroes } from "../models";
@@ -202,26 +202,23 @@ export default handleActions(
       action: Action<{}>
     ) => {
       const newStates = state.heroesFight.slice();
-      newStates.forEach((h: IHeroBattlefield) => h.state = IHeroBattlefieldState.idle)
+      newStates.forEach((h: IHeroBattlefield) => h.state = IHeroBattlefieldState.idle);
       return ({ ...state, heroesFight: newStates });
     },
-
-
-
-
-    [UPDATE_HEROES_STATE]: (
+    [UPDATE_HERO_POINTS]: (
       state: IStoreState.ISession,
       action: Action<IUpdateHeroPointsPayload>
     ) => {
-      const newPLayers = state.players;
+      const newHeroes = state.heroesFight;
+      const ind = newHeroes.findIndex((h: IHeroBattlefield) => !!action.payload && h.id === action.payload.heroId && h.playerId === action.payload.playerId);
+      if (action.payload) {
+        newHeroes[ind].points[action.payload.pointLabel] = action.payload.newValue
+      }
       return ({
         ...state,
-        players: newPLayers
+        heroesFight: newHeroes
       });
     },
-
-
-
 
     // HEROES ORDER ACTIONS
     [SET_HEROES_ORDER]: (

@@ -37,6 +37,7 @@ class Battlefield extends React.PureComponent<IProps, {}> {
         <Tiles tiles={this.props.tiles} clickOnTile={this.clickOnTile}/>
         <Heroes heroes={this.props.allHeroes}
                 tiles={this.props.tiles}
+                setNewActionPointsValue={this.setNewActionPointsValue}
                 selectHero={this.props.updateSelectedHero}/>
       </ContainerBattlefield>
     );
@@ -70,6 +71,10 @@ class Battlefield extends React.PureComponent<IProps, {}> {
       this.props.changeAction(ActionsType.heroMovement, tile);
     }
   };
+
+  private setNewActionPointsValue = (hero: IHeroBattlefield) => {
+    console.log(hero)
+  }
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {

@@ -15,6 +15,7 @@ interface IProps {
   heroSelected: boolean
   selectHero: (hero: IHeroBattlefield) => void
   tile: ITile
+  setNewActionPointsValue: (hero: IHeroBattlefield) => void
 }
 
 // interface IState {}
@@ -43,9 +44,7 @@ class Hero extends React.PureComponent<IProps, {}> {
   private selectHero = () => {
     switch (this.props.hero.state) {
       case IHeroBattlefieldState.attacked:
-
-        this.props.selectHero(this.props.hero);
-
+        this.props.setNewActionPointsValue(this.props.hero);
         break;
       case IHeroBattlefieldState.attackedRanged:
 

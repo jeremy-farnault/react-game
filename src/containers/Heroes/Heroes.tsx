@@ -7,6 +7,7 @@ interface IProps {
   heroes: IHeroBattlefield[]
   selectHero: (hero: IHeroBattlefield) => void
   tiles: ITile[][]
+  setNewActionPointsValue: (hero: IHeroBattlefield) => void
 }
 
 // interface IState {}
@@ -24,6 +25,7 @@ class Heroes extends React.PureComponent<IProps, {}> {
                 heroState={hero.state}
                 hero={hero}
                 heroSelected={hero.selected}
+                setNewActionPointsValue={this.props.setNewActionPointsValue}
                 selectHero={this.props.selectHero}/>
         );
       })
