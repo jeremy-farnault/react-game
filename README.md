@@ -114,9 +114,10 @@ Attack and kill heroes to win the game
         - ~~Change hero state~~
     - ~~BUG: Ennemy state is changed to move. Should stay idle~~
     - ~~Reset heroes state on change action or change hero turn~~
-    - Attack mode enable click on enemy
+    - ~~Attack mode enable click on enemy~~
     - Deal damage equal to simple rule
     - Remove life points
+    - This action removes an action point
     - Remove hero if dead
     
 Defending should put the current hero on shadow color and not the foes

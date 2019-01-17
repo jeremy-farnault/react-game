@@ -95,7 +95,7 @@ class Fight extends React.PureComponent<IProps, IState> {
             </LeftSection>
             <Battlefield
               currentHero={heroes[0]}
-              allHeroes={this.state.allHeroes}
+              allHeroes={heroes}
               currentSelectedAction={action}
               currentSelectedHero={heroes[0]}
               updateSelectedAction={this.updateSelectedAction}

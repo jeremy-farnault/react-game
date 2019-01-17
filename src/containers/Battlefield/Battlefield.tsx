@@ -22,6 +22,7 @@ interface IProps {
   currentSelectedHero: IHeroBattlefield | null
   currentSelectedAction: ActionsType
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
+  updateHeroPoints: typeof actions.updateHeroPoints
   updateSelectedAction: (action: ActionsType) => void
   changeAction: (action: ActionsType, tile?: ITile) => void
   decrementActionPoints: typeof actions.decrementActionPoints
@@ -72,9 +73,14 @@ class Battlefield extends React.PureComponent<IProps, {}> {
     }
   };
 
-  private setNewActionPointsValue = (hero: IHeroBattlefield) => {
-    console.log(hero)
-  }
+  private setNewActionPointsValue = (hero: IHeroBattlefield, pointLabel: string, newValue: number) => {
+    this.props.updateHeroPoints({
+      heroId: hero.id,
+      playerId: hero.playerId,
+      pointLabel,
+      newValue
+    });
+  };
 }
 
 function mapStateToProps(state: IStoreState.IRootState) {
@@ -89,6 +95,7 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
     setHeroSelected: actions.setHeroSelected,
     setHeroNewPosition: actions.setHeroNewPosition,
     updateTiles: actions.updateTiles,
+    updateHeroPoints: actions.updateHeroPoints,
     resetTiles: actions.resetTiles
   }, dispatch);
 

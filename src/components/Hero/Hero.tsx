@@ -11,11 +11,12 @@ import * as React from "react";
 
 interface IProps {
   hero: IHeroBattlefield
+  heroes: IHeroBattlefield[]
   heroState: IHeroBattlefieldState
   heroSelected: boolean
   selectHero: (hero: IHeroBattlefield) => void
   tile: ITile
-  setNewActionPointsValue: (hero: IHeroBattlefield) => void
+  setNewActionPointsValue: (hero: IHeroBattlefield, pointLabel: string, newValue: number) => void
 }
 
 // interface IState {}
@@ -44,7 +45,9 @@ class Hero extends React.PureComponent<IProps, {}> {
   private selectHero = () => {
     switch (this.props.hero.state) {
       case IHeroBattlefieldState.attacked:
-        this.props.setNewActionPointsValue(this.props.hero);
+        const h = this.props.hero
+        const newValue = h.points.currentLifePoints - (this.props.heroes[0].characteristics.attack - h.characteristics.armor)
+        this.props.setNewActionPointsValue(this.props.hero, 'currentLifePoints', newValue);
         break;
       case IHeroBattlefieldState.attackedRanged:
 

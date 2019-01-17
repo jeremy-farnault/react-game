@@ -42,7 +42,7 @@ export const fakePlayers: IPlayers = {
         characteristics: {
           agility: 7,
           armor: 7,
-          attack: 8,
+          attack: 11,
           attackArmor: 2,
           initiative: 10,
           lifePoints: 10,
