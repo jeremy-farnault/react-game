@@ -137,13 +137,15 @@ export interface IHeroCharacteristics {
   armor: number
   attack: number
   attackArmor: number
+  attackRange: number
   initiative: number
   lifePoints: number
   magic: number
   magicPoints: number
+  magicRange: number
   mental: number
-  range: number
   rangedAttack: number
+  rangedAttackRange: number
   size: HeroSize
   speed: number
   stamina: number
