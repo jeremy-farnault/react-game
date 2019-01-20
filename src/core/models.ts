@@ -217,10 +217,10 @@ export const ActionButtonIcon = {
 
 export enum ActionCharacteristic {
   heroMovement = "speed",
-  heroAttack = "attack",
-  heroRangedAttack = "rangedAttack",
-  heroAttackArmor = "attackArmor",
-  heroMagic = "magic",
+  heroAttack = "attackRange",
+  heroRangedAttack = "rangedAttackRange",
+  heroAttackArmor = "attackArmorRange",
+  heroMagic = "magicRange",
   heroDefense = "armor"
 }
 
