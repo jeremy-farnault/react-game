@@ -215,6 +215,9 @@ export default handleActions(
       if (action.payload) {
         newHeroes[ind].points[action.payload.pointLabel] = action.payload.newValue
       }
+      if (newHeroes[ind].points.currentLifePoints <= 0) {
+        newHeroes.splice(ind, 1)
+      }
       return ({
         ...state,
         heroesFight: newHeroes
