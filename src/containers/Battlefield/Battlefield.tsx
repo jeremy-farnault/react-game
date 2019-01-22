@@ -14,7 +14,6 @@ interface IProps {
   allHeroes: IHeroBattlefield[]
   currentHero: IHeroBattlefield
   tiles: ITile[][]
-  players: IPlayers
   setHeroSelected: typeof actions.setHeroSelected
   updateTiles: typeof actions.updateTiles
   resetTiles: typeof actions.resetTiles
@@ -85,8 +84,7 @@ class Battlefield extends React.PureComponent<IProps, {}> {
 
 function mapStateToProps(state: IStoreState.IRootState) {
   return {
-    tiles: state.battlefield.tiles,
-    players: state.session.players
+    tiles: state.battlefield.tiles
   };
 }
 

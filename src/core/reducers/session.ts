@@ -209,7 +209,6 @@ export default handleActions(
       state: IStoreState.ISession,
       action: Action<IUpdateHeroPointsPayload>
     ) => {
-      console.log(action.payload)
       const newHeroes = state.heroesFight;
       const ind = newHeroes.findIndex((h: IHeroBattlefield) => !!action.payload && h.id === action.payload.heroId && h.playerId === action.payload.playerId);
       if (action.payload) {
