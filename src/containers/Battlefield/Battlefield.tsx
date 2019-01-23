@@ -8,7 +8,6 @@ import { ContainerBattlefield } from "./BattlefieldStyles";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
-import IPlayers = IStoreState.IPlayers;
 
 interface IProps {
   allHeroes: IHeroBattlefield[]

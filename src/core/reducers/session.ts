@@ -151,34 +151,35 @@ export default handleActions(
     }),
 
     // UPDATE PLAYERS ACTIONS
+
     [SET_HERO_SELECTED]: (
       state: IStoreState.ISession,
       action: Action<ISetHeroSelectedPayload>
     ) => {
-      const newPLayers = state.players;
-      if (action.payload && action.payload.playerId && action.payload.heroId) {
-        Object.keys(newPLayers)
-          .forEach((playerId: string) => Object.keys(newPLayers[playerId].heroes)
-            .forEach((heroId: string) => newPLayers[playerId].heroes[heroId].selected = false));
-        newPLayers[action.payload.playerId].heroes[action.payload.heroId].selected = action.payload.setSelected;
+      const newHeroes = state.heroesFight;
+      newHeroes.map(h => h.selected = false)
+      const ind = newHeroes.findIndex((h: IHeroBattlefield) => !!action.payload && h.id === action.payload.heroId && h.playerId === action.payload.playerId);
+      if (action.payload) {
+        newHeroes[ind].selected = action.payload.setSelected
       }
       return ({
         ...state,
-        players: newPLayers
+        heroesFight: newHeroes
       });
     },
     [SET_HERO_NEW_POSITION]: (
       state: IStoreState.ISession,
       action: Action<ISetHeroNewPositionPayload>
     ) => {
-      const newPLayers = state.players;
-      if (action.payload && action.payload.playerId && action.payload.heroId) {
-        newPLayers[action.payload.playerId].heroes[action.payload.heroId].tileX = action.payload.tileX;
-        newPLayers[action.payload.playerId].heroes[action.payload.heroId].tileY = action.payload.tileY;
+      const newHeroes = state.heroesFight;
+      const ind = newHeroes.findIndex((h: IHeroBattlefield) => !!action.payload && h.id === action.payload.heroId && h.playerId === action.payload.playerId);
+      if (action.payload) {
+        newHeroes[ind].tileX = action.payload.tileX;
+        newHeroes[ind].tileY = action.payload.tileY;
       }
       return ({
         ...state,
-        players: newPLayers
+        heroesFight: newHeroes
       });
     },
     [UPDATE_HEROES_STATE]: (
@@ -209,13 +210,13 @@ export default handleActions(
       state: IStoreState.ISession,
       action: Action<IUpdateHeroPointsPayload>
     ) => {
-      const newHeroes = state.heroesFight;
+      const newHeroes = state.heroesFight.slice();
       const ind = newHeroes.findIndex((h: IHeroBattlefield) => !!action.payload && h.id === action.payload.heroId && h.playerId === action.payload.playerId);
       if (action.payload) {
-        newHeroes[ind].points[action.payload.pointLabel] = action.payload.newValue
+        newHeroes[ind].points[action.payload.pointLabel] = action.payload.newValue;
       }
       if (newHeroes[ind].points.currentLifePoints <= 0) {
-        newHeroes.splice(ind, 1)
+        newHeroes.splice(ind, 1);
       }
       return ({
         ...state,

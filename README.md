@@ -115,10 +115,14 @@ Attack and kill heroes to win the game
     - ~~BUG: Ennemy state is changed to move. Should stay idle~~
     - ~~Reset heroes state on change action or change hero turn~~
     - ~~Attack mode enable click on enemy~~
-    - Deal damage equal to simple rule
-    - Remove life points
+    - ~~Update the state after life points change~~
+        - ~~Harmonize redux by using heroesFight instead of players while in the game~~
+    - ~~Deal damage equal to simple rule~~
+    - ~~Remove life points~~
+    - ~~Remove hero if dead~~
+    - Set the tile the hero was on to empty
     - This action removes an action point
-    - Remove hero if dead
+    - Display a grave on the tile
     
 Defending should put the current hero on shadow color and not the foes
 
