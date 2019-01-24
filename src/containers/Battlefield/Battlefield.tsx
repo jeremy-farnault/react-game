@@ -72,11 +72,19 @@ class Battlefield extends React.PureComponent<IProps, {}> {
   };
 
   private setNewActionPointsValue = (hero: IHeroBattlefield, pointLabel: string, newValue: number) => {
+    if (this.props.allHeroes[0].currentActionPoints - 1 <= 0) {
+      this.props.resetTiles({});
+    }
     this.props.updateHeroPoints({
       heroId: hero.id,
       playerId: hero.playerId,
       pointLabel,
       newValue
+    });
+    this.props.decrementActionPoints({
+      heroIndex: 0,
+      heroId: this.props.allHeroes[0].id,
+      playerId: this.props.allHeroes[0].playerId
     });
   };
 }

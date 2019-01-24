@@ -120,9 +120,19 @@ Attack and kill heroes to win the game
     - ~~Deal damage equal to simple rule~~
     - ~~Remove life points~~
     - ~~Remove hero if dead~~
-    - Set the tile the hero was on to empty
-    - This action removes an action point
-    - Display a grave on the tile
+    - ~~This action removes an action point~~
+        - ~~With no action point => reset tiles~~
+    - Decide on the design / behaviour after a death
+        - Set the tile the hero was on new status death
+            - Tile is still walkable but has to display something
+        - Display a grave on the tile?
+            - Should be a version of the hero on the ground
+        - Don't remove the hero from the list
+            - Has dead status
+            - Not displayed on the initiative bar
+            - Can't be selected
+            - His non blocking to walk
+            - Can't be attacked
     
 Defending should put the current hero on shadow color and not the foes
 

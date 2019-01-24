@@ -32,7 +32,8 @@ export enum TileState {
   heroDefense = "heroDefense",
   heroMagic = "heroMagic",
   heroMovement = "heroMovement",
-  heroRangedAttack = "heroRangedAttack"
+  heroRangedAttack = "heroRangedAttack",
+  heroDead = "heroDead"
 }
 
 export enum ITileStateToHeroBattlefieldState {
