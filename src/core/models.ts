@@ -44,6 +44,7 @@ export enum ITileStateToHeroBattlefieldState {
   heroMagic = "attackedMagic",
   heroMovement = "idle",
   heroRangedAttack = "attackedRanged"
+  heroDead = “dead”
 }
 
 export enum TileColors {
@@ -54,7 +55,8 @@ export enum TileColors {
   heroDefense = "#929AEC",
   heroMagic = "#8EBEBA",
   heroMovement = "#3CB371",
-  heroRangedAttack = "#A37B5E"
+  heroRangedAttack = "#A37B5E",
+  heroDead = “rgba(0, 0, 0, 0)”
 }
 
 export enum TileHoverColors {
@@ -65,7 +67,8 @@ export enum TileHoverColors {
   heroDefense = "#B2B8F1",
   heroMagic = "#8EBEBA",
   heroMovement = "#98FB98",
-  heroRangedAttack = "#BEA28E"
+  heroRangedAttack = "#BEA28E",
+  heroDead = rgba(0, 0, 0, 0)"
 }
 
 export enum TileSize {
@@ -76,7 +79,8 @@ export enum TileSize {
   heroDefense = 30,
   heroMagic = 30,
   heroMovement = 30,
-  heroRangedAttack = 30
+  heroRangedAttack = 30,
+  heroDead = 40
 }
 
 // Heroes
@@ -120,7 +124,8 @@ export enum IHeroBattlefieldState {
   attackedRanged = "attackedRanged",
   attackedArmor = "attackedArmor",
   attackedMagic = "attackedMagic",
-  defending = "defending"
+  defending = "defending",
+  dead = “dead”
 }
 
 export enum HeroShadowColors {
@@ -130,7 +135,8 @@ export enum HeroShadowColors {
   defending = "#929AEC",
   attackedMagic = "#8EBEBA",
   move = "#3CB371",
-  attackedRanged = "#A37B5E"
+  attackedRanged = "#A37B5E",
+  dead = "rgba(0, 0, 0, 0)"
 }
 
 export interface IHeroCharacteristics {
@@ -164,6 +170,7 @@ export interface IHeroAssets {
   miniaturePath: IAsset
   tokenInitPath: IAsset
   tokenPath: IAsset
+  deathPath: IAsset
 }
 
 export interface IHeroSkill {
