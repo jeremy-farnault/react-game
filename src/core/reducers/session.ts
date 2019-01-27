@@ -216,7 +216,7 @@ export default handleActions(
         newHeroes[ind].points[action.payload.pointLabel] = action.payload.newValue;
       }
       if (newHeroes[ind].points.currentLifePoints <= 0) {
-        newHeroes.splice(ind, 1);
+        newHeroes[ind].state =  IHeroBattlefieldState.dead
       }
       return ({
         ...state,
