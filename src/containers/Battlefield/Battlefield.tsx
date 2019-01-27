@@ -8,6 +8,7 @@ import { ContainerBattlefield } from "./BattlefieldStyles";
 import * as React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
+import { INewTile } from "../../core/reducers/battlefield";
 
 interface IProps {
   allHeroes: IHeroBattlefield[]
@@ -36,6 +37,7 @@ class Battlefield extends React.PureComponent<IProps, {}> {
         <Tiles tiles={this.props.tiles} clickOnTile={this.clickOnTile}/>
         <Heroes heroes={this.props.allHeroes}
                 tiles={this.props.tiles}
+                updateTiles={this.updateTiles}
                 setNewActionPointsValue={this.setNewActionPointsValue}
                 selectHero={this.props.updateSelectedHero}/>
       </ContainerBattlefield>
@@ -86,6 +88,10 @@ class Battlefield extends React.PureComponent<IProps, {}> {
       heroId: this.props.allHeroes[0].id,
       playerId: this.props.allHeroes[0].playerId
     });
+  };
+
+  private updateTiles = (newTiles: INewTile[]) => {
+    this.props.updateTiles({ data: newTiles });
   };
 }
 

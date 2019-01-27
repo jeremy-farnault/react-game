@@ -1,9 +1,5 @@
-import {
-  HeroShadowColors,
-  IHeroBattlefield,
-  IHeroBattlefieldState,
-  ITile
-} from "../../core/models";
+import { HeroShadowColors, IHeroBattlefield, IHeroBattlefieldState, ITile, TileState } from "../../core/models";
+import { INewTile } from "../../core/reducers/battlefield";
 import { constants } from "../../utils/constants";
 import { HeroStyled } from "./HeroStyles";
 
@@ -17,6 +13,7 @@ interface IProps {
   selectHero: (hero: IHeroBattlefield) => void
   tile: ITile
   setNewActionPointsValue: (hero: IHeroBattlefield, pointLabel: string, newValue: number) => void
+  updateTiles: (newTiles: INewTile[]) => void
 }
 
 // interface IState {}
@@ -45,27 +42,30 @@ class Hero extends React.PureComponent<IProps, {}> {
   private selectHero = () => {
     switch (this.props.hero.state) {
       case IHeroBattlefieldState.attacked:
-        const h = this.props.hero
-        const newValue = h.points.currentLifePoints - (this.props.heroes[0].characteristics.attack - h.characteristics.armor)
-        this.props.setNewActionPointsValue(this.props.hero, 'currentLifePoints', newValue);
+        const h = this.props.hero;
+        const newValue = h.points.currentLifePoints - (this.props.heroes[0].characteristics.attack - h.characteristics.armor);
+        this.props.setNewActionPointsValue(this.props.hero, "currentLifePoints", newValue);
+        if (newValue <= 0) {
+          this.props.updateTiles([{
+            tileState: TileState.heroDead,
+            tileX: h.tileX,
+            tileY: h.tileY
+          }]);
+        }
         break;
       case IHeroBattlefieldState.attackedRanged:
-
         this.props.selectHero(this.props.hero);
-
         break;
       case IHeroBattlefieldState.attackedArmor:
-
         this.props.selectHero(this.props.hero);
-
         break;
       case IHeroBattlefieldState.attackedMagic:
-
         this.props.selectHero(this.props.hero);
-
         break;
       case IHeroBattlefieldState.defending:
         break;
+      case IHeroBattlefieldState.dead:
+        return;
       default:
         this.props.selectHero(this.props.hero);
         break;

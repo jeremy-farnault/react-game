@@ -123,8 +123,9 @@ Attack and kill heroes to win the game
     - ~~This action removes an action point~~
         - ~~With no action point => reset tiles~~
     - Decide on the design / behaviour after a death
-        - Set the tile the hero was on new status death
-            - Tile is still walkable but has to display something
+        - ~~Set the tile the hero was on new status death~~
+            - ~~Tile is still walkable but has to display something~~
+            - If dead hero should not be clickable
         - Display a grave on the tile?
             - Should be a version of the hero on the ground
         - Don't remove the hero from the list
