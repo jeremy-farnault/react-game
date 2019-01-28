@@ -125,9 +125,11 @@ Attack and kill heroes to win the game
     - Decide on the design / behaviour after a death
         - ~~Set the tile the hero was on new status death~~
             - ~~Tile is still walkable but has to display something~~
-            - If dead hero should not be clickable
-        - Display a grave on the tile?
-            - Should be a version of the hero on the ground
+            - ~~If dead hero should not be clickable and hoverable~~
+            - Should allow to click and hover the tile behind it
+            - Should always be behind a hero standing on the same tile
+        - ~~Display a grave on the tile?~~
+            - ~~Should be a version of the hero on the ground~~
         - Don't remove the hero from the list
             - Has dead status
             - Not displayed on the initiative bar
@@ -152,3 +154,4 @@ https://github.com/inooid/react-redux-card-game
 
 
 http://react-dnd.github.io/react-dnd/about
+https://legogames.fandom.com/wiki/Category:LEGO_The_Lord_of_the_Rings:_The_Video_Game_Images

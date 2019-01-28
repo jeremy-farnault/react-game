@@ -22,19 +22,22 @@ export interface IStyledHero {
   posX: number
   posY: number
   shadowColor: string
+  isDead: boolean
 }
 
 class Hero extends React.PureComponent<IProps, {}> {
 
   public render() {
     const h = this.props.hero;
+    const isDead = h.points.currentLifePoints <= 0
     return (
       <HeroStyled
         onClick={this.selectHero}
         shadowColor={HeroShadowColors[this.props.heroState]}
         posX={this.props.tile.posX + (constants.tileSize - h.assets.battlefieldPath.width) / 2}
         posY={this.props.tile.posY - 4}
-        src={h.assets.battlefieldPath.path}
+        src={h.assets.battlefieldPath.path} // Add the isDead path if/when available
+        isDead={isDead}
         height={50}/>
     );
   }

@@ -5,10 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/tilesHelpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/tilesHelpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,12 +21,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="745">
-                <caret line="127" column="49" selection-start-line="127" selection-start-column="49" selection-end-line="127" selection-end-column="49" />
+              <first_editor relative-caret-position="825">
+                <caret line="131" column="62" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
               </first_editor>
               <second_editor />
             </state>
@@ -59,20 +56,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#1#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+            <state relative-caret-position="570">
+              <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
               <folding>
                 <element signature="e#0#112#0" expanded="true" />
               </folding>
@@ -83,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="210">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -149,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHeroStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZoneStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/DetailsModal/DetailsModalStyles.tsx" />
@@ -186,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/components/CastButton/CastButtonStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/Timer/Timer.tsx" />
         <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" />
-        <option value="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" />
         <option value="$PROJECT_DIR$/src/core/reducers/battlefield.ts" />
         <option value="$PROJECT_DIR$/src/core/constants/index.ts" />
         <option value="$PROJECT_DIR$/src/core/actions/index.ts" />
@@ -198,8 +187,10 @@
         <option value="$PROJECT_DIR$/src/core/reducers/session.ts" />
         <option value="$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/components/Tile/TileStyles.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/Hero/Hero.tsx" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -234,7 +225,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,6 +260,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Hero" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Tile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
@@ -368,6 +365,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -544,6 +542,7 @@
       <workItem from="1548271450885" duration="1837000" />
       <workItem from="1548358092483" duration="1500000" />
       <workItem from="1548616863330" duration="2073000" />
+      <workItem from="1548703529786" duration="2085000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -591,7 +590,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344535000" />
+    <option name="totallyTimeSpent" value="346620000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -692,12 +691,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fix halo first hero" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/TEMP/zoom-png-4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/TEMP/Shield-25-311x500.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/TEMP/Shield-24-500x424.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -946,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/reducers/battlefield.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -973,6 +959,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tile/Tile.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tile/TileStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="968">
@@ -983,39 +1003,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Heroes/Heroes.tsx">
+    <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="745">
-            <caret line="127" column="49" selection-start-line="127" selection-start-column="49" selection-end-line="127" selection-end-column="49" />
+          <first_editor relative-caret-position="825">
+            <caret line="131" column="62" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#112#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
