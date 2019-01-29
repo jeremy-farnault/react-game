@@ -1,6 +1,6 @@
 import { ITile, TileColors, TileHoverColors, TileSize, TileState } from "../../core/models";
 import { constants } from "../../utils/constants";
-import { StyledTile } from "./TileStyles";
+import { StyledContainerTile, StyledTile } from "./TileStyles";
 
 import * as React from "react";
 
@@ -25,14 +25,30 @@ class Tile extends React.PureComponent<IProps, {}> {
 
   public render() {
     return (
-      <div style={{width: constants.tileSize, height: constants.tileSize, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+      <StyledContainerTile size={constants.tileSize}>
         <StyledTile
           onClick={this.clickOnTile}
           hoverColor={TileHoverColors[TileState[this.props.tile.state]]}
           size={TileSize[TileState[this.props.tile.state]]}
           borderColor={TileColors[TileState[this.props.tile.state]]}
         />
-      </div>
+
+
+
+        {this.props.tile.state === TileState.heroDead &&
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          backgroundColor: 'red',
+          width: constants.tileSize,
+          height: constants.tileSize
+        }}/>
+        }
+
+
+
+      </StyledContainerTile>
     );
   }
 

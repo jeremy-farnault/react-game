@@ -3,6 +3,15 @@ import { IStyledTile } from "./Tile";
 
 import styled from "styled-components";
 
+export const StyledContainerTile = styled.div`
+width: ${(props: {size: number}) => props.size}px;
+height: ${(props: {size: number}) => props.size}px;
+justify-content: center;
+align-items: center;
+display: flex;
+`
+StyledContainerTile.displayName = 'StyledContainerTile'
+
 export const StyledTile = styled.div`
 width: ${(props: IStyledTile) => props.size}px;
 height: ${(props: IStyledTile) => props.size}px;

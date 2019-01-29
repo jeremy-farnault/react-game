@@ -127,7 +127,9 @@ Attack and kill heroes to win the game
             - ~~Tile is still walkable but has to display something~~
             - ~~If dead hero should not be clickable and hoverable~~
             - Should allow to click and hover the tile behind it
+                - Display an invisible tile with zindex superior to the death image and events linked to the tile beneath
             - Should always be behind a hero standing on the same tile
+            - If hero enters tile state should become hero, if hero leaves should be back to death status
         - ~~Display a grave on the tile?~~
             - ~~Should be a version of the hero on the ground~~
         - Don't remove the hero from the list
