@@ -47,7 +47,7 @@ class Hero extends React.PureComponent<IProps, {}> {
       case IHeroBattlefieldState.attacked:
         const h = this.props.hero;
         const newValue = h.points.currentLifePoints - (this.props.heroes[0].characteristics.attack - h.characteristics.armor);
-        this.props.setNewActionPointsValue(this.props.hero, "currentLifePoints", newValue);
+        this.props.setNewActionPointsValue(h, "currentLifePoints", newValue);
         if (newValue <= 0) {
           this.props.updateTiles([{
             tileState: TileState.heroDead,

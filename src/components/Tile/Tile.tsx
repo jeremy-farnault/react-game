@@ -1,6 +1,6 @@
 import { ITile, TileColors, TileHoverColors, TileSize, TileState } from "../../core/models";
 import { constants } from "../../utils/constants";
-import { StyledContainerTile, StyledTile } from "./TileStyles";
+import { StyledContainerTile, StyledInvisibleTile, StyledTile } from "./TileStyles";
 
 import * as React from "react";
 
@@ -16,9 +16,13 @@ export interface IStyledTile {
   borderColor: string
   hoverColor: string
   size: number
+  invisibleHovered: boolean
 }
 
 class Tile extends React.PureComponent<IProps, {}> {
+
+  private invisibleHovered: boolean = false
+
   constructor(props: IProps) {
     super(props);
   }
@@ -30,24 +34,15 @@ class Tile extends React.PureComponent<IProps, {}> {
           onClick={this.clickOnTile}
           hoverColor={TileHoverColors[TileState[this.props.tile.state]]}
           size={TileSize[TileState[this.props.tile.state]]}
-          borderColor={TileColors[TileState[this.props.tile.state]]}
-        />
-
-
-
-        {this.props.tile.state === TileState.heroDead &&
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          backgroundColor: 'red',
-          width: constants.tileSize,
-          height: constants.tileSize
-        }}/>
-        }
-
-
-
+          invisibleHovered={this.invisibleHovered}
+          borderColor={TileColors[TileState[this.props.tile.state]]}>
+          {this.props.tile.state === TileState.heroDead &&
+          <StyledInvisibleTile
+            onMouseEnter={this.setInvisibleHovered}
+            onMouseLeave={this.setInvisibleNonHovered}
+            onClick={this.clickOnTile}
+            size={TileSize[TileState[this.props.tile.state]]}/>}
+        </StyledTile>
       </StyledContainerTile>
     );
   }
@@ -55,6 +50,14 @@ class Tile extends React.PureComponent<IProps, {}> {
   private clickOnTile = () => {
     this.props.clickOnTile(this.props.tile);
   };
+
+  private setInvisibleHovered = () => {
+   this.invisibleHovered = true
+  }
+
+  private setInvisibleNonHovered = () => {
+    this.invisibleHovered = false
+  }
 
   // private getBorderRightColor = () => {
   //   if (this.props.tile.state === TileState.idleHero && this.props.tile.columnIndex < constants.numberOfColumns - 1 &&

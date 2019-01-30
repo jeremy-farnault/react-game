@@ -80,7 +80,7 @@ export enum TileSize {
   heroMagic = 30,
   heroMovement = 30,
   heroRangedAttack = 30,
-  heroDead = 40
+  heroDead = 30
 }
 
 // Heroes
