@@ -52,7 +52,7 @@ export default handleActions(
     [RESET_TILES]: (state: IStoreState.IBattlefield, action: Action<{}>) => ({
       ...state,
       tiles: state.tiles.map((line: ITile[]) => line.map((t: ITile) => {
-        if (t.state !== TileState.idleHero) {
+        if (t.state !== TileState.idleHero && t.state !== TileState.heroDead) {
           return {
             state: TileState.empty,
             columnIndex: t.columnIndex,
