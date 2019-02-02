@@ -11,7 +11,7 @@ import { IUpdateHeroState, IUpdateHeroStatePayload } from "../core/reducers/sess
 import * as PF from "pathfinding";
 
 export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic: number, heroX: number, heroY: number,
-                                            state: TileState, areHeroesWall: boolean): INewTile[] => {
+                                            state: TileState): INewTile[] => {
   const finder = new PF.AStarFinder();
   const result: INewTile[] = [];
   // Create a grid to with the walkable nodes
@@ -23,10 +23,11 @@ export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic
       const grid = gridMaster.clone();
       const path = finder.findPath(heroX, heroY, colInd, lineInd, grid);
       if (path.length <= heroCharacteristic + 1) {
+        const st = tiles[lineInd][colInd].state
         result.push({
           tileX: colInd,
           tileY: lineInd,
-          tileState: tiles[lineInd][colInd].state === TileState.idleHero ? TileState.idleHero : state
+          tileState: st === TileState.idleHero ? ((st === TileState.heroDead && state === TileState.heroMovement) ? TileState.heroDeadMovement : TileState.idleHero) : state
         });
       }
     }

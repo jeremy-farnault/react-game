@@ -36,7 +36,7 @@ class Tile extends React.PureComponent<IProps, {}> {
           size={TileSize[TileState[this.props.tile.state]]}
           invisibleHovered={this.invisibleHovered}
           borderColor={TileColors[TileState[this.props.tile.state]]}>
-          {this.props.tile.state === TileState.heroDead &&
+          {this.props.tile.state === TileState.heroDeadMovement &&
           <StyledInvisibleTile
             onMouseEnter={this.setInvisibleHovered}
             onMouseLeave={this.setInvisibleNonHovered}

@@ -29,22 +29,24 @@ export enum TileState {
   idleHero = "idleHero",
   heroAttack = "heroAttack",
   heroAttackArmor = "heroAttackArmor",
+  heroDead = "heroDead",
+  heroDeadMovement = "heroDeadMovement",
   heroDefense = "heroDefense",
   heroMagic = "heroMagic",
   heroMovement = "heroMovement",
-  heroRangedAttack = "heroRangedAttack",
-  heroDead = "heroDead"
+  heroRangedAttack = "heroRangedAttack"
 }
 
 export enum ITileStateToHeroBattlefieldState {
   idleHero = "idle",
   heroAttack = "attacked",
   heroAttackArmor = "attackedArmor",
+  heroDead = "dead",
+  heroDeadMovement = "dead",
   heroDefense = "defending",
   heroMagic = "attackedMagic",
   heroMovement = "idle",
-  heroRangedAttack = "attackedRanged",
-  heroDead = "dead"
+  heroRangedAttack = "attackedRanged"
 }
 
 export enum TileColors {
@@ -52,11 +54,12 @@ export enum TileColors {
   idleHero = "rgba(0, 0, 0, 0)",
   heroAttack = "#FF3447",
   heroAttackArmor = "#E5D964",
+  heroDead = "rgba(0, 0, 0, 0)",
+  heroDeadMovement = "rgba(0, 0, 0, 0)",
   heroDefense = "#929AEC",
   heroMagic = "#8EBEBA",
   heroMovement = "#3CB371",
-  heroRangedAttack = "#A37B5E",
-  heroDead = "rgba(0, 0, 0, 0)"
+  heroRangedAttack = "#A37B5E"
 }
 
 export enum TileHoverColors {
@@ -64,11 +67,12 @@ export enum TileHoverColors {
   idleHero = "rgba(0, 0, 0, 0)",
   heroAttack = "#FF707E",
   heroAttackArmor = "#ECE492",
+  heroDead = "rgba(0, 0, 0, 0)",
+  heroDeadMovement = "rgba(0, 0, 0, 0)",
   heroDefense = "#B2B8F1",
   heroMagic = "#8EBEBA",
   heroMovement = "#98FB98",
-  heroRangedAttack = "#BEA28E",
-  heroDead = "rgba(0, 0, 0, 0)"
+  heroRangedAttack = "#BEA28E"
 }
 
 export enum TileSize {
@@ -76,11 +80,12 @@ export enum TileSize {
   idleHero = 40,
   heroAttack = 30,
   heroAttackArmor = 30,
+  heroDead = 30,
+  heroDeadMovement = 30,
   heroDefense = 30,
   heroMagic = 30,
   heroMovement = 30,
-  heroRangedAttack = 30,
-  heroDead = 30
+  heroRangedAttack = 30
 }
 
 // Heroes
