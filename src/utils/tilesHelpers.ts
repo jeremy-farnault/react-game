@@ -24,10 +24,11 @@ export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic
       const path = finder.findPath(heroX, heroY, colInd, lineInd, grid);
       if (path.length <= heroCharacteristic + 1) {
         const st = tiles[lineInd][colInd].state
+        const isHeroDeadMove = st === TileState.heroDead && state === TileState.heroMovement
         result.push({
           tileX: colInd,
           tileY: lineInd,
-          tileState: st === TileState.idleHero ? TileState.idleHero : (st === TileState.heroDead && state === TileState.heroMovement ? TileState.heroDeadMovement : state)
+          tileState: st === TileState.idleHero ? TileState.idleHero : (isHeroDeadMove ? TileState.heroDeadMovement : state)
         });
       }
     }
