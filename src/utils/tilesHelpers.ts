@@ -27,7 +27,7 @@ export const getNewTileStateByHeroStatus = (tiles: ITile[][], heroCharacteristic
         result.push({
           tileX: colInd,
           tileY: lineInd,
-          tileState: st === TileState.idleHero ? ((st === TileState.heroDead && state === TileState.heroMovement) ? TileState.heroDeadMovement : TileState.idleHero) : state
+          tileState: st === TileState.idleHero ? TileState.idleHero : (st === TileState.heroDead && state === TileState.heroMovement ? TileState.heroDeadMovement : state)
         });
       }
     }
