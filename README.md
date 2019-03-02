@@ -140,6 +140,7 @@ Attack and kill heroes to win the game
             - Can't be selected
             - His non blocking to walk
             - Can't be attacked
+- Integrate the new assets
 
 Defending should put the current hero on shadow color and not the foes
 
