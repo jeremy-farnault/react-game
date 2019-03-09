@@ -303,7 +303,7 @@ export const ActionPointsIcon = {
 
 export const VariousAssets = {
   cardBack: {
-    path: require("../assets/various/cards_back.png"),
+    path: require("../assets/HumbleBundle/TCG Card Design/lava_style/back/back_lava.png"),
     height: 264
   },
   endTurn: {

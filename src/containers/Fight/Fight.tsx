@@ -156,9 +156,8 @@ class Fight extends React.PureComponent<IProps, IState> {
     this.setState({ currentSelectedAction: action });
     const usedHero = !!hero ? hero : this.props.heroesFight[0];
     const usedTile = !!tile ? tile : this.props.tiles[usedHero.tileY][usedHero.tileX];
-    const areHeroesWall = action === ActionsType.heroMovement;
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
-      usedTile.columnIndex, usedTile.lineIndex, TileState[action], areHeroesWall);
+      usedTile.columnIndex, usedTile.lineIndex, TileState[action]);
     const newStateHeroes = getNewHeroStatus(this.props.tiles, usedHero.characteristics[ActionCharacteristic[action]],
       usedTile.columnIndex, usedTile.lineIndex, TileState[action], this.props.heroesFight)
     this.props.updateHeroesState(newStateHeroes)
@@ -182,7 +181,7 @@ class Fight extends React.PureComponent<IProps, IState> {
       playerId: hero.playerId
     });
     const newTiles = getNewTileStateByHeroStatus(this.props.tiles, hero.characteristics.speed,
-      hero.tileX, hero.tileY, TileState.heroMovement, true);
+      hero.tileX, hero.tileY, TileState.heroMovement);
     this.props.updateTiles({ data: newTiles });
   };
 }
