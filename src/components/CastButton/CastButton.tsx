@@ -1,4 +1,4 @@
-import { ICard } from "../../core/models";
+import { ICard, VariousAssets } from "../../core/models";
 import { CastButtonDiv } from "./CastButtonStyles";
 
 import * as React from "react";
@@ -50,10 +50,7 @@ class CastButton extends React.PureComponent<IProps & ICollectedProps, {}> {
     this.checkDroppedCard()
     return connectDropTarget(
       <div>
-        <CastButtonDiv disabled={this.props.disabled}
-                       isOver={this.props.isOver}>
-          <div>Cast</div>
-        </CastButtonDiv>
+        <CastButtonDiv disabled={this.props.disabled} isOver={this.props.isOver} src={VariousAssets.castButton.path}/>
       </div>
     );
   }

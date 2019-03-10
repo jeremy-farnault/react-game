@@ -290,11 +290,11 @@ export const IHeroBattlefieldPointsIcon = {
 
 export const ActionPointsIcon = {
   actionPointFull: {
-    path: require("../assets/various/action_point_unused.png"),
+    path: require("../assets/HumbleBundle/Potion Icons/t_38.png"),
     size: 40
   },
   actionPointEmpty: {
-    path: require("../assets/various/action_point_used.png"),
+    path: require("../assets/HumbleBundle/Potion Icons/t_39.png"),
     size: 40
   }
 };
@@ -307,8 +307,11 @@ export const VariousAssets = {
     height: 264
   },
   endTurn: {
-    path: require("../assets/various/hourglass_end_turn.png"),
+    path: require("../assets/HumbleBundle/Fantasy Icons/MagicItems/MagicItems_png/transparent/artifact_12_t.PNG"),
     size: 54,
     text: "End turn"
+  },
+  castButton: {
+    path: require("../assets/HumbleBundle/Fantasy Icons/MagicItems/MagicItems_png/transparent/addons/addons_13_t.png")
   }
 };

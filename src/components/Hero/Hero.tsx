@@ -38,7 +38,7 @@ class Hero extends React.PureComponent<IProps, {}> {
         posY={this.props.tile.posY - 4}
         src={h.assets.battlefieldPath.path} // Add the isDead path if/when available
         isDead={isDead}
-        height={50}/>
+        height={70}/>
     );
   }
 

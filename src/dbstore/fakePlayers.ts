@@ -19,7 +19,7 @@ export const fakePlayers: IPlayers = {
       [heroesIds.aragorn]: {
         assets: {
           battlefieldPath: {
-            path: require("../assets/heroesBattlefield/aragorn.png"),
+            path: require("../assets/HumbleBundle/Fantasy Characters/FantasyCharacters_h_rogue_male.png"),
             height: 50,
             width: 50
           },
@@ -34,7 +34,7 @@ export const fakePlayers: IPlayers = {
             width: 50
           },
           tokenPath: {
-            path: require("../assets/heroesTokens/aragorn.png"),
+            path: require("../assets/HumbleBundle/Character Avatar Icons/male/m_39.png"),
             height: 50,
             width: 50
           }
@@ -88,7 +88,7 @@ export const fakePlayers: IPlayers = {
       [heroesIds.arwen]: {
         assets: {
           tokenPath: {
-            path: require("../assets/heroesTokens/arwen.png"),
+            path: require("../assets/HumbleBundle/Character Avatar Icons/female/05.PNG"),
             height: 50,
             width: 50
           },
@@ -103,7 +103,7 @@ export const fakePlayers: IPlayers = {
             width: 50
           },
           battlefieldPath: {
-            path: require("../assets/heroesBattlefield/arwen.png"),
+            path: require("../assets/HumbleBundle/Fantasy Characters/FantasyCharacters_elf_sentinel_female.png"),
             height: 50,
             width: 27
           }
@@ -162,8 +162,8 @@ export const fakePlayers: IPlayers = {
         effect: "Reduce your threat to your starting threat level.",
         description: "Sentinel",
         assets: {
-          miniaturePath: require("../assets/cardsSmall/aragorn_small.png"),
-          normalPath: require("../assets/cardsBig/aragorn_big.png")
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [heroesIds.aragorn],
@@ -176,8 +176,8 @@ export const fakePlayers: IPlayers = {
         effect: "Discard a card.",
         description: "Noble",
         assets: {
-          normalPath: require("../assets/cardsBig/arwen_big.png"),
-          miniaturePath: require("../assets/cardsSmall/arwen_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [heroesIds.arwen],
@@ -190,8 +190,8 @@ export const fakePlayers: IPlayers = {
         effect: "Damage may be assigned to Barliman.",
         description: "Hobbit",
         assets: {
-          normalPath: require("../assets/cardsBig/barlimanbutterbur_big.png"),
-          miniaturePath: require("../assets/cardsSmall/barlimanbutterbur_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [],
@@ -204,8 +204,8 @@ export const fakePlayers: IPlayers = {
         effect: "Lower the cost of weapons by 2.",
         description: "Gondor",
         assets: {
-          normalPath: require("../assets/cardsBig/beregond_big.png"),
-          miniaturePath: require("../assets/cardsSmall/beregond_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [],
@@ -218,8 +218,8 @@ export const fakePlayers: IPlayers = {
         effect: "The first player gains control of Bilbo.",
         description: "Hobbit",
         assets: {
-          normalPath: require("../assets/cardsBig/bilbo_big.png"),
-          miniaturePath: require("../assets/cardsSmall/bilbo_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: ["Hero X", "Hero Y"],
@@ -232,8 +232,8 @@ export const fakePlayers: IPlayers = {
         effect: "Raise threat by 1 for each non hero.",
         description: "Bree",
         assets: {
-          normalPath: require("../assets/cardsBig/billferny_big.png"),
-          miniaturePath: require("../assets/cardsSmall/billferny_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: [],
@@ -246,8 +246,8 @@ export const fakePlayers: IPlayers = {
         effect: "Each hobbit gets +1 hit point.",
         description: "Pony",
         assets: {
-          normalPath: require("../assets/cardsBig/billpony_big.png"),
-          miniaturePath: require("../assets/cardsSmall/billpony_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: [],
@@ -260,8 +260,8 @@ export const fakePlayers: IPlayers = {
         effect: "Gondor allies get +1 hit point.",
         description: "Warrior",
         assets: {
-          normalPath: require("../assets/cardsBig/boromir_big.png"),
-          miniaturePath: require("../assets/cardsSmall/boromir_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: ["Hero X", "Hero Y"],
@@ -274,8 +274,8 @@ export const fakePlayers: IPlayers = {
         effect: "Each Harad enemy gets +1 hit points.",
         description: "Harad",
         assets: {
-          normalPath: require("../assets/cardsBig/haradcaptain_big.png"),
-          miniaturePath: require("../assets/cardsSmall/haradcaptain_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -288,8 +288,8 @@ export const fakePlayers: IPlayers = {
         effect: "You must damage another character you control.",
         description: "Troll",
         assets: {
-          normalPath: require("../assets/cardsBig/cavetroll_big.png"),
-          miniaturePath: require("../assets/cardsSmall/cavetroll_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: [],
@@ -350,7 +350,7 @@ export const fakePlayers: IPlayers = {
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
-            path: require("../assets/heroesTokens/bombadil.png"),
+            path: require("../assets/HumbleBundle/Character Avatar Icons/male/m_17.png"),
             height: 50,
             width: 50
           },
@@ -365,7 +365,7 @@ export const fakePlayers: IPlayers = {
             width: 50
           },
           battlefieldPath: {
-            path: require("../assets/heroesBattlefield/bombadil.png"),
+            path: require("../assets/HumbleBundle/Fantasy Characters/FantasyCharacters_Dwarven_healer_female.png"),
             height: 50,
             width: 37
           }
@@ -420,7 +420,7 @@ export const fakePlayers: IPlayers = {
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
-            path: require("../assets/heroesTokens/boromir.png"),
+            path: require("../assets/HumbleBundle/Character Avatar Icons/male/m_24.png"),
             height: 50,
             width: 50
           },
@@ -435,7 +435,7 @@ export const fakePlayers: IPlayers = {
             width: 50
           },
           battlefieldPath: {
-            path: require("../assets/heroesBattlefield/boromir.png"),
+            path: require("../assets/HumbleBundle/Fantasy Characters/FantasyCharacters_h_warrior_male.png"),
             height: 50,
             width: 58
           }
@@ -490,7 +490,7 @@ export const fakePlayers: IPlayers = {
         state: IHeroBattlefieldState.idle,
         assets: {
           tokenPath: {
-            path: require("../assets/heroesTokens/cave_troll.png"),
+            path: require("../assets/HumbleBundle/Mobs Avatar Icons/Mobs_golem_01.png"),
             height: 50,
             width: 50
           },
@@ -505,7 +505,7 @@ export const fakePlayers: IPlayers = {
             width: 50
           },
           battlefieldPath: {
-            path: require("../assets/heroesBattlefield/cave_troll.png"),
+            path: require("../assets/HumbleBundle/Fantasy Characters/FantasyCharacters_stone_spirit.png"),
             height: 50,
             width: 50
           }
@@ -519,8 +519,8 @@ export const fakePlayers: IPlayers = {
         effect: "Cannot have non-Morgul attachments.",
         description: "Nazgul",
         assets: {
-          normalPath: require("../assets/cardsBig/fellrider_big.png"),
-          miniaturePath: require("../assets/cardsSmall/fellrider_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -533,8 +533,8 @@ export const fakePlayers: IPlayers = {
         effect: "Exhaust the One Ring and spend 1 resource.",
         description: "Hobbit",
         assets: {
-          normalPath: require("../assets/cardsBig/frodo_big.png"),
-          miniaturePath: require("../assets/cardsSmall/frodo_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.good,
         linkedTo: ["Hero X", "Hero Y"],
@@ -547,8 +547,8 @@ export const fakePlayers: IPlayers = {
         effect: "Archery 2. Player must deal 3 damage to a hero.",
         description: "Brigand",
         assets: {
-          normalPath: require("../assets/cardsBig/umbarassassin_big.png"),
-          miniaturePath: require("../assets/cardsSmall/umbarassassin_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -561,8 +561,8 @@ export const fakePlayers: IPlayers = {
         effect: "Characters you control cannot attack Ship ennemies.",
         description: "Corsair",
         assets: {
-          normalPath: require("../assets/cardsBig/umbarcaptain_big.png"),
-          miniaturePath: require("../assets/cardsSmall/umbarcaptain_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -575,8 +575,8 @@ export const fakePlayers: IPlayers = {
         effect: "Gets +1 hit points for each resource on it.",
         description: "Corsair",
         assets: {
-          normalPath: require("../assets/cardsBig/umbarraider_big.png"),
-          miniaturePath: require("../assets/cardsSmall/umbarraider_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: [],
@@ -589,8 +589,8 @@ export const fakePlayers: IPlayers = {
         effect: "Toughness 2. Returns it to the staging area.",
         description: "Uruk-hai",
         assets: {
-          normalPath: require("../assets/cardsBig/urukhaifighter_big.png"),
-          miniaturePath: require("../assets/cardsSmall/urukhaifighter_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -603,8 +603,8 @@ export const fakePlayers: IPlayers = {
         effect: "Add an Orc ennemy to the staging area.",
         description: "Uruk",
         assets: {
-          normalPath: require("../assets/cardsBig/uruklieutenant_big.png"),
-          miniaturePath: require("../assets/cardsSmall/uruklieutenant_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -617,8 +617,8 @@ export const fakePlayers: IPlayers = {
         effect: "Destroys a character.",
         description: "Uruk-hai",
         assets: {
-          normalPath: require("../assets/cardsBig/uruksoldier_big.png"),
-          miniaturePath: require("../assets/cardsSmall/uruksoldier_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],
@@ -631,8 +631,8 @@ export const fakePlayers: IPlayers = {
         effect: "Return Wargs to the staging area after it attacks.",
         description: "Creature",
         assets: {
-          normalPath: require("../assets/cardsBig/wargs_big.png"),
-          miniaturePath: require("../assets/cardsSmall/wargs_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: [],
@@ -645,8 +645,8 @@ export const fakePlayers: IPlayers = {
         effect: "Player cannot play attachments on the Witch-King.",
         description: "Nazgul",
         assets: {
-          normalPath: require("../assets/cardsBig/witchking_big.png"),
-          miniaturePath: require("../assets/cardsSmall/witchking_small.png")
+          normalPath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png"),
+          miniaturePath: require("../assets/HumbleBundle/TCG Card Design/wooden_style/card_title/frame_wood.png")
         } as ICardAssets,
         faction: Faction.evil,
         linkedTo: ["Hero X", "Hero Y"],

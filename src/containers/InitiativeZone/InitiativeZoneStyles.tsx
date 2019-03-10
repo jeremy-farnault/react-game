@@ -101,7 +101,7 @@ DisplayMoreButton.displayName = 'DisplayMoreButton'
 export const EndTurnButton = styled.img`
 height: ${VariousAssets.endTurn.size}px;
 margin-bottom: 12px;
-margin-left: 20px;
+margin-left: 10px;
 &:hover {
 opacity: ${grid.opacity};
 }
