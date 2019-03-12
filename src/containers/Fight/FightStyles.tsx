@@ -10,7 +10,7 @@ ContainerScene.displayName = 'ContainerScene'
 
 export const BackgroundImage = styled.img`
 position: absolute;
-top: -300px;
+top: 0;
 left: 0;
 z-index: 0;
 `

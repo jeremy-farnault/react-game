@@ -82,7 +82,7 @@ class Fight extends React.PureComponent<IProps, IState> {
     return (
       <ContainerScene>
         <BackgroundImage
-          src={require("../../assets/backgrounds/battlefield_big.jpg")}/>
+          src={require("../../assets/HumbleBundle/GUI/Fantasy_GUI/bg.png")}/>
         {heroes.length > 0 &&
         <div>
           <BattlefieldScene>

@@ -26,9 +26,9 @@ StyledTile.displayName = 'StyledTile'
 
 export const StyledInvisibleTile = styled.div`
 position: absolute;
-top: 0px;
-left: 0px;
-background-color: red;
+top: 0;
+left: 0;
+background-color: transparent;
 width: ${(props: {size: number}) => props.size}px;
 height: ${(props: {size: number}) => props.size}px;
 z-index: 10;
