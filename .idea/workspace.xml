@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/backgrounds/battlefield_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/backgrounds/battlefield_big_snow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tile/TileStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tile/TileStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,11 +46,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.tsx">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#0#112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/models.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="197" column="49" selection-start-line="197" selection-start-column="49" selection-end-line="197" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/constants.ts">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -73,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>updateTiles</find>
       <find>resetTiles</find>
       <find>DetailsAndInitiativeZone</find>
       <find>material</find>
@@ -103,6 +130,7 @@
       <find>tokenInitPath</find>
       <find>tokenPath</find>
       <find>255, 0, 0</find>
+      <find>ActionButtonIcon</find>
     </findStrings>
     <replaceStrings>
       <replace>TILES</replace>
@@ -137,7 +165,6 @@
         <option value="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetailsStyles.tsx" />
         <option value="$PROJECT_DIR$/src/utils/grid.ts" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButtonStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/components/ActionPoints/ActionPoints.tsx" />
@@ -174,12 +201,13 @@
         <option value="$PROJECT_DIR$/src/components/CastButton/CastButton.tsx" />
         <option value="$PROJECT_DIR$/src/components/CastButton/CastButtonStyles.tsx" />
         <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/core/models.ts" />
         <option value="$PROJECT_DIR$/src/dbstore/fakePlayers.ts" />
         <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/Tile/TileStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/Hero/Hero.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx" />
+        <option value="$PROJECT_DIR$/src/core/models.ts" />
       </list>
     </option>
   </component>
@@ -214,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,6 +308,13 @@
               <item name="react-game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ActionButton" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
@@ -419,7 +455,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -605,6 +640,7 @@
       <workItem from="1552122035282" duration="593000" />
       <workItem from="1552182714724" duration="5998000" />
       <workItem from="1552432672162" duration="1872000" />
+      <workItem from="1552455415868" duration="2062000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -652,7 +688,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362252000" />
+    <option name="totallyTimeSpent" value="364314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -753,16 +789,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fix halo first hero" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/cardsBig/aragorn_big.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbstore/cards.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="1013" selection-start-line="1013" selection-end-line="1013" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1024,22 +1050,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1094">
-          <caret line="173" column="2" selection-start-line="173" selection-start-column="2" selection-end-line="173" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/HumbleBundle/Fantasy Characters/FantasyCharacters_h_rogue_male.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbstore/fakePlayers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="94" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -1055,17 +1074,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbstore/fakePlayers.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/Hero/HeroStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="21" column="94" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
+        <state relative-caret-position="68">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.tsx">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/constants.ts">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="197" column="49" selection-start-line="197" selection-start-column="49" selection-end-line="197" selection-end-column="49" />
         </state>
       </provider>
     </entry>

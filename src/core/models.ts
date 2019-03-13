@@ -195,8 +195,8 @@ export enum SkillIconType {
 }
 
 export const SkillsIcon = {
-  specialAttack: require("../assets/skillTokens/weapon_skill.png"),
-  specialMagic: require("../assets/skillTokens/magic_skill.png")
+  specialAttack: require("../assets/HumbleBundle/Fantasy Badges/Tex_badge_32.png"),
+  specialMagic: require("../assets/HumbleBundle/Fantasy Badges/Tex_badge_35.PNG")
 };
 
 // Action Buttons
@@ -220,12 +220,12 @@ export enum ActionsTypeText {
 }
 
 export const ActionButtonIcon = {
-  heroMovement: require("../assets/actionsTokens/movement_action.png"),
-  heroAttack: require("../assets/actionsTokens/attack_action.png"),
-  heroRangedAttack: require("../assets/actionsTokens/ranged_attack_action.png"),
-  heroAttackArmor: require("../assets/actionsTokens/attack_armor_action.png"),
-  heroMagic: require("../assets/actionsTokens/magic_action.png"),
-  heroDefense: require("../assets/actionsTokens/defense_action.png")
+  heroMovement: require("../assets/HumbleBundle/Loot RPG/ActionLoot_18.png"),
+  heroAttack: require("../assets/HumbleBundle/Loot RPG/ActionLoot_10.png"),
+  heroRangedAttack: require("../assets/HumbleBundle/Loot RPG/ActionLoot_73.png"),
+  heroAttackArmor: require("../assets/HumbleBundle/Loot RPG/ActionLoot_03.png"),
+  heroMagic: require("../assets/HumbleBundle/Loot RPG/ActionLoot_113.png"),
+  heroDefense: require("../assets/HumbleBundle/Loot RPG/ActionLoot_97.png")
 };
 
 export enum ActionCharacteristic {
@@ -273,15 +273,15 @@ export interface ICardsBattlefieldPlayer {
 
 export const IHeroBattlefieldPointsIcon = {
   currentLifePoints: {
-    path: require("../assets/descriptionTokens/life_points.png"),
+    path: require("../assets/HumbleBundle/Potion Icons/t_37.png"),
     size: 30
   },
   currentMagicPoints: {
-    path: require("../assets/descriptionTokens/magic_points.png"),
+    path: require("../assets/HumbleBundle/Potion Icons/t_38.png"),
     size: 30
   },
   currentArmorPoints: {
-    path: require("../assets/descriptionTokens/armor_points.png"),
+    path: require("../assets/HumbleBundle/Fantasy Icons/ArmorIcons/ArmorIcons_png/transparent/armor/armor_20.PNG"),
     size: 30
   }
 };
@@ -290,11 +290,11 @@ export const IHeroBattlefieldPointsIcon = {
 
 export const ActionPointsIcon = {
   actionPointFull: {
-    path: require("../assets/HumbleBundle/Potion Icons/t_38.png"),
+    path: require("../assets/HumbleBundle/Fantasy Icons/GemsIcons/GemsIcons_png/116.png"),
     size: 40
   },
   actionPointEmpty: {
-    path: require("../assets/HumbleBundle/Potion Icons/t_39.png"),
+    path: require("../assets/HumbleBundle/Fantasy Icons/GemsIcons/GemsIcons_png/addons/gems_add_144.png"),
     size: 40
   }
 };

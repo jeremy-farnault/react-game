@@ -29,8 +29,7 @@ class ActionButton extends React.PureComponent<IProps, {}> {
         disabled={this.props.disabled}
         onClick={this.pressActionButton}>
         <img src={ActionButtonIcon[ActionsType[this.props.actionType]]}
-             height={constants.buttonActionSize}
-             width={constants.buttonActionSize}/>
+             height={constants.buttonActionSize}/>
       </ButtonActionStyled>
     );
   }
