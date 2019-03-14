@@ -315,3 +315,11 @@ export const VariousAssets = {
     path: require("../assets/HumbleBundle/Fantasy Icons/MagicItems/MagicItems_png/transparent/addons/addons_13_t.png")
   }
 };
+
+// UI Assets
+
+export const UIAssets = {
+  pointsBackground: {
+    path: require("../assets/HumbleBundle/Wooden UI/plank_14.png")
+  }
+}

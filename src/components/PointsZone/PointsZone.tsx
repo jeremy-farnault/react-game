@@ -1,4 +1,4 @@
-import { IHeroBattlefield } from "../../core/models";
+import { IHeroBattlefield, UIAssets } from "../../core/models";
 import { PointsZoneStyled, TextZoneStyled } from "./PointsZoneStyles";
 
 import * as React from "react";
@@ -19,6 +19,7 @@ class PointsZone extends React.PureComponent<IProps, {}> {
       <PointsZoneStyled
         data-place="bottom"
         data-tip={'Points left'}>
+        <img src={UIAssets.pointsBackground.path} width={90}/>
         <ReactTooltip type='light' effect='solid' multiline={true}/>
         <TextZoneStyled
           isCurrentPlayer={this.props.isCurrentPlayer}>
