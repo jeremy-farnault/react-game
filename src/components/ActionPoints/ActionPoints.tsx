@@ -1,6 +1,6 @@
-import { ActionPointsIcon, IHeroBattlefield } from "../../core/models";
+import { ActionPointsIcon, IHeroBattlefield, UIAssets } from "../../core/models";
 import { constants } from "../../utils/constants";
-import { ActionPointsStyled, ActionPointsZoneStyled } from "./ActionPointsStyles";
+import { ActionPointsBackground, ActionPointsStyled, ActionPointsZoneStyled } from "./ActionPointsStyles";
 
 import * as _ from "lodash";
 import * as React from "react";
@@ -34,6 +34,7 @@ class ActionPoints extends React.PureComponent<IProps, IState> {
     const cp = this.state.currentAP
     return (
       <ActionPointsZoneStyled>
+        <ActionPointsBackground src={UIAssets.actionPointsBackground.path} width={90}/>
         {_.range(constants.actionPoints).reverse().map((i: number) =>
           <ActionPointsStyled key={i}
                               src={cp <= i ? ActionPointsIcon.actionPointEmpty.path : ActionPointsIcon.actionPointFull.path}

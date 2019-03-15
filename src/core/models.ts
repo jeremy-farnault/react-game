@@ -321,5 +321,8 @@ export const VariousAssets = {
 export const UIAssets = {
   pointsBackground: {
     path: require("../assets/HumbleBundle/Wooden UI/plank_14.png")
+  },
+  actionPointsBackground: {
+    path: require("../assets/HumbleBundle/Wooden UI/plank_13.png")
   }
 }
