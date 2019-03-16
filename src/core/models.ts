@@ -320,9 +320,15 @@ export const VariousAssets = {
 
 export const UIAssets = {
   pointsBackground: {
-    path: require("../assets/HumbleBundle/Wooden UI/plank_14.png")
+    currentPlayerPath: require("../assets/HumbleBundle/GUI/Fantasy_GUI/banner_01_01.png"),
+    enemyPlayerPath: require("../assets/HumbleBundle/GUI/Fantasy_GUI/banner_02_01.png"),
+    width: 90
   },
   actionPointsBackground: {
     path: require("../assets/HumbleBundle/Wooden UI/plank_13_90.png")
+  },
+  actionButtonsBackground: {
+    path: require("../assets/HumbleBundle/Wooden UI/frame_k_03.png"),
+    height: 220
   }
 }

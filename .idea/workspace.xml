@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActionPoints/ActionPoints.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionPoints/ActionPoints.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActionPoints/ActionPointsStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionPoints/ActionPointsStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PointsZone/PointsZone.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PointsZone/PointsZone.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PointsZone/PointsZoneStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PointsZone/PointsZoneStyles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,26 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/models.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
-              <caret line="325" column="62" selection-start-line="325" selection-start-column="62" selection-end-line="325" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ActionPoints/ActionPoints.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/ActionPoints/ActionPointsStyles.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="830">
+              <caret line="331" column="13" selection-start-line="331" selection-start-column="13" selection-end-line="331" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -51,17 +35,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/PointsZone/PointsZone.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="306">
+              <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#66#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/PointsZone/PointsZoneStyles.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -134,12 +135,10 @@
         <option value="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetailsStyles.tsx" />
         <option value="$PROJECT_DIR$/src/utils/grid.ts" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButtonStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx" />
         <option value="$PROJECT_DIR$/src/utils/colors.ts" />
         <option value="$PROJECT_DIR$/src/utils/constants.ts" />
-        <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/Timer/TimerStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/BottomSection/BottomSectionStyles.tsx" />
         <option value="$PROJECT_DIR$/src/core/create.ts" />
@@ -172,11 +171,13 @@
         <option value="$PROJECT_DIR$/src/components/Tile/TileStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/Hero/Hero.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx" />
-        <option value="$PROJECT_DIR$/src/components/PointsZone/PointsZoneStyles.tsx" />
-        <option value="$PROJECT_DIR$/src/components/PointsZone/PointsZone.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionPoints/ActionPoints.tsx" />
-        <option value="$PROJECT_DIR$/src/core/models.ts" />
         <option value="$PROJECT_DIR$/src/components/ActionPoints/ActionPointsStyles.tsx" />
+        <option value="$PROJECT_DIR$/src/components/PointsZone/PointsZoneStyles.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx" />
+        <option value="$PROJECT_DIR$/src/core/models.ts" />
+        <option value="$PROJECT_DIR$/src/components/PointsZone/PointsZone.tsx" />
       </list>
     </option>
   </component>
@@ -211,7 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,6 +284,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ActionButton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ActionButtons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-game" type="b2602c69:ProjectViewProjectNode" />
@@ -438,6 +445,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -626,7 +634,8 @@
       <workItem from="1552455415868" duration="2062000" />
       <workItem from="1552525142064" duration="1203000" />
       <workItem from="1552534956917" duration="2941000" />
-      <workItem from="1552719335494" duration="769000" />
+      <workItem from="1552719335494" duration="846000" />
+      <workItem from="1552770226938" duration="3542000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -674,7 +683,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369227000" />
+    <option name="totallyTimeSpent" value="372846000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -775,16 +784,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fix halo first hero" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/reducers/index.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1011,16 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/constants.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1055,20 +1044,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/HumbleBundle/Wooden UI/plank_13.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ActionPoints/ActionPoints.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="325" column="62" selection-start-line="325" selection-start-column="62" selection-end-line="325" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Fight/FightStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1076,24 +1051,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PointsZone/PointsZone.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/ActionPoints/ActionPoints.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PointsZone/PointsZoneStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+        <state relative-caret-position="527">
+          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ActionPoints/ActionPointsStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PointsZone/PointsZoneStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtonsStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="331" column="13" selection-start-line="331" selection-start-column="13" selection-end-line="331" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PointsZone/PointsZone.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
