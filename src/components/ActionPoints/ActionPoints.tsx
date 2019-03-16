@@ -16,31 +16,33 @@ interface IState {
 class ActionPoints extends React.PureComponent<IProps, IState> {
 
   constructor(props: IProps) {
-    super(props)
+    super(props);
     this.state = {
       currentAP: this.props.currentHero.currentActionPoints
-    }
+    };
   }
 
   public componentWillReceiveProps(nextProps: IProps) {
     if (nextProps.currentHero.currentActionPoints !== this.state.currentAP) {
       this.setState({
         currentAP: nextProps.currentHero.currentActionPoints
-      })
+      });
     }
   }
 
   public render() {
-    const cp = this.state.currentAP
+    const cp = this.state.currentAP;
     return (
-      <ActionPointsZoneStyled>
+      <div style={{position: 'relative'}}>
         <ActionPointsBackground src={UIAssets.actionPointsBackground.path} width={90}/>
-        {_.range(constants.actionPoints).reverse().map((i: number) =>
-          <ActionPointsStyled key={i}
-                              src={cp <= i ? ActionPointsIcon.actionPointEmpty.path : ActionPointsIcon.actionPointFull.path}
-                              height={cp <= i ? ActionPointsIcon.actionPointEmpty.size : ActionPointsIcon.actionPointFull.size}/>
-        )}
-      </ActionPointsZoneStyled>
+        <ActionPointsZoneStyled>
+          {_.range(constants.actionPoints).reverse().map((i: number) =>
+            <ActionPointsStyled key={i}
+                                src={cp <= i ? ActionPointsIcon.actionPointEmpty.path : ActionPointsIcon.actionPointFull.path}
+                                height={cp <= i ? ActionPointsIcon.actionPointEmpty.size : ActionPointsIcon.actionPointFull.size}/>
+          )}
+        </ActionPointsZoneStyled>
+      </div>
     );
   }
 }

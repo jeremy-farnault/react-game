@@ -323,6 +323,6 @@ export const UIAssets = {
     path: require("../assets/HumbleBundle/Wooden UI/plank_14.png")
   },
   actionPointsBackground: {
-    path: require("../assets/HumbleBundle/Wooden UI/plank_13.png")
+    path: require("../assets/HumbleBundle/Wooden UI/plank_13_90.png")
   }
 }
