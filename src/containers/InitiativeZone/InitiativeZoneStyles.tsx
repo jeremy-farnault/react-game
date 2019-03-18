@@ -12,23 +12,15 @@ align-items: flex-end;
 InitiativeContainer.displayName = 'InitiativeContainer'
 
 export const CurrentHeroZone = styled.div`
-background-color: ${colors.greyOpacity};
-display: flex;
-justify-content: flex-start;
-align-items: flex-end;
-flex-direction: row;
-padding: 10px 17px;
-height: fit-content;
-width: fit-content;
-border: 2px solid ${colors.grey};
-border-right-width: 0;
-border-top-right-radius: ${(50 * 1.6 + 40 + 13) / 2}px;
-border-top-left-radius: ${(50 * 1.6 + 40 + 13) / 2}px;
-border-bottom-left-radius: ${(50 * 1.6 + 40 + 13) / 2}px;
+position: relative;
 `
 CurrentHeroZone.displayName = 'CurrentHeroZone'
 
 export const CurrentHero = styled.div`
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 display: flex;
 justify-content: center;
 flex-direction: column;

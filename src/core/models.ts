@@ -330,5 +330,9 @@ export const UIAssets = {
   actionButtonsBackground: {
     path: require("../assets/HumbleBundle/Wooden UI/frame_k_03.png"),
     height: 220
+  },
+  initiativeCurrentHero: {
+    path: require('../assets/HumbleBundle/Wooden UI/frame_c_05.png'),
+    size: 150
   }
 }

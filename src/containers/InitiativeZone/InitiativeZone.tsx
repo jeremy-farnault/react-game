@@ -1,4 +1,4 @@
-import { IHeroBattlefield, VariousAssets } from "../../core/models";
+import { IHeroBattlefield, UIAssets, VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
 import { constants } from "../../utils/constants";
 import {
@@ -39,10 +39,12 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
               updateSelectedHero={this.props.updateSelectedHero}
               src={heroes[0].assets.tokenPath.path}
               dataTip={heroes[0].id}
-              width={heroes[0].assets.tokenPath.width * 1.6}
-              height={heroes[0].assets.tokenPath.width * 1.6}/>
+              width={heroes[0].assets.tokenPath.width * 1.4}
+              height={heroes[0].assets.tokenPath.width * 1.4}/>
             <CurrentHeroTeam/>
           </CurrentHero>
+          <img src={UIAssets.initiativeCurrentHero.path}
+               width={UIAssets.initiativeCurrentHero.size}/>
         </CurrentHeroZone>
         <SecondaryHeroesZone>
           {heroes.map((h: IHeroBattlefield, ind: number) => {
