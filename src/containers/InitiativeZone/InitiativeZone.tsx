@@ -32,6 +32,8 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
     const remainingHeroes = "<div>" + test.map(s => `<p>` + s.hero + " (" + s.player + ")</p>").join("") + "</div>";
     return (
       <InitiativeContainer>
+        <img src={UIAssets.initiativeOtherHeroes.path} style={{position: 'absolute', top: '50%', left: 0, zIndex: -1, transform:"translate(25%, -50%)"}}
+             height={UIAssets.initiativeOtherHeroes.height}/>
         <CurrentHeroZone>
           <CurrentHero>
             <InitiativeHeroPortrait

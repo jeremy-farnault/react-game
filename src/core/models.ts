@@ -334,5 +334,9 @@ export const UIAssets = {
   initiativeCurrentHero: {
     path: require('../assets/HumbleBundle/Wooden UI/frame_c_05.png'),
     size: 150
+  },
+  initiativeOtherHeroes: {
+    path: require('../assets/HumbleBundle/Wooden UI/strip_bg02.png'),
+    height: 60
   }
 }

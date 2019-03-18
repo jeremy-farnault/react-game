@@ -5,9 +5,10 @@ import { grid } from "../../utils/grid";
 import styled from "styled-components";
 
 export const InitiativeContainer = styled.div`
+position: relative;
 display: flex;
 flex-direction: row;
-align-items: flex-end;
+align-items: center;
 `
 InitiativeContainer.displayName = 'InitiativeContainer'
 
@@ -38,21 +39,10 @@ background-color: ${colors.blueGreen};
 CurrentHeroTeam.displayName = 'CurrentHeroTeam'
 
 export const SecondaryHeroesZone = styled.div`
-background-color: ${colors.greyOpacity};
 display: flex;
-justify-content: flex-start;
-align-items: flex-end;
 flex-direction: row;
-padding-top: 10px;
 height: fit-content;
-border: 2px solid ${colors.grey};
-border-left-width: 0;
-padding-bottom: 10px;
-padding-right: 10px;
 width: fit-content;
-border-top-right-radius: ${(50 * 1.3 + 20 + 13) / 2}px;
-border-top-left-radius: 15px;
-border-bottom-right-radius: ${(50 * 1.3 + 20 + 13) / 2}px;
 `
 SecondaryHeroesZone.displayName = 'SecondaryHeroesZone'
 
@@ -92,8 +82,6 @@ DisplayMoreButton.displayName = 'DisplayMoreButton'
 
 export const EndTurnButton = styled.img`
 height: ${VariousAssets.endTurn.size}px;
-margin-bottom: 12px;
-margin-left: 10px;
 &:hover {
 opacity: ${grid.opacity};
 }
