@@ -141,6 +141,9 @@ Attack and kill heroes to win the game
             - His non blocking to walk
             - Can't be attacked
 - Integrate the new assets
+    - Don't forget more heroes button and modal
+    - Don't forget hero panel and hero details popup
+- Integrate chat
 
 Defending should put the current hero on shadow color and not the foes
 

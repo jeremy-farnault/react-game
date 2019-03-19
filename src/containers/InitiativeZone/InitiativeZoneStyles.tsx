@@ -13,6 +13,7 @@ align-items: center;
 InitiativeContainer.displayName = 'InitiativeContainer'
 
 export const CurrentHeroZone = styled.div`
+margin-right: 10px;
 position: relative;
 `
 CurrentHeroZone.displayName = 'CurrentHeroZone'
@@ -46,8 +47,17 @@ width: fit-content;
 `
 SecondaryHeroesZone.displayName = 'SecondaryHeroesZone'
 
-export const SecondaryHero = styled.div`
+export const SecondaryHeroZone = styled.div`
+position: relative;
 margin-right: 10px;
+`
+SecondaryHeroZone.displayName = 'SecondaryHeroZone'
+
+export const SecondaryHero = styled.div`
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 display: flex;
 justify-content: center;
 flex-direction: column;

@@ -6,7 +6,7 @@ import {
   CurrentHeroTeam,
   CurrentHeroZone, DisplayMoreButton, EndTurnButton,
   InitiativeContainer, SecondaryHero,
-  SecondaryHeroesZone, SecondaryHeroTeam
+  SecondaryHeroesZone, SecondaryHeroTeam, SecondaryHeroZone
 } from "./InitiativeZoneStyles";
 
 import { Icon } from "@material-ui/core";
@@ -32,8 +32,6 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
     const remainingHeroes = "<div>" + test.map(s => `<p>` + s.hero + " (" + s.player + ")</p>").join("") + "</div>";
     return (
       <InitiativeContainer>
-        <img src={UIAssets.initiativeOtherHeroes.path} style={{position: 'absolute', top: '50%', left: 0, zIndex: -1, transform:"translate(25%, -50%)"}}
-             height={UIAssets.initiativeOtherHeroes.height}/>
         <CurrentHeroZone>
           <CurrentHero>
             <InitiativeHeroPortrait
@@ -53,16 +51,20 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
             if (ind === 0 || ind > constants.maxNumberOfHeroesInitiative) {
               return null;
             }
-            return <SecondaryHero key={h.playerId + h.id}>
-              <InitiativeHeroPortrait
-                hero={h}
-                updateSelectedHero={this.props.updateSelectedHero}
-                src={h.assets.tokenPath.path}
-                dataTip={h.id}
-                width={h.assets.tokenPath.width * 0.8}
-                height={h.assets.tokenPath.width * 0.8}/>
-              <SecondaryHeroTeam sameTeam={h.playerId === heroes[0].playerId}/>
-            </SecondaryHero>;
+            return <SecondaryHeroZone key={h.playerId + h.id}>
+              <SecondaryHero>
+                <InitiativeHeroPortrait
+                  hero={h}
+                  updateSelectedHero={this.props.updateSelectedHero}
+                  src={h.assets.tokenPath.path}
+                  dataTip={h.id}
+                  width={h.assets.tokenPath.width * 0.8}
+                  height={h.assets.tokenPath.width * 0.8}/>
+                <SecondaryHeroTeam sameTeam={h.playerId === heroes[0].playerId}/>
+              </SecondaryHero>
+              <img src={UIAssets.initiativeOtherHeroes.path}
+                   width={UIAssets.initiativeOtherHeroes.size}/>
+            </SecondaryHeroZone>;
           })}
           {heroes.length > constants.maxNumberOfHeroesInitiative &&
           <DisplayMoreButton
