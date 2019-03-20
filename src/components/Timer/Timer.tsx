@@ -1,4 +1,4 @@
-import { IHeroBattlefield } from "../../core/models";
+import { IHeroBattlefield, UIAssets } from "../../core/models";
 import { constants } from "../../utils/constants";
 import { TimerStyled, TimerZoneStyled } from "./TimerStyles";
 
@@ -43,6 +43,7 @@ class Timer extends React.PureComponent<IProps, IState> {
     const { totalTime } = this.state;
     return (
       <TimerZoneStyled>
+        <img src={UIAssets.timerBackground.path} width={UIAssets.timerBackground.width}/>
         <TimerStyled
           isWarning={totalTime <= constants.timerWarning}
           isAlert={totalTime <= constants.timerAlert}>
@@ -58,7 +59,7 @@ class Timer extends React.PureComponent<IProps, IState> {
     }, 1000);
   };
 
-  private stopTimer = () => {
+  private readonly stopTimer = () => {
     clearInterval(this.interval);
     this.setState({ totalTime: this.props.minutesTurn * 60 + this.props.secondsTurn });
     this.startTimer();

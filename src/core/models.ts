@@ -338,5 +338,9 @@ export const UIAssets = {
   initiativeOtherHeroes: {
     path: require('../assets/HumbleBundle/Wooden UI/frame_c_03.png'),
     size: 80
+  },
+  timerBackground: {
+    path: require('../assets/HumbleBundle/GUI/Fantasy_GUI/text_bg_03.png'),
+    width: 220
   }
 }
