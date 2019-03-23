@@ -144,6 +144,8 @@ Attack and kill heroes to win the game
     - Don't forget more heroes button and modal
     - Don't forget hero panel and hero details popup
 - Integrate chat
+- Save user data in database
+- Start to work on multiplayer
 
 Defending should put the current hero on shadow color and not the foes
 
