@@ -319,17 +319,16 @@ export const VariousAssets = {
 // UI Assets
 
 export const UIAssets = {
-  pointsBackground: {
-    currentPlayerPath: require("../assets/HumbleBundle/GUI/Fantasy_GUI/banner_01_01.png"),
-    enemyPlayerPath: require("../assets/HumbleBundle/GUI/Fantasy_GUI/banner_02_01.png"),
-    width: 90
-  },
-  actionPointsBackground: {
-    path: require("../assets/HumbleBundle/Wooden UI/plank_13_90.png")
+  actionAndDetailsBackground: {
+    path: require("../assets/HumbleBundle/GUI/QuestJournal/book/book.png"),
+    height: 260
   },
   actionButtonsBackground: {
     path: require("../assets/HumbleBundle/Wooden UI/frame_k_03.png"),
     height: 220
+  },
+  actionPointsBackground: {
+    path: require("../assets/HumbleBundle/Wooden UI/plank_13_90.png")
   },
   initiativeCurrentHero: {
     path: require('../assets/HumbleBundle/Wooden UI/frame_c_05.png'),
@@ -338,6 +337,11 @@ export const UIAssets = {
   initiativeOtherHeroes: {
     path: require('../assets/HumbleBundle/Wooden UI/frame_c_03.png'),
     size: 80
+  },
+  pointsBackground: {
+    currentPlayerPath: require("../assets/HumbleBundle/GUI/Fantasy_GUI/banner_01_01.png"),
+    enemyPlayerPath: require("../assets/HumbleBundle/GUI/Fantasy_GUI/banner_02_01.png"),
+    width: 90
   },
   timerBackground: {
     path: require('../assets/HumbleBundle/GUI/Fantasy_GUI/text_bg_03.png'),

@@ -1,6 +1,6 @@
 import * as actions from "../../core/actions";
 import { ActionsType, ICardsBattlefield, IHeroBattlefield, VariousAssets } from "../../core/models";
-import ActionButtons from "../ActionButtons/ActionButtons";
+import ActionsAndDetails from "../ActionsAndDetails/ActionsAndDetails";
 import InitiativeAndDetails from "../InitiativeAndDetails/InitiativeAndDetails";
 import Timer from "../Timer/Timer";
 import { BottomSectionContainer, DeckImage, LeftSection, RightSection } from "./BottomSectionStyles";
@@ -41,11 +41,9 @@ class BottomSection extends React.PureComponent<IProps, IState> {
     return (
       <BottomSectionContainer>
         <LeftSection>
-          <ActionButtons
-            hero={heroes[0]}
-            currentActionPoints={heroes[0].currentActionPoints}
-            currentAction={action}
-            changeAction={this.props.changeAction}/>
+          <ActionsAndDetails heroesSorted={heroes}
+                             changeAction={this.props.changeAction}
+                             selectedAction={action}/>
           <InitiativeAndDetails heroesSorted={heroes}
                                 updateSelectedHero={this.props.updateSelectedHero}
                                 setNextCurrentHero={this.props.setNextCurrentHero}
