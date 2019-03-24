@@ -143,9 +143,11 @@ Attack and kill heroes to win the game
 - Integrate the new assets
     - Don't forget more heroes button and modal
     - Don't forget hero panel and hero details popup
+    - Do skills and actions
 - Integrate chat
 - Save user data in database
 - Start to work on multiplayer
+- Start writing the story for the solo game. Think about a book story and integrate
 
 Defending should put the current hero on shadow color and not the foes
 
