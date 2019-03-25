@@ -320,7 +320,7 @@ export const VariousAssets = {
 
 export const UIAssets = {
   actionAndDetailsBackground: {
-    path: require("../assets/HumbleBundle/GUI/QuestJournal/book/book.png"),
+    path: require("../assets/HumbleBundle/GUI/QuestJournal/book/book_cropped.png"),
     height: 260
   },
   actionButtonsBackground: {

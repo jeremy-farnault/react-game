@@ -16,9 +16,9 @@ class ActionsAndDetails extends React.PureComponent<IProps, {}> {
 
   public render() {
     return (
-      <div style={{ position: "relative", display: "flex", flexDirection: "row" }}>
+      <div style={{ position: "relative" }}>
         <img src={UIAssets.actionAndDetailsBackground.path} height={UIAssets.actionAndDetailsBackground.height}/>
-        <div style={{position: 'absolute'}}>
+        <div style={{position: 'absolute', display: "flex", flexDirection: "row", top: 0, left: 0}}>
           <ActionButtons
             hero={this.props.heroesSorted[0]}
             currentActionPoints={this.props.heroesSorted[0].currentActionPoints}
