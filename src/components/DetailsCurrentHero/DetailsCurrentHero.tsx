@@ -1,6 +1,10 @@
 import { IHeroBattlefield, IHeroBattlefieldPointsIcon, IHeroSkill, SkillsIcon } from "../../core/models";
-import { TextStyled } from "../DetailsModal/DetailsModalStyles";
-import { DetailsCurrentHeroContainer, PointsCurrentHero, SkillsCurrentHero } from "./DetailsCurrentHeroStyles";
+import {
+  DetailsCurrentHeroContainer,
+  PointsCurrentHero,
+  SkillsCurrentHero,
+  TextStyled
+} from "./DetailsCurrentHeroStyles";
 
 import * as _ from 'lodash'
 import * as React from "react";

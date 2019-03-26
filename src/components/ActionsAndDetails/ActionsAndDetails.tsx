@@ -1,6 +1,8 @@
 import { ActionsType, IHeroBattlefield, UIAssets } from "../../core/models";
+import { ActionsAndDetailsStrings } from "../../core/strings";
 import ActionButtons from "../ActionButtons/ActionButtons";
 import DetailsCurrentHero from "../DetailsCurrentHero/DetailsCurrentHero";
+import { ContainerStyled, PageContainerStyled, PagesContainerStyled, PageTitleStyled } from "./ActionAndDetailsStyles";
 
 import * as React from "react";
 
@@ -16,17 +18,24 @@ class ActionsAndDetails extends React.PureComponent<IProps, {}> {
 
   public render() {
     return (
-      <div style={{ position: "relative" }}>
-        <img src={UIAssets.actionAndDetailsBackground.path} height={UIAssets.actionAndDetailsBackground.height}/>
-        <div style={{position: 'absolute', display: "flex", flexDirection: "row", top: 0, left: 0}}>
-          <ActionButtons
-            hero={this.props.heroesSorted[0]}
-            currentActionPoints={this.props.heroesSorted[0].currentActionPoints}
-            currentAction={this.props.selectedAction}
-            changeAction={this.props.changeAction}/>
-          <DetailsCurrentHero heroesSorted={this.props.heroesSorted}/>
-        </div>
-      </div>
+      <ContainerStyled>
+        <img src={UIAssets.actionAndDetailsBackground.path}
+             height={UIAssets.actionAndDetailsBackground.height}/>
+        <PagesContainerStyled>
+          <PageContainerStyled>
+            <PageTitleStyled>{ActionsAndDetailsStrings.actionsTitle}</PageTitleStyled>
+            <ActionButtons
+              hero={this.props.heroesSorted[0]}
+              currentActionPoints={this.props.heroesSorted[0].currentActionPoints}
+              currentAction={this.props.selectedAction}
+              changeAction={this.props.changeAction}/>
+          </PageContainerStyled>
+          <PageContainerStyled>
+            <PageTitleStyled>{ActionsAndDetailsStrings.detailsTitle}</PageTitleStyled>
+            <DetailsCurrentHero heroesSorted={this.props.heroesSorted}/>
+          </PageContainerStyled>
+        </PagesContainerStyled>
+      </ContainerStyled>
     );
   }
 }
