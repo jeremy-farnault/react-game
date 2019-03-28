@@ -1,6 +1,6 @@
-import { ActionButtonIcon, ActionsType, ActionsTypeText } from "../../core/models";
+import { ActionButtonIcon, ActionsType, ActionsTypeText, UIAssets } from "../../core/models";
 import { constants } from "../../utils/constants";
-import { ButtonActionStyled } from "./ActionButtonStyles";
+import { ButtonActionImageStyled, ButtonActionStyled } from "./ActionButtonStyles";
 
 import * as React from "react";
 
@@ -28,15 +28,17 @@ class ActionButton extends React.PureComponent<IProps, {}> {
         selected={this.props.selected}
         disabled={this.props.disabled}
         onClick={this.pressActionButton}>
-        <img src={ActionButtonIcon[ActionsType[this.props.actionType]]}
-             height={constants.buttonActionSize}/>
+        {this.props.selected &&
+        <img src={UIAssets.actionButtonBackground.path} height={UIAssets.actionButtonBackground.height}/>}
+        <ButtonActionImageStyled src={ActionButtonIcon[ActionsType[this.props.actionType]]}
+                                 height={constants.buttonActionSize}/>
       </ButtonActionStyled>
     );
   }
 
   private pressActionButton = () => {
-    this.props.changeAction(this.props.actionType)
-  }
+    this.props.changeAction(this.props.actionType);
+  };
 }
 
 export default ActionButton;

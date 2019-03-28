@@ -323,6 +323,10 @@ export const UIAssets = {
     path: require("../assets/HumbleBundle/GUI/QuestJournal/book/book_cropped.png"),
     height: 260
   },
+  actionButtonBackground: {
+    path: require("../assets/HumbleBundle/Wooden UI/frame_c_04.png"),
+    height: 50
+  },
   actionButtonsBackground: {
     path: require("../assets/HumbleBundle/Wooden UI/frame_k_03.png"),
     height: 220

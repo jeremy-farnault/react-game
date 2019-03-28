@@ -25,5 +25,6 @@ PagesContainerStyled.displayName = 'PagesContainerStyled'
 
 export const ContainerStyled = styled.div`
 position: relative;
+margin-right: 20px;
 `
 ContainerStyled.displayName = 'ContainerStyled'
