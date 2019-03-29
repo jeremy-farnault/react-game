@@ -2,6 +2,7 @@
 
 * Redesign bottom section
     * Decided if the detail section will stay
+        * 3 different details sections -> reduce to one
     * Center the timer?
 * Integrate HumbleBundle assets
     * Button displaying the list of heroes on popup
