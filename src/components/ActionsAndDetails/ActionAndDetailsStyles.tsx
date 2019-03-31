@@ -1,6 +1,9 @@
+import { colors } from "../../utils/colors";
+
 import styled from "styled-components";
 
 export const PageTitleStyled = styled.div`
+color: ${(props: { sameTeam?: boolean }) => props.sameTeam ? colors.blueGreen : (props.sameTeam === false ? colors.paleRed : 'black')};
 height: 50px;
 align-items: flex-end;
 justify-content: center;

@@ -3,6 +3,7 @@
 * Redesign bottom section
     * Decided if the detail section will stay
         * 3 different details sections -> reduce to one
+            * Hero selected will be display in the action and details section as the page. Must include a way of showing team it belongs to
     * Center the timer?
 * Integrate HumbleBundle assets
     * Button displaying the list of heroes on popup

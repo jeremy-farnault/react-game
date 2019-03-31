@@ -41,13 +41,12 @@ class BottomSection extends React.PureComponent<IProps, IState> {
     return (
       <BottomSectionContainer>
         <LeftSection>
-          <ActionsAndDetails heroesSorted={heroes}
+          <ActionsAndDetails heroesSorted={heroes} selectedHero={hero}
                              changeAction={this.props.changeAction}
                              selectedAction={action}/>
           <InitiativeAndDetails heroesSorted={heroes}
                                 updateSelectedHero={this.props.updateSelectedHero}
-                                setNextCurrentHero={this.props.setNextCurrentHero}
-                                selectedHero={hero}/>
+                                setNextCurrentHero={this.props.setNextCurrentHero}/>
         </LeftSection>
         <RightSection>
           <Timer hero={heroes[0]} minutesTurn={1} secondsTurn={0}
