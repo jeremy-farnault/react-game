@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 export const BottomSectionContainer = styled.div`
 z-index: 1;
-max-width: ${constants.tileSize * constants.numberOfColumns + 355}px;
+max-width: ${constants.tileSize * constants.numberOfColumns + 500}px;
 justify-content: space-between;
 position: relative;
 display: flex;
@@ -24,7 +24,7 @@ LeftSection.displayName = 'LeftSection'
 
 export const RightSection = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 `
 RightSection.displayName = 'RightSection'
 

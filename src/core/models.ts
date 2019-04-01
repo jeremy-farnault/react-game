@@ -304,7 +304,7 @@ export const ActionPointsIcon = {
 export const VariousAssets = {
   cardBack: {
     path: require("../assets/HumbleBundle/TCG Card Design/lava_style/back/back_lava.png"),
-    height: 264
+    height: 214
   },
   endTurn: {
     path: require("../assets/HumbleBundle/Fantasy Icons/MagicItems/MagicItems_png/transparent/artifact_12_t.PNG"),
@@ -349,6 +349,6 @@ export const UIAssets = {
   },
   timerBackground: {
     path: require('../assets/HumbleBundle/GUI/Fantasy_GUI/text_bg_03.png'),
-    width: 220
+    width: 172
   }
 }

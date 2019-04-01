@@ -19,7 +19,7 @@ BackgroundImage.displayName = 'BackgroundImage'
 export const BattlefieldScene = styled.div`
 flex-direction: row;
 display: flex;
-max-width: ${constants.tileSize * constants.numberOfColumns + 355}px;
+max-width: ${constants.tileSize * constants.numberOfColumns + 220}px;
 justify-content: flex-start;
 margin: auto;
 `

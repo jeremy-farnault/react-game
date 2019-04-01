@@ -5,7 +5,6 @@ import styled from "styled-components";
 export const TimerZoneStyled = styled.div`
 position: relative;
 height: fit-content;
-margin-right: 20px;
 justify-content: center;
 align-items: center;
 `
