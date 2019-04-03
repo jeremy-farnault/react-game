@@ -1,4 +1,5 @@
 export const colors = {
+  background: '#21232F',
   blackLowOpacity: 'rgba(0, 0, 0, .2)',
   blackHighOpacity: 'rgba(0, 0, 0, .8)',
   blackMediumOpacity: 'rgba(0, 0, 0, .5)',

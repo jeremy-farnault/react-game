@@ -76,16 +76,16 @@ export enum TileHoverColors {
 }
 
 export enum TileSize {
-  empty = 25,
-  idleHero = 40,
-  heroAttack = 30,
-  heroAttackArmor = 30,
-  heroDead = 30,
-  heroDeadMovement = 30,
-  heroDefense = 30,
-  heroMagic = 30,
-  heroMovement = 30,
-  heroRangedAttack = 30
+  empty = 30,
+  idleHero = 45,
+  heroAttack = 35,
+  heroAttackArmor = 35,
+  heroDead = 35,
+  heroDeadMovement = 35,
+  heroDefense = 35,
+  heroMagic = 35,
+  heroMovement = 35,
+  heroRangedAttack = 35
 }
 
 // Heroes
@@ -349,6 +349,6 @@ export const UIAssets = {
   },
   timerBackground: {
     path: require('../assets/HumbleBundle/GUI/Fantasy_GUI/text_bg_03.png'),
-    width: 172
+    width: 230
   }
 }

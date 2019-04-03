@@ -1,10 +1,16 @@
-import { constants } from "../../utils/constants";
+import { colors } from "../../utils/colors";
 
 import styled from "styled-components";
 
 export const ContainerScene = styled.div`
+height: 100vh;
+width: 100vw;
+display: flex;
+align-items: flex-start;
 margin: auto;
-padding: 50px 0;
+justify-content: center;
+background-color: ${colors.background};
+
 `
 ContainerScene.displayName = 'ContainerScene'
 
@@ -19,24 +25,16 @@ BackgroundImage.displayName = 'BackgroundImage'
 export const BattlefieldScene = styled.div`
 flex-direction: row;
 display: flex;
-max-width: ${constants.tileSize * constants.numberOfColumns + 220}px;
-justify-content: flex-start;
 margin: auto;
 `
 BattlefieldScene.displayName = 'BattlefieldScene'
 
 export const LeftSection = styled.div`
-margin-right: 20px;
-z-index: 2;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-justify-content: space-between;
+margin-right: 150px;
 `
 LeftSection.displayName = 'LeftSection'
 
 export const RightSection = styled.div`
-z-index: 2;
-margin-left: 20px;
+margin-left: 150px;
 `
 RightSection.displayName = 'RightSection'

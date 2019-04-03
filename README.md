@@ -1,6 +1,24 @@
 ## PLAN
 
 * Redesign all screen
+    * Row 1
+        * Col 1
+            * Banner left
+        * Col 2
+            * Row 1
+                * Timer
+            * Row 2
+                * Battlefield
+        * Col 3
+            * Row 1
+                * Banner right
+            * Row 2
+                * Card
+    * Row 2
+        * Row 1
+            * Action Points
+        * Row 2
+            * Initiative
     * Battlefield centered
     * Battlefield bigger
     * Points banner top of the screen
@@ -10,6 +28,7 @@
     * Action points centered under the battlefield (find background)
     * Initiative bar bottom left of the screen
     * Action buttons surrounding the current hero portrait
+    * Details on hover on initiative
 * Integrate HumbleBundle assets
     * Cards modal redesign
     * Button displaying the list of heroes on popup

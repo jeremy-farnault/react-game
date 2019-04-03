@@ -7,6 +7,7 @@ position: relative;
 height: fit-content;
 justify-content: center;
 align-items: center;
+margin-bottom: 20px;
 `
 TimerZoneStyled.displayName = 'TimerZoneStyled'
 
