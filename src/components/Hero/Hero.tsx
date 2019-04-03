@@ -1,8 +1,15 @@
-import { HeroShadowColors, IHeroBattlefield, IHeroBattlefieldState, ITile, TileState } from "../../core/models";
+import {
+  HeroShadowColors,
+  IHeroBattlefield,
+  IHeroBattlefieldState,
+  ITile,
+  TileState
+} from "../../core/models";
 import { INewTile } from "../../core/reducers/battlefield";
 import { HeroStyled } from "./HeroStyles";
 
 import * as React from "react";
+import { constants } from "../../utils/constants";
 
 interface IProps {
   hero: IHeroBattlefield
@@ -37,7 +44,7 @@ class Hero extends React.PureComponent<IProps, {}> {
         posY={this.props.tile.posY - 22}
         src={h.assets.battlefieldPath.path} // Add the isDead path if/when available
         isDead={isDead}
-        height={70}/>
+        width={constants.tileSize}/>
     );
   }
 
