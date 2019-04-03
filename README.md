@@ -1,11 +1,17 @@
 ## PLAN
 
-* Redesign bottom section
-    * Redesign all screen?
-    * Change the color of the names on the book. Use colors of banners
-        * Use the same colors for the dots on the initiative section
-    * Center the timer?
+* Redesign all screen
+    * Battlefield centered
+    * Battlefield bigger
+    * Points banner top of the screen
+    * Change background to be a color not an image
+    * Timer center on top of the screen (banner image)
+    * Card bottom right of the battlefield
+    * Action points centered under the battlefield (find background)
+    * Initiative bar bottom left of the screen
+    * Action buttons surrounding the current hero portrait
 * Integrate HumbleBundle assets
+    * Cards modal redesign
     * Button displaying the list of heroes on popup
     * Modal with the full initiative list
     * Hero detail panel

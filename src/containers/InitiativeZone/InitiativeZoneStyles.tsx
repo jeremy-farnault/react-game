@@ -70,7 +70,7 @@ border-radius: 4px;
 width: 8px;
 margin-top: 6px;
 height: 8px;
-background-color: ${(props: {sameTeam: boolean}) => props.sameTeam ? colors.blueGreen : colors.paleRed};
+background-color: ${(props: {sameTeam: boolean}) => props.sameTeam ? colors.blueGreen : colors.red};
 `
 SecondaryHeroTeam.displayName = 'SecondaryHeroTeam'
 

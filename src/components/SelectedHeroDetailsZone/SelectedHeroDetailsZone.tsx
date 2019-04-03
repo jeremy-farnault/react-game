@@ -66,7 +66,7 @@ class SelectedHeroDetailsZone extends React.PureComponent<IProps, IState> {
           <IconNameZone>
             <Icon
               onClick={this.openModal}
-              style={{ fontSize: 30, color: hero.playerId === heroes[0].playerId ? colors.blueGreen : colors.paleRed }}>
+              style={{ fontSize: 30, color: hero.playerId === heroes[0].playerId ? colors.blueGreen : colors.red }}>
               zoom_in
             </Icon>
           </IconNameZone>

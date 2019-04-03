@@ -3,7 +3,7 @@ export const colors = {
   blackHighOpacity: 'rgba(0, 0, 0, .8)',
   blackMediumOpacity: 'rgba(0, 0, 0, .5)',
   blue: '#929AEC',
-  blueGreen: '#8EBEBA',
+  blueGreen: '#155C6E',
   brow: '#A37B5E',
   chocolate: '#D2691E',
   chocolateOpacity: 'rgba(210, 105, 30, .5)',
@@ -19,7 +19,7 @@ export const colors = {
   paleRed: '#FF707E',
   paleYellow: '#ECE492',
   purple: '#9370DB',
-  red: '#FF3447',
+  red: '#C21D1D',
   transparent: 'rgba(0, 0, 0, 0)',
   white: '#FFFFFF',
   yellow: '#E5D964'

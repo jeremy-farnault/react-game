@@ -7,7 +7,7 @@ export const DetailsContainer = styled.div`
 background-color: ${colors.greyOpacity};
 margin-bottom: 20px;
 padding: 20px;
-border: 2px solid ${(props: { sameTeam: boolean }) => props.sameTeam ? colors.blueGreen : colors.paleRed};
+border: 2px solid ${(props: { sameTeam: boolean }) => props.sameTeam ? colors.blueGreen : colors.red};
 border-radius: 10px;
 flex-direction: column;
 display: flex;
@@ -17,7 +17,7 @@ align-items: center;
 DetailsContainer.displayName = "DetailsContainer";
 
 export const TextName = styled.div`
-color: ${(props: { sameTeam: boolean }) => props.sameTeam ? colors.blueGreen : colors.paleRed};
+color: ${(props: { sameTeam: boolean }) => props.sameTeam ? colors.blueGreen : colors.red};
 margin-right: 15px;
 `;
 TextName.displayName = "TextName";
