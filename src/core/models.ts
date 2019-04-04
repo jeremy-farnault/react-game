@@ -290,7 +290,7 @@ export const IHeroBattlefieldPointsIcon = {
 
 export const ActionPointsIcon = {
   actionPointFull: {
-    path: require("../assets/HumbleBundle/Fantasy Icons/GemsIcons/GemsIcons_png/116.png"),
+    path: require("../assets/HumbleBundle/Fantasy Icons/GemsIcons/GemsIcons_png/117.png"),
     size: 40
   },
   actionPointEmpty: {
@@ -332,7 +332,7 @@ export const UIAssets = {
     height: 220
   },
   actionPointsBackground: {
-    path: require("../assets/HumbleBundle/Wooden UI/plank_13_90.png")
+    path: require("../assets/HumbleBundle/GUI/Fantasy_GUI/button_08_frame.png")
   },
   initiativeCurrentHero: {
     path: require('../assets/HumbleBundle/Wooden UI/frame_c_05.png'),

@@ -9,6 +9,7 @@ display: flex;
 align-items: flex-start;
 margin: auto;
 justify-content: center;
+flex-direction: column;
 background-color: ${colors.background};
 
 `

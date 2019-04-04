@@ -1,3 +1,4 @@
+import ActionPoints from "../../components/ActionPoints/ActionPoints";
 import PointsZone from "../../components/PointsZone/PointsZone";
 import * as actions from "../../core/actions";
 import {
@@ -83,33 +84,36 @@ class Fight extends React.PureComponent<IProps, IState> {
       <ContainerScene>
         {heroes.length > 0 &&
         <div>
-          <BattlefieldScene>
-            <LeftSection>
-              <PointsZone
-                player={Object.keys(this.props.players)[0]}
-                heroes={heroes}
-                isCurrentPlayer={Object.keys(this.props.players)[0] === heroes[0].playerId}/>
-            </LeftSection>
-            <div style={{display: 'flex', justifyContent: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-              <Timer hero={heroes[0]} minutesTurn={constants.minutesTurn} secondsTurn={constants.secondsTurn}
-                     nextHero={this.props.setNextCurrentHero}/>
-              <Battlefield
-                currentHero={heroes[0]}
-                allHeroes={heroes}
-                currentSelectedAction={action}
-                currentSelectedHero={heroes[0]}
-                updateSelectedAction={this.updateSelectedAction}
-                updateSelectedHero={this.updateSelectedHero}
-                changeAction={this.changeAction}
-                decrementActionPoints={this.props.decrementActionPoints}/>
-            </div>
-            <RightSection>
-              <PointsZone
-                player={Object.keys(this.props.players)[1]}
-                heroes={heroes}
-                isCurrentPlayer={Object.keys(this.props.players)[1] === heroes[0].playerId}/>
-            </RightSection>
-          </BattlefieldScene>
+          <div>
+            <BattlefieldScene>
+              <LeftSection>
+                <PointsZone
+                  player={Object.keys(this.props.players)[0]}
+                  heroes={heroes}
+                  isCurrentPlayer={Object.keys(this.props.players)[0] === heroes[0].playerId}/>
+              </LeftSection>
+              <div style={{ display: "flex", justifyContent: "flex", flexDirection: "column", alignItems: "center" }}>
+                <Timer hero={heroes[0]} minutesTurn={constants.minutesTurn} secondsTurn={constants.secondsTurn}
+                       nextHero={this.props.setNextCurrentHero}/>
+                <Battlefield
+                  currentHero={heroes[0]}
+                  allHeroes={heroes}
+                  currentSelectedAction={action}
+                  currentSelectedHero={heroes[0]}
+                  updateSelectedAction={this.updateSelectedAction}
+                  updateSelectedHero={this.updateSelectedHero}
+                  changeAction={this.changeAction}
+                  decrementActionPoints={this.props.decrementActionPoints}/>
+              </div>
+              <RightSection>
+                <PointsZone
+                  player={Object.keys(this.props.players)[1]}
+                  heroes={heroes}
+                  isCurrentPlayer={Object.keys(this.props.players)[1] === heroes[0].playerId}/>
+              </RightSection>
+            </BattlefieldScene>
+          </div>
+          <ActionPoints currentHero={heroes[0]}/>
         </div>}
       </ContainerScene>
     );

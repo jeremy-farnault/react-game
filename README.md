@@ -19,11 +19,6 @@
             * Action Points
         * Row 2
             * Initiative
-    * Battlefield centered
-    * Battlefield bigger
-    * Points banner top of the screen
-    * Change background to be a color not an image
-    * Timer center on top of the screen (banner image)
     * Card bottom right of the battlefield
     * Action points centered under the battlefield (find background)
     * Initiative bar bottom left of the screen
