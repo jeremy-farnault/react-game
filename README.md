@@ -56,6 +56,7 @@
 
 ## RESOURCES
 
+[Chat](https://pusher.com/tutorials/react-direct-messaging)
 [RGB Chart](http://www.tayloredmktg.com/rgb/)
 [Colors](https://www.color-hex.com/color/ff3447)
 [Banner Saga](https://www.destructoid.com/review-the-banner-saga-3-514993.phtml8)
