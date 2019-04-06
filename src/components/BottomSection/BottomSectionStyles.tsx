@@ -1,18 +1,15 @@
 import { VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
-import { constants } from "../../utils/constants";
 import { grid } from "../../utils/grid";
 
 import styled from "styled-components";
 
 export const BottomSectionContainer = styled.div`
 z-index: 1;
-max-width: ${constants.tileSize * constants.numberOfColumns + 500}px;
 justify-content: space-between;
-position: relative;
+align-items: center;
+margin-top: -50px;
 display: flex;
-flex-direction: row;
-margin: 20px auto auto;
 `
 BottomSectionContainer.displayName = 'BottomSectionContainer'
 

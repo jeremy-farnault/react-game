@@ -1,16 +1,13 @@
 import * as actions from "../../core/actions";
 import { ActionsType, ICardsBattlefield, IHeroBattlefield, VariousAssets } from "../../core/models";
-import ActionsAndDetails from "../ActionsAndDetails/ActionsAndDetails";
 import InitiativeAndDetails from "../InitiativeAndDetails/InitiativeAndDetails";
-import Timer from "../Timer/Timer";
-import { BottomSectionContainer, DeckImage, LeftSection, RightSection } from "./BottomSectionStyles";
+import { BottomSectionContainer, DeckImage } from "./BottomSectionStyles";
 
 import * as React from "react";
 import ModalCards from "../ModalCards/ModalCards";
 
 interface IProps {
   heroesSorted: IHeroBattlefield[]
-  selectedHero: IHeroBattlefield | null
   setNextCurrentHero: () => void
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
   selectedAction: ActionsType
@@ -36,23 +33,12 @@ class BottomSection extends React.PureComponent<IProps, IState> {
 
   public render() {
     const heroes = this.props.heroesSorted;
-    const hero = this.props.selectedHero;
-    const action = this.props.selectedAction;
     return (
       <BottomSectionContainer>
-        <LeftSection>
-          <ActionsAndDetails heroesSorted={heroes} selectedHero={hero}
-                             changeAction={this.props.changeAction}
-                             selectedAction={action}/>
-          <InitiativeAndDetails heroesSorted={heroes}
-                                updateSelectedHero={this.props.updateSelectedHero}
-                                setNextCurrentHero={this.props.setNextCurrentHero}/>
-        </LeftSection>
-        <RightSection>
-          <Timer hero={heroes[0]} minutesTurn={1} secondsTurn={0}
-                 nextHero={this.props.setNextCurrentHero}/>
-          <DeckImage src={VariousAssets.cardBack.path} onClick={this.openModal}/>
-        </RightSection>
+        <InitiativeAndDetails heroesSorted={heroes}
+                              updateSelectedHero={this.props.updateSelectedHero}
+                              setNextCurrentHero={this.props.setNextCurrentHero}/>
+        <DeckImage src={VariousAssets.cardBack.path} onClick={this.openModal}/>
         <ModalCards isOpen={this.state.modalOpen}
                     heroes={heroes}
                     drawCard={this.props.drawCard}

@@ -6,9 +6,9 @@ export const ContainerScene = styled.div`
 height: 100vh;
 width: 100vw;
 display: flex;
-align-items: flex-start;
+align-items: center;
 margin: auto;
-justify-content: center;
+justify-content: flex-start;
 flex-direction: column;
 background-color: ${colors.background};
 
@@ -39,3 +39,11 @@ export const RightSection = styled.div`
 margin-left: 150px;
 `
 RightSection.displayName = 'RightSection'
+
+export const TimerAndBattlefieldSection = styled.div`
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+align-items: center;
+`
+TimerAndBattlefieldSection.displayName = 'TimerAndBattlefieldSection'

@@ -1,27 +1,6 @@
 ## PLAN
 
 * Redesign all screen
-    * Row 1
-        * Col 1
-            * Banner left
-        * Col 2
-            * Row 1
-                * Timer
-            * Row 2
-                * Battlefield
-        * Col 3
-            * Row 1
-                * Banner right
-            * Row 2
-                * Card
-    * Row 2
-        * Row 1
-            * Action Points
-        * Row 2
-            * Initiative
-    * Card bottom right of the battlefield
-    * Action points centered under the battlefield (find background)
-    * Initiative bar bottom left of the screen
     * Action buttons surrounding the current hero portrait
     * Details on hover on initiative
 * Integrate HumbleBundle assets
@@ -70,6 +49,8 @@
 
 ## BUGS
 
+* Passing to next hero does not reinitialize the tiles (on timer change)
+* Action points are not reset for new turn of hero (on timer change)
 * Defending should put the current hero on shadow color and not the foes
 * Should be able to unselect on click on any empty space
 
