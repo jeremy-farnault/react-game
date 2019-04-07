@@ -1,7 +1,9 @@
 ## PLAN
 
 * Redesign all screen
-    * Details on hover on initiative
+    * Frame k 05
+    * On click on hero in initiative bar will show the frame absolute positioning above the miniature
+    * Contains basic information: life, magic, armor  and skills
 * Integrate HumbleBundle assets
     * Cards modal redesign
     * Button displaying the list of heroes on popup
