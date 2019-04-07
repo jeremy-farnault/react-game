@@ -325,7 +325,11 @@ export const UIAssets = {
   },
   actionButtonBackground: {
     path: require("../assets/HumbleBundle/Wooden UI/frame_c_04.png"),
-    height: 50
+    height: 40
+  },
+  actionButtonSelectedBackground: {
+    path: require("../assets/HumbleBundle/GUI/FantasyButtons/ring_bg/bg/r_bg2.png"),
+    height: 40
   },
   actionButtonsBackground: {
     path: require("../assets/HumbleBundle/Wooden UI/frame_k_03.png"),

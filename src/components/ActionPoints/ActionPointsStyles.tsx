@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
+export const ActionPointsContainerStyled = styled.div`
+width: 100%;
+justify-content: center;
+align-items: center;
+display: flex;
+`
+
 export const ActionPointsImagesZoneStyled = styled.div`
+width: fit-content;
 position: relative;
 display: flex;
 justify-content: center;

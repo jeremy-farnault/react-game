@@ -1,7 +1,6 @@
 ## PLAN
 
 * Redesign all screen
-    * Action buttons surrounding the current hero portrait
     * Details on hover on initiative
 * Integrate HumbleBundle assets
     * Cards modal redesign

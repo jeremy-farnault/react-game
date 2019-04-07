@@ -1,6 +1,6 @@
 export const constants = {
   actionPoints: 3,
-  buttonActionSize: 30,
+  buttonActionSize: 25,
   maxNumberOfHeroesInitiative: 9,
   minutesTurn: 1,
   numberOfColumns: 16,

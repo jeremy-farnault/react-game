@@ -1,3 +1,4 @@
+import InitiativeHeroPortrait from "../../components/InitiativeHeroPortrait/InitiativeHeroPortrait";
 import { IHeroBattlefield, UIAssets, VariousAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
 import { constants } from "../../utils/constants";
@@ -11,7 +12,7 @@ import {
 
 import { Icon } from "@material-ui/core";
 import * as React from "react";
-import InitiativeHeroPortrait from "../../components/InitiativeHeroPortrait/InitiativeHeroPortrait";
+import ReactTooltip = require("react-tooltip");
 
 interface IProps {
   heroesSorted: IHeroBattlefield[]
@@ -32,6 +33,7 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
     const remainingHeroes = "<div>" + test.map(s => `<p>` + s.hero + " (" + s.player + ")</p>").join("") + "</div>";
     return (
       <InitiativeContainer>
+        <ReactTooltip type='light' effect='solid' multiline={true}/>
         <CurrentHeroZone>
           <CurrentHero>
             <InitiativeHeroPortrait

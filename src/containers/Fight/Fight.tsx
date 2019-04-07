@@ -119,7 +119,7 @@ class Fight extends React.PureComponent<IProps, IState> {
             </RightSection>
           </BattlefieldScene>
           <ActionPoints currentHero={heroes[0]}/>
-          <BottomSection heroesSorted={heroes} setNextCurrentHero={this.setNextCurrentHero}
+          <BottomSection heroesSorted={heroes} setNextCurrentHero={this.setNextCurrentHero} currentAction={action}
                          updateSelectedHero={this.updateSelectedHero} selectedAction={action}
                          changeAction={this.changeAction} cardsFight={this.props.cardsFight}
                          decrementActionPoints={this.decrementActionPoints} drawCard={this.props.drawCard}

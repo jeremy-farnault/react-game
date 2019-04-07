@@ -7,15 +7,16 @@ import * as React from "react";
 import ModalCards from "../ModalCards/ModalCards";
 
 interface IProps {
-  heroesSorted: IHeroBattlefield[]
-  setNextCurrentHero: () => void
-  updateSelectedHero: (hero: IHeroBattlefield | null) => void
-  selectedAction: ActionsType
-  changeAction: (action: ActionsType) => void
   cardsFight: ICardsBattlefield
+  changeAction: (action: ActionsType) => void
+  currentAction: ActionsType
   decrementActionPoints: () => void
   drawCard: typeof actions.drawCard
+  heroesSorted: IHeroBattlefield[]
   playCard: typeof actions.playCard
+  selectedAction: ActionsType
+  setNextCurrentHero: () => void
+  updateSelectedHero: (hero: IHeroBattlefield | null) => void
 }
 
 interface IState {
@@ -33,10 +34,13 @@ class BottomSection extends React.PureComponent<IProps, IState> {
 
   public render() {
     const heroes = this.props.heroesSorted;
+    const hero = heroes[0]
     return (
       <BottomSectionContainer>
-        <InitiativeAndDetails heroesSorted={heroes}
+        <InitiativeAndDetails heroesSorted={heroes} changeAction={this.props.changeAction}
+                              currentActionPoints={hero.currentActionPoints} hero={hero}
                               updateSelectedHero={this.props.updateSelectedHero}
+                              currentAction={this.props.selectedAction}
                               setNextCurrentHero={this.props.setNextCurrentHero}/>
         <DeckImage src={VariousAssets.cardBack.path} onClick={this.openModal}/>
         <ModalCards isOpen={this.state.modalOpen}

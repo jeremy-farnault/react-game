@@ -14,49 +14,39 @@ interface IProps {
 
 // interface IState {}
 
+const positions = [{h: 90, v: -20}, {h: 20, v: -20}, {h: -20, v: 20}, {h: -20, v: 90}, {h: 20, v: 130}]
+
 class ActionButtons extends React.PureComponent<IProps, {}> {
 
   public render() {
     const h = this.props.hero as IHeroBattlefield;
-    const mvt = h.characteristics.speed > 0;
-    const atk = h.characteristics.attack > 0;
-    const rAtk = h.characteristics.rangedAttack > 0;
-    const mgc = h.characteristics.magic > 0;
-    const def = h.characteristics.armor > 0;
-    const atkArm = h.characteristics.attackArmor > 0;
+    const actions = [];
+    if (h.characteristics.speed > 0) {
+      actions.push(ActionsType.heroMovement);
+    }
+    if (h.characteristics.attack > 0) {
+      actions.push(ActionsType.heroAttack);
+    }
+    if (h.characteristics.rangedAttack > 0) {
+      actions.push(ActionsType.heroRangedAttack);
+    }
+    if (h.characteristics.magic > 0) {
+      actions.push(ActionsType.heroAttackArmor);
+    }
+    if (h.characteristics.armor > 0) {
+      actions.push(ActionsType.heroMagic);
+    }
+    if (h.characteristics.attackArmor > 0) {
+      actions.push(ActionsType.heroDefense);
+    }
     return (
       <ActionZoneStyled>
         <ReactTooltip type='light' effect='solid' multiline={true}/>
-        {mvt &&
-        <ActionButton actionType={ActionsType.heroMovement}
-                      selected={this.props.currentAction === ActionsType.heroMovement}
-                      disabled={this.props.currentActionPoints < 1}
-                      changeAction={this.changeAction}/>}
-        {atk &&
-        <ActionButton actionType={ActionsType.heroAttack}
-                      selected={this.props.currentAction === ActionsType.heroAttack}
-                      disabled={this.props.currentActionPoints < 1}
-                      changeAction={this.changeAction}/>}
-        {rAtk &&
-        <ActionButton actionType={ActionsType.heroRangedAttack}
-                      selected={this.props.currentAction === ActionsType.heroRangedAttack}
-                      disabled={this.props.currentActionPoints < 1}
-                      changeAction={this.changeAction}/>}
-        {atkArm &&
-        <ActionButton actionType={ActionsType.heroAttackArmor}
-                      selected={this.props.currentAction === ActionsType.heroAttackArmor}
-                      disabled={this.props.currentActionPoints < 1}
-                      changeAction={this.changeAction}/>}
-        {mgc &&
-        <ActionButton actionType={ActionsType.heroMagic}
-                      selected={this.props.currentAction === ActionsType.heroMagic}
-                      disabled={this.props.currentActionPoints < 1}
-                      changeAction={this.changeAction}/>}
-        {def &&
-        <ActionButton actionType={ActionsType.heroDefense}
-                      selected={this.props.currentAction === ActionsType.heroDefense}
-                      disabled={this.props.currentActionPoints < 1}
-                      changeAction={this.changeAction}/>}
+        {actions.map((a, i) =>
+          <ActionButton key={a} actionType={a} selected={this.props.currentAction === a}
+                        position={positions[i]} disabled={this.props.currentActionPoints < 1}
+                        changeAction={this.changeAction}/>
+        )}
       </ActionZoneStyled>
     );
   }
