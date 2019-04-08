@@ -1,7 +1,6 @@
 ## PLAN
 
 * Redesign all screen
-    * Frame k 05
     * On click on hero in initiative bar will show the frame absolute positioning above the miniature
     * Contains basic information: life, magic, armor  and skills
 * Integrate HumbleBundle assets

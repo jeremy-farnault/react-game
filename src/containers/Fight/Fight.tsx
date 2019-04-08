@@ -123,6 +123,7 @@ class Fight extends React.PureComponent<IProps, IState> {
                          updateSelectedHero={this.updateSelectedHero} selectedAction={action}
                          changeAction={this.changeAction} cardsFight={this.props.cardsFight}
                          decrementActionPoints={this.decrementActionPoints} drawCard={this.props.drawCard}
+                         currentSelectedHero={this.state.currentSelectedHero}
                          playCard={this.props.playCard}/>
         </div>}
       </ContainerScene>
@@ -148,7 +149,7 @@ class Fight extends React.PureComponent<IProps, IState> {
   };
 
   private updateSelectedHero = (hero: IHeroBattlefield | null) => {
-    this.setState({ currentSelectedHero: hero });
+    this.setState({ currentSelectedHero: hero === this.state.currentSelectedHero ? null : hero });
   };
 
   private changeAction = async (action: ActionsType, tile?: ITile, hero?: IHeroBattlefield) => {
@@ -220,85 +221,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Fight);
-
-
-{/*<BackgroundImage*/
-}
-{/*  src={require("../../assets/HumbleBundle/GUI/Fantasy_GUI/bg.png")}/>*/
-}
-{/*{heroes.length > 0 &&*/
-}
-{/*<div>*/
-}
-{/*  <BattlefieldScene>*/
-}
-{/*    <LeftSection>*/
-}
-{/*      <PointsZone*/
-}
-{/*        player={Object.keys(this.props.players)[0]}*/
-}
-{/*        heroes={heroes}*/
-}
-{/*        isCurrentPlayer={Object.keys(this.props.players)[0] === heroes[0].playerId}/>*/
-}
-{/*      <ActionPoints currentHero={heroes[0]}/>*/
-}
-{/*    </LeftSection>*/
-}
-{/*    <Battlefield*/
-}
-{/*      currentHero={heroes[0]}*/
-}
-{/*      allHeroes={heroes}*/
-}
-{/*      currentSelectedAction={action}*/
-}
-{/*      currentSelectedHero={heroes[0]}*/
-}
-{/*      updateSelectedAction={this.updateSelectedAction}*/
-}
-{/*      updateSelectedHero={this.updateSelectedHero}*/
-}
-{/*      changeAction={this.changeAction}*/
-}
-{/*      decrementActionPoints={this.props.decrementActionPoints}/>*/
-}
-{/*    <RightSection>*/
-}
-{/*      <PointsZone*/
-}
-{/*        player={Object.keys(this.props.players)[1]}*/
-}
-{/*        heroes={heroes}*/
-}
-{/*        isCurrentPlayer={Object.keys(this.props.players)[1] === heroes[0].playerId}/>*/
-}
-{/*    </RightSection>*/
-}
-{/*  </BattlefieldScene>*/
-}
-{/*  <BottomSection*/
-}
-{/*    heroesSorted={heroes}*/
-}
-{/*    selectedHero={hero}*/
-}
-{/*    setNextCurrentHero={this.setNextCurrentHero}*/
-}
-{/*    updateSelectedHero={this.updateSelectedHero}*/
-}
-{/*    changeAction={this.changeAction}*/
-}
-{/*    cardsFight={this.props.cardsFight}*/
-}
-{/*    drawCard={this.props.drawCard}*/
-}
-{/*    playCard={this.props.playCard}*/
-}
-{/*    decrementActionPoints={this.decrementActionPoints}*/
-}
-{/*    selectedAction={action}/>*/
-}
-{/*</div>}*/
-}

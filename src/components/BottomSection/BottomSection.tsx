@@ -10,6 +10,7 @@ interface IProps {
   cardsFight: ICardsBattlefield
   changeAction: (action: ActionsType) => void
   currentAction: ActionsType
+  currentSelectedHero: IHeroBattlefield | null
   decrementActionPoints: () => void
   drawCard: typeof actions.drawCard
   heroesSorted: IHeroBattlefield[]
@@ -41,6 +42,7 @@ class BottomSection extends React.PureComponent<IProps, IState> {
                               currentActionPoints={hero.currentActionPoints} hero={hero}
                               updateSelectedHero={this.props.updateSelectedHero}
                               currentAction={this.props.selectedAction}
+                              currentSelectedHero={this.props.currentSelectedHero}
                               setNextCurrentHero={this.props.setNextCurrentHero}/>
         <DeckImage src={VariousAssets.cardBack.path} onClick={this.openModal}/>
         <ModalCards isOpen={this.state.modalOpen}

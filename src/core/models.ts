@@ -338,6 +338,11 @@ export const UIAssets = {
   actionPointsBackground: {
     path: require("../assets/HumbleBundle/GUI/Fantasy_GUI/button_08_frame.png")
   },
+  detailsBackground: {
+    path: require("../assets/HumbleBundle/Wooden UI/frame_k_05.png"),
+    positionBig: -170,
+    positionSmall: -90
+  },
   initiativeCurrentHero: {
     path: require('../assets/HumbleBundle/Wooden UI/frame_c_05.png'),
     size: 150

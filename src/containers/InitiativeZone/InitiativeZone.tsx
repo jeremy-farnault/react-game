@@ -15,6 +15,7 @@ import * as React from "react";
 import ReactTooltip = require("react-tooltip");
 
 interface IProps {
+  currentSelectedHero: IHeroBattlefield | null
   heroesSorted: IHeroBattlefield[]
   setNextCurrentHero: () => void
   updateSelectedHero: (hero: IHeroBattlefield | null) => void
@@ -41,7 +42,9 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
               updateSelectedHero={this.props.updateSelectedHero}
               src={heroes[0].assets.tokenPath.path}
               dataTip={heroes[0].id}
+              positionDetails={UIAssets.detailsBackground.positionBig}
               width={heroes[0].assets.tokenPath.width * 1.4}
+              isSelected={!!this.props.currentSelectedHero && this.props.currentSelectedHero === heroes[0]}
               height={heroes[0].assets.tokenPath.width * 1.4}/>
             <CurrentHeroTeam/>
           </CurrentHero>
@@ -59,7 +62,9 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
                   hero={h}
                   updateSelectedHero={this.props.updateSelectedHero}
                   src={h.assets.tokenPath.path}
+                  positionDetails={UIAssets.detailsBackground.positionSmall}
                   dataTip={h.id}
+                  isSelected={!!this.props.currentSelectedHero && this.props.currentSelectedHero === h}
                   width={h.assets.tokenPath.width * 0.8}
                   height={h.assets.tokenPath.width * 0.8}/>
                 <SecondaryHeroTeam sameTeam={h.playerId === heroes[0].playerId}/>

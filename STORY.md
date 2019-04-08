@@ -23,4 +23,4 @@
 * One of the 2 heroes have autistic traits. Can forget people easily. Don’t grief.
 * One of the main places will be based on Mount Sunday, one on Abel Tasman, one on Cathedral Cove and one on Hobbiton and one on Tongariro
 * One of the main characters will be uncomfortable with his/her image
-​
+* Include sword fight (katana Iaido style)

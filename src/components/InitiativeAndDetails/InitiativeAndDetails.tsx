@@ -9,6 +9,7 @@ interface IProps {
   changeAction: (action: ActionsType) => void
   currentAction: ActionsType
   currentActionPoints: number
+  currentSelectedHero: IHeroBattlefield | null
   hero: IHeroBattlefield | null
   heroesSorted: IHeroBattlefield[]
   setNextCurrentHero: () => void
@@ -26,6 +27,7 @@ class InitiativeAndDetails extends React.PureComponent<IProps, {}> {
         <ActionButtons changeAction={this.props.changeAction} hero={this.props.hero}
                        currentAction={this.props.currentAction} currentActionPoints={this.props.currentActionPoints}/>
         <InitiativeZone heroesSorted={heroes} setNextCurrentHero={this.props.setNextCurrentHero}
+                        currentSelectedHero={this.props.currentSelectedHero}
                         updateSelectedHero={this.props.updateSelectedHero}/>
       </DetailsAndInitiativeContainer>
     );
