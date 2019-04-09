@@ -10,8 +10,8 @@ import * as _ from "lodash";
 import * as React from "react";
 
 interface IProps {
-  selectedHero: IHeroBattlefield | null
-  heroesSorted: IHeroBattlefield[]
+  isCurrentHero: boolean
+  selectedHero: IHeroBattlefield
 }
 
 // interface IState {}
@@ -19,7 +19,7 @@ interface IProps {
 class DetailsSelectedHero extends React.PureComponent<IProps, {}> {
 
   public render() {
-    const hero = this.props.selectedHero || this.props.heroesSorted[0];
+    const hero = this.props.selectedHero;
     return <DetailsCurrentHeroContainer>
       {Object.keys(hero.points).map(c =>
         <PointsCurrentHero key={c + hero.id}
@@ -30,7 +30,7 @@ class DetailsSelectedHero extends React.PureComponent<IProps, {}> {
           <TextStyled>{hero.points[c]}</TextStyled>
         </PointsCurrentHero>
       )}
-      {hero.skills.map((s: IHeroSkill) =>
+      {this.props.isCurrentHero && hero.skills.map((s: IHeroSkill) =>
         <SkillsCurrentHero key={s.name + hero.id}>
           <img data-tip={s.name} src={SkillsIcon[s.iconType]}
                height={40} data-place='left'/>

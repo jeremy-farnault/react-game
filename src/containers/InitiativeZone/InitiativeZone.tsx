@@ -39,6 +39,7 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
           <CurrentHero>
             <InitiativeHeroPortrait
               hero={heroes[0]}
+              isCurrentHero={true}
               updateSelectedHero={this.props.updateSelectedHero}
               src={heroes[0].assets.tokenPath.path}
               dataTip={heroes[0].id}
@@ -61,6 +62,7 @@ class InitiativeZone extends React.PureComponent<IProps, {}> {
                 <InitiativeHeroPortrait
                   hero={h}
                   updateSelectedHero={this.props.updateSelectedHero}
+                  isCurrentHero={false}
                   src={h.assets.tokenPath.path}
                   positionDetails={UIAssets.detailsBackground.positionSmall}
                   dataTip={h.id}

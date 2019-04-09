@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8575b54f-7b38-443c-a3fe-7e7fa94c9c56" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/STORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ActionsAndDetails/ActionsAndDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActionsAndDetails/ActionsAndDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DetailsSelectedHero/DetailsSelectedHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DetailsSelectedHero/DetailsSelectedHero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortrait.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortrait.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortraitStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortraitStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/models.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
-              <caret line="341" column="73" selection-start-line="341" selection-start-column="73" selection-end-line="341" selection-end-column="73" />
+            <state relative-caret-position="4500">
+              <caret line="300" selection-start-line="300" selection-end-line="300" />
             </state>
           </provider>
         </entry>
@@ -63,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
+            <state relative-caret-position="1920">
               <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
             </state>
           </provider>
@@ -72,11 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="45" selection-start-column="45" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -84,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="360">
               <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
               <folding>
                 <element signature="e#0#76#0" expanded="true" />
@@ -96,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            <state relative-caret-position="836">
+              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
               <folding>
                 <element signature="e#0#100#0" expanded="true" />
               </folding>
@@ -105,13 +98,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortrait.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="81" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
+            <state relative-caret-position="525">
+              <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
               <folding>
-                <element signature="e#0#53#0" expanded="true" />
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DetailsSelectedHero/DetailsSelectedHero.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#105#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortraitStyles.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -211,8 +216,6 @@
         <option value="$PROJECT_DIR$/src/components/Timer/Timer.tsx" />
         <option value="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHeroStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/DetailsCurrentHero/DetailsCurrentHero.tsx" />
-        <option value="$PROJECT_DIR$/src/components/DetailsSelectedHero/DetailsSelectedHero.tsx" />
-        <option value="$PROJECT_DIR$/src/components/ActionsAndDetails/ActionsAndDetails.tsx" />
         <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZone.tsx" />
         <option value="$PROJECT_DIR$/src/components/SelectedHeroDetailsZone/SelectedHeroDetailsZoneStyles.tsx" />
@@ -231,15 +234,17 @@
         <option value="$PROJECT_DIR$/src/components/ActionButtons/ActionButtons.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButtonStyles.tsx" />
         <option value="$PROJECT_DIR$/src/components/ActionButton/ActionButton.tsx" />
-        <option value="$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortraitStyles.tsx" />
         <option value="$PROJECT_DIR$/STORY.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx" />
         <option value="$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx" />
-        <option value="$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortrait.tsx" />
-        <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" />
         <option value="$PROJECT_DIR$/src/containers/Fight/Fight.tsx" />
         <option value="$PROJECT_DIR$/src/core/models.ts" />
+        <option value="$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx" />
+        <option value="$PROJECT_DIR$/src/components/ActionsAndDetails/ActionsAndDetails.tsx" />
+        <option value="$PROJECT_DIR$/src/components/DetailsSelectedHero/DetailsSelectedHero.tsx" />
+        <option value="$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortrait.tsx" />
+        <option value="$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortraitStyles.tsx" />
       </list>
     </option>
   </component>
@@ -783,7 +788,8 @@
       <workItem from="1554406015151" duration="1635000" />
       <workItem from="1554522053070" duration="5461000" />
       <workItem from="1554587364027" duration="11375000" />
-      <workItem from="1554755306383" duration="2477000" />
+      <workItem from="1554755306383" duration="2680000" />
+      <workItem from="1554843474530" duration="1768000" />
     </task>
     <task id="LOCAL-00001" summary="Displaying the tiles">
       <created>1533367224943</created>
@@ -831,7 +837,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419852000" />
+    <option name="totallyTimeSpent" value="421823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -979,26 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ActionsAndDetails/ActionsAndDetails.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DetailsSelectedHero/DetailsSelectedHero.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZoneStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -1010,13 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="68" column="109" selection-start-line="68" selection-start-column="109" selection-end-line="68" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ActionsAndDetails/ActionAndDetailsStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="115" selection-start-line="5" selection-start-column="115" selection-end-line="5" selection-end-column="115" />
         </state>
       </provider>
     </entry>
@@ -1219,6 +1198,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1239,37 +1225,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Battlefield/Battlefield.tsx">
+    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="4500">
+          <caret line="300" selection-start-line="300" selection-end-line="300" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx">
+    <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortraitStyles.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1920">
+          <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/InitiativeAndDetails/InitiativeAndDetails.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="360">
           <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BottomSection/BottomSection.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ActionsAndDetails/ActionAndDetailsStyles.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ActionsAndDetails/ActionsAndDetails.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#0#76#0" expanded="true" />
           </folding>
@@ -1278,35 +1275,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/InitiativeZone/InitiativeZone.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        <state relative-caret-position="836">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
           <folding>
             <element signature="e#0#100#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Fight/Fight.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortraitStyles.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="159" selection-end-column="4" />
+        <state relative-caret-position="240">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DetailsSelectedHero/DetailsSelectedHero.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#105#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/InitiativeHeroPortrait/InitiativeHeroPortrait.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="81" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
+        <state relative-caret-position="525">
+          <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
           <folding>
-            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#0#63#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/models.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="341" column="73" selection-start-line="341" selection-start-column="73" selection-end-line="341" selection-end-column="73" />
         </state>
       </provider>
     </entry>

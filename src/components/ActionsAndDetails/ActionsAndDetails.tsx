@@ -18,7 +18,7 @@ interface IProps {
 class ActionsAndDetails extends React.PureComponent<IProps, {}> {
 
   public render() {
-    const hero = this.props.selectedHero || this.props.heroesSorted[0]
+    const hero = this.props.selectedHero || this.props.heroesSorted[0];
     return (
       <ContainerStyled>
         <img src={UIAssets.actionAndDetailsBackground.path}
@@ -36,7 +36,9 @@ class ActionsAndDetails extends React.PureComponent<IProps, {}> {
             <PageTitleStyled sameTeam={hero.playerId === this.props.heroesSorted[0].playerId}>
               {hero.id}
             </PageTitleStyled>
-            <DetailsSelectedHero heroesSorted={this.props.heroesSorted} selectedHero={this.props.selectedHero}/>
+            <DetailsSelectedHero
+              selectedHero={!!this.props.selectedHero ? this.props.selectedHero : this.props.heroesSorted[0]}
+              isCurrentHero={false}/>
           </PageContainerStyled>
         </PagesContainerStyled>
       </ContainerStyled>
