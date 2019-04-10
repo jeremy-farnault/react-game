@@ -274,15 +274,15 @@ export interface ICardsBattlefieldPlayer {
 export const IHeroBattlefieldPointsIcon = {
   currentLifePoints: {
     path: require("../assets/HumbleBundle/Potion Icons/t_37.png"),
-    size: 30
+    size: 20
   },
   currentMagicPoints: {
     path: require("../assets/HumbleBundle/Potion Icons/t_38.png"),
-    size: 30
+    size: 20
   },
   currentArmorPoints: {
     path: require("../assets/HumbleBundle/Fantasy Icons/ArmorIcons/ArmorIcons_png/transparent/armor/armor_20.PNG"),
-    size: 30
+    size: 20
   }
 };
 

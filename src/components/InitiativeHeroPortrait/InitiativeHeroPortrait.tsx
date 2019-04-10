@@ -28,8 +28,6 @@ class InitiativeHeroPortrait extends React.PureComponent<IProps, {}> {
   public render() {
     return (
       <InitiativeAndDetailsContainer>
-
-
         {this.props.isSelected &&
         <DetailsHero top={this.props.positionDetails}>
           <BackgroundDetailsHero src={UIAssets.detailsBackground.path}
@@ -37,8 +35,6 @@ class InitiativeHeroPortrait extends React.PureComponent<IProps, {}> {
           <DetailsSelectedHero selectedHero={this.props.hero}
                                isCurrentHero={this.props.isCurrentHero}/>
         </DetailsHero>}
-
-
         <Portrait src={this.props.src}
                   data-place='top'
                   onClick={this.selectHero}
