@@ -5,7 +5,7 @@ export const colors = {
   blackMediumOpacity: 'rgba(0, 0, 0, .5)',
   blue: '#929AEC',
   blueGreen: '#155C6E',
-  brow: '#A37B5E',
+  brown: '#A37B5E',
   chocolate: '#D2691E',
   chocolateOpacity: 'rgba(210, 105, 30, .5)',
   darkSlateGray: '#2F4F4F',

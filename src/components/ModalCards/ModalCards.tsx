@@ -1,12 +1,12 @@
 import * as actions from "../../core/actions";
-import { ICard, ICardsBattlefield, IHeroBattlefield } from "../../core/models";
+import { ICard, ICardsBattlefield, IHeroBattlefield, UIAssets } from "../../core/models";
 import { colors } from "../../utils/colors";
-import { DrawButton } from "./ModalCardsStyles";
+import Card from "../Card/Card";
+import CastButton from "../CastButton/CastButton";
+import { DrawButton, Images, TextButton } from "./ModalCardsStyles";
 
 import * as React from "react";
 import * as Modal from "react-modal";
-import Card from "../Card/Card";
-import CastButton from "../CastButton/CastButton";
 
 
 interface IProps {
@@ -27,7 +27,7 @@ interface IState {
 const customStyles = {
   overlay: {
     zIndex: 10,
-    backgroundColor: colors.blackMediumOpacity
+    backgroundColor: colors.blackLowOpacity
   },
   content: {
     top: "50%",
@@ -36,14 +36,15 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: colors.blackMediumOpacity,
+    backgroundColor: colors.blackHighOpacity,
     paddingLeft: 150,
     paddingRight: 150,
     paddingTop: 100,
     paddingBottom: 50,
-    borderSize: 2,
+    borderSize: 4,
+    borderRadius: 10,
     borderStyle: "solid",
-    borderColor: colors.grey,
+    borderColor: colors.yellow,
     justifyContent: "center",
     alignItems: "center"
   }
@@ -84,8 +85,10 @@ class ModalCards extends React.PureComponent<IProps, IState> {
             />;
           }
         )}
-        <DrawButton onClick={this.drawCard} disabled={disabled}>
-          Draw
+        <DrawButton disabled={disabled} onClick={this.drawCard} style={{position: 'relative'}}>
+          <Images src={UIAssets.drawButton.path} width={UIAssets.drawButton.width}/>
+          <Images src={UIAssets.drawButton.pathFrame} width={UIAssets.drawButton.width + 4}/>
+          <TextButton>Draw</TextButton>
         </DrawButton>
       </Modal>
     );

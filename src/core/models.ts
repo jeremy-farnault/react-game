@@ -343,6 +343,11 @@ export const UIAssets = {
     positionBig: -170,
     positionSmall: -90
   },
+  drawButton: {
+    path: require("../assets/HumbleBundle/GUI/Fantasy_GUI/button_03.png"),
+    pathFrame: require("../assets/HumbleBundle/GUI/Fantasy_GUI/button_03_frame.png"),
+    width: 150
+  },
   initiativeCurrentHero: {
     path: require('../assets/HumbleBundle/Wooden UI/frame_c_05.png'),
     size: 150

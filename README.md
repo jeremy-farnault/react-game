@@ -1,11 +1,8 @@
 ## PLAN
 
 * Integrate HumbleBundle assets
-    * Cards modal redesign
     * Button displaying the list of heroes on popup
     * Modal with the full initiative list
-    * Hero detail panel
-    * Hero full details popup
 * Attack and kill heroes to win the game
     * Decide on the design / behaviour after a death
         * If hero enters tile, state should become hero, if hero leaves should be back to death status
