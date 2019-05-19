@@ -25,3 +25,9 @@
 * One of the main characters will be uncomfortable with his/her image
 * Include sword fight (katana Iaido style)
 * Add a real evil foe they have to form an alliance to defeat (night king). Maybe something linked to the destruction of the nature (Godzilla)
+
+unity
+gamemaker
+appgamekit
+lumberyard
+
