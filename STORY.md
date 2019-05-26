@@ -26,8 +26,13 @@
 * Include sword fight (katana Iaido style)
 * Add a real evil foe they have to form an alliance to defeat (night king). Maybe something linked to the destruction of the nature (Godzilla)
 
-unity
-gamemaker
-appgamekit
-lumberyard
+NEW GAME VERSION:
+
+Focus on the solo part
+Game will be moving on a map, having random encounters, making choices on a rich storyline, gathering new characters and cards, fighting foes based on the first version of the game
+
+MVP:
+Moving avatar on a map
+Having a choice to make that would lead to 2 different fights
+Having different outcomes based on the result of the fight
 
