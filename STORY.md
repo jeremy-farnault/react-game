@@ -36,3 +36,10 @@ Moving avatar on a map
 Having a choice to make that would lead to 2 different fights
 Having different outcomes based on the result of the fight
 
+Dispay a map
+Can zoom in to see a region including POIs and an avatar
+Have a path to walk in to a next POI
+Start a dialogue with an NPC
+Choice includes to recruit the NPC
+Based on the choice, the next fight will be hard or easy
+
