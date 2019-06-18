@@ -43,3 +43,19 @@ Start a dialogue with an NPC
 Choice includes to recruit the NPC
 Based on the choice, the next fight will be hard or easy
 
+
+
+
+Hex hidden by clouds
+Info from PNJ or exploration to display the real ones
+No points on the map. Just general directions. 
+Difficulty will be also based on the time the player have to finish smthg
+
+1 - Display an hex tiles map
+2 - Display an avatar on the map and make it move by sliding onto the clicked slide
+3 - implement a fog of war on non visited tiles
+
+
+
+
+
